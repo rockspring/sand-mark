@@ -1,0 +1,3 @@
+/** The file input stream used to read data from.*/
+private final FileInputStream fis;
+private final FileChannel fileChannel;

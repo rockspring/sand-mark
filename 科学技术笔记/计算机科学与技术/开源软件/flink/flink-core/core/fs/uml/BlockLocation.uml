@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.fs.local.LocalBlockLocation</OriginalElement>
+  <nodes>
+    <node x="5.25" y="158.0">org.apache.flink.core.fs.local.LocalBlockLocation</node>
+    <node x="183.0" y="79.0">org.apache.flink.core.fs.BlockLocation</node>
+    <node x="0.0" y="79.0">org.apache.flink.annotation.Internal</node>
+    <node x="223.75" y="0.0">java.lang.Comparable</node>
+    <node x="25.75" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="192.25" y="158.0">org.apache.flink.runtime.fs.hdfs.HadoopBlockLocation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.fs.BlockLocation" target="java.lang.Comparable">
+      <point x="33.75" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.fs.hdfs.HadoopBlockLocation" target="org.apache.flink.core.fs.BlockLocation">
+      <point x="0.0" y="-14.5" />
+      <point x="33.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.local.LocalBlockLocation" target="org.apache.flink.core.fs.BlockLocation">
+      <point x="41.75" y="-14.5" />
+      <point x="130.5" y="133.0" />
+      <point x="216.75" y="133.0" />
+      <point x="-33.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.annotation.Internal" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="-21.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.BlockLocation" target="org.apache.flink.annotation.Public">
+      <point x="-33.75" y="-14.5" />
+      <point x="216.75" y="54.0" />
+      <point x="89.5" y="54.0" />
+      <point x="21.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.local.LocalBlockLocation" target="org.apache.flink.annotation.Internal">
+      <point x="-41.75" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="138.0" y="93.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

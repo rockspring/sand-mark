@@ -1,0 +1,89 @@
+- name: Configure webserver with nginx and tls
+  hosts: vagrant1
+  sudo: True
+  gather_facts: True
+  vars:
+    key_file: /etc/nginx/ssl/nginx.key
+    cert_file: /etc/nginx/ssl/nginx.crt
+    conf_file: /etc/nginx/sites-available/default
+    server_name: localhost
+  tasks:
+    - debug: var=ansible_distribution
+
+    - name: Install nginx
+      apt: name=nginx update_cache=yes cache_valid_time=3600
+      register: result
+
+    - debug: var=result
+
+    - name: create directories for ssl certificates
+      file: path=/etc/nginx/ssl state=directory
+
+    - name: copy TLS key
+      copy: src=files/nginx.key dest={{ key_file }} owner=root mode=0600
+      notify: restart nginx
+
+    - name: copy TLS certificate
+      copy: src=files/nginx.crt dest={{ cert_file }}
+      notify: restart nginx
+
+    - name: copy nginx config file
+      template: src=templates/nginx.conf.j2 dest={{ conf_file }}
+      notify: restart nginx
+
+    - name: enable configuration
+      file: dest=/etc/nginx/sites-enabled/default src={{ conf_file }} state=link
+      notify: restart nginx
+
+    - name: copy index.html
+      template: src=templates/index.html.j2 dest=/usr/share/nginx/html/index.html mode=0644
+      notify: restart nginx
+
+    - name: capture output of whoami command
+      command: whoami
+      register: login
+
+    - debug: msg="Logged in as user {{ login.stdout }}"
+
+    - name: capture output of id command
+      command: id -un
+      register: login
+
+    - debug: var=login
+
+    - name: run myprog
+      command: /opt/myprog
+      register: result
+      ignore_errors: True
+
+    - debug: var=result
+
+    - debug: var=hostvars
+
+    - name: checkout perl-json
+      sudo: False
+      git:
+        accept_hostkey=yes
+        depth=1
+        dest=/vagrant/projects/perl-json-clone
+        repo=git@gitlab.corp.anjuke.com:leqinzhou/perl-json.git
+        version=master
+
+    - name: untar perl-json
+      shell: cd /vagrant/projects/perl-json-clone; tar -zxvf JSON-2.90.tar.gz
+
+    - name: install perl-json
+      shell: cd /vagrant/projects/perl-json-clone/JSON-2.90; {{ item }}
+      with_items:
+        perl Makefile.PL;
+        make;
+        make test;
+        make install;
+
+      register: result
+
+    - debug: var=result
+
+  handlers:
+   - name: restart nginx
+     service: name=nginx state=restarted

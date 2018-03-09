@@ -1,0 +1,32 @@
+├── arabic-segmenter-atb+bn+arztrain.ser.gz
+├── ctb.gz
+├── ctb.prop
+├── dict
+│   ├── Makefile
+│   ├── as.non
+│   ├── char.ctb.list
+│   ├── character_list
+│   ├── character_list.as
+│   ├── character_list.gb18030
+│   ├── character_list.hk
+│   ├── ctb.non
+│   ├── hk.non
+│   ├── in.as
+│   ├── in.ctb
+│   ├── in.ctb.gb18030
+│   ├── in.hk
+│   ├── in.pk
+│   ├── in.pk.gb
+│   ├── pku.non
+│   ├── pos_close
+│   │   └── char.ctb.list
+│   └── pos_open
+│       ├── character_list.as
+│       ├── character_list.hk
+│       ├── character_list.pku.gb
+│       └── character_list.pku.utf8
+├── dict-chris6.ser.gz
+├── norm.simp.utf8
+├── pku.gz
+└── pku.prop
+

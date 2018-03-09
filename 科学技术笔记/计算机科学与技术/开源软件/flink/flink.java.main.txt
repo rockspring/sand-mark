@@ -1,0 +1,155 @@
+./flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/MesosApplicationMasterRunner.java:	public static void main(String[] args) {
+./flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosSessionClusterEntrypoint.java:	public static void main(String[] args) {
+./flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosJobClusterEntrypoint.java:	public static void main(String[] args) {
+./flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosTaskExecutorRunner.java:	public static void main(String[] args) throws Exception {
+./flink-libraries/flink-gelly-examples/src/main/java/org/apache/flink/graph/Runner.java:	public static void main(String[] args) throws Exception {
+./flink-libraries/flink-gelly-examples/src/main/java/org/apache/flink/graph/examples/SingleSourceShortestPaths.java:	public static void main(String[] args) throws Exception {
+./flink-libraries/flink-gelly-examples/src/main/java/org/apache/flink/graph/examples/GSASingleSourceShortestPaths.java:	public static void main(String[] args) throws Exception {
+./flink-libraries/flink-gelly-examples/src/main/java/org/apache/flink/graph/examples/PregelSSSP.java:	public static void main(String[] args) throws Exception {
+./flink-libraries/flink-gelly-examples/src/main/java/org/apache/flink/graph/examples/MusicProfiles.java:	public static void main(String[] args) throws Exception {
+./flink-libraries/flink-gelly-examples/src/main/java/org/apache/flink/graph/examples/EuclideanGraphWeighing.java:	public static void main(String[] args) throws Exception {
+./flink-libraries/flink-gelly-examples/src/main/java/org/apache/flink/graph/examples/IncrementalSSSP.java:	public static void main(String [] args) throws Exception {
+./flink-libraries/flink-python/src/main/java/org/apache/flink/python/api/PythonPlanBinder.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-elasticsearch/src/test/java/org/apache/flink/streaming/connectors/elasticsearch/examples/ElasticsearchSinkExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-orc/src/test/java/org/apache/flink/orc/util/OrcTestFileGenerator.java:	public static void main(String[] args) throws IOException {
+./flink-connectors/flink-hbase/src/test/java/org/apache/flink/addons/hbase/example/HBaseWriteStreamExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-hbase/src/test/java/org/apache/flink/addons/hbase/example/HBaseReadExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-hbase/src/test/java/org/apache/flink/addons/hbase/example/HBaseWriteExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/example/CassandraTupleWriteAheadSinkExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/example/CassandraPojoSinkExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/streaming/connectors/cassandra/example/CassandraTupleSinkExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-cassandra/src/test/java/org/apache/flink/batch/connectors/cassandra/example/BatchExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-kinesis/src/test/java/org/apache/flink/streaming/connectors/kinesis/manualtests/ManualProducerTest.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-kinesis/src/test/java/org/apache/flink/streaming/connectors/kinesis/manualtests/ManualConsumerProducerTest.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-kinesis/src/test/java/org/apache/flink/streaming/connectors/kinesis/manualtests/ManualExactlyOnceWithStreamReshardingTest.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-kinesis/src/test/java/org/apache/flink/streaming/connectors/kinesis/manualtests/ManualExactlyOnceTest.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-kinesis/src/main/java/org/apache/flink/streaming/connectors/kinesis/examples/ConsumeFromKinesis.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-kinesis/src/main/java/org/apache/flink/streaming/connectors/kinesis/examples/ProduceIntoKinesis.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-hadoop-compatibility/src/test/java/org/apache/flink/test/hadoopcompatibility/mapred/example/HadoopMapredCompatWordCount.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-hadoop-compatibility/src/test/java/org/apache/flink/test/hadoopcompatibility/mapreduce/example/WordCount.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-elasticsearch2/src/test/java/org/apache/flink/streaming/connectors/elasticsearch2/examples/ElasticsearchSinkExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-elasticsearch5/src/test/java/org/apache/flink/streaming/connectors/elasticsearch5/examples/ElasticsearchSinkExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-nifi/src/test/java/org/apache/flink/streaming/connectors/nifi/examples/NiFiSourceTopologyExample.java:	public static void main(String[] args) throws Exception {
+./flink-connectors/flink-connector-nifi/src/test/java/org/apache/flink/streaming/connectors/nifi/examples/NiFiSinkTopologyExample.java:	public static void main(String[] args) throws Exception {
+./flink-quickstart/flink-quickstart-java/target/classes/archetype-resources/src/main/java/BatchJob.java:	public static void main(String[] args) throws Exception {
+./flink-quickstart/flink-quickstart-java/target/classes/archetype-resources/src/main/java/StreamingJob.java:	public static void main(String[] args) throws Exception {
+./flink-quickstart/flink-quickstart-java/src/main/resources/archetype-resources/src/main/java/BatchJob.java:	public static void main(String[] args) throws Exception {
+./flink-quickstart/flink-quickstart-java/src/main/resources/archetype-resources/src/main/java/StreamingJob.java:	public static void main(String[] args) throws Exception {
+./flink-yarn-tests/src/test/java/org/apache/flink/yarn/TestingYarnTaskManagerRunner.java:	public static void main(String[] args) throws IOException {
+./flink-yarn-tests/src/test/java/org/apache/flink/yarn/TestingApplicationMaster.java:	public static void main(String[] args) {
+./flink-formats/flink-avro/src/test/java/org/apache/flink/formats/avro/testjar/AvroExternalJarProgram.java:	public static void main(String[] args) throws Exception {
+./flink-filesystems/flink-s3-fs-hadoop/src/main/java/org/apache/hadoop/conf/Configuration.java:  public static void main(String[] args) throws Exception {
+./flink-filesystems/flink-s3-fs-presto/src/main/java/org/apache/hadoop/conf/Configuration.java:	public static void main(String[] args) throws Exception {
+./flink-java8/src/test/java/org/apache/flink/runtime/util/jartestprogram/FilterLambda4.java:	public static void main(String[] args) throws Exception {
+./flink-java8/src/test/java/org/apache/flink/runtime/util/jartestprogram/FilterLambda3.java:	public static void main(String[] args) throws Exception {
+./flink-java8/src/test/java/org/apache/flink/runtime/util/jartestprogram/FilterLambda2.java:	public static void main(String[] args) throws Exception {
+./flink-java8/src/test/java/org/apache/flink/runtime/util/jartestprogram/FilterLambda1.java:	public static void main(String[] args) throws Exception {
+./flink-java8/src/main/java/org/apache/flink/streaming/examples/java8/wordcount/WordCount.java:	public static void main(String[] args) throws Exception {
+./flink-java8/src/main/java/org/apache/flink/examples/java8/relational/TPCHQuery10.java:	public static void main(String[] args) throws Exception {
+./flink-java8/src/main/java/org/apache/flink/examples/java8/wordcount/WordCount.java:	public static void main(String[] args) throws Exception {
+./flink-core/src/test/java/org/apache/flink/configuration/ConfigDocsCompletenessChecker.java:	public static void main(String[] args) throws Exception {
+./flink-core/src/test/java/org/apache/flink/api/java/tuple/TupleGenerator.java:	public static void main(String[] args) throws Exception {
+./flink-core/src/main/java/org/apache/flink/configuration/ConfigOptionsDocGenerator.java:	public static void main(String[] args) throws IOException, ClassNotFoundException {
+./flink-clients/src/test/java/org/apache/flink/client/testjar/JobWithExternalDependency.java:	public static void main(String[] args) throws ClassNotFoundException {
+./flink-clients/src/test/java/org/apache/flink/client/testjar/WordCount.java:	public static void main(String[] args) throws Exception {
+./flink-clients/src/test/java/org/apache/flink/client/program/ExecutionPlanCreationTest.java:		public static void main(String[] args) throws Exception {
+./flink-clients/src/test/java/org/apache/flink/client/program/ClientTest.java:		public static void main(String[] args) throws Exception {
+./flink-clients/src/test/java/org/apache/flink/client/program/ClientTest.java:		public static void main(String[] args) throws Exception {
+./flink-clients/src/test/java/org/apache/flink/client/program/ClientTest.java:		public static void main(String[] args) throws Exception {
+./flink-clients/src/test/java/org/apache/flink/client/program/ClientTest.java:		public static void main(String[] args) throws Exception {
+./flink-clients/src/test/java/org/apache/flink/client/program/ClientTest.java:		public static void main(String[] args) throws Exception {
+./flink-clients/src/test/java/org/apache/flink/client/program/ClientTest.java:		public static void main(String[] args) throws Exception {
+./flink-clients/src/test/java/org/apache/flink/client/program/ClientTest.java:		public static void main(String[] args) throws Exception {
+./flink-clients/src/main/java/org/apache/flink/client/program/PackagedProgram.java:							"It also declares no main(String[]) method as alternative entry point", e);
+./flink-clients/src/main/java/org/apache/flink/client/program/PackagedProgram.java:							"It also declares no main(String[]) method as alternative entry point", e);
+./flink-clients/src/main/java/org/apache/flink/client/CliFrontend.java:	public static void main(final String[] args) {
+./flink-scala-shell/src/main/java/org/apache/flink/api/java/JarHelper.java:	public static void main(String[] args) throws IOException {
+./flink-runtime-web/src/main/java/org/apache/flink/runtime/webmonitor/history/HistoryServer.java:	public static void main(String[] args) throws Exception {
+./flink-yarn/src/main/java/org/apache/flink/yarn/YarnTaskExecutorRunner.java:	public static void main(String[] args) {
+./flink-yarn/src/main/java/org/apache/flink/yarn/cli/FlinkYarnSessionCli.java:	public static void main(final String[] args) throws Exception {
+./flink-yarn/src/main/java/org/apache/flink/yarn/YarnApplicationMasterRunner.java:	public static void main(String[] args) {
+./flink-yarn/src/main/java/org/apache/flink/yarn/entrypoint/YarnSessionClusterEntrypoint.java:	public static void main(String[] args) {
+./flink-yarn/src/main/java/org/apache/flink/yarn/entrypoint/YarnJobClusterEntrypoint.java:	public static void main(String[] args) {
+./flink-end-to-end-tests/src/main/java/org/apache/flink/streaming/tests/ClassLoaderTestProgram.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/recovery/AbstractTaskManagerProcessFailureRecoveryTest.java:		public static void main(String[] args) {
+./flink-tests/src/test/java/org/apache/flink/test/runtime/entrypoint/StreamingNoop.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/runtime/NetworkStackThroughputITCase.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/state/operator/restore/keyed/KeyedJob.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/state/operator/restore/unkeyed/NonKeyedJob.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/classloading/jar/CheckpointingCustomKvStateProgram.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/classloading/jar/StreamingCustomInputSplitProgram.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/classloading/jar/UserCodeType.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/classloading/jar/CustomInputSplitProgram.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/classloading/jar/CheckpointedStreamingProgram.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/classloading/jar/KMeansForTest.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/classloading/jar/StreamingProgram.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/classloading/jar/CustomKvStateProgram.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/manual/HashTableRecordWidthCombinations.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/manual/MassiveStringSorting.java:	public static void main(String[] args) {
+./flink-tests/src/test/java/org/apache/flink/test/manual/NotSoMiniClusterIterations.java:	public static void main(String[] args) {
+./flink-tests/src/test/java/org/apache/flink/test/manual/MassiveStringValueSorting.java:	public static void main(String[] args) {
+./flink-tests/src/test/java/org/apache/flink/test/manual/StreamingScalabilityAndLatency.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/manual/OverwriteObjects.java:	public static void main(String[] args) throws Exception {
+./flink-tests/src/test/java/org/apache/flink/test/manual/ReducePerformance.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/twitter/TwitterExample.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/join/WindowJoin.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/wordcount/WordCount.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/async/AsyncIOExample.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/ml/IncrementalLearningSkeleton.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/kafka/Kafka010Example.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/iteration/IterateExample.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/windowing/GroupedProcessingTimeWindowExample.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/windowing/WindowWordCount.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/windowing/TopSpeedWindowing.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/windowing/SessionWindowing.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/sideoutput/SideOutputExample.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-streaming/src/main/java/org/apache/flink/streaming/examples/socket/SocketWindowWordCount.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/misc/CollectionExecutionExample.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/misc/PiEstimation.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/relational/EmptyFieldsCountAccumulator.java:	public static void main(final String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/relational/util/WebLogDataGenerator.java:	public static void main(String[] args) {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/relational/TPCHQuery3.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/relational/TPCHQuery10.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/relational/WebLogAnalysis.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/wordcount/WordCount.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/wordcount/WordCountPojo.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/graph/PageRank.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/graph/EnumTriangles.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/graph/ConnectedComponents.java:	public static void main(String... args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/clustering/KMeans.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/clustering/util/KMeansDataGenerator.java:	public static void main(String[] args) throws IOException {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/ml/LinearRegression.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/ml/util/LinearRegressionDataGenerator.java:	public static void main(String[] args) throws IOException {
+./flink-examples/flink-examples-batch/src/main/java/org/apache/flink/examples/java/distcp/DistCp.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-table/src/main/java/org/apache/flink/table/examples/java/WordCountSQL.java:	public static void main(String[] args) throws Exception {
+./flink-examples/flink-examples-table/src/main/java/org/apache/flink/table/examples/java/WordCountTable.java:	public static void main(String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/test/java/org/apache/flink/storm/split/SplitStreamBoltLocal.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/test/java/org/apache/flink/storm/split/SplitStreamSpoutLocal.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/split/SpoutSplitExample.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/join/SingleJoinExample.java:	public static void main(String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/wordcount/WordCountLocal.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/wordcount/WordCountLocalByName.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/wordcount/WordCountRemoteByClient.java:	public static void main(final String[] args) throws AlreadyAliveException, InvalidTopologyException,
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/wordcount/BoltTokenizerWordCountWithNames.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/wordcount/SpoutSourceWordCount.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/wordcount/BoltTokenizerWordCountPojo.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/wordcount/BoltTokenizerWordCount.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/wordcount/WordCountRemoteBySubmitter.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/exclamation/ExclamationWithSpout.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/exclamation/ExclamationWithBolt.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/exclamation/ExclamationLocal.java:	public static void main(final String[] args) throws Exception {
+./flink-contrib/flink-storm-examples/src/main/java/org/apache/flink/storm/print/PrintSampleStream.java:	public static void main(String[] args) throws Exception {
+./flink-java/src/test/java/org/apache/flink/api/java/tuple/TupleGenerator.java:	public static void main(String[] args) throws Exception {
+./flink-runtime/src/test/java/org/apache/flink/runtime/jobmanager/JobManagerProcessReapingTest.java:		public static void main(String[] args) {
+./flink-runtime/src/test/java/org/apache/flink/runtime/taskmanager/TaskManagerProcessReapingTestBase.java:		public static void main(String[] args) throws Exception {
+./flink-runtime/src/test/java/org/apache/flink/runtime/util/JvmExitOnFatalErrorTest.java:		public static void main(String[] args) throws Exception {
+./flink-runtime/src/test/java/org/apache/flink/runtime/util/BlockingShutdownTest.java:		public static void main(String[] args) throws Exception {
+./flink-runtime/src/test/java/org/apache/flink/runtime/util/jartestprogram/WordCountWithExternalClass2.java:	public static void main(String[] args) throws Exception {
+./flink-runtime/src/test/java/org/apache/flink/runtime/util/jartestprogram/WordCountWithAnonymousClass.java:	public static void main(String[] args) throws Exception {
+./flink-runtime/src/test/java/org/apache/flink/runtime/util/jartestprogram/WordCountWithInnerClass.java:	public static void main(String[] args) throws Exception {
+./flink-runtime/src/test/java/org/apache/flink/runtime/util/jartestprogram/WordCountWithExternalClass.java:	public static void main(String[] args) throws Exception {
+./flink-runtime/src/test/java/org/apache/flink/runtime/testutils/JobManagerProcess.java:		public static void main(String[] args) {
+./flink-runtime/src/test/java/org/apache/flink/runtime/testutils/TaskManagerProcess.java:		public static void main(String[] args) throws Exception {
+./flink-runtime/src/main/java/org/apache/flink/runtime/zookeeper/FlinkZooKeeperQuorumPeer.java:	public static void main(String[] args) {
+./flink-runtime/src/main/java/org/apache/flink/runtime/entrypoint/StandaloneSessionClusterEntrypoint.java:	public static void main(String[] args) {
+./flink-runtime/src/main/java/org/apache/flink/runtime/taskexecutor/TaskManagerRunner.java:	public static void main(String[] args) throws Exception {

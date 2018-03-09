@@ -1,0 +1,21 @@
+/** This lock guards the methods {@link #initOutPathLocalFS(Path, WriteMode, boolean)} and
+ * {@link #initOutPathDistFS(Path, WriteMode, boolean)} which are otherwise susceptible to races. */
+private static final ReentrantLock LOCK = new ReentrantLock(true);
+
+/** Cache for file systems, by scheme + authority. */
+private static final HashMap<FSKey, FileSystem> CACHE = new HashMap<>();
+
+/** All available file system factories. */
+private static final List<FileSystemFactory> RAW_FACTORIES = loadFileSystems();
+
+/** Mapping of file system schemes to the corresponding factories,
+ * populated in {@link FileSystem#initialize(Configuration)}. */
+private static final HashMap<String, FileSystemFactory> FS_FACTORIES = new HashMap<>();
+
+/** The default factory that is used when no scheme matches. */
+private static final FileSystemFactory FALLBACK_FACTORY = loadHadoopFsFactory();
+
+/** The default filesystem scheme to be used, configured during process-wide initialization.
+ * This value defaults to the local file systems scheme {@code 'file:///'} or {@code 'file:/'}. */
+//CHECKSTYLE.OFF: StaticVariableName
+private static URI DEFAULT_SCHEME;

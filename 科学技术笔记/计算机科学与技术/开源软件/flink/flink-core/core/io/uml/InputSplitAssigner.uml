@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.api.common.io.DefaultInputSplitAssigner</OriginalElement>
+  <nodes>
+    <node x="332.5" y="79.0">org.apache.flink.core.io.InputSplitAssigner</node>
+    <node x="238.0" y="237.0">org.apache.flink.api.common.io.LocatableInputSplitAssigner.LocatableInputSplitWithCount</node>
+    <node x="378.6875" y="158.0">org.apache.flink.api.common.io.DefaultInputSplitAssigner</node>
+    <node x="0.0" y="237.0">org.apache.flink.api.common.io.LocatableInputSplitAssigner.LocatableInputSplitChooser</node>
+    <node x="603.6875" y="158.0">org.apache.flink.api.common.io.ReplicatingInputSplitAssigner</node>
+    <node x="344.5" y="0.0">org.apache.flink.annotation.PublicEvolving</node>
+    <node x="687.25" y="79.0">org.apache.flink.annotation.Internal</node>
+    <node x="138.6875" y="158.0">org.apache.flink.api.common.io.LocatableInputSplitAssigner</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.io.InputSplitAssigner" target="org.apache.flink.annotation.PublicEvolving">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.DefaultInputSplitAssigner" target="org.apache.flink.annotation.Internal">
+      <point x="51.25" y="-14.5" />
+      <point x="532.4375" y="138.0" />
+      <point x="710.75" y="138.0" />
+      <point x="-23.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.ReplicatingInputSplitAssigner" target="org.apache.flink.annotation.Internal">
+      <point x="57.0" y="-14.5" />
+      <point x="774.6875" y="138.0" />
+      <point x="757.75" y="138.0" />
+      <point x="23.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.LocatableInputSplitAssigner.LocatableInputSplitWithCount" target="org.apache.flink.api.common.io.LocatableInputSplitAssigner">
+      <point x="0.0" y="-14.5" />
+      <point x="354.5" y="212.0" />
+      <point x="303.6875" y="212.0" />
+      <point x="55.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.ReplicatingInputSplitAssigner" target="org.apache.flink.core.io.InputSplitAssigner">
+      <point x="-57.0" y="-14.5" />
+      <point x="660.6875" y="128.0" />
+      <point x="466.66666666666663" y="128.0" />
+      <point x="53.66666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.DefaultInputSplitAssigner" target="org.apache.flink.core.io.InputSplitAssigner">
+      <point x="-51.25" y="-14.5" />
+      <point x="429.9375" y="138.0" />
+      <point x="413.0" y="138.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.LocatableInputSplitAssigner.LocatableInputSplitChooser" target="org.apache.flink.api.common.io.LocatableInputSplitAssigner">
+      <point x="0.0" y="-14.5" />
+      <point x="109.0" y="212.0" />
+      <point x="193.6875" y="212.0" />
+      <point x="-55.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.LocatableInputSplitAssigner" target="org.apache.flink.core.io.InputSplitAssigner">
+      <point x="0.0" y="-14.5" />
+      <point x="248.6875" y="138.0" />
+      <point x="359.3333333333333" y="138.0" />
+      <point x="-53.666666666666686" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="420.0" y="133.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

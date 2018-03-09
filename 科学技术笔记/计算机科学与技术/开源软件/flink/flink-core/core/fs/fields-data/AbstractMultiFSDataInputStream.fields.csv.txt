@@ -1,0 +1,3 @@
+FSDataInputStream	delegate
+long	totalPos
+long	totalAvailable

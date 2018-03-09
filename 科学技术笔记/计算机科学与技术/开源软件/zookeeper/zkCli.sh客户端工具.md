@@ -1,0 +1,10 @@
+zkCli.sh对应的代码
+
+ZooKeeperMain有一个main函数
+
+使用jline实现行编辑
+
+
+主线程有一个主循环，循环调用ConsoleReader的readLine方法，获取当前需要输入的命令
+
+ConsoleReader的readLine方法有一个循环，循环处理用户的键盘输入，知道回车键输入后终止本次行输入

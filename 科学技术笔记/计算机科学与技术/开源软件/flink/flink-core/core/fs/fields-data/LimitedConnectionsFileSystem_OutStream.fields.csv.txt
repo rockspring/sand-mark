@@ -1,0 +1,5 @@
+FSDataOutputStream	originalStream
+LimitedConnectionsFileSystem	fs
+StreamProgressTracker	progressTracker
+StreamTimeoutException	timeoutException
+AtomicBoolean	closed

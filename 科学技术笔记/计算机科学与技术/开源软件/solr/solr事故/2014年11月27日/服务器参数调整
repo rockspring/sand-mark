@@ -1,0 +1,14 @@
+vim /etc/pam.d/common-session-noninteractive
+
+session required pam_limits.so
+
+vim /etc/security/limits.conf
+
+* - nofile 65535
+root - nofile 65535
+
+
+
+vim /etc/pam.d/common-session
+
+session required pam_limits.so

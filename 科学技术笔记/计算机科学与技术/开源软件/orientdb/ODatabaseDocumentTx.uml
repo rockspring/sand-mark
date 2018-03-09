@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</OriginalElement>
+  <nodes>
+    <node x="495.94466666666665" y="415.0">com.orientechnologies.orient.core.db.ODatabaseDocumentInternal</node>
+    <node x="801.9500000000002" y="257.0">com.orientechnologies.orient.core.db.ODatabase.STATUS</node>
+    <node x="471.875" y="662.0">com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.SimpleRecordReader</node>
+    <node x="17.5" y="415.0">java.lang.SuppressWarnings</node>
+    <node x="158.375" y="662.0">com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.LatestVersionRecordReader</node>
+    <node x="467.25" y="583.0">com.orientechnologies.orient.core.db.OPartitionedDatabasePool.DatabaseDocumentTxPooled</node>
+    <node x="468.95000000000016" y="257.0">com.orientechnologies.orient.core.db.ODatabase.ATTRIBUTES</node>
+    <node x="920.9500000000002" y="257.0">com.orientechnologies.orient.core.db.ODatabaseInternal</node>
+    <node x="591.7560000000001" y="0.0">java.lang.AutoCloseable</node>
+    <node x="493.50600000000003" y="158.0">com.orientechnologies.orient.core.db.ODatabase</node>
+    <node x="322.94466666666665" y="415.0">com.orientechnologies.common.listener.OListenerManger</node>
+    <node x="314.25" y="583.0">com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.RecordReader</node>
+    <node x="343.95000000000005" y="257.0">com.orientechnologies.orient.core.db.ODatabase.OPTIONS</node>
+    <node x="615.9500000000002" y="257.0">com.orientechnologies.orient.core.db.ODatabase.OPERATION_MODE</node>
+    <node x="0.0" y="583.0">com.orientechnologies.orient.core.db.document.ODatabaseDocumentTxPooled</node>
+    <node x="188.95000000000005" y="336.0">com.orientechnologies.orient.core.db.document.ODatabaseDocument</node>
+    <node x="606.7560000000001" y="79.0">java.io.Closeable</node>
+    <node x="336.2248571428572" y="494.0">com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</node>
+    <node x="121.95000000000005" y="257.0">com.orientechnologies.orient.core.db.ODatabaseSchemaAware</node>
+    <node x="457.75600000000003" y="79.0">com.orientechnologies.orient.core.util.OBackupable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" target="com.orientechnologies.common.listener.OListenerManger">
+      <point x="0.0" y="-14.5" />
+      <point x="432.7248571428572" y="469.0" />
+      <point x="399.44466666666665" y="469.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabase.ATTRIBUTES" target="com.orientechnologies.orient.core.db.ODatabase">
+      <point x="0.0" y="-14.5" />
+      <point x="532.4500000000002" y="237.0" />
+      <point x="551.0060000000001" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocument" target="com.orientechnologies.orient.core.db.ODatabase">
+      <point x="44.5" y="-14.5" />
+      <point x="322.45000000000005" y="311.0" />
+      <point x="333.45000000000005" y="311.0" />
+      <point x="333.45000000000005" y="217.0" />
+      <point x="518.1488571428572" y="217.0" />
+      <point x="-32.85714285714283" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTxPooled" target="java.lang.SuppressWarnings">
+      <point x="-58.75" y="-14.5" />
+      <point x="-41.25" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabaseDocumentInternal" target="com.orientechnologies.orient.core.db.document.ODatabaseDocument">
+      <point x="-55.99999999999994" y="-14.5" />
+      <point x="551.9446666666666" y="390.0" />
+      <point x="277.95000000000005" y="390.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabase.OPERATION_MODE" target="com.orientechnologies.orient.core.db.ODatabase">
+      <point x="0.0" y="-14.5" />
+      <point x="698.9500000000002" y="237.0" />
+      <point x="567.4345714285714" y="237.0" />
+      <point x="16.428571428571445" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabaseInternal" target="com.orientechnologies.orient.core.db.ODatabase">
+      <point x="0.0" y="-14.5" />
+      <point x="1001.4500000000002" y="217.0" />
+      <point x="600.2917142857143" y="217.0" />
+      <point x="49.28571428571428" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.SimpleRecordReader" target="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx">
+      <point x="43.25" y="-14.5" />
+      <point x="601.625" y="637.0" />
+      <point x="702.75" y="637.0" />
+      <point x="702.75" y="553.0" />
+      <point x="509.92485714285715" y="553.0" />
+      <point x="77.19999999999993" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabase.STATUS" target="com.orientechnologies.orient.core.db.ODatabase">
+      <point x="0.0" y="-14.5" />
+      <point x="851.4500000000002" y="227.0" />
+      <point x="583.8631428571429" y="227.0" />
+      <point x="32.85714285714283" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabase.OPTIONS" target="com.orientechnologies.orient.core.db.ODatabase">
+      <point x="0.0" y="-14.5" />
+      <point x="396.45000000000005" y="227.0" />
+      <point x="534.5774285714285" y="227.0" />
+      <point x="-16.428571428571445" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabaseDocumentInternal" target="com.orientechnologies.orient.core.db.ODatabaseInternal">
+      <point x="56.00000000000006" y="-14.5" />
+      <point x="663.9446666666666" y="390.0" />
+      <point x="1001.4500000000002" y="390.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.LatestVersionRecordReader" target="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx">
+      <point x="-54.5" y="-14.5" />
+      <point x="212.875" y="637.0" />
+      <point x="245.5" y="637.0" />
+      <point x="245.5" y="553.0" />
+      <point x="394.1248571428572" y="553.0" />
+      <point x="-38.60000000000002" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.SimpleRecordReader" target="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.RecordReader">
+      <point x="-43.25" y="-14.5" />
+      <point x="515.125" y="637.0" />
+      <point x="414.0" y="637.0" />
+      <point x="33.25" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.RecordReader" target="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx">
+      <point x="0.0" y="-14.5" />
+      <point x="380.75" y="563.0" />
+      <point x="432.7248571428572" y="563.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTxPooled" target="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx">
+      <point x="58.75" y="-14.5" />
+      <point x="176.25" y="543.0" />
+      <point x="355.52485714285723" y="543.0" />
+      <point x="-77.19999999999999" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabase" target="java.io.Closeable">
+      <point x="28.75" y="-14.5" />
+      <point x="579.7560000000001" y="133.0" />
+      <point x="660.2560000000001" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" target="java.lang.SuppressWarnings">
+      <point x="-64.33333333333331" y="-14.5" />
+      <point x="368.3915238095239" y="469.0" />
+      <point x="141.25" y="469.0" />
+      <point x="41.25" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.OPartitionedDatabasePool.DatabaseDocumentTxPooled" target="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx">
+      <point x="0.0" y="-14.5" />
+      <point x="579.75" y="563.0" />
+      <point x="471.3248571428571" y="563.0" />
+      <point x="38.59999999999991" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabaseSchemaAware" target="com.orientechnologies.orient.core.db.ODatabase">
+      <point x="0.0" y="-14.5" />
+      <point x="222.45000000000005" y="207.0" />
+      <point x="501.72028571428575" y="207.0" />
+      <point x="-49.28571428571428" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.ODatabase" target="com.orientechnologies.orient.core.util.OBackupable">
+      <point x="-28.75" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.LatestVersionRecordReader" target="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx.RecordReader">
+      <point x="54.5" y="-14.5" />
+      <point x="321.875" y="637.0" />
+      <point x="347.5" y="637.0" />
+      <point x="-33.25" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocument" target="com.orientechnologies.orient.core.db.ODatabaseSchemaAware">
+      <point x="-44.5" y="-14.5" />
+      <point x="233.45000000000005" y="311.0" />
+      <point x="222.45000000000005" y="311.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx" target="com.orientechnologies.orient.core.db.ODatabaseDocumentInternal">
+      <point x="64.33333333333337" y="-14.5" />
+      <point x="497.0581904761906" y="469.0" />
+      <point x="607.9446666666666" y="469.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6576319543509273" x="480.85032537960956" y="660.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

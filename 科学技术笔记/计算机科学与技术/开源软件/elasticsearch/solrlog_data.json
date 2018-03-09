@@ -1,0 +1,18 @@
+{
+  "message" : ["周乐钦", "zhouleqin"],
+  "message_analyzer" : "whitespace",
+  "urlLength" : 100,
+  "dateTime" : "2015-02-07",
+  "httpCode200" : true,
+  "ip" : "127.0.0.1",
+  "new_date" : "2015-02-07",
+  "new_number" : "123456",
+  "multi_number" :666,
+  "_multi_number" :888,
+  "multi_keywords" :"周乐钦",
+  "obj1" : {
+  	"sub_object1" : {
+  		"value" : "abcd"
+  	}
+  }
+}

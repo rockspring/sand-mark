@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.fs.ClosingFSDataInputStream</OriginalElement>
+  <nodes>
+    <node x="1057.0" y="356.0">org.apache.flink.core.fs.FSDataInputStreamWrapper</node>
+    <node x="269.5" y="435.0">org.apache.flink.runtime.state.MultiStreamStateHandle.MultiFSDataInputStream</node>
+    <node x="512.0" y="356.0">org.apache.flink.runtime.fs.hdfs.HadoopDataInputStream</node>
+    <node x="1176.25" y="435.0">org.apache.flink.core.fs.ClosingFSDataInputStream</node>
+    <node x="935.0" y="356.0">org.apache.flink.core.fs.LimitedConnectionsFileSystem.InStream</node>
+    <node x="542.8333333333334" y="267.0">org.apache.flink.core.fs.FSDataInputStream</node>
+    <node x="1168.625" y="0.0">java.lang.AutoCloseable</node>
+    <node x="732.0" y="356.0">org.apache.flink.core.fs.local.LocalDataInputStream</node>
+    <node x="0.0" y="356.0">org.apache.flink.api.common.io.InputStreamFSInputWrapper</node>
+    <node x="1368.782258064516" y="356.0">org.apache.flink.core.fs.WrappingProxyCloseable</node>
+    <node x="243.0" y="356.0">org.apache.flink.core.fs.AbstractMultiFSDataInputStream</node>
+    <node x="1183.625" y="79.0">java.io.Closeable</node>
+    <node x="1197.4354838709673" y="168.0">org.apache.flink.annotation.Internal</node>
+    <node x="547.3333333333334" y="79.0">org.apache.flink.annotation.Public</node>
+    <node x="1297.625" y="267.0">org.apache.flink.util.WrappingProxy</node>
+    <node x="600.3333333333334" y="168.0">java.io.InputStream</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.fs.WrappingProxyCloseable" target="java.io.Closeable">
+      <point x="75.75" y="-14.5" />
+      <point x="1545.532258064516" y="326.0" />
+      <point x="1484.157258064516" y="326.0" />
+      <point x="1484.157258064516" y="138.0" />
+      <point x="1277.25" y="138.0" />
+      <point x="40.125" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.WrappingProxyCloseable" target="org.apache.flink.annotation.Internal">
+      <point x="-25.25" y="-14.5" />
+      <point x="1444.532258064516" y="336.0" />
+      <point x="1451.125" y="336.0" />
+      <point x="1451.125" y="227.0" />
+      <point x="1283.602150537634" y="227.0" />
+      <point x="39.16666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.AbstractMultiFSDataInputStream" target="org.apache.flink.core.fs.FSDataInputStream">
+      <point x="62.25" y="-14.5" />
+      <point x="429.75" y="336.0" />
+      <point x="584.3333333333334" y="336.0" />
+      <point x="-41.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.state.MultiStreamStateHandle.MultiFSDataInputStream" target="org.apache.flink.core.fs.AbstractMultiFSDataInputStream">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.ClosingFSDataInputStream" target="org.apache.flink.core.fs.WrappingProxyCloseable">
+      <point x="70.66666666666669" y="-14.5" />
+      <point x="1352.9166666666667" y="410.0" />
+      <point x="1469.782258064516" y="410.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FSDataInputStreamWrapper" target="org.apache.flink.util.WrappingProxy">
+      <point x="73.0" y="-14.5" />
+      <point x="1239.5" y="336.0" />
+      <point x="1333.375" y="336.0" />
+      <point x="-35.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FSDataInputStreamWrapper" target="org.apache.flink.annotation.Internal">
+      <point x="0.0" y="-14.5" />
+      <point x="1166.5" y="247.0" />
+      <point x="1236.602150537634" y="247.0" />
+      <point x="-7.833333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.local.LocalDataInputStream" target="org.apache.flink.annotation.Internal">
+      <point x="45.75" y="-14.5" />
+      <point x="869.25" y="237.0" />
+      <point x="1220.9354838709673" y="237.0" />
+      <point x="-23.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FSDataInputStream" target="org.apache.flink.annotation.Public">
+      <point x="-41.5" y="-14.5" />
+      <point x="584.3333333333334" y="217.0" />
+      <point x="589.8333333333334" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FSDataInputStreamWrapper" target="org.apache.flink.core.fs.FSDataInputStream">
+      <point x="-73.0" y="-14.5" />
+      <point x="1093.5" y="316.0" />
+      <point x="695.0000000000001" y="316.0" />
+      <point x="69.16666666666674" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.InputStreamFSInputWrapper" target="org.apache.flink.core.fs.FSDataInputStream">
+      <point x="55.75" y="-14.5" />
+      <point x="167.25" y="326.0" />
+      <point x="556.6666666666667" y="326.0" />
+      <point x="-69.16666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.InStream" target="org.apache.flink.core.fs.FSDataInputStream">
+      <point x="-25.5" y="-14.5" />
+      <point x="960.5" y="326.0" />
+      <point x="667.3333333333334" y="326.0" />
+      <point x="41.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.ClosingFSDataInputStream" target="org.apache.flink.core.fs.FSDataInputStreamWrapper">
+      <point x="-70.66666666666669" y="-14.5" />
+      <point x="1211.5833333333333" y="410.0" />
+      <point x="1166.5" y="410.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FSDataInputStream" target="java.io.InputStream">
+      <point x="41.5" y="-14.5" />
+      <point x="667.3333333333334" y="217.0" />
+      <point x="661.8333333333334" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.local.LocalDataInputStream" target="org.apache.flink.core.fs.FSDataInputStream">
+      <point x="-45.75" y="-14.5" />
+      <point x="777.75" y="336.0" />
+      <point x="639.6666666666667" y="336.0" />
+      <point x="13.833333333333371" y="14.5" />
+    </edge>
+    <edge source="java.io.InputStream" target="java.io.Closeable">
+      <point x="0.0" y="-14.5" />
+      <point x="661.8333333333334" y="138.0" />
+      <point x="1197.0" y="138.0" />
+      <point x="-40.125" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.WrappingProxyCloseable" target="org.apache.flink.util.WrappingProxy">
+      <point x="-75.75" y="-14.5" />
+      <point x="1394.032258064516" y="336.0" />
+      <point x="1404.875" y="336.0" />
+      <point x="35.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.ClosingFSDataInputStream" target="org.apache.flink.annotation.Internal">
+      <point x="0.0" y="-14.5" />
+      <point x="1282.25" y="410.0" />
+      <point x="1286.5" y="410.0" />
+      <point x="1286.5" y="247.0" />
+      <point x="1252.2688172043008" y="247.0" />
+      <point x="7.833333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.WrappingProxy" target="org.apache.flink.annotation.Internal">
+      <point x="0.0" y="-14.5" />
+      <point x="1369.125" y="237.0" />
+      <point x="1267.9354838709673" y="237.0" />
+      <point x="23.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.fs.hdfs.HadoopDataInputStream" target="org.apache.flink.core.fs.FSDataInputStream">
+      <point x="0.0" y="-14.5" />
+      <point x="-13.833333333333371" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.io.InputStreamFSInputWrapper" target="org.apache.flink.annotation.Public">
+      <point x="-55.75" y="-14.5" />
+      <point x="55.75" y="148.0" />
+      <point x="561.5" y="148.0" />
+      <point x="-28.33333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.InStream" target="java.io.Closeable">
+      <point x="25.5" y="-14.5" />
+      <point x="1011.5" y="148.0" />
+      <point x="1223.75" y="148.0" />
+      <point x="-13.375" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.annotation.Internal" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="1244.4354838709673" y="128.0" />
+      <point x="618.1666666666667" y="128.0" />
+      <point x="28.33333333333337" y="14.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.AbstractMultiFSDataInputStream" target="org.apache.flink.annotation.Internal">
+      <point x="-62.25" y="-14.5" />
+      <point x="305.25" y="227.0" />
+      <point x="1205.2688172043008" y="227.0" />
+      <point x="-39.166666666666686" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9429882044560943" x="753.0" y="227.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

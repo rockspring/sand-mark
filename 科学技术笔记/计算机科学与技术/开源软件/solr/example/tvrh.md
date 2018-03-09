@@ -1,0 +1,41 @@
+http://localhost:8983/solr/tvrh?q=*:*&tv.all=true&fl=includes&wt=json&indent=true
+
+"MA147LL/A",[
+      "uniqueKey","MA147LL/A",
+      "includes",[
+        "cable",[
+          "tf",1,
+          "positions",[
+            "position",3],
+          "offsets",[
+            "start",23,
+            "end",28],
+          "df",3,
+          "tf-idf",0.3333333333333333],
+        "earbud",[
+          "tf",1,
+          "positions",[
+            "position",0],
+          "offsets",[
+            "start",0,
+            "end",6],
+          "df",1,
+          "tf-idf",1.0],
+        "headphones",[
+          "tf",1,
+          "positions",[
+            "position",1],
+          "offsets",[
+            "start",7,
+            "end",17],
+          "df",1,
+          "tf-idf",1.0],
+        "usb",[
+          "tf",1,
+          "positions",[
+            "position",2],
+          "offsets",[
+            "start",19,
+            "end",22],
+          "df",3,
+          "tf-idf",0.3333333333333333]]]

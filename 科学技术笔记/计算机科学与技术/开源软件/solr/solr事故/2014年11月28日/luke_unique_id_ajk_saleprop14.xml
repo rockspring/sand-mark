@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <lst name="responseHeader">
+    <int name="status">0</int>
+    <int name="QTime">185</int>
+  </lst>
+  <lst name="index">
+    <int name="numDocs">318307</int>
+    <int name="maxDoc">422668</int>
+    <int name="deletedDocs">104361</int>
+    <long name="indexHeapUsageBytes">2598068</long>
+    <long name="version">17700000</long>
+    <int name="segmentCount">13</int>
+    <bool name="current">true</bool>
+    <bool name="hasDeletions">true</bool>
+    <str name="directory">
+      org.apache.lucene.store.NRTCachingDirectory:NRTCachingDirectory(MMapDirectory@/home/www/release/search-cloud/cloud/7806/idx/collection1/data/index.20141118144437000
+      lockFactory=NativeFSLockFactory@/home/www/release/search-cloud/cloud/7806/idx/collection1/data/index.20141118144437000;
+      maxCacheMB=48.0 maxMergeSizeMB=4.0)
+    </str>
+    <lst name="userData">
+      <str name="commitTimeMSec">1417166566960</str>
+    </lst>
+    <date name="lastModified">2014-11-28T09:22:46.96Z</date>
+  </lst>
+  <lst name="fields">
+    <lst name="unique_id">
+      <str name="type">string</str>
+      <str name="schema">I-------OF-----l</str>
+      <str name="index">(unstored field)</str>
+      <int name="docs">422668</int>
+      <int name="distinct">321771</int>
+      <lst name="topTerms">
+        <int name="A246572394">4</int>
+        <int name="A238450365">3</int>
+        <int name="A237264865">3</int>
+        <int name="A237553201">3</int>
+        <int name="A238450362">3</int>
+        <int name="A238450364">3</int>
+        <int name="A237264867">3</int>
+        <int name="A237264866">3</int>
+        <int name="A237264946">3</int>
+        <int name="A238450361">3</int>
+      </lst>
+      <lst name="histogram">
+        <int name="1">223675</int>
+        <int name="2">95296</int>
+        <int name="4">2800</int>
+      </lst>
+    </lst>
+  </lst>
+  <lst name="info">
+    <lst name="key">
+      <str name="I">Indexed</str>
+      <str name="T">Tokenized</str>
+      <str name="S">Stored</str>
+      <str name="D">DocValues</str>
+      <str name="M">Multivalued</str>
+      <str name="V">TermVector Stored</str>
+      <str name="o">Store Offset With TermVector</str>
+      <str name="p">Store Position With TermVector</str>
+      <str name="O">Omit Norms</str>
+      <str name="F">Omit Term Frequencies &amp; Positions</str>
+      <str name="P">Omit Positions</str>
+      <str name="H">Store Offsets with Positions</str>
+      <str name="L">Lazy</str>
+      <str name="B">Binary</str>
+      <str name="f">Sort Missing First</str>
+      <str name="l">Sort Missing Last</str>
+    </lst>
+    <str name="NOTE">Document Frequency (df) is not updated when a document is marked for deletion. df values include
+      deleted documents.
+    </str>
+  </lst>
+</response>

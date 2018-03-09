@@ -1,0 +1,14 @@
+/** The original data input stream to read from. */
+private final FSDataInputStream originalStream;
+
+/** The connection-limiting file system to un-register from. */
+private final LimitedConnectionsFileSystem fs;
+
+/** An exception with which the stream has been externally closed. */
+private volatile StreamTimeoutException timeoutException;
+
+/** The progress tracker for this stream. */
+private final StreamProgressTracker progressTracker;
+
+/** Flag tracking whether the stream was already closed, for proper inactivity tracking. */
+private AtomicBoolean closed = new AtomicBoolean();

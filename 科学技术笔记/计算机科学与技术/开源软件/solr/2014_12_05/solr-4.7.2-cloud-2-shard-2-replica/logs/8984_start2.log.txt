@@ -1,0 +1,5 @@
+
+INFO  - 2014-12-05 09:26:49.995; [main-EventThread] org.apache.solr.common.cloud.ZkStateReader$3.process(ZkStateReader.java:311); Updating live nodes... (3)
+INFO  - 2014-12-05 09:26:50.146; [main-EventThread] org.apache.solr.common.cloud.ZkStateReader$2.process(ZkStateReader.java:257); A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 3)
+INFO  - 2014-12-05 09:26:54.442; [main-EventThread] org.apache.solr.common.cloud.ZkStateReader$2.process(ZkStateReader.java:257); A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 3)
+INFO  - 2014-12-05 09:26:57.030; [main-EventThread] org.apache.solr.common.cloud.ZkStateReader$2.process(ZkStateReader.java:257); A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 3)

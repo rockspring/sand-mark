@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.index.IndexWriter</OriginalElement>
+  <nodes>
+    <node x="575.7270833333334" y="79.0">org.apache.lucene.index.TwoPhaseCommit</node>
+    <node x="893.0" y="237.0">org.apache.lucene.index.IndexWriter.MergedDeletesAndUpdates</node>
+    <node x="575.0" y="316.0">org.apache.lucene.index.DocumentsWriter.ForcedPurgeEvent</node>
+    <node x="12.500000000000057" y="237.0">org.apache.lucene.index.IndexWriter.ReaderPool</node>
+    <node x="0.0" y="0.0">java.lang.AutoCloseable</node>
+    <node x="373.00000000000006" y="316.0">org.apache.lucene.index.DocumentsWriter.ResolveUpdatesEvent</node>
+    <node x="494.64375000000007" y="158.0">org.apache.lucene.index.IndexWriter</node>
+    <node x="1122.0" y="316.0">org.apache.lucene.index.DocumentsWriter.ApplyDeletesEvent</node>
+    <node x="927.0" y="316.0">org.apache.lucene.index.DocumentsWriter.DeleteNewFilesEvent</node>
+    <node x="149.50000000000006" y="237.0">org.apache.lucene.index.IndexWriter.IndexReaderWarmer</node>
+    <node x="756.0" y="316.0">org.apache.lucene.index.DocumentsWriter.FlushFailedEvent</node>
+    <node x="15.000000000000057" y="79.0">java.io.Closeable</node>
+    <node x="430.7270833333334" y="79.0">org.apache.lucene.util.Accountable</node>
+    <node x="790.0" y="237.0">org.apache.lucene.index.IndexWriter.Event</node>
+    <node x="117.00000000000006" y="316.0">org.apache.lucene.index.SimpleMergedSegmentWarmer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.index.IndexWriter.IndexReaderWarmer" target="org.apache.lucene.index.IndexWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="235.00000000000006" y="217.0" />
+      <point x="539.2687500000001" y="217.0" />
+      <point x="-14.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriter.FlushFailedEvent" target="org.apache.lucene.index.IndexWriter.Event">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.IndexWriter" target="org.apache.lucene.index.TwoPhaseCommit">
+      <point x="39.66666666666663" y="-14.5" />
+      <point x="593.8104166666667" y="138.0" />
+      <point x="654.7270833333334" y="138.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.IndexWriter" target="java.io.Closeable">
+      <point x="-39.66666666666663" y="-14.5" />
+      <point x="514.4770833333334" y="138.0" />
+      <point x="95.25000000000006" y="138.0" />
+      <point x="26.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriter.ForcedPurgeEvent" target="org.apache.lucene.index.IndexWriter.Event">
+      <point x="0.0" y="-14.5" />
+      <point x="655.5" y="296.0" />
+      <point x="814.9000000000001" y="296.0" />
+      <point x="-16.600000000000023" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriter.ResolveUpdatesEvent" target="org.apache.lucene.index.IndexWriter.Event">
+      <point x="0.0" y="-14.5" />
+      <point x="464.00000000000006" y="286.0" />
+      <point x="798.3" y="286.0" />
+      <point x="-33.200000000000045" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriter.DeleteNewFilesEvent" target="org.apache.lucene.index.IndexWriter.Event">
+      <point x="0.0" y="-14.5" />
+      <point x="1014.5" y="296.0" />
+      <point x="848.1000000000001" y="296.0" />
+      <point x="16.600000000000023" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriter.ApplyDeletesEvent" target="org.apache.lucene.index.IndexWriter.Event">
+      <point x="0.0" y="-14.5" />
+      <point x="1203.5" y="286.0" />
+      <point x="864.7" y="286.0" />
+      <point x="33.200000000000045" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SimpleMergedSegmentWarmer" target="org.apache.lucene.index.IndexWriter.IndexReaderWarmer">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.IndexWriter.MergedDeletesAndUpdates" target="org.apache.lucene.index.IndexWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="1001.0" y="207.0" />
+      <point x="598.7687500000001" y="207.0" />
+      <point x="44.625" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.IndexWriter" target="org.apache.lucene.util.Accountable">
+      <point x="0.0" y="-14.5" />
+      <point x="554.1437500000001" y="128.0" />
+      <point x="493.2270833333334" y="128.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.IndexWriter.Event" target="org.apache.lucene.index.IndexWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="831.5" y="217.0" />
+      <point x="569.0187500000001" y="217.0" />
+      <point x="14.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.IndexWriter.ReaderPool" target="java.io.Closeable">
+      <point x="-29.25" y="-14.5" />
+      <point x="-26.75" y="14.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.IndexWriter.ReaderPool" target="org.apache.lucene.index.IndexWriter">
+      <point x="29.25" y="-14.5" />
+      <point x="100.25000000000006" y="207.0" />
+      <point x="509.51875000000007" y="207.0" />
+      <point x="-44.625" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="642.5" y="172.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

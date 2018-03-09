@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.util.bkd</OriginalElement>
+  <nodes>
+    <node x="0.0" y="158.0">org.apache.lucene.util.bkd.BKDWriter.MergeReader</node>
+    <node x="148.0" y="158.0">org.apache.lucene.util.bkd.BKDWriter.BKDMergeQueue</node>
+    <node x="667.0" y="158.0">org.apache.lucene.util.bkd.OfflinePointWriter</node>
+    <node x="1199.0" y="158.0">org.apache.lucene.util.bkd.HeapPointReader</node>
+    <node x="89.50000000000001" y="232.0">org.apache.lucene.util.bkd.BKDReader</node>
+    <node x="787.3802083333333" y="79.0">org.apache.lucene.util.bkd.PointWriter</node>
+    <node x="14.98214285714289" y="390.0">org.apache.lucene.util.bkd.BKDReader.PackedIndexTree</node>
+    <node x="10.5" y="311.0">org.apache.lucene.util.bkd.BKDReader.IntersectState</node>
+    <node x="1016.0" y="158.0">org.apache.lucene.util.bkd.OfflinePointReader</node>
+    <node x="675.625" y="232.0">org.apache.lucene.util.bkd.DocIdsWriter</node>
+    <node x="543.0" y="158.0">org.apache.lucene.util.bkd.BKDWriter.PathSlice</node>
+    <node x="846.0" y="158.0">org.apache.lucene.util.bkd.HeapPointWriter</node>
+    <node x="164.5" y="311.0">org.apache.lucene.util.bkd.BKDReader.IndexTree</node>
+    <node x="780.25" y="0.0">java.io.Closeable</node>
+    <node x="320.99999999999994" y="158.0">org.apache.lucene.util.bkd.BKDWriter.OneDimensionBKDWriter</node>
+    <node x="424.625" y="232.0">org.apache.lucene.util.bkd.MutablePointsReaderUtils</node>
+    <node x="1138.3802083333333" y="79.0">org.apache.lucene.util.bkd.PointReader</node>
+    <node x="266.74999999999994" y="79.0">org.apache.lucene.util.bkd.BKDWriter</node>
+    <node x="228.625" y="390.0">org.apache.lucene.util.bkd.BKDReader.LegacyIndexTree</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.util.bkd.BKDWriter.PathSlice" target="org.apache.lucene.util.bkd.BKDWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="595.0" y="128.0" />
+      <point x="365.62499999999994" y="128.0" />
+      <point x="42.375" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.HeapPointWriter" target="org.apache.lucene.util.bkd.PointWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="921.0" y="138.0" />
+      <point x="875.8802083333333" y="138.0" />
+      <point x="29.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDWriter.BKDMergeQueue" target="org.apache.lucene.util.bkd.BKDWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="224.5" y="138.0" />
+      <point x="309.12499999999994" y="138.0" />
+      <point x="-14.125" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDWriter.OneDimensionBKDWriter" target="org.apache.lucene.util.bkd.BKDWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="421.99999999999994" y="138.0" />
+      <point x="337.37499999999994" y="138.0" />
+      <point x="14.125" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDReader.IndexTree" target="org.apache.lucene.util.bkd.BKDReader">
+      <point x="0.0" y="-14.5" />
+      <point x="218.5" y="291.0" />
+      <point x="162.625" y="291.0" />
+      <point x="14.625" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.OfflinePointReader" target="org.apache.lucene.util.bkd.PointReader">
+      <point x="0.0" y="-14.5" />
+      <point x="1097.5" y="138.0" />
+      <point x="1168.8802083333333" y="138.0" />
+      <point x="-30.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDReader.PackedIndexTree" target="org.apache.lucene.util.bkd.BKDReader.IndexTree">
+      <point x="38.0" y="-14.5" />
+      <point x="128.9821428571429" y="365.0" />
+      <point x="191.5" y="365.0" />
+      <point x="-27.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.PointWriter" target="java.io.Closeable">
+      <point x="0.0" y="-14.5" />
+      <point x="846.3802083333333" y="54.0" />
+      <point x="833.75" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDWriter.MergeReader" target="org.apache.lucene.util.bkd.BKDWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="64.0" y="128.0" />
+      <point x="280.87499999999994" y="128.0" />
+      <point x="-42.375" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDReader.LegacyIndexTree" target="org.apache.lucene.util.bkd.BKDReader">
+      <point x="37.75" y="-14.5" />
+      <point x="341.875" y="365.0" />
+      <point x="318.1071428571429" y="365.0" />
+      <point x="318.1071428571429" y="281.0" />
+      <point x="191.875" y="281.0" />
+      <point x="43.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.OfflinePointWriter" target="org.apache.lucene.util.bkd.PointWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="746.5" y="138.0" />
+      <point x="816.8802083333333" y="138.0" />
+      <point x="-29.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.HeapPointReader" target="org.apache.lucene.util.bkd.PointReader">
+      <point x="0.0" y="-14.5" />
+      <point x="1276.0" y="138.0" />
+      <point x="1229.8802083333333" y="138.0" />
+      <point x="30.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDReader.LegacyIndexTree" target="org.apache.lucene.util.bkd.BKDReader.IndexTree">
+      <point x="-37.75" y="-14.5" />
+      <point x="266.375" y="365.0" />
+      <point x="245.5" y="365.0" />
+      <point x="27.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDReader.IntersectState" target="org.apache.lucene.util.bkd.BKDReader">
+      <point x="0.0" y="-14.5" />
+      <point x="77.5" y="291.0" />
+      <point x="133.375" y="291.0" />
+      <point x="-14.625" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDReader.PackedIndexTree" target="org.apache.lucene.util.bkd.BKDReader">
+      <point x="-38.0" y="-14.5" />
+      <point x="52.98214285714289" y="365.0" />
+      <point x="0.0" y="365.0" />
+      <point x="0.0" y="281.0" />
+      <point x="104.12500000000001" y="281.0" />
+      <point x="-43.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.PointReader" target="java.io.Closeable">
+      <point x="0.0" y="-14.5" />
+      <point x="1199.3802083333333" y="54.0" />
+      <point x="869.4166666666665" y="54.0" />
+      <point x="35.66666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.util.bkd.BKDWriter" target="java.io.Closeable">
+      <point x="0.0" y="-14.5" />
+      <point x="323.24999999999994" y="54.0" />
+      <point x="798.0833333333333" y="54.0" />
+      <point x="-35.666666666666686" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="677.0" y="230.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

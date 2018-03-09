@@ -1,0 +1,8 @@
+/** Inner stream for the currently accessed segment of the virtual global stream. */
+protected FSDataInputStream delegate;
+
+/** Position in the virtual global stream. */
+protected long totalPos;
+
+/** Total available bytes in the virtual global stream. */
+protected long totalAvailable;

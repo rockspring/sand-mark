@@ -1,0 +1,19 @@
+/**
+ * The directory separator, a slash.
+ */
+public static final String SEPARATOR = "/";
+
+/**
+ * The directory separator, a slash (character).
+ */
+public static final char SEPARATOR_CHAR = '/';
+
+/**
+ * Character denoting the current directory.
+ */
+public static final String CUR_DIR = ".";
+
+/**
+ * The internal representation of the path, a hierarchical URI.
+ */
+private URI uri;

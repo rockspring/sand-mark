@@ -1,0 +1,12 @@
+FileSystem	originalFs
+ReentrantLock	lock
+Condition	available
+int	maxNumOpenOutputStreams
+int	maxNumOpenInputStreams
+int	maxNumOpenStreamsTotal
+long	streamOpenTimeoutNanos
+long	streamInactivityTimeoutNanos
+HashSet<OutStream>	openOutputStreams
+HashSet<InStream>	openInputStreams
+int	numReservedOutputStreams
+int	numReservedInputStreams

@@ -1,0 +1,15 @@
+{
+    "type2" : {
+        "_all" : {"enabled" : true, "store": true},
+        "properties" : {
+            "users" : {
+                "type" : "nested",
+                "include_in_parent": true,
+                "properties": {
+                    "first" : {"type": "string","analyzer": "standard" },
+                    "last"  : {"type": "string","analyzer": "standard" }
+                }
+            }
+        }
+    }
+}

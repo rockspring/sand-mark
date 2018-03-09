@@ -1,0 +1,64 @@
+%-*- encoding: UTF-8 -*-
+% example.tex
+% 例子
+\documentclass[UTF8]{ctexart}
+
+\title{2.2.1 正文段落}
+\author{张三}
+\date{\today}
+
+\setlength\parskip{0pt}
+
+%全局地设置断点列表
+\hyphenation{man-u-script com-pu-ter gym-na-sium}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+中文文档类每段缩进，并自动设置段落缩进为两个汉字宽度。如果在某一段开头临时禁用缩进，可以在段前使用noindent命令；而如果要在文本本来没有缩进的地方使用缩进，可以使用
+\indent
+命令产生一个长为parindent的缩进。
+
+除了段落首行缩进，另一个关于分段的重要参数是段与段之间的垂直距离，这是由变量parskip控制。
+
+段落最明显的属性是对齐方式。LaTeX的段落默认是两端均匀对齐的，也可以改为左对齐、右对齐或居中格式。raggedright命令设置段落左对齐。
+
+\raggedright
+English words like `technology' stem from a Greek root beginning with the letters tec\dots
+
+\raggedleft
+\date{\today}
+
+\centering
+以上三种对齐方式的用法。
+
+\raggedright
+LaTeX提供了三个环境来排版不同对齐方式的文字：flushleft环境左对齐、flushright环境右对齐、center环境居中。
+
+\begin{flushleft}
+左对齐环境
+\end{flushleft}
+
+\begin{flushright}
+右对齐环境
+\end{flushright}
+
+\begin{center}
+居中环境
+\end{center}
+
+TeX的断词算法通常工作得很好，不需要人工干预，不过任然可能会有一些特殊的单词是TeX不能正确处理的，此时可以在单词中使用-命令告诉LaTeX可能的断点，如man\-u\-script。还可以在使用hyphenation命令在导言区全局地设置断点列表。
+
+\begin{sloppypar}
+使用sloppy命令可以允许段落中更大的空格，从而禁用断词功能；与之对应的命令是fussy，让段落恢复默认的较严格的间距。更多地是使用等效的sloppypar环境，把允许更宽松间距的文本段落放在环境中。
+\end{sloppypar}
+
+三个宏包hyphenat、ragged2e、microtype与断词有关。
+
+\setlength\leftskip{4em}
+\setlength\rightskip{4em}
+These parameters tell \TeX{} how much glue to place at the left and at the right end of each line of the current paragraph.
+
+\end{document}

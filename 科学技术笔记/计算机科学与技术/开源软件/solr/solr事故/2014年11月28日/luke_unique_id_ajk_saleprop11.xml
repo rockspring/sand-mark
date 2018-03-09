@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<response>
+  <lst name="responseHeader">
+    <int name="status">0</int>
+    <int name="QTime">579</int>
+  </lst>
+  <lst name="index">
+    <int name="numDocs">1301924</int>
+    <int name="maxDoc">1458438</int>
+    <int name="deletedDocs">156514</int>
+    <long name="indexHeapUsageBytes">8908348</long>
+    <long name="version">21861460</long>
+    <int name="segmentCount">14</int>
+    <bool name="current">false</bool>
+    <bool name="hasDeletions">true</bool>
+    <str name="directory">
+      org.apache.lucene.store.NRTCachingDirectory:NRTCachingDirectory(MMapDirectory@/home/www/release/search-cloud/cloud/7805/idx/collection1/data/index.20141127121034585
+      lockFactory=NativeFSLockFactory@/home/www/release/search-cloud/cloud/7805/idx/collection1/data/index.20141127121034585;
+      maxCacheMB=48.0 maxMergeSizeMB=4.0)
+    </str>
+    <lst name="userData">
+      <str name="commitTimeMSec">1417163391393</str>
+    </lst>
+    <date name="lastModified">2014-11-28T08:29:51.393Z</date>
+  </lst>
+  <lst name="fields">
+    <lst name="unique_id">
+      <str name="type">string</str>
+      <str name="schema">I-------OF-----l</str>
+      <str name="index">(unstored field)</str>
+      <int name="docs">1458438</int>
+      <int name="distinct">1310823</int>
+      <lst name="topTerms">
+        <int name="A244801030">4</int>
+        <int name="A241185367">3</int>
+        <int name="A240202559">3</int>
+        <int name="A240208933">3</int>
+        <int name="A241184840">3</int>
+        <int name="A241185362">3</int>
+        <int name="A240204064">3</int>
+        <int name="A240203173">3</int>
+        <int name="A240206820">3</int>
+        <int name="A241184591">3</int>
+      </lst>
+      <lst name="histogram">
+        <int name="1">1163455</int>
+        <int name="2">147122</int>
+        <int name="4">246</int>
+      </lst>
+    </lst>
+  </lst>
+  <lst name="info">
+    <lst name="key">
+      <str name="I">Indexed</str>
+      <str name="T">Tokenized</str>
+      <str name="S">Stored</str>
+      <str name="D">DocValues</str>
+      <str name="M">Multivalued</str>
+      <str name="V">TermVector Stored</str>
+      <str name="o">Store Offset With TermVector</str>
+      <str name="p">Store Position With TermVector</str>
+      <str name="O">Omit Norms</str>
+      <str name="F">Omit Term Frequencies &amp; Positions</str>
+      <str name="P">Omit Positions</str>
+      <str name="H">Store Offsets with Positions</str>
+      <str name="L">Lazy</str>
+      <str name="B">Binary</str>
+      <str name="f">Sort Missing First</str>
+      <str name="l">Sort Missing Last</str>
+    </lst>
+    <str name="NOTE">Document Frequency (df) is not updated when a document is marked for deletion. df values include
+      deleted documents.
+    </str>
+  </lst>
+</response>

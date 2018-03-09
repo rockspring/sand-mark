@@ -1,0 +1,1 @@
+TopFieldDocs search(Query query, Filter filter, int n,Sort sort, boolean doDocScores, boolean doMaxScore)

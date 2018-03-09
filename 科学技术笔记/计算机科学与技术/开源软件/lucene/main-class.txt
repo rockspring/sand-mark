@@ -1,0 +1,59 @@
+./lucene/benchmark/src/java/org/apache/lucene/benchmark/quality/trec/QueryDriver.java:  public static void main(String[] args) throws Exception {
+./lucene/benchmark/src/java/org/apache/lucene/benchmark/quality/utils/QualityQueriesFinder.java:  public static void main(String[] args) throws IOException {
+./lucene/benchmark/src/java/org/apache/lucene/benchmark/utils/ExtractReuters.java:  public static void main(String[] args) throws Exception {
+./lucene/benchmark/src/java/org/apache/lucene/benchmark/utils/ExtractWikipedia.java:  public static void main(String[] args) throws Exception {
+./lucene/benchmark/src/java/org/apache/lucene/benchmark/byTask/programmatic/Sample.java:  public static void main(String[] args) throws Exception {
+./lucene/benchmark/src/java/org/apache/lucene/benchmark/byTask/feeds/TrecDocParser.java:  //public static void main(String[] args) {
+./lucene/benchmark/src/java/org/apache/lucene/benchmark/byTask/Benchmark.java:  public static void main(String[] args) {
+./lucene/demo/src/java/org/apache/lucene/demo/SearchFiles.java:  public static void main(String[] args) throws Exception {
+./lucene/demo/src/java/org/apache/lucene/demo/IndexFiles.java:  public static void main(String[] args) {
+./lucene/demo/src/java/org/apache/lucene/demo/facet/SimpleSortedSetFacetsExample.java:  public static void main(String[] args) throws Exception {
+./lucene/demo/src/java/org/apache/lucene/demo/facet/AssociationsFacetsExample.java:  public static void main(String[] args) throws Exception {
+./lucene/demo/src/java/org/apache/lucene/demo/facet/MultiCategoryListsFacetsExample.java:  public static void main(String[] args) throws Exception {
+./lucene/demo/src/java/org/apache/lucene/demo/facet/DistanceFacetsExample.java:  public static void main(String[] args) throws Exception {
+./lucene/demo/src/java/org/apache/lucene/demo/facet/RangeFacetsExample.java:  public static void main(String[] args) throws Exception {
+./lucene/demo/src/java/org/apache/lucene/demo/facet/SimpleFacetsExample.java:  public static void main(String[] args) throws Exception {
+./lucene/demo/src/java/org/apache/lucene/demo/facet/ExpressionAggregationFacetsExample.java:  public static void main(String[] args) throws Exception {
+./lucene/misc/src/java/org/apache/lucene/misc/GetTermInfo.java:  public static void main(String[] args) throws Exception {
+./lucene/misc/src/java/org/apache/lucene/misc/HighFreqTerms.java:  public static void main(String[] args) throws Exception {
+./lucene/misc/src/java/org/apache/lucene/misc/IndexMergeTool.java:  public static void main(String[] args) throws IOException {
+./lucene/misc/src/java/org/apache/lucene/index/IndexSplitter.java:  public static void main(String[] args) throws Exception {
+./lucene/misc/src/java/org/apache/lucene/index/MultiPassIndexSplitter.java:  public static void main(String[] args) throws Exception {
+./lucene/queryparser/src/test/org/apache/lucene/queryparser/surround/query/Test01Exceptions.java:  public static void main(String args[]) {
+./lucene/queryparser/src/test/org/apache/lucene/queryparser/surround/query/Test03Distance.java:  public static void main(String args[]) {
+./lucene/queryparser/src/test/org/apache/lucene/queryparser/surround/query/Test02Boolean.java:  public static void main(String args[]) {
+./lucene/core/src/test/org/apache/lucene/util/fst/TestFSTs.java:  public static void main(String[] args) throws IOException {
+./lucene/core/src/java/org/apache/lucene/analysis/package-info.java: *   public static void main(String[] args) throws IOException {
+./lucene/core/src/java/org/apache/lucene/analysis/package-info.java: *   public static void main(String[] args) throws IOException {
+./lucene/core/src/java/org/apache/lucene/index/IndexUpgrader.java:  public static void main(String[] args) throws IOException {
+./lucene/core/src/java/org/apache/lucene/index/CheckIndex.java:  public static void main(String[] args) throws IOException, InterruptedException {
+./lucene/core/src/java/org/apache/lucene/store/LockVerifyServer.java:  public static void main(String[] args) throws Exception {
+./lucene/core/src/java/org/apache/lucene/store/LockStressTest.java:  public static void main(String[] args) throws Exception {
+./lucene/analysis/kuromoji/src/tools/java/org/apache/lucene/analysis/ja/util/DictionaryBuilder.java:  public static void main(String[] args) throws IOException {
+./lucene/analysis/common/src/tools/java/org/apache/lucene/analysis/standard/GenerateJflexTLDMacros.java:  public static void main(String... args) throws Exception {
+./lucene/analysis/common/src/java/org/apache/lucene/analysis/compound/hyphenation/TernaryTree.java:  public static void main(String[] args) {
+./lucene/analysis/common/src/java/org/apache/lucene/analysis/en/PorterStemmer.java:  public static void main(String[] args) {
+./lucene/analysis/icu/src/tools/java/org/apache/lucene/analysis/icu/GenerateUTR30DataFiles.java:  public static void main(String args[]) {
+./lucene/analysis/icu/src/tools/java/org/apache/lucene/analysis/icu/RBBIRuleCompiler.java:  public static void main(String args[]) throws Exception {
+./lucene/backward-codecs/src/test/org/apache/lucene/index/TestManyPointsInOldIndex.java:  public static void main(String[] args) throws IOException {
+./lucene/backward-codecs/src/java/org/apache/lucene/index/FixBrokenOffsets.java:  public static void main(String[] args) throws IOException {
+./lucene/spatial-extras/src/test/org/apache/lucene/spatial/SpatialExample.java:  public static void main(String[] args) throws Exception {
+./lucene/facet/src/java/org/apache/lucene/facet/taxonomy/PrintTaxonomyStats.java:  public static void main(String[] args) throws IOException {
+./solr/core/src/test/org/apache/solr/handler/admin/SecurityConfHandlerTest.java:  public static void main(String[] args) throws Exception{
+./solr/core/src/test/org/apache/solr/util/hll/IntegrationTestGenerator.java:    public static void main(String[] args) throws IOException {
+./solr/core/src/test/org/apache/solr/util/BitSetPerf.java:  public static void main(String[] args) {
+./solr/core/src/test/org/apache/solr/search/DocSetPerf.java:  public static void main(String[] args) {
+./solr/core/src/test/org/apache/solr/search/TestSolrJ.java:  public static void main(String[] args) throws Exception {
+./solr/core/src/test/SecureRandomAlgorithmTesterApp.java:  public static void main(String[] args) throws NoSuchAlgorithmException {
+./solr/core/src/java/org/apache/solr/core/snapshots/SolrSnapshotsTool.java:  public static void main(String[] args) throws IOException {
+./solr/core/src/java/org/apache/solr/core/ConfigOverlay.java:  public static void main(String[] args) {
+./solr/core/src/java/org/apache/solr/util/CryptoKeys.java:  public static void main(String[] args) throws Exception {
+./solr/core/src/java/org/apache/solr/util/SimplePostTool.java:  public static void main(String[] args) {
+./solr/core/src/java/org/apache/solr/util/SolrCLI.java:  public static void main(String[] args) throws Exception {
+./solr/core/src/java/org/apache/solr/cloud/ZkCLI.java:  public static void main(String[] args) throws InterruptedException,
+./solr/core/src/java/org/apache/solr/index/hdfs/CheckHdfsIndex.java:  public static void main(String[] args) throws IOException, InterruptedException {
+./solr/core/src/java/org/apache/solr/client/solrj/embedded/JettySolrRunner.java:  public static void main(String[] args) {
+./solr/solrj/src/test/org/apache/solr/common/util/TestJavaBinCodec.java:  public static void main(String[] args) {
+./solr/solr-ref-guide/tools/ReducePDFSize.java:  public static void main(String[] args) throws IOException {
+./solr/solr-ref-guide/tools/CheckLinksAndAnchors.java:  public static void main(String[] args) throws Exception {
+./solr/solr-ref-guide/tools/BuildNavAndPDFBody.java:  public static void main(String[] args) throws Exception {

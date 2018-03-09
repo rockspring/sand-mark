@@ -1,0 +1,77 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{daciuk2011smaller}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=e6c93c15fefc9b0ca126405a95a6b52a}{Daciuk}{D\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=d5f90d91b37fa46d60240a75afd2ed8b}{Weiss}{W\bibinitperiod}{Dawid}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3a85eec7fec7c231ceac9cc1e0763a38}
+      \strng{fullhash}{3a85eec7fec7c231ceac9cc1e0763a38}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Implementation and Application of Automata}
+      \field{title}{Smaller representation of finite state automata}
+      \field{year}{2011}
+      \field{pages}{118\bibrangedash 129}
+      \range{pages}{12}
+    \endentry
+    \entry{lucene-fst-prune}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5cd62a0ea6a5624a31c0617a17171ea0}{McCandless}{M\bibinitperiod}{Mike}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5cd62a0ea6a5624a31c0617a17171ea0}
+      \strng{fullhash}{5cd62a0ea6a5624a31c0617a17171ea0}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FST Builder pruning}
+      \verb{url}
+      \verb http://mail-archives.apache.org/mod_mbox/lucene-java-user/201311.mbox/%3CCAL8PwkZjZZ7Mi_XCS9XQKkjZp5tAbwLt81EkSb7X7UHm3j7GyQ@mail.gmail.com%3E
+      \endverb
+      \keyw{pruning}
+    \endentry
+    \entry{lucene-fst-prune-2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=5cd62a0ea6a5624a31c0617a17171ea0}{McCandless}{M\bibinitperiod}{Mike}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5cd62a0ea6a5624a31c0617a17171ea0}
+      \strng{fullhash}{5cd62a0ea6a5624a31c0617a17171ea0}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{FST Builder pruning}
+      \verb{url}
+      \verb http://osdir.com/ml/java-user.lucene.apache.org/2013-11/msg00114.html
+      \endverb
+      \keyw{pruning}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

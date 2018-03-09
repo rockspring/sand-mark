@@ -1,0 +1,3 @@
+XmlConfiguration类有main方法
+main方法里读取xml配置文件，一次启动配置的实现了LifeCycle接口的组件
+Server是实现了LifeCycle接口的类

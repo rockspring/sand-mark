@@ -1,0 +1,10 @@
+/** The tracked stream. */
+private final StreamWithTimeout stream;
+
+/** The number of bytes written the last time that the {@link #checkNewBytesAndMark(long)}
+ * method was called. It is important to initialize this with {@code -1} so that the
+ * first check (0 bytes) always appears to have made progress. */
+private volatile long lastCheckBytes = -1;
+
+/** The timestamp when the last inactivity evaluation was made. */
+private volatile long lastCheckTimestampNanos;

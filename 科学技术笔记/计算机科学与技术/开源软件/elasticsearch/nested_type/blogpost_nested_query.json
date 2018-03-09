@@ -1,0 +1,17 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "title": "eggs" }}, 
+        {
+          "nested": {
+            "path": "comments", 
+            "query": {
+              "bool": {
+                "must": [ 
+                  { "match": { "comments.name": "john" }},
+                  { "match": { "comments.age":  28     }}
+                ]
+        }}}}
+      ]
+}}}

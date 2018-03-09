@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome document</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://stackedit.io/libs/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="mysql-master-slave安装部署实战">MySQL master-slave安装部署实战</h1>
+
+<blockquote>
+  <p>操作系统：Ubuntu 12.04 x86_64 <br>
+  MySQL：5.5.37</p>
+</blockquote><div class="se-section-delimiter"></div>
+
+<h2 id="1安装必备工具">1，安装必备工具</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> update
+sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> </span><span class="pun">-</span><span class="pln">y install g</span><span class="pun">++</span><span class="pln">
+sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> </span><span class="pun">-</span><span class="pln">y install cmake
+sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> </span><span class="pun">-</span><span class="pln">y install libncurses5</span><span class="pun">-</span><span class="pln">dev
+sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> </span><span class="pun">-</span><span class="pln">y install bison
+sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> </span><span class="pun">-</span><span class="pln">y install vim</span></code></pre>
+
+<h2 id="2创建mysql用户和用户组">2，创建MySQL用户和用户组</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">sudo groupadd </span><span class="pun">-</span><span class="pln">r mysql </span><span class="com"># -r创建系统组</span><span class="pln">
+sudo useradd </span><span class="pun">-</span><span class="pln">r </span><span class="pun">-</span><span class="pln">g mysql mysql </span><span class="com">#-r创建系统组</span></code></pre>
+
+<h2 id="3下载并解压mysql源码包">3，下载并解压MySQL源码包</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd </span><span class="pun">~</span><span class="pln"> </span><span class="com">#目录随意</span><span class="pln">
+wget http</span><span class="pun">:</span><span class="com">//cdn.mysql.com/Downloads/MySQL-5.5/mysql-5.5.37.tar.gz</span><span class="pln">
+tar </span><span class="pun">-</span><span class="pln">zxvf mysql</span><span class="pun">-</span><span class="lit">5.5</span><span class="pun">.</span><span class="lit">37.tar</span><span class="pun">.</span><span class="pln">gz</span></code></pre>
+
+<h1 id="4master实例安装部署相关">4，master实例安装部署相关</h1>
+
+<h1 id="41安装master实例">4.1，安装master实例</h1>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd mysql</span><span class="pun">-</span><span class="lit">5.5</span><span class="pun">.</span><span class="lit">37</span><span class="pln">
+
+cmake </span><span class="pun">.</span><span class="pln"> </span><span class="pun">-</span><span class="pln">DCMAKE_INSTALL_PREFIX</span><span class="pun">=</span><span class="str">/usr/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3306 </span><span class="pun">-</span><span class="pln">DMYSQL_DATADIR</span><span class="pun">=</span><span class="str">/usr/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3306</span><span class="pun">/</span><span class="pln">data </span><span class="pun">-</span><span class="pln">DDEFAULT_CHARSET</span><span class="pun">=</span><span class="pln">utf8 </span><span class="pun">-</span><span class="pln">DDEFAULT_COLLATION</span><span class="pun">=</span><span class="pln">utf8_general_ci </span><span class="pun">-</span><span class="pln">DEXTRA_CHARSETS</span><span class="pun">=</span><span class="pln">all </span><span class="pun">-</span><span class="pln">DENABLED_LOCAL_INFILE</span><span class="pun">=</span><span class="lit">1</span><span class="pln">
+make
+sudo make install</span></code></pre>
+
+<h2 id="42master实例安装后处理">4.2，master实例安装后处理</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd </span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3306
+sudo chown </span><span class="pun">-</span><span class="pln">R mysql </span><span class="pun">.</span><span class="pln">
+sudo chgrp </span><span class="pun">-</span><span class="pln">R mysql </span><span class="pun">.</span><span class="pln">
+sudo scripts</span><span class="pun">/</span><span class="pln">mysql_install_db </span><span class="pun">--</span><span class="pln">user</span><span class="pun">=</span><span class="pln">mysql
+sudo chown </span><span class="pun">-</span><span class="pln">R root </span><span class="pun">.</span><span class="pln">
+sudo chown </span><span class="pun">-</span><span class="pln">R mysql data</span></code></pre>
+
+<h2 id="43master实例配置文件">4.3，master实例配置文件</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd </span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3306</span><span class="pun">/</span><span class="pln">support</span><span class="pun">-</span><span class="pln">files
+sudo cp </span><span class="kwd">my</span><span class="pun">-</span><span class="pln">medium</span><span class="pun">.</span><span class="pln">cnf </span><span class="kwd">my</span><span class="pun">.</span><span class="pln">cnf
+sudo vim </span><span class="kwd">my</span><span class="pun">.</span><span class="pln">cnf</span></code></pre>
+
+<p><strong>如下为my.cnf文件的内容</strong></p>
+
+<pre class="prettyprint prettyprinted"><code><span class="com"># Example MySQL config file for medium systems.</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># This is for a system with little memory (32M - 64M) where MySQL plays</span><span class="pln">
+</span><span class="com"># an important part, or systems up to 128M where MySQL is used together with</span><span class="pln">
+</span><span class="com"># other programs (such as a web server)</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># MySQL programs look for option files in a set of</span><span class="pln">
+</span><span class="com"># locations which depend on the deployment platform.</span><span class="pln">
+</span><span class="com"># You can copy this option file to one of those</span><span class="pln">
+</span><span class="com"># locations. For information about these locations, see:</span><span class="pln">
+</span><span class="com"># http://dev.mysql.com/doc/mysql/en/option-files.html</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># In this file, you can use all long options that a program supports.</span><span class="pln">
+</span><span class="com"># If you want to know which options a program supports, run the program</span><span class="pln">
+</span><span class="com"># with the "--help" option.</span><span class="pln">
+
+</span><span class="com"># The following options will be passed to all MySQL clients</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">client</span><span class="pun">]</span><span class="pln">
+</span><span class="com">#password   = your_password</span><span class="pln">
+port        </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3306</span><span class="pln">
+socket      </span><span class="pun">=</span><span class="pln"> </span><span class="str">/tmp/</span><span class="pln">mysql_3306</span><span class="pun">.</span><span class="pln">sock
+
+</span><span class="com"># Here follows entries for some specific programs</span><span class="pln">
+
+</span><span class="com"># The MySQL server</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">mysqld</span><span class="pun">]</span><span class="pln">
+port        </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3306</span><span class="pln">
+socket      </span><span class="pun">=</span><span class="pln"> </span><span class="str">/tmp/</span><span class="pln">mysql_3306</span><span class="pun">.</span><span class="pln">sock
+skip</span><span class="pun">-</span><span class="pln">external</span><span class="pun">-</span><span class="pln">locking
+key_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">16M</span><span class="pln">
+max_allowed_packet </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1M</span><span class="pln">
+table_open_cache </span><span class="pun">=</span><span class="pln"> </span><span class="lit">64</span><span class="pln">
+sort_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">512K</span><span class="pln">
+net_buffer_length </span><span class="pun">=</span><span class="pln"> </span><span class="lit">8K</span><span class="pln">
+read_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">256K</span><span class="pln">
+read_rnd_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">512K</span><span class="pln">
+myisam_sort_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">8M</span><span class="pln">
+
+</span><span class="com"># Don't listen on a TCP/IP port at all. This can be a security enhancement,</span><span class="pln">
+</span><span class="com"># if all processes that need to connect to mysqld run on the same host.</span><span class="pln">
+</span><span class="com"># All interaction with mysqld must be made via Unix sockets or named pipes.</span><span class="pln">
+</span><span class="com"># Note that using this option without enabling named pipes on Windows</span><span class="pln">
+</span><span class="com"># (via the "enable-named-pipe" option) will render mysqld useless!</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#skip-networking</span><span class="pln">
+
+</span><span class="com"># Replication Master Server (default)</span><span class="pln">
+</span><span class="com"># binary logging is required for replication</span><span class="pln">
+log</span><span class="pun">-</span><span class="pln">bin</span><span class="pun">=</span><span class="pln">mysql</span><span class="pun">-</span><span class="pln">bin
+
+</span><span class="com"># binary logging format - mixed recommended</span><span class="pln">
+binlog_format</span><span class="pun">=</span><span class="pln">mixed
+
+</span><span class="com"># required unique id between 1 and 2^32 - 1</span><span class="pln">
+</span><span class="com"># defaults to 1 if master-host is not set</span><span class="pln">
+</span><span class="com"># but will not function as a master if omitted</span><span class="pln">
+server</span><span class="pun">-</span><span class="pln">id   </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+
+</span><span class="com"># Replication Slave (comment out master section to use this)</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># To configure this host as a replication slave, you can choose between</span><span class="pln">
+</span><span class="com"># two methods :</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># 1) Use the CHANGE MASTER TO command (fully described in our manual) -</span><span class="pln">
+</span><span class="com">#    the syntax is:</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    CHANGE MASTER TO MASTER_HOST=&lt;host&gt;, MASTER_PORT=&lt;port&gt;,</span><span class="pln">
+</span><span class="com">#    MASTER_USER=&lt;user&gt;, MASTER_PASSWORD=&lt;password&gt; ;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    where you replace &lt;host&gt;, &lt;user&gt;, &lt;password&gt; by quoted strings and</span><span class="pln">
+</span><span class="com">#    &lt;port&gt; by the master's port number (3306 by default).</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    Example:</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    CHANGE MASTER TO MASTER_HOST='125.564.12.1', MASTER_PORT=3306,</span><span class="pln">
+</span><span class="com">#    MASTER_USER='joe', MASTER_PASSWORD='secret';</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># OR</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># 2) Set the variables below. However, in case you choose this method, then</span><span class="pln">
+</span><span class="com">#    start replication for the first time (even unsuccessfully, for example</span><span class="pln">
+</span><span class="com">#    if you mistyped the password in master-password and the slave fails to</span><span class="pln">
+</span><span class="com">#    connect), the slave will create a master.info file, and any later</span><span class="pln">
+</span><span class="com">#    change in this file to the variables' values below will be ignored and</span><span class="pln">
+</span><span class="com">#    overridden by the content of the master.info file, unless you shutdown</span><span class="pln">
+</span><span class="com">#    the slave server, delete master.info and restart the slaver server.</span><span class="pln">
+</span><span class="com">#    For that reason, you may want to leave the lines below untouched</span><span class="pln">
+</span><span class="com">#    (commented) and instead use CHANGE MASTER TO (see above)</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># required unique id between 2 and 2^32 - 1</span><span class="pln">
+</span><span class="com"># (and different from the master)</span><span class="pln">
+</span><span class="com"># defaults to 2 if master-host is set</span><span class="pln">
+</span><span class="com"># but will not function as a slave if omitted</span><span class="pln">
+</span><span class="com">#server-id       = 2</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># The replication master for this slave - required</span><span class="pln">
+</span><span class="com">#master-host     =   &lt;hostname&gt;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># The username the slave will use for authentication when connecting</span><span class="pln">
+</span><span class="com"># to the master - required</span><span class="pln">
+</span><span class="com">#master-user     =   &lt;username&gt;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># The password the slave will authenticate with when connecting to</span><span class="pln">
+</span><span class="com"># the master - required</span><span class="pln">
+</span><span class="com">#master-password =   &lt;password&gt;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># The port the master is listening on.</span><span class="pln">
+</span><span class="com"># optional - defaults to 3306</span><span class="pln">
+</span><span class="com">#master-port     =  &lt;port&gt;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># binary logging - not required for slaves, but recommended</span><span class="pln">
+</span><span class="com">#log-bin=mysql-bin</span><span class="pln">
+
+</span><span class="com"># Uncomment the following if you are using InnoDB tables</span><span class="pln">
+</span><span class="com">#innodb_data_home_dir = /usr/local/mysql/data</span><span class="pln">
+</span><span class="com">#innodb_data_file_path = ibdata1:10M:autoextend</span><span class="pln">
+</span><span class="com">#innodb_log_group_home_dir = /usr/local/mysql/data</span><span class="pln">
+</span><span class="com"># You can set .._buffer_pool_size up to 50 - 80 %</span><span class="pln">
+</span><span class="com"># of RAM but beware of setting memory usage too high</span><span class="pln">
+</span><span class="com">#innodb_buffer_pool_size = 16M</span><span class="pln">
+</span><span class="com">#innodb_additional_mem_pool_size = 2M</span><span class="pln">
+</span><span class="com"># Set .._log_file_size to 25 % of buffer pool size</span><span class="pln">
+</span><span class="com">#innodb_log_file_size = 5M</span><span class="pln">
+</span><span class="com">#innodb_log_buffer_size = 8M</span><span class="pln">
+</span><span class="com">#innodb_flush_log_at_trx_commit = 1</span><span class="pln">
+</span><span class="com">#innodb_lock_wait_timeout = 50</span><span class="pln">
+
+</span><span class="pun">[</span><span class="pln">mysqldump</span><span class="pun">]</span><span class="pln">
+quick
+max_allowed_packet </span><span class="pun">=</span><span class="pln"> </span><span class="lit">16M</span><span class="pln">
+
+</span><span class="pun">[</span><span class="pln">mysql</span><span class="pun">]</span><span class="pln">
+</span><span class="kwd">no</span><span class="pun">-</span><span class="kwd">auto</span><span class="pun">-</span><span class="pln">rehash
+</span><span class="com"># Remove the next comment character if you are not familiar with SQL</span><span class="pln">
+</span><span class="com">#safe-updates</span><span class="pln">
+
+</span><span class="pun">[</span><span class="pln">myisamchk</span><span class="pun">]</span><span class="pln">
+key_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20M</span><span class="pln">
+sort_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20M</span><span class="pln">
+read_buffer </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2M</span><span class="pln">
+write_buffer </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2M</span><span class="pln">
+
+</span><span class="pun">[</span><span class="pln">mysqlhotcopy</span><span class="pun">]</span><span class="pln">
+interactive</span><span class="pun">-</span><span class="pln">timeout</span></code></pre>
+
+<h2 id="44master实例安装后设置root密码">4.4，master实例安装后设置root密码</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd </span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3306</span><span class="pun">/</span><span class="pln">bin
+
+sudo </span><span class="pun">./</span><span class="pln">mysqld_safe </span><span class="pun">--</span><span class="pln">defaults</span><span class="pun">-</span><span class="pln">extra</span><span class="pun">-</span><span class="pln">file</span><span class="pun">=../</span><span class="pln">support</span><span class="pun">-</span><span class="pln">files</span><span class="pun">/</span><span class="kwd">my</span><span class="pun">.</span><span class="pln">cnf </span><span class="pun">&amp;</span><span class="pln"> </span><span class="com">#使用指定配置文件启动MySQL服务器</span><span class="pln">
+</span><span class="pun">./</span><span class="pln">mysqladmin </span><span class="pun">--</span><span class="pln">socket</span><span class="pun">=</span><span class="str">/tmp/</span><span class="pln">mysql_3306</span><span class="pun">.</span><span class="pln">sock </span><span class="pun">-</span><span class="pln">u root password </span><span class="str">'admin'</span><span class="pln"> </span><span class="com">#设置root的密码</span><span class="pln">
+</span><span class="pun">./</span><span class="pln">mysql </span><span class="pun">-</span><span class="pln">u root </span><span class="pun">-</span><span class="pln">padmin </span><span class="pun">--</span><span class="pln">socket</span><span class="pun">=</span><span class="str">/tmp/</span><span class="pln">mysql_3306</span><span class="pun">.</span><span class="pln">sock </span><span class="com">#尝试连接</span><span class="pln">
+</span><span class="pun">./</span><span class="pln">mysqladmin </span><span class="pun">-</span><span class="pln">u root </span><span class="pun">-</span><span class="pln">padmin </span><span class="pun">--</span><span class="pln">socket</span><span class="pun">=</span><span class="str">/tmp/</span><span class="pln">mysql_3306</span><span class="pun">.</span><span class="pln">sock shutdown </span><span class="com">#关闭MySQL服务器</span></code></pre>
+
+<h2 id="45master实例添加replication账户">4.5，master实例添加replication账户</h2>
+
+<pre class="prettyprint prettyprinted"><code><span class="pln">cd </span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3306</span><span class="pun">/</span><span class="pln">bin
+sudo </span><span class="pun">./</span><span class="pln">mysqld_safe </span><span class="pun">--</span><span class="pln">defaults</span><span class="pun">-</span><span class="pln">extra</span><span class="pun">-</span><span class="pln">file</span><span class="pun">=../</span><span class="pln">support</span><span class="pun">-</span><span class="pln">files</span><span class="pun">/</span><span class="kwd">my</span><span class="pun">.</span><span class="pln">cnf </span><span class="pun">&amp;</span><span class="pln"> </span><span class="com">#使用指定配置文件启动MySQL服务器</span><span class="pln">
+</span><span class="pun">./</span><span class="pln">mysql </span><span class="pun">-</span><span class="pln">u root </span><span class="pun">-</span><span class="pln">padmin </span><span class="pun">--</span><span class="pln">socket</span><span class="pun">=</span><span class="str">/tmp/</span><span class="pln">mysql_3306</span><span class="pun">.</span><span class="pln">sock </span><span class="com">#尝试连接</span><span class="pln">
+
+CREATE USER </span><span class="str">'repl'</span><span class="pun">@</span><span class="str">'%'</span><span class="pln"> IDENTIFIED BY </span><span class="str">'slavepass'</span><span class="pun">;</span><span class="pln">
+GRANT REPLICATION SLAVE</span><span class="pun">,</span><span class="pln">REPLICATION CLIENT ON </span><span class="pun">*.*</span><span class="pln"> TO </span><span class="str">'repl'</span><span class="pun">@</span><span class="str">'%'</span><span class="pln"> identified </span><span class="kwd">by</span><span class="pln"> </span><span class="str">'slavepass'</span><span class="pln"> </span><span class="kwd">with</span><span class="pln"> grant option</span><span class="pun">;</span><span class="pln">
+GRANT REPLICATION SLAVE</span><span class="pun">,</span><span class="pln">REPLICATION CLIENT ON </span><span class="pun">*.*</span><span class="pln"> TO </span><span class="str">'repl'</span><span class="pun">@</span><span class="str">'localhost'</span><span class="pln"> identified </span><span class="kwd">by</span><span class="pln"> </span><span class="str">'slavepass'</span><span class="pln"> </span><span class="kwd">with</span><span class="pln"> grant option</span><span class="pun">;</span></code></pre>
+
+<h1 id="5slave实例安装部署相关">5，slave实例安装部署相关</h1>
+
+<h2 id="51安装slave实例">5.1，安装slave实例</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd mysql</span><span class="pun">-</span><span class="lit">5.5</span><span class="pun">.</span><span class="lit">37</span><span class="pln">
+
+cmake </span><span class="pun">.</span><span class="pln"> </span><span class="pun">-</span><span class="pln">DCMAKE_INSTALL_PREFIX</span><span class="pun">=</span><span class="str">/usr/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3307 </span><span class="pun">-</span><span class="pln">DMYSQL_DATADIR</span><span class="pun">=</span><span class="str">/usr/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3307</span><span class="pun">/</span><span class="pln">data </span><span class="pun">-</span><span class="pln">DDEFAULT_CHARSET</span><span class="pun">=</span><span class="pln">utf8 </span><span class="pun">-</span><span class="pln">DDEFAULT_COLLATION</span><span class="pun">=</span><span class="pln">utf8_general_ci </span><span class="pun">-</span><span class="pln">DEXTRA_CHARSETS</span><span class="pun">=</span><span class="pln">all </span><span class="pun">-</span><span class="pln">DENABLED_LOCAL_INFILE</span><span class="pun">=</span><span class="lit">1</span><span class="pln">
+make
+sudo make install</span></code></pre>
+
+<h2 id="52slave实例安装后处理">5.2，slave实例安装后处理</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd </span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3307
+sudo chown </span><span class="pun">-</span><span class="pln">R mysql </span><span class="pun">.</span><span class="pln">
+sudo chgrp </span><span class="pun">-</span><span class="pln">R mysql </span><span class="pun">.</span><span class="pln">
+sudo scripts</span><span class="pun">/</span><span class="pln">mysql_install_db </span><span class="pun">--</span><span class="pln">user</span><span class="pun">=</span><span class="pln">mysql
+sudo chown </span><span class="pun">-</span><span class="pln">R root </span><span class="pun">.</span><span class="pln">
+sudo chown </span><span class="pun">-</span><span class="pln">R mysql data</span></code></pre>
+
+<h2 id="53slave实例配置文件">5.3，slave实例配置文件</h2>
+
+<pre class="prettyprint prettyprinted"><code><span class="pln">cd </span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3307</span><span class="pun">/</span><span class="pln">support</span><span class="pun">-</span><span class="pln">files
+sudo cp </span><span class="kwd">my</span><span class="pun">-</span><span class="pln">medium</span><span class="pun">.</span><span class="pln">cnf </span><span class="kwd">my</span><span class="pun">.</span><span class="pln">cnf
+sudo vim </span><span class="kwd">my</span><span class="pun">.</span><span class="pln">cnf</span></code></pre>
+
+<p><strong>如下为my.cnf文件的内容</strong></p>
+
+<pre class="prettyprint prettyprinted"><code><span class="com"># Example MySQL config file for medium systems.</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># This is for a system with little memory (32M - 64M) where MySQL plays</span><span class="pln">
+</span><span class="com"># an important part, or systems up to 128M where MySQL is used together with</span><span class="pln">
+</span><span class="com"># other programs (such as a web server)</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># MySQL programs look for option files in a set of</span><span class="pln">
+</span><span class="com"># locations which depend on the deployment platform.</span><span class="pln">
+</span><span class="com"># You can copy this option file to one of those</span><span class="pln">
+</span><span class="com"># locations. For information about these locations, see:</span><span class="pln">
+</span><span class="com"># http://dev.mysql.com/doc/mysql/en/option-files.html</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># In this file, you can use all long options that a program supports.</span><span class="pln">
+</span><span class="com"># If you want to know which options a program supports, run the program</span><span class="pln">
+</span><span class="com"># with the "--help" option.</span><span class="pln">
+
+</span><span class="com"># The following options will be passed to all MySQL clients</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">client</span><span class="pun">]</span><span class="pln">
+</span><span class="com">#password   = your_password</span><span class="pln">
+port        </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3307</span><span class="pln">
+socket      </span><span class="pun">=</span><span class="pln"> </span><span class="str">/tmp/</span><span class="pln">mysql_3307</span><span class="pun">.</span><span class="pln">sock
+
+</span><span class="com"># Here follows entries for some specific programs</span><span class="pln">
+
+</span><span class="com"># The MySQL server</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">mysqld</span><span class="pun">]</span><span class="pln">
+port        </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3307</span><span class="pln">
+socket      </span><span class="pun">=</span><span class="pln"> </span><span class="str">/tmp/</span><span class="pln">mysql_3307</span><span class="pun">.</span><span class="pln">sock
+skip</span><span class="pun">-</span><span class="pln">external</span><span class="pun">-</span><span class="pln">locking
+key_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">16M</span><span class="pln">
+max_allowed_packet </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1M</span><span class="pln">
+table_open_cache </span><span class="pun">=</span><span class="pln"> </span><span class="lit">64</span><span class="pln">
+sort_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">512K</span><span class="pln">
+net_buffer_length </span><span class="pun">=</span><span class="pln"> </span><span class="lit">8K</span><span class="pln">
+read_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">256K</span><span class="pln">
+read_rnd_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">512K</span><span class="pln">
+myisam_sort_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">8M</span><span class="pln">
+
+</span><span class="com"># Don't listen on a TCP/IP port at all. This can be a security enhancement,</span><span class="pln">
+</span><span class="com"># if all processes that need to connect to mysqld run on the same host.</span><span class="pln">
+</span><span class="com"># All interaction with mysqld must be made via Unix sockets or named pipes.</span><span class="pln">
+</span><span class="com"># Note that using this option without enabling named pipes on Windows</span><span class="pln">
+</span><span class="com"># (via the "enable-named-pipe" option) will render mysqld useless!</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#skip-networking</span><span class="pln">
+
+</span><span class="com"># Replication Master Server (default)</span><span class="pln">
+</span><span class="com"># binary logging is required for replication</span><span class="pln">
+</span><span class="com">#log-bin=mysql-bin</span><span class="pln">
+
+</span><span class="com"># binary logging format - mixed recommended</span><span class="pln">
+</span><span class="com">#binlog_format=mixed</span><span class="pln">
+
+</span><span class="com"># required unique id between 1 and 2^32 - 1</span><span class="pln">
+</span><span class="com"># defaults to 1 if master-host is not set</span><span class="pln">
+</span><span class="com"># but will not function as a master if omitted</span><span class="pln">
+</span><span class="com">#server-id  = 1</span><span class="pln">
+
+</span><span class="com"># Replication Slave (comment out master section to use this)</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># To configure this host as a replication slave, you can choose between</span><span class="pln">
+</span><span class="com"># two methods :</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># 1) Use the CHANGE MASTER TO command (fully described in our manual) -</span><span class="pln">
+</span><span class="com">#    the syntax is:</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    CHANGE MASTER TO MASTER_HOST=&lt;host&gt;, MASTER_PORT=&lt;port&gt;,</span><span class="pln">
+</span><span class="com">#    MASTER_USER=&lt;user&gt;, MASTER_PASSWORD=&lt;password&gt; ;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    where you replace &lt;host&gt;, &lt;user&gt;, &lt;password&gt; by quoted strings and</span><span class="pln">
+</span><span class="com">#    &lt;port&gt; by the master's port number (3306 by default).</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    Example:</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com">#    CHANGE MASTER TO MASTER_HOST='125.564.12.1', MASTER_PORT=3306,</span><span class="pln">
+</span><span class="com">#    MASTER_USER='joe', MASTER_PASSWORD='secret';</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># OR</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># 2) Set the variables below. However, in case you choose this method, then</span><span class="pln">
+</span><span class="com">#    start replication for the first time (even unsuccessfully, for example</span><span class="pln">
+</span><span class="com">#    if you mistyped the password in master-password and the slave fails to</span><span class="pln">
+</span><span class="com">#    connect), the slave will create a master.info file, and any later</span><span class="pln">
+</span><span class="com">#    change in this file to the variables' values below will be ignored and</span><span class="pln">
+</span><span class="com">#    overridden by the content of the master.info file, unless you shutdown</span><span class="pln">
+</span><span class="com">#    the slave server, delete master.info and restart the slaver server.</span><span class="pln">
+</span><span class="com">#    For that reason, you may want to leave the lines below untouched</span><span class="pln">
+</span><span class="com">#    (commented) and instead use CHANGE MASTER TO (see above)</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># required unique id between 2 and 2^32 - 1</span><span class="pln">
+</span><span class="com"># (and different from the master)</span><span class="pln">
+</span><span class="com"># defaults to 2 if master-host is set</span><span class="pln">
+</span><span class="com"># but will not function as a slave if omitted</span><span class="pln">
+server</span><span class="pun">-</span><span class="pln">id       </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># The replication master for this slave - required</span><span class="pln">
+</span><span class="com">#master-host     =   &lt;hostname&gt;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># The username the slave will use for authentication when connecting</span><span class="pln">
+</span><span class="com"># to the master - required</span><span class="pln">
+</span><span class="com">#master-user     =   &lt;username&gt;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># The password the slave will authenticate with when connecting to</span><span class="pln">
+</span><span class="com"># the master - required</span><span class="pln">
+</span><span class="com">#master-password =   &lt;password&gt;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># The port the master is listening on.</span><span class="pln">
+</span><span class="com"># optional - defaults to 3306</span><span class="pln">
+</span><span class="com">#master-port     =  &lt;port&gt;</span><span class="pln">
+</span><span class="com">#</span><span class="pln">
+</span><span class="com"># binary logging - not required for slaves, but recommended</span><span class="pln">
+log</span><span class="pun">-</span><span class="pln">bin</span><span class="pun">=</span><span class="pln">mysql</span><span class="pun">-</span><span class="pln">bin
+
+</span><span class="com"># Uncomment the following if you are using InnoDB tables</span><span class="pln">
+</span><span class="com">#innodb_data_home_dir = /usr/local/mysql/data</span><span class="pln">
+</span><span class="com">#innodb_data_file_path = ibdata1:10M:autoextend</span><span class="pln">
+</span><span class="com">#innodb_log_group_home_dir = /usr/local/mysql/data</span><span class="pln">
+</span><span class="com"># You can set .._buffer_pool_size up to 50 - 80 %</span><span class="pln">
+</span><span class="com"># of RAM but beware of setting memory usage too high</span><span class="pln">
+</span><span class="com">#innodb_buffer_pool_size = 16M</span><span class="pln">
+</span><span class="com">#innodb_additional_mem_pool_size = 2M</span><span class="pln">
+</span><span class="com"># Set .._log_file_size to 25 % of buffer pool size</span><span class="pln">
+</span><span class="com">#innodb_log_file_size = 5M</span><span class="pln">
+</span><span class="com">#innodb_log_buffer_size = 8M</span><span class="pln">
+</span><span class="com">#innodb_flush_log_at_trx_commit = 1</span><span class="pln">
+</span><span class="com">#innodb_lock_wait_timeout = 50</span><span class="pln">
+
+</span><span class="pun">[</span><span class="pln">mysqldump</span><span class="pun">]</span><span class="pln">
+quick
+max_allowed_packet </span><span class="pun">=</span><span class="pln"> </span><span class="lit">16M</span><span class="pln">
+
+</span><span class="pun">[</span><span class="pln">mysql</span><span class="pun">]</span><span class="pln">
+</span><span class="kwd">no</span><span class="pun">-</span><span class="kwd">auto</span><span class="pun">-</span><span class="pln">rehash
+</span><span class="com"># Remove the next comment character if you are not familiar with SQL</span><span class="pln">
+</span><span class="com">#safe-updates</span><span class="pln">
+
+</span><span class="pun">[</span><span class="pln">myisamchk</span><span class="pun">]</span><span class="pln">
+key_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20M</span><span class="pln">
+sort_buffer_size </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20M</span><span class="pln">
+read_buffer </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2M</span><span class="pln">
+write_buffer </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2M</span><span class="pln">
+
+</span><span class="pun">[</span><span class="pln">mysqlhotcopy</span><span class="pun">]</span><span class="pln">
+interactive</span><span class="pun">-</span><span class="pln">timeout</span></code></pre>
+
+<h2 id="54slave实例安装后设置root密码">5.4，slave实例安装后设置root密码</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd </span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3307</span><span class="pun">/</span><span class="pln">bin
+sudo </span><span class="pun">./</span><span class="pln">mysqld_safe </span><span class="pun">--</span><span class="pln">defaults</span><span class="pun">-</span><span class="pln">extra</span><span class="pun">-</span><span class="pln">file</span><span class="pun">=../</span><span class="pln">support</span><span class="pun">-</span><span class="pln">files</span><span class="pun">/</span><span class="kwd">my</span><span class="pun">.</span><span class="pln">cnf </span><span class="pun">&amp;</span><span class="pln"> </span><span class="com">#使用指定配置文件启动MySQL服务器</span><span class="pln">
+</span><span class="pun">./</span><span class="pln">mysqladmin </span><span class="pun">--</span><span class="pln">socket</span><span class="pun">=</span><span class="str">/tmp/</span><span class="pln">mysql_3307</span><span class="pun">.</span><span class="pln">sock </span><span class="pun">-</span><span class="pln">u root password </span><span class="str">'admin'</span><span class="pln"> </span><span class="com">#设置root的密码</span><span class="pln">
+</span><span class="pun">./</span><span class="pln">mysql </span><span class="pun">-</span><span class="pln">u root </span><span class="pun">-</span><span class="pln">padmin </span><span class="pun">--</span><span class="pln">socket</span><span class="pun">=</span><span class="str">/tmp/</span><span class="pln">mysql_3307</span><span class="pun">.</span><span class="pln">sock </span><span class="com">#尝试连接</span><span class="pln">
+</span><span class="pun">./</span><span class="pln">mysqladmin </span><span class="pun">-</span><span class="pln">u root </span><span class="pun">-</span><span class="pln">padmin </span><span class="pun">--</span><span class="pln">socket</span><span class="pun">=</span><span class="str">/tmp/</span><span class="pln">mysql_3307</span><span class="pun">.</span><span class="pln">sock shutdown </span><span class="com">#关闭MySQL服务器</span></code></pre>
+
+<h2 id="55启动slave服务器并开始设置与master同步">5.5，启动slave服务器并开始设置与master同步</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-shell"><span class="pln">cd </span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">mysql_3307</span><span class="pun">/</span><span class="pln">bin
+
+sudo </span><span class="pun">./</span><span class="pln">mysqld_safe </span><span class="pun">--</span><span class="pln">defaults</span><span class="pun">-</span><span class="pln">extra</span><span class="pun">-</span><span class="pln">file</span><span class="pun">=../</span><span class="pln">support</span><span class="pun">-</span><span class="pln">files</span><span class="pun">/</span><span class="kwd">my</span><span class="pun">.</span><span class="pln">cnf </span><span class="pun">--</span><span class="pln">relay</span><span class="pun">-</span><span class="pln">log</span><span class="pun">=</span><span class="pln">precise64</span><span class="pun">-</span><span class="pln">relay</span><span class="pun">-</span><span class="pln">bin </span><span class="pun">&amp;</span><span class="pln">
+</span><span class="pun">./</span><span class="pln">mysql </span><span class="pun">-</span><span class="pln">u root </span><span class="pun">-</span><span class="pln">padmin </span><span class="pun">--</span><span class="pln">socket</span><span class="pun">=</span><span class="str">/tmp/</span><span class="pln">mysql_3307</span><span class="pun">.</span><span class="pln">sock </span><span class="com">#尝试连接</span><span class="pln">
+
+</span><span class="com">#mysql&gt;</span><span class="pln">
+stop slave</span><span class="pun">;</span><span class="pln"> </span><span class="com">#先停止slave同步线程</span><span class="pln">
+change master to master_host</span><span class="pun">=</span><span class="str">'localhost'</span><span class="pun">,</span><span class="pln"> master_port</span><span class="pun">=</span><span class="lit">3306</span><span class="pun">,</span><span class="pln"> master_user</span><span class="pun">=</span><span class="str">'repl'</span><span class="pun">,</span><span class="pln"> master_password</span><span class="pun">=</span><span class="str">'slavepass'</span><span class="pun">,</span><span class="pln">master_log_file</span><span class="pun">=</span><span class="str">'mysql-bin.xxxxxx'</span><span class="pun">,</span><span class="pln"> master_log_pos</span><span class="pun">=</span><span class="pln">xxx</span><span class="pun">;</span><span class="pln"> </span><span class="com">#mysql-bin.xxxxxx为master的log文件名，xxx为同步的起点，可在master实例查看（show master status;)</span><span class="pln">
+start slave</span><span class="pun">;</span><span class="pln"> </span><span class="com">#开启slave同步线程</span><span class="pln">
+
+show processlist</span><span class="pun">;</span><span class="pln">
+</span><span class="com">#如何分别有来自system user用户的Waiting for master to send event和Slave has read all relay log; waiting for the slave I/O thread to update it连接，则正常</span></code></pre>
+
+<h1 id="6测试master-slave的同步功能是否工作正常">6，测试master-slave的同步功能是否工作正常</h1>
+
+<h2 id="61在master里的test数据库创建一张表">6.1，在master里的test数据库创建一张表</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-sql"><span class="kwd">use</span><span class="pln"> test</span><span class="pun">;</span><span class="pln">
+create table test </span><span class="pun">(</span><span class="pln">
+    id </span><span class="kwd">int</span><span class="pln">
+</span><span class="pun">);</span><span class="pln">
+insert </span><span class="kwd">into</span><span class="pln"> test values</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span></code></pre>
+
+<h2 id="62在slave里的test数据库查询在aster的中创建的表及数添加的据">6.2，在slave里的test数据库查询在master的中创建的表及数添加的据</h2>
+
+<pre class="prettyprint prettyprinted"><code class="language-sql"><span class="pln">user test</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">select</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> test</span><span class="pun">;</span></code></pre>
+
+<h1 id="7如果顺利地走到这里master-slave简易部署完毕">7，如果顺利地走到这里，master-slave简易部署完毕</h1></div></body>
+</html>

@@ -1,0 +1,1 @@
+ssh -C -D 9999 -i swimmingsand_tokyo.pem ubuntu@54.65.118.15

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.index.DocValuesIterator</OriginalElement>
+  <nodes>
+    <node x="1185.0" y="79.0">org.apache.lucene.index.DocValuesIterator</node>
+    <node x="844.0" y="267.0">org.apache.lucene.search.SortedNumericSelector.MaxValue</node>
+    <node x="1483.0" y="267.0">org.apache.lucene.codecs.lucene70.Lucene70DocValuesProducer.SparseNumericDocValues</node>
+    <node x="630.0" y="267.0">org.apache.lucene.index.FilterNumericDocValues</node>
+    <node x="878.25" y="158.0">org.apache.lucene.index.NumericDocValues</node>
+    <node x="971.0" y="267.0">org.apache.lucene.search.SortedNumericSelector.MinValue</node>
+    <node x="1062.25" y="158.0">org.apache.lucene.index.SortedNumericDocValues</node>
+    <node x="1291.0" y="267.0">org.apache.lucene.codecs.lucene70.Lucene70NormsProducer.DenseNormsIterator</node>
+    <node x="1709.0" y="267.0">org.apache.lucene.codecs.lucene70.Lucene70DocValuesProducer.DenseNumericDocValues</node>
+    <node x="1459.25" y="158.0">org.apache.lucene.index.SortedSetDocValues</node>
+    <node x="229.0" y="267.0">org.apache.lucene.index.NormValuesWriter.BufferedNorms</node>
+    <node x="1095.0" y="267.0">org.apache.lucene.codecs.lucene70.Lucene70NormsProducer.SparseNormsIterator</node>
+    <node x="392.0" y="267.0">org.apache.lucene.index.NumericDocValuesWriter.BufferedNumericDocValues</node>
+    <node x="1287.25" y="158.0">org.apache.lucene.index.BinaryDocValues</node>
+    <node x="0.0" y="267.0">org.apache.lucene.index.SortingLeafReader.SortingNumericDocValues</node>
+    <node x="1190.0" y="0.0">org.apache.lucene.search.DocIdSetIterator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.index.BinaryDocValues" target="org.apache.lucene.index.DocValuesIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="1363.25" y="138.0" />
+      <point x="1283.75" y="138.0" />
+      <point x="19.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.NormValuesWriter.BufferedNorms" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="300.5" y="217.0" />
+      <point x="902.85" y="217.0" />
+      <point x="-57.39999999999998" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SortedNumericDocValues" target="org.apache.lucene.index.DocValuesIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="1164.75" y="138.0" />
+      <point x="1244.25" y="138.0" />
+      <point x="-19.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.codecs.lucene70.Lucene70NormsProducer.SparseNormsIterator" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="1183.0" y="237.0" />
+      <point x="984.85" y="237.0" />
+      <point x="24.600000000000023" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SortingLeafReader.SortingNumericDocValues" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="104.5" y="207.0" />
+      <point x="886.45" y="207.0" />
+      <point x="-73.79999999999995" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocValuesIterator" target="org.apache.lucene.search.DocIdSetIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.codecs.lucene70.Lucene70DocValuesProducer.DenseNumericDocValues" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="1810.0" y="207.0" />
+      <point x="1034.05" y="207.0" />
+      <point x="73.79999999999995" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.codecs.lucene70.Lucene70NormsProducer.DenseNormsIterator" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="1377.0" y="227.0" />
+      <point x="1001.25" y="227.0" />
+      <point x="41.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.SortedNumericSelector.MinValue" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="1023.0" y="247.0" />
+      <point x="968.45" y="247.0" />
+      <point x="8.200000000000045" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.NumericDocValues" target="org.apache.lucene.index.DocValuesIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="960.25" y="128.0" />
+      <point x="1204.75" y="128.0" />
+      <point x="-59.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.codecs.lucene70.Lucene70DocValuesProducer.SparseNumericDocValues" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="1586.0" y="217.0" />
+      <point x="1017.6500000000001" y="217.0" />
+      <point x="57.40000000000009" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.FilterNumericDocValues" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="727.0" y="237.0" />
+      <point x="935.65" y="237.0" />
+      <point x="-24.600000000000023" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SortedSetDocValues" target="org.apache.lucene.index.DocValuesIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="1546.25" y="128.0" />
+      <point x="1323.25" y="128.0" />
+      <point x="59.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.NumericDocValuesWriter.BufferedNumericDocValues" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="501.0" y="227.0" />
+      <point x="919.25" y="227.0" />
+      <point x="-41.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.SortedNumericSelector.MaxValue" target="org.apache.lucene.index.NumericDocValues">
+      <point x="0.0" y="-14.5" />
+      <point x="897.5" y="247.0" />
+      <point x="952.05" y="247.0" />
+      <point x="-8.200000000000045" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.555152770585189" x="955.5000000000001" y="148.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

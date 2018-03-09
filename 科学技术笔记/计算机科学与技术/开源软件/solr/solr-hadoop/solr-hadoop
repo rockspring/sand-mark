@@ -1,0 +1,256 @@
+44   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=/home/shg4873/projects/oss/solr-map-reduce-example/hadoop-2.6.0/lib/native
+44   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=/tmp
+44   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+44   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Linux
+45   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+45   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=3.13.0-44-generic
+45   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=shg4873
+45   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=/home/shg4873
+45   [main] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=/home/shg4873/projects/oss/solr-map-reduce-example
+46   [main] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.apache.solr.common.cloud.ConnectionManager@73d9f898
+59   [main] INFO  org.apache.solr.common.cloud.ConnectionManager  - Waiting for client to connect to ZooKeeper
+69   [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+70   [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+93   [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x14b14a4f0d90003, negotiated timeout = 30000
+95   [main-EventThread] INFO  org.apache.solr.common.cloud.ConnectionManager  - Watcher org.apache.solr.common.cloud.ConnectionManager@73d9f898 name:ZooKeeperConnection Watcher:127.0.0.1:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+95   [main] INFO  org.apache.solr.common.cloud.ConnectionManager  - Client is connected to ZooKeeper
+108  [main] INFO  org.apache.solr.common.cloud.ZkStateReader  - Updating cluster state from ZooKeeper...
+156  [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn  - EventThread shut down
+156  [main] INFO  org.apache.zookeeper.ZooKeeper  - Session: 0x14b14a4f0d90003 closed
+324  [main] INFO  org.apache.hadoop.yarn.client.RMProxy  - Connecting to ResourceManager at /0.0.0.0:8032
+703  [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Cluster reports 10 mapper slots
+1032 [main] INFO  org.apache.hadoop.yarn.client.RMProxy  - Connecting to ResourceManager at /0.0.0.0:8032
+1039 [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Cluster reports 2 reduce slots
+1039 [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Using these parameters: numFiles: 1, mappers: 80, realMappers: 1, reducers: 2, shards: 2, fanout: 2147483647, maxSegments: 1
+1039 [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Randomizing list of 1 input files to spread indexing load more evenly among mappers
+1145 [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Done. Randomizing list of 1 input files took 3.533806E7 secs
+1193 [main] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.apache.solr.common.cloud.ConnectionManager@18d92120
+1193 [main] INFO  org.apache.solr.common.cloud.ConnectionManager  - Waiting for client to connect to ZooKeeper
+1193 [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+1194 [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+1224 [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x14b14a4f0d90004, negotiated timeout = 30000
+1224 [main-EventThread] INFO  org.apache.solr.common.cloud.ConnectionManager  - Watcher org.apache.solr.common.cloud.ConnectionManager@18d92120 name:ZooKeeperConnection Watcher:127.0.0.1:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+1224 [main] INFO  org.apache.solr.common.cloud.ConnectionManager  - Client is connected to ZooKeeper
+1225 [main] INFO  org.apache.solr.hadoop.ZooKeeperInspector  - Load collection config from:/collections/collection1
+1271 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/admin-extra.menu-top.html
+1281 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/currency.xml
+1282 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/protwords.txt
+1284 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/mapping-FoldToASCII.txt
+1285 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/_schema_analysis_synonyms_english.json
+1286 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/_rest_managed.json
+1287 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/solrconfig.xml
+1289 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/_schema_analysis_stopwords_english.json
+1290 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/stopwords.txt
+1294 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/contractions_ga.txt
+1296 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_hi.txt
+1297 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_eu.txt
+1298 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/userdict_ja.txt
+1300 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_es.txt
+1301 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_sv.txt
+1302 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/contractions_it.txt
+1304 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stoptags_ja.txt
+1306 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stemdict_nl.txt
+1307 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_bg.txt
+1309 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_hy.txt
+1310 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_el.txt
+1311 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/hyphenations_ga.txt
+1313 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_ar.txt
+1314 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_fr.txt
+1315 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_pt.txt
+1317 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_nl.txt
+1318 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_th.txt
+1319 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_de.txt
+1321 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_lv.txt
+1322 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/contractions_ca.txt
+1326 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_ru.txt
+1328 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_ca.txt
+1329 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_da.txt
+1331 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_gl.txt
+1332 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_no.txt
+1333 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_ckb.txt
+1334 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_fa.txt
+1335 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_tr.txt
+1336 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_hu.txt
+1337 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_id.txt
+1338 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_ro.txt
+1339 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_cz.txt
+1340 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_ja.txt
+1341 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_it.txt
+1342 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_fi.txt
+1343 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/contractions_fr.txt
+1345 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_ga.txt
+1346 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/lang/stopwords_en.txt
+1348 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/spellings.txt
+1349 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/mapping-ISOLatin1Accent.txt
+1350 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/admin-extra.html
+1353 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/xslt/luke.xsl
+1354 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/xslt/updateXml.xsl
+1355 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/xslt/example_atom.xsl
+1357 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/xslt/example.xsl
+1358 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/xslt/example_rss.xsl
+1359 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/synonyms.txt
+1361 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/scripts.conf
+1366 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/update-script.js
+1369 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/query_spatial.vm
+1370 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/mime_type_lists.vm
+1371 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/results_list.vm
+1372 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/cluster_results.vm
+1373 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/hit_grouped.vm
+1373 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/layout.vm
+1374 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/debug.vm
+1375 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/join_doc.vm
+1376 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/facet_queries.vm
+1377 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/query_group.vm
+1379 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/main.css
+1380 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/VM_global_library.vm
+1381 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/pagination_bottom.vm
+1382 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/error.vm
+1384 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/facets.vm
+1385 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/richtext_doc.vm
+1386 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/head.vm
+1388 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/query_form.vm
+1389 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/hit_plain.vm
+1390 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/cluster.vm
+1391 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/jquery.autocomplete.js
+1393 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/facet_pivot.vm
+1394 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/browse.vm
+1396 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/footer.vm
+1397 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/jquery.autocomplete.css
+1398 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/README.txt
+1399 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/did_you_mean.vm
+1401 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/header.vm
+1402 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/hit.vm
+1403 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/suggest.vm
+1404 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/pagination_top.vm
+1409 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/query.vm
+1415 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/product_doc.vm
+1416 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/facet_ranges.vm
+1418 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/tabs.vm
+1420 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/velocity/facet_fields.vm
+1421 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/elevate.xml
+1427 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/admin-extra.menu-bottom.html
+1429 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/schema.xml
+1435 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/clustering/carrot2/lingo-attributes.xml
+1437 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/clustering/carrot2/stc-attributes.xml
+1438 [main] INFO  org.apache.solr.cloud.ZkController  - Write file /tmp/1421980649266-0/clustering/carrot2/kmeans-attributes.xml
+1606 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn  - EventThread shut down
+1607 [main] INFO  org.apache.zookeeper.ZooKeeper  - Session: 0x14b14a4f0d90004 closed
+1610 [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Indexing 1 files using 1 real mappers into 2 reducers
+1652 [main] INFO  org.apache.hadoop.yarn.client.RMProxy  - Connecting to ResourceManager at /0.0.0.0:8032
+15216 [main] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat  - Total input paths to process : 1
+15420 [main] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - number of splits:1
+15870 [main] INFO  org.apache.hadoop.mapreduce.JobSubmitter  - Submitting tokens for job: job_1421980613831_0001
+16982 [main] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl  - Submitted application application_1421980613831_0001
+17049 [main] INFO  org.apache.hadoop.mapreduce.Job  - The url to track the job: http://dev-4873:8088/proxy/application_1421980613831_0001/
+17050 [main] INFO  org.apache.hadoop.mapreduce.Job  - Running job: job_1421980613831_0001
+31277 [main] INFO  org.apache.hadoop.mapreduce.Job  - Job job_1421980613831_0001 running in uber mode : false
+31279 [main] INFO  org.apache.hadoop.mapreduce.Job  -  map 0% reduce 0%
+44498 [main] INFO  org.apache.hadoop.mapreduce.Job  -  map 67% reduce 0%
+46525 [main] INFO  org.apache.hadoop.mapreduce.Job  -  map 100% reduce 0%
+61692 [main] INFO  org.apache.hadoop.mapreduce.Job  -  map 100% reduce 33%
+62696 [main] INFO  org.apache.hadoop.mapreduce.Job  -  map 100% reduce 67%
+70744 [main] INFO  org.apache.hadoop.mapreduce.Job  -  map 100% reduce 83%
+71757 [main] INFO  org.apache.hadoop.mapreduce.Job  -  map 100% reduce 100%
+73786 [main] INFO  org.apache.hadoop.mapreduce.Job  - Job job_1421980613831_0001 completed successfully
+74008 [main] INFO  org.apache.hadoop.mapreduce.Job  - Counters: 72
+	File System Counters
+		FILE: Number of bytes read=2003020
+		FILE: Number of bytes written=4510653
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=518932
+		HDFS: Number of bytes written=1320639
+		HDFS: Number of read operations=117
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=72
+	Job Counters
+		Launched map tasks=1
+		Launched reduce tasks=2
+		Other local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=12707
+		Total time spent by all reduces in occupied slots (ms)=46027
+		Total time spent by all map tasks (ms)=12707
+		Total time spent by all reduce tasks (ms)=46027
+		Total vcore-seconds taken by all map tasks=12707
+		Total vcore-seconds taken by all reduce tasks=46027
+		Total megabyte-seconds taken by all map tasks=13011968
+		Total megabyte-seconds taken by all reduce tasks=47131648
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=2104
+		Map output bytes=1994592
+		Map output materialized bytes=2003020
+		Input split bytes=118
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=2104
+		Reduce shuffle bytes=2003020
+		Reduce input records=2104
+		Reduce output records=2104
+		Spilled Records=4208
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=1002
+		CPU time spent (ms)=31870
+		Physical memory (bytes) snapshot=1085345792
+		Virtual memory (bytes) snapshot=3138457600
+		Total committed heap usage (bytes)=746586112
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	morphline
+		MorphlineMapRunner.elapsedTime=0
+		morphline.convertTimestamp.numNotifyCalls=4
+		morphline.convertTimestamp.numProcessCalls=2104
+		morphline.extractAvroPaths.numNotifyCalls=4
+		morphline.extractAvroPaths.numProcessCalls=2104
+		morphline.loadSolr.elapsedTime=0
+		morphline.loadSolr.numNotifyCalls=4
+		morphline.loadSolr.numProcessCalls=2104
+		morphline.logDebug.numNotifyCalls=4
+		morphline.logDebug.numProcessCalls=2104
+		morphline.pipe.numNotifyCalls=4
+		morphline.pipe.numProcessCalls=1
+		morphline.readAvroContainer.numNotifyCalls=4
+		morphline.readAvroContainer.numProcessCalls=1
+		morphline.readAvroContainer.numRecords=2104
+		morphline.sanitizeUnknownSolrFields.numNotifyCalls=4
+		morphline.sanitizeUnknownSolrFields.numProcessCalls=2104
+	File Input Format Counters
+		Bytes Read=72
+	File Output Format Counters
+		Bytes Written=1320639
+	org.apache.solr.hadoop.SolrCounters
+		SolrReducer: Number of document batches processed=106
+		SolrReducer: Number of documents processed=2104
+		SolrReducer: Time spent by reducers on physical merges [ms]=16067617
+	org.apache.solr.hadoop.morphline.MorphlineCounters
+		MorphlineMapper: Number of documents read=2104
+		MorphlineMapper: Number of file bytes read=249540
+		MorphlineMapper: Number of files read=1
+74010 [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Done. Indexing 1 files using 1 real mappers into 2 reducers took 2.41333944E10 secs
+74125 [main] INFO  org.apache.solr.hadoop.GoLive  - Live merging of output shards into Solr cluster...
+74133 [pool-4-thread-2] INFO  org.apache.solr.hadoop.GoLive  - Live merge hdfs://127.0.0.1:8020/outdir/results/part-00001 into http://127.0.1.1:7573/solr
+74133 [pool-4-thread-1] INFO  org.apache.solr.hadoop.GoLive  - Live merge hdfs://127.0.0.1:8020/outdir/results/part-00000 into http://127.0.1.1:7574/solr
+76107 [main] INFO  org.apache.solr.hadoop.GoLive  - Committing live merge...
+76146 [main] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=10000 watcher=org.apache.solr.common.cloud.ConnectionManager@28fbf6a1
+76147 [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+76147 [main] INFO  org.apache.solr.common.cloud.ConnectionManager  - Waiting for client to connect to ZooKeeper
+76150 [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+76163 [main-SendThread(127.0.0.1:2181)] INFO  org.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x14b14a4f0d90006, negotiated timeout = 10000
+76164 [main-EventThread] INFO  org.apache.solr.common.cloud.ConnectionManager  - Watcher org.apache.solr.common.cloud.ConnectionManager@28fbf6a1 name:ZooKeeperConnection Watcher:127.0.0.1:2181 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+76164 [main] INFO  org.apache.solr.common.cloud.ConnectionManager  - Client is connected to ZooKeeper
+76165 [main] INFO  org.apache.solr.common.cloud.ZkStateReader  - Updating cluster state from ZooKeeper...
+77313 [main] INFO  org.apache.zookeeper.ZooKeeper  - Session: 0x14b14a4f0d90006 closed
+77313 [main] INFO  org.apache.solr.hadoop.GoLive  - Done committing live merge
+77313 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn  - EventThread shut down
+77314 [main] INFO  org.apache.solr.hadoop.GoLive  - Live merging of index shards into Solr cluster took 1.06305184E9 secs
+77315 [main] INFO  org.apache.solr.hadoop.GoLive  - Live merging completed successfully
+77315 [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Succeeded with job: jobName: org.apache.solr.hadoop.MapReduceIndexerTool/MorphlineMapper, jobId: job_1421980613831_0001
+77315 [main] INFO  org.apache.solr.hadoop.MapReduceIndexerTool  - Success. Done. Program took 2.57719091E10 secs. Goodbye.

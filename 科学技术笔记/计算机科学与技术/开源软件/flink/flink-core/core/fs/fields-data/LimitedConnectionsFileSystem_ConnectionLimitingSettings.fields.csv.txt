@@ -1,0 +1,5 @@
+int	limitTotal
+int	limitInput
+int	limitOutput
+long	streamOpenTimeout
+long	streamInactivityTimeout

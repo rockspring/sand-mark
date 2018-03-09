@@ -1,0 +1,2 @@
+/Users/zlq/Projects/oss/googletest-read-only/CMakeFiles/gtest.dir
+/Users/zlq/Projects/oss/googletest-read-only/CMakeFiles/gtest_main.dir

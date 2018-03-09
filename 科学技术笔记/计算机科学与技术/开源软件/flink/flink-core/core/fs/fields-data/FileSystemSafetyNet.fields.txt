@@ -1,0 +1,2 @@
+/** The map from thread to the safety net registry for that thread. */
+private static final ThreadLocal<SafetyNetCloseableRegistry> REGISTRIES = new ThreadLocal<>();

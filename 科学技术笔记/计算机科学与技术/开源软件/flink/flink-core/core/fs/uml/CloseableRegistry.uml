@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.fs.SafetyNetCloseableRegistry</OriginalElement>
+  <nodes>
+    <node x="0.0" y="336.0">org.apache.flink.core.fs.SafetyNetCloseableRegistry.CloseableReaperThread</node>
+    <node x="329.375" y="257.0">org.apache.flink.core.fs.CloseableRegistry</node>
+    <node x="206.41666666666666" y="168.0">org.apache.flink.core.fs.WrappingProxyCloseable</node>
+    <node x="463.66666666666663" y="336.0">org.apache.flink.core.fs.SafetyNetCloseableRegistry.PhantomDelegatingCloseableRef</node>
+    <node x="474.26089743589745" y="79.0">java.io.Closeable</node>
+    <node x="128.9942307692308" y="79.0">org.apache.flink.annotation.Internal</node>
+    <node x="428.41666666666663" y="168.0">org.apache.flink.util.AbstractCloseableRegistry</node>
+    <node x="459.26089743589745" y="0.0">java.lang.AutoCloseable</node>
+    <node x="41.5" y="257.0">org.apache.flink.core.fs.SafetyNetCloseableRegistry</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.fs.WrappingProxyCloseable" target="org.apache.flink.annotation.Internal">
+      <point x="-67.33333333333331" y="-14.5" />
+      <point x="240.08333333333334" y="138.0" />
+      <point x="187.7442307692308" y="138.0" />
+      <point x="11.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.WrappingProxyCloseable" target="java.io.Closeable">
+      <point x="0.0" y="-14.5" />
+      <point x="307.41666666666663" y="138.0" />
+      <point x="484.96089743589744" y="138.0" />
+      <point x="-42.80000000000001" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.SafetyNetCloseableRegistry" target="org.apache.flink.annotation.Internal">
+      <point x="-54.5" y="-14.5" />
+      <point x="96.0" y="148.0" />
+      <point x="140.7442307692308" y="148.0" />
+      <point x="-35.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.CloseableRegistry" target="org.apache.flink.annotation.Internal">
+      <point x="-39.25" y="-14.5" />
+      <point x="368.625" y="217.0" />
+      <point x="195.91666666666666" y="217.0" />
+      <point x="195.91666666666666" y="148.0" />
+      <point x="164.2442307692308" y="148.0" />
+      <point x="-11.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.SafetyNetCloseableRegistry.PhantomDelegatingCloseableRef" target="org.apache.flink.core.fs.SafetyNetCloseableRegistry">
+      <point x="-61.75" y="-14.5" />
+      <point x="525.4166666666666" y="311.0" />
+      <point x="205.0" y="311.0" />
+      <point x="54.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.AbstractCloseableRegistry" target="java.io.Closeable">
+      <point x="70.0" y="-14.5" />
+      <point x="603.4166666666666" y="148.0" />
+      <point x="549.1608974358974" y="148.0" />
+      <point x="21.399999999999977" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.SafetyNetCloseableRegistry.CloseableReaperThread" target="org.apache.flink.core.fs.SafetyNetCloseableRegistry">
+      <point x="0.0" y="-14.5" />
+      <point x="-54.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.AbstractCloseableRegistry" target="org.apache.flink.annotation.Internal">
+      <point x="-70.0" y="-14.5" />
+      <point x="463.41666666666663" y="128.0" />
+      <point x="211.2442307692308" y="128.0" />
+      <point x="35.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.SafetyNetCloseableRegistry.PhantomDelegatingCloseableRef" target="java.io.Closeable">
+      <point x="61.74999999999997" y="-14.5" />
+      <point x="648.9166666666666" y="138.0" />
+      <point x="570.5608974358975" y="138.0" />
+      <point x="42.80000000000001" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.SafetyNetCloseableRegistry" target="org.apache.flink.util.AbstractCloseableRegistry">
+      <point x="54.5" y="-14.5" />
+      <point x="205.0" y="227.0" />
+      <point x="480.91666666666663" y="227.0" />
+      <point x="-52.5" y="14.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.CloseableRegistry" target="org.apache.flink.util.AbstractCloseableRegistry">
+      <point x="39.25" y="-14.5" />
+      <point x="447.125" y="237.0" />
+      <point x="585.9166666666666" y="237.0" />
+      <point x="52.5" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="357.5" y="187.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

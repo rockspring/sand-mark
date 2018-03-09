@@ -1,0 +1,14 @@
+/** The original data output stream to write to. */
+private final FSDataOutputStream originalStream;
+
+/** The connection-limiting file system to un-register from. */
+private final LimitedConnectionsFileSystem fs;
+
+/** The progress tracker for this stream. */
+private final StreamProgressTracker progressTracker;
+
+/** An exception with which the stream has been externally closed. */
+private volatile StreamTimeoutException timeoutException;
+
+/** Flag tracking whether the stream was already closed, for proper inactivity tracking. */
+private AtomicBoolean closed = new AtomicBoolean();

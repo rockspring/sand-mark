@@ -1,0 +1,10 @@
+INFO  - 2015-01-26 09:57:57.557; [qtp664577724-8682] org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={distrib.from=http://10.10.3.136:7803/solr/collection1/&update.distrib=FROMLEADER&wt=javabin&version=2} {delete=[A255897373 (-1491324085140979712), A256170315 (-1491324085140979713), A256183937 (-1491324085140979714), A255610931 (-1491324085140979715), A256169642 (-1491324085140979716), A256169297 (-1491324085140979717), A255610739 (-1491324085140979718), A255611057 (-1491324085140979719), A255610267 (-1491324085140979720), A255611006 (-1491324085140979721), ... (16 deletes)]} 0 1
+
+
+INFO  - 2015-01-26 09:57:57.803; [qtp664577724-8682] org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={distrib.from=http://10.10.3.136:7803/solr/collection1/&update.distrib=FROMLEADER&wt=javabin&version=2} {delete=[A253557657 (-1491324085399977984), A253892403 (-1491324085399977985)]} 0 1
+
+
+INFO  - 2015-01-26 09:57:58.095; [qtp664577724-8682] org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={distrib.from=http://10.10.3.136:7803/solr/collection1/&update.distrib=FROMLEADER&wt=javabin&version=2} {add=[A251693497 (1491324085693579264), A258514506 (1491324085695676416)]} 0 11
+
+
+INFO  - 2015-01-26 09:57:58.107; [qtp664577724-8682] org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={distrib.from=http://10.10.3.136:7803/solr/collection1/&update.distrib=FROMLEADER&wt=javabin&version=2} {add=[A258959366 (1491324085696724992), A258962170 (1491324085697773568), A258962172 (1491324085698822144), A258962443 (1491324085699870720), A258962749 (1491324085700919296), A258962787 (1491324085701967872), A258962796 (1491324085703016448), A258962797 (1491324085706162176), A258962799 (1491324085707210752), A258962801 (1491324085708259328), ... (12 adds)]} 0 10

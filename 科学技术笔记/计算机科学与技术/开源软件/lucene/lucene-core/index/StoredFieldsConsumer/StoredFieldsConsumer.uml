@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.index.StoredFieldsConsumer</OriginalElement>
+  <nodes>
+    <node x="283.5729166666667" y="79.0">org.apache.lucene.codecs.compressing.CompressingStoredFieldsWriter</node>
+    <node x="547.5729166666667" y="79.0">org.apache.lucene.index.TrackingTmpOutputDirectoryWrapper</node>
+    <node x="350.46875" y="0.0">org.apache.lucene.codecs.StoredFieldsWriter</node>
+    <node x="260.9479166666667" y="168.0">org.apache.lucene.index.SortingStoredFieldsConsumer</node>
+    <node x="76.57291666666669" y="79.0">org.apache.lucene.index.StoredFieldsConsumer</node>
+    <node x="0.0" y="0.0">org.apache.lucene.index.DocumentsWriterPerThread</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.index.SortingStoredFieldsConsumer" target="org.apache.lucene.index.TrackingTmpOutputDirectoryWrapper">
+      <point x="96.66666666666663" y="-14.5" />
+      <point x="473.6145833333333" y="148.0" />
+      <point x="758.3229166666667" y="148.0" />
+      <point x="70.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.StoredFieldsConsumer" target="org.apache.lucene.codecs.StoredFieldsWriter">
+      <point x="62.33333333333334" y="-14.5" />
+      <point x="232.40625000000003" y="54.0" />
+      <point x="377.46875" y="54.0" />
+      <point x="-54.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SortingStoredFieldsConsumer" target="org.apache.lucene.index.StoredFieldsConsumer">
+      <point x="-19.333333333333343" y="-14.5" />
+      <point x="357.61458333333337" y="128.0" />
+      <point x="216.82291666666669" y="128.0" />
+      <point x="46.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.codecs.compressing.CompressingStoredFieldsWriter" target="org.apache.lucene.codecs.StoredFieldsWriter">
+      <point x="0.0" y="-14.5" />
+      <point x="405.0729166666667" y="54.0" />
+      <point x="431.46875" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.StoredFieldsConsumer" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="0.0" y="-14.5" />
+      <point x="170.07291666666669" y="54.0" />
+      <point x="182.5" y="54.0" />
+      <point x="73.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SortingStoredFieldsConsumer" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="-96.66666666666666" y="-14.5" />
+      <point x="280.28125" y="148.0" />
+      <point x="66.07291666666669" y="148.0" />
+      <point x="66.07291666666669" y="54.0" />
+      <point x="36.5" y="54.0" />
+      <point x="-73.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SortingStoredFieldsConsumer" target="org.apache.lucene.codecs.StoredFieldsWriter">
+      <point x="19.333333333333314" y="-14.5" />
+      <point x="396.28125" y="128.0" />
+      <point x="537.0729166666667" y="128.0" />
+      <point x="537.0729166666667" y="54.0" />
+      <point x="485.46875" y="54.0" />
+      <point x="53.999999999999986" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="429.0" y="98.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,10 @@
+/** Lock for atomic modifications to reaper thread and registry count. */
+private static final Object REAPER_THREAD_LOCK = new Object();
+
+//CHECKSTYLE.OFF: StaticVariableName
+
+/** Singleton reaper thread takes care of all registries in VM. */
+private static CloseableReaperThread REAPER_THREAD = null;
+
+/** Global count of all instances of SafetyNetCloseableRegistry. */
+private static int GLOBAL_SAFETY_NET_REGISTRY_COUNT = 0;

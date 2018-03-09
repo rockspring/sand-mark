@@ -1,0 +1,1 @@
+mvn archetype:generate   -DgroupId=io.github.swimmingsand  -DartifactId=example001  -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

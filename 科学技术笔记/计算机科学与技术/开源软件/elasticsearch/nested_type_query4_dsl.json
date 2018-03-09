@@ -1,0 +1,5 @@
+{
+    "query" : {
+        "match" : {"group" : { "query" : "fans", "operator" : "or"}}
+    }
+}

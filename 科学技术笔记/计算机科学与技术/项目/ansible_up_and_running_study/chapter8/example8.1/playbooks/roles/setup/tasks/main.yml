@@ -1,0 +1,19 @@
+---
+# tasks file for setup
+
+- name: checkout perl-json
+  sudo: False
+  git:
+    accept_hostkey=yes
+    depth=1
+    dest=/vagrant/projects/perl-json-clone
+    repo=git@gitlab.corp.anjuke.com:leqinzhou/perl-json.git
+    version=master
+
+- name: checkout oracle jdk
+  git:
+    accept_hostkey=yes
+    depth=1
+    dest=/vagrant/projects/oracle-jdk-clone
+    repo=git@gitlab.corp.anjuke.com:leqinzhou/oracle-jdk.git
+    version=master

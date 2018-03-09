@@ -1,0 +1,3 @@
+private final InputStream inStream;
+
+private long pos = 0;

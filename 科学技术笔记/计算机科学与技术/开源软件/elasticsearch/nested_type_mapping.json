@@ -1,0 +1,13 @@
+{
+    "type1" : {
+        "properties" : {
+            "users" : {
+                "type" : "nested",
+                "properties": {
+                    "first" : {"type": "string", "store" : "true", "analyzer": "standard" },
+                    "last"  : {"type": "string", "store" : "true", "analyzer": "standard" }
+                }
+            }
+        }
+    }
+}

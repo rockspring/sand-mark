@@ -1,0 +1,2 @@
+on过滤条件中，NULL的比较结果为UNKNOWN
+group by和order by中两个NULL的比较结果为相等

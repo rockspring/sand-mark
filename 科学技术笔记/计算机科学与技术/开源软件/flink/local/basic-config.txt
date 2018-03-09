@@ -1,0 +1,29 @@
+akka {
+ daemonic = on
+
+ loggers = ["akka.event.slf4j.Slf4jLogger"]
+ logging-filter = "akka.event.slf4j.Slf4jLoggingFilter"
+ log-config-on-start = off
+
+ jvm-exit-on-fatal-error = on
+
+ serialize-messages = off
+
+ loglevel = OFF
+ stdout-loglevel = OFF
+
+ log-dead-letters = off
+ log-dead-letters-during-shutdown = off
+
+ actor {
+   guardian-supervisor-strategy = "akka.actor.StoppingSupervisorStrategy"
+   default-dispatcher {
+     throughput = 15
+
+     fork-join-executor {
+       parallelism-factor = 2.0
+     }
+   }
+ }
+}
+      

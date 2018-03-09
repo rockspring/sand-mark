@@ -1,0 +1,111 @@
+DEBUG - 2014-08-04 08:01:25.896; org.eclipse.jetty.http.HttpParser; filled 184/184
+DEBUG - 2014-08-04 08:01:25.897; org.eclipse.jetty.server.Server; REQUEST /solr/update on BlockingHttpConnection@ba679e,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=2,l=2,c=47},r=1
+DEBUG - 2014-08-04 08:01:25.897; org.eclipse.jetty.server.handler.ContextHandler; scope null||/solr/update @ o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-08-04 08:01:25.898; org.eclipse.jetty.server.handler.ContextHandler; context=/solr||/update @ o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-08-04 08:01:25.898; org.eclipse.jetty.server.session.SessionHandler; sessionManager=org.eclipse.jetty.server.session.HashSessionManager@79b66b06
+DEBUG - 2014-08-04 08:01:25.899; org.eclipse.jetty.server.session.SessionHandler; session=null
+DEBUG - 2014-08-04 08:01:25.899; org.eclipse.jetty.servlet.ServletHandler; servlet /solr|/update|null -> default
+DEBUG - 2014-08-04 08:01:25.899; org.eclipse.jetty.servlet.ServletHandler; chain=SolrRequestFilter->default
+DEBUG - 2014-08-04 08:01:25.900; org.eclipse.jetty.servlet.ServletHandler$CachedChain; call filter SolrRequestFilter
+DEBUG - 2014-08-04 08:01:25.901; org.apache.solr.update.processor.LogUpdateProcessor; PRE_UPDATE add{,id=(null)} {{params(),defaults(wt=xml)}}
+DEBUG - 2014-08-04 08:01:25.901; org.apache.solr.update.SolrCmdDistributor; sending update to http://127.0.1.1:7805/solr/collection1/ retry:0 add{,id=(null)} params:update.distrib=TOLEADER&distrib.from=http%3A%2F%2F127.0.1.1%3A7804%2Fsolr%2Fcollection1%2F
+DEBUG - 2014-08-04 08:01:25.902; org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer$Runner; starting runner: org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer$Runner@6921dcac
+DEBUG - 2014-08-04 08:01:25.903; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection request: [route: {}->http://127.0.1.1:7805][total kept alive: 1; route allocated: 1 of 100; total allocated: 1 of 10000]
+DEBUG - 2014-08-04 08:01:25.903; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection leased: [id: 1][route: {}->http://127.0.1.1:7805][total kept alive: 0; route allocated: 1 of 100; total allocated: 1 of 10000]
+DEBUG - 2014-08-04 08:01:25.903; org.apache.http.impl.client.DefaultRequestDirector; Stale connection check
+DEBUG - 2014-08-04 08:01:25.904; org.apache.solr.update.processor.LogUpdateProcessor; PRE_UPDATE FINISH {{params(),defaults(wt=xml)}}
+DEBUG - 2014-08-04 08:01:25.906; org.apache.http.client.protocol.RequestAddCookies; CookieSpec selected: best-match
+DEBUG - 2014-08-04 08:01:25.906; org.apache.http.client.protocol.RequestAuthCache; Auth cache not set in the context
+DEBUG - 2014-08-04 08:01:25.906; org.apache.http.client.protocol.RequestTargetAuthentication; Target auth state: UNCHALLENGED
+DEBUG - 2014-08-04 08:01:25.906; org.apache.http.client.protocol.RequestProxyAuthentication; Proxy auth state: UNCHALLENGED
+DEBUG - 2014-08-04 08:01:25.906; org.apache.http.impl.client.DefaultRequestDirector; Attempt 1 to execute request
+DEBUG - 2014-08-04 08:01:25.907; org.apache.http.impl.conn.DefaultClientConnection; Sending request: POST /solr/collection1/update?update.distrib=TOLEADER&distrib.from=http%3A%2F%2F127.0.1.1%3A7804%2Fsolr%2Fcollection1%2F&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-08-04 08:01:25.907; org.apache.http.impl.conn.Wire;  >> "POST /solr/collection1/update?update.distrib=TOLEADER&distrib.from=http%3A%2F%2F127.0.1.1%3A7804%2Fsolr%2Fcollection1%2F&wt=javabin&version=2 HTTP/1.1[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.907; org.apache.http.impl.conn.Wire;  >> "User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.907; org.apache.http.impl.conn.Wire;  >> "Content-Type: application/javabin[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.907; org.apache.http.impl.conn.Wire;  >> "Transfer-Encoding: chunked[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.908; org.apache.http.impl.conn.Wire;  >> "Host: 127.0.1.1:7805[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.908; org.apache.http.impl.conn.Wire;  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.908; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.908; org.apache.http.impl.conn.DefaultClientConnection; >> POST /solr/collection1/update?update.distrib=TOLEADER&distrib.from=http%3A%2F%2F127.0.1.1%3A7804%2Fsolr%2Fcollection1%2F&wt=javabin&version=2 HTTP/1.1
+DEBUG - 2014-08-04 08:01:25.908; org.apache.http.impl.conn.DefaultClientConnection; >> User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrServer] 1.0
+DEBUG - 2014-08-04 08:01:25.908; org.apache.http.impl.conn.DefaultClientConnection; >> Content-Type: application/javabin
+DEBUG - 2014-08-04 08:01:25.908; org.apache.http.impl.conn.DefaultClientConnection; >> Transfer-Encoding: chunked
+DEBUG - 2014-08-04 08:01:25.908; org.apache.http.impl.conn.DefaultClientConnection; >> Host: 127.0.1.1:7805
+DEBUG - 2014-08-04 08:01:25.909; org.apache.http.impl.conn.DefaultClientConnection; >> Connection: Keep-Alive
+DEBUG - 2014-08-04 08:01:25.909; org.apache.http.impl.conn.Wire;  >> "8c[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.909; org.apache.http.impl.conn.Wire;  >> "[0x2][0xc3][0xe0]&params[0xa2][0xe0].update.distrib(TOLEADER[0xe0],distrib.from?[0x8]http://127.0.1.1:7804/solr/collection1/[0xe0]&delByQ[0x0][0xe0]'docsMap[0xe][0x13][0x10][0x1][0x8]?[0x80][0x0][0x0][0xe0]!a!f[\n]"
+DEBUG - 2014-08-04 08:01:25.911; org.apache.http.impl.conn.Wire;  >> "[0x2][0xe0]"ow[0x1][0xe0]"cw[0x6][0xff][0xff][0xff][0xff][0xf]"
+DEBUG - 2014-08-04 08:01:25.911; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.913; org.apache.http.impl.conn.Wire;  >> "0[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.914; org.apache.http.impl.conn.Wire;  >> "[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.975; org.eclipse.jetty.http.HttpParser; filled 485/485
+DEBUG - 2014-08-04 08:01:25.977; org.eclipse.jetty.server.Server; REQUEST /solr/collection1/update on BlockingHttpConnection@1e1ff563,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=6,l=10,c=-2},r=2
+DEBUG - 2014-08-04 08:01:25.977; org.eclipse.jetty.server.handler.ContextHandler; scope null||/solr/collection1/update @ o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-08-04 08:01:25.977; org.eclipse.jetty.server.handler.ContextHandler; context=/solr||/collection1/update @ o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-08-04 08:01:25.977; org.eclipse.jetty.server.session.SessionHandler; sessionManager=org.eclipse.jetty.server.session.HashSessionManager@79b66b06
+DEBUG - 2014-08-04 08:01:25.978; org.eclipse.jetty.server.session.SessionHandler; session=null
+DEBUG - 2014-08-04 08:01:25.978; org.eclipse.jetty.servlet.ServletHandler; servlet /solr|/collection1/update|null -> default
+DEBUG - 2014-08-04 08:01:25.978; org.eclipse.jetty.servlet.ServletHandler; chain=SolrRequestFilter->default
+DEBUG - 2014-08-04 08:01:25.978; org.eclipse.jetty.servlet.ServletHandler$CachedChain; call filter SolrRequestFilter
+DEBUG - 2014-08-04 08:01:25.979; org.apache.solr.update.processor.LogUpdateProcessor; PRE_UPDATE add{,id=(null),overwrite=false} {distrib.from=http://127.0.1.1:7805/solr/collection1/&update.distrib=FROMLEADER&wt=javabin&version=2}
+DEBUG - 2014-08-04 08:01:25.980; org.eclipse.jetty.http.HttpParser; filled 5/5
+DEBUG - 2014-08-04 08:01:25.980; org.apache.solr.update.processor.LogUpdateProcessor; PRE_UPDATE FINISH {distrib.from=http://127.0.1.1:7805/solr/collection1/&update.distrib=FROMLEADER&wt=javabin&version=2}
+INFO  - 2014-08-04 08:01:25.980; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={distrib.from=http://127.0.1.1:7805/solr/collection1/&update.distrib=FROMLEADER&wt=javabin&version=2} {add=[(null)]} 0 1
+DEBUG - 2014-08-04 08:01:25.981; org.apache.solr.servlet.SolrDispatchFilter; Closing out SolrRequest: {distrib.from=http://127.0.1.1:7805/solr/collection1/&update.distrib=FROMLEADER&wt=javabin&version=2}
+DEBUG - 2014-08-04 08:01:25.981; org.eclipse.jetty.server.Server; RESPONSE /solr/collection1/update  200 handled=true
+DEBUG - 2014-08-04 08:01:25.985; org.apache.http.impl.conn.Wire;  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.985; org.apache.http.impl.conn.Wire;  << "Content-Type: application/octet-stream[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.986; org.apache.http.impl.conn.Wire;  << "Content-Length: 41[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.986; org.apache.http.impl.conn.Wire;  << "[\r][\n]"
+DEBUG - 2014-08-04 08:01:25.986; org.apache.http.impl.conn.DefaultClientConnection; Receiving response: HTTP/1.1 200 OK
+DEBUG - 2014-08-04 08:01:25.986; org.apache.http.impl.conn.DefaultClientConnection; << HTTP/1.1 200 OK
+DEBUG - 2014-08-04 08:01:25.986; org.apache.http.impl.conn.DefaultClientConnection; << Content-Type: application/octet-stream
+DEBUG - 2014-08-04 08:01:25.986; org.apache.http.impl.conn.DefaultClientConnection; << Content-Length: 41
+DEBUG - 2014-08-04 08:01:25.986; org.apache.http.impl.client.DefaultRequestDirector; Connection can be kept alive indefinitely
+DEBUG - 2014-08-04 08:01:25.987; org.apache.http.impl.conn.Wire;  << "[0x2][0xa1][0xe0].responseHeader[0xa2][0xe0]&status[0x6][0x0][0x0][0x0][0x0][0xe0]%QTimeS[0x3]"
+DEBUG - 2014-08-04 08:01:25.987; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection [id: 1][route: {}->http://127.0.1.1:7805] can be kept alive indefinitely
+DEBUG - 2014-08-04 08:01:25.987; org.apache.http.impl.conn.PoolingClientConnectionManager; Connection released: [id: 1][route: {}->http://127.0.1.1:7805][total kept alive: 1; route allocated: 1 of 100; total allocated: 1 of 10000]
+DEBUG - 2014-08-04 08:01:25.987; org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer$Runner; finished: org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer$Runner@6921dcac
+INFO  - 2014-08-04 08:01:25.988; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={} {add=[(null)]} 0 88
+DEBUG - 2014-08-04 08:01:25.989; org.apache.solr.servlet.SolrDispatchFilter; Closing out SolrRequest: {{params(),defaults(wt=xml)}}
+DEBUG - 2014-08-04 08:01:25.989; org.eclipse.jetty.server.Server; RESPONSE /solr/update  200 handled=true
+DEBUG - 2014-08-04 08:01:25.989; org.eclipse.jetty.http.HttpParser; filled -1/0
+DEBUG - 2014-08-04 08:01:25.991; org.eclipse.jetty.server.AbstractHttpConnection; closed BlockingHttpConnection@ba679e,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1
+INFO  - 2014-08-04 08:01:26.980; org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+DEBUG - 2014-08-04 08:01:26.980; org.apache.solr.update.UpdateLog; TLOG: preSoftCommit: prevMap=1678158558 new map=1817960366
+DEBUG - 2014-08-04 08:01:26.988; org.apache.solr.core.CachingDirectoryFactory; Reusing cached directory: CachedDir<<refCount=1;path=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data;done=false>>
+DEBUG - 2014-08-04 08:01:26.992; org.apache.solr.core.CachingDirectoryFactory; Releasing directory: /vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data 0 false
+INFO  - 2014-08-04 08:01:27.053; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@19e142a5[collection1] main
+DEBUG - 2014-08-04 08:01:27.053; org.apache.solr.core.CachingDirectoryFactory; incRef'ed: CachedDir<<refCount=3;path=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index.20140803144538793;done=false>>
+INFO  - 2014-08-04 08:01:27.054; org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+DEBUG - 2014-08-04 08:01:27.054; org.apache.solr.search.SolrIndexSearcher; autowarming Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)} from Searcher@36633b88[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	fieldValueCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.055; org.apache.solr.search.SolrIndexSearcher; autowarming result for Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	fieldValueCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.055; org.apache.solr.search.SolrIndexSearcher; autowarming Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)} from Searcher@36633b88[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	filterCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.055; org.apache.solr.search.SolrIndexSearcher; autowarming result for Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	filterCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.056; org.apache.solr.search.SolrIndexSearcher; autowarming Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)} from Searcher@36633b88[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	queryResultCache{lookups=2,hits=1,hitratio=0.5,inserts=4,evictions=0,size=4,warmupTime=1,cumulative_lookups=5,cumulative_hits=2,cumulative_hitratio=0.4,cumulative_inserts=3,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.057; org.apache.solr.search.SolrIndexSearcher; autowarming result for Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	queryResultCache{lookups=0,hits=0,hitratio=0.0,inserts=4,evictions=0,size=4,warmupTime=1,cumulative_lookups=5,cumulative_hits=2,cumulative_hitratio=0.4,cumulative_inserts=3,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.058; org.apache.solr.search.SolrIndexSearcher; autowarming Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)} from Searcher@36633b88[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	documentCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=11,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=11,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.058; org.apache.solr.search.SolrIndexSearcher; autowarming result for Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	documentCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=11,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=11,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.058; org.apache.solr.search.SolrIndexSearcher; autowarming Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)} from Searcher@36633b88[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	perSegFilter{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.059; org.apache.solr.search.SolrIndexSearcher; autowarming result for Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+	perSegFilter{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+INFO  - 2014-08-04 08:01:27.059; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+INFO  - 2014-08-04 08:01:27.059; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2014-08-04 08:01:27.064; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@19e142a5[collection1] main{StandardDirectoryReader(segments_7:47 _i(4.7):C126 _j(4.7):C1 _k(4.7):C1 _l(4.7):C1 _m(4.7):C1)}
+DEBUG - 2014-08-04 08:01:27.065; org.apache.solr.search.SolrIndexSearcher; Closing Searcher@36633b88[collection1] main
+	fieldValueCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+	filterCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+	queryResultCache{lookups=2,hits=1,hitratio=0.5,inserts=4,evictions=0,size=4,warmupTime=1,cumulative_lookups=5,cumulative_hits=2,cumulative_hitratio=0.4,cumulative_inserts=3,cumulative_evictions=0}
+	documentCache{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=11,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=11,cumulative_evictions=0}
+	perSegFilter{lookups=0,hits=0,hitratio=0.0,inserts=0,evictions=0,size=0,warmupTime=0,cumulative_lookups=0,cumulative_hits=0,cumulative_hitratio=0.0,cumulative_inserts=0,cumulative_evictions=0}
+DEBUG - 2014-08-04 08:01:27.066; org.apache.solr.core.CachingDirectoryFactory; Releasing directory: /vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index.20140803144538793 2 false

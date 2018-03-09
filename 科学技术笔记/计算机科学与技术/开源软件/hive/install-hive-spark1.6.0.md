@@ -1,0 +1,1 @@
+ln -s ~/Servers/spark/spark-1.6.0-bin-hadoop2.6/lib/spark-assembly-1.6.0-hadoop2.6.0.jar spark-assembly-1.6.0-hadoop2.6.0.jar

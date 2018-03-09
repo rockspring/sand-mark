@@ -1,0 +1,726 @@
+INFO  - 2014-07-23 11:01:34.262; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-07-23 11:01:34.349; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-07-23 11:01:34.353; org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx
+INFO  - 2014-07-23 11:01:34.365; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx/'
+INFO  - 2014-07-23 11:01:35.264; org.apache.solr.core.ConfigSolr; Loading container configuration from /vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx/solr.xml
+DEBUG - 2014-07-23 11:01:35.484; org.apache.solr.core.Config; null missing optional solr/cores
+DEBUG - 2014-07-23 11:01:35.491; org.apache.solr.core.Config; null missing optional solr/@coreLoadThreads
+DEBUG - 2014-07-23 11:01:35.496; org.apache.solr.core.Config; null missing optional solr/@persistent
+DEBUG - 2014-07-23 11:01:35.502; org.apache.solr.core.Config; null missing optional solr/@sharedLib
+DEBUG - 2014-07-23 11:01:35.508; org.apache.solr.core.Config; null missing optional solr/@zkHost
+DEBUG - 2014-07-23 11:01:35.514; org.apache.solr.core.Config; null missing optional solr/logging/@class
+DEBUG - 2014-07-23 11:01:35.532; org.apache.solr.core.Config; null missing optional solr/logging/@enabled
+DEBUG - 2014-07-23 11:01:35.538; org.apache.solr.core.Config; null missing optional solr/logging/watcher/@size
+DEBUG - 2014-07-23 11:01:35.545; org.apache.solr.core.Config; null missing optional solr/logging/watcher/@threshold
+DEBUG - 2014-07-23 11:01:35.551; org.apache.solr.core.Config; null missing optional solr/cores/@adminHandler
+DEBUG - 2014-07-23 11:01:35.556; org.apache.solr.core.Config; null missing optional solr/cores/@distribUpdateConnTimeout
+DEBUG - 2014-07-23 11:01:35.561; org.apache.solr.core.Config; null missing optional solr/cores/@distribUpdateSoTimeout
+DEBUG - 2014-07-23 11:01:35.573; org.apache.solr.core.Config; null missing optional solr/cores/@host
+DEBUG - 2014-07-23 11:01:35.585; org.apache.solr.core.Config; null missing optional solr/cores/@hostContext
+DEBUG - 2014-07-23 11:01:35.592; org.apache.solr.core.Config; null missing optional solr/cores/@hostPort
+DEBUG - 2014-07-23 11:01:35.598; org.apache.solr.core.Config; null missing optional solr/cores/@leaderVoteWait
+DEBUG - 2014-07-23 11:01:35.604; org.apache.solr.core.Config; null missing optional solr/cores/@leaderConflictResolveWait
+DEBUG - 2014-07-23 11:01:35.610; org.apache.solr.core.Config; null missing optional solr/cores/@genericCoreNodeNames
+DEBUG - 2014-07-23 11:01:35.623; org.apache.solr.core.Config; null missing optional solr/cores/@managementPath
+DEBUG - 2014-07-23 11:01:35.634; org.apache.solr.core.Config; null missing optional solr/cores/@shareSchema
+DEBUG - 2014-07-23 11:01:35.640; org.apache.solr.core.Config; null missing optional solr/cores/@transientCacheSize
+DEBUG - 2014-07-23 11:01:35.645; org.apache.solr.core.Config; null missing optional solr/cores/@zkClientTimeout
+DEBUG - 2014-07-23 11:01:35.653; org.apache.solr.core.Config; null missing optional solr/cores/@defaultCoreName
+DEBUG - 2014-07-23 11:01:35.659; org.apache.solr.core.Config; null missing optional solr/@persistent
+DEBUG - 2014-07-23 11:01:35.665; org.apache.solr.core.Config; null missing optional solr/cores/@adminPath
+DEBUG - 2014-07-23 11:01:35.683; org.apache.solr.core.Config; null missing optional solr/str[@name='adminHandler']
+DEBUG - 2014-07-23 11:01:35.689; org.apache.solr.core.Config; null missing optional solr/str[@name='collectionsHandler']
+DEBUG - 2014-07-23 11:01:35.694; org.apache.solr.core.Config; null missing optional solr/str[@name='infoHandler']
+DEBUG - 2014-07-23 11:01:35.699; org.apache.solr.core.Config; null missing optional solr/int[@name='coreLoadThreads']
+DEBUG - 2014-07-23 11:01:35.704; org.apache.solr.core.Config; null missing optional solr/str[@name='coreRootDirectory']
+DEBUG - 2014-07-23 11:01:35.710; org.apache.solr.core.Config; null missing optional solr/solrcloud/int[@name='distribUpdateConnTimeout']
+DEBUG - 2014-07-23 11:01:35.720; org.apache.solr.core.Config; null missing optional solr/solrcloud/int[@name='distribUpdateSoTimeout']
+DEBUG - 2014-07-23 11:01:35.730; org.apache.solr.core.Config; null missing optional solr/solrcloud/int[@name='maxUpdateConnections']
+DEBUG - 2014-07-23 11:01:35.738; org.apache.solr.core.Config; null missing optional solr/solrcloud/int[@name='maxUpdateConnectionsPerHost']
+DEBUG - 2014-07-23 11:01:35.746; org.apache.solr.core.Config; null solr/solrcloud/str[@name='host']=${host:}
+DEBUG - 2014-07-23 11:01:35.755; org.apache.solr.core.Config; null solr/solrcloud/str[@name='hostContext']=${hostContext:solr}
+DEBUG - 2014-07-23 11:01:35.760; org.apache.solr.core.Config; null solr/solrcloud/int[@name='hostPort']=${jetty.port:8983}
+DEBUG - 2014-07-23 11:01:35.768; org.apache.solr.core.Config; null missing optional solr/solrcloud/int[@name='leaderVoteWait']
+DEBUG - 2014-07-23 11:01:35.782; org.apache.solr.core.Config; null missing optional solr/solrcloud/int[@name='leaderConflictResolveWait']
+DEBUG - 2014-07-23 11:01:35.792; org.apache.solr.core.Config; null solr/solrcloud/bool[@name='genericCoreNodeNames']=${genericCoreNodeNames:true}
+DEBUG - 2014-07-23 11:01:35.798; org.apache.solr.core.Config; null missing optional solr/str[@name='managementPath']
+DEBUG - 2014-07-23 11:01:35.806; org.apache.solr.core.Config; null missing optional solr/str[@name='sharedLib']
+DEBUG - 2014-07-23 11:01:35.811; org.apache.solr.core.Config; null missing optional solr/str[@name='shareSchema']
+DEBUG - 2014-07-23 11:01:35.823; org.apache.solr.core.Config; null missing optional solr/int[@name='transientCacheSize']
+DEBUG - 2014-07-23 11:01:35.840; org.apache.solr.core.Config; null solr/solrcloud/int[@name='zkClientTimeout']=${zkClientTimeout:30000}
+DEBUG - 2014-07-23 11:01:35.848; org.apache.solr.core.Config; null missing optional solr/solrcloud/str[@name='zkHost']
+DEBUG - 2014-07-23 11:01:35.855; org.apache.solr.core.Config; null missing optional solr/logging/str[@name='class']
+DEBUG - 2014-07-23 11:01:35.861; org.apache.solr.core.Config; null missing optional solr/logging/str[@name='enabled']
+DEBUG - 2014-07-23 11:01:35.876; org.apache.solr.core.Config; null missing optional solr/logging/watcher/int[@name='size']
+DEBUG - 2014-07-23 11:01:35.888; org.apache.solr.core.Config; null missing optional solr/logging/watcher/int[@name='threshold']
+INFO  - 2014-07-23 11:01:35.895; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx
+INFO  - 2014-07-23 11:01:35.954; org.apache.solr.core.CoreContainer; New CoreContainer 278604369
+INFO  - 2014-07-23 11:01:35.954; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx/]
+INFO  - 2014-07-23 11:01:36.049; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-07-23 11:01:36.050; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-07-23 11:01:36.065; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-07-23 11:01:36.066; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-07-23 11:01:36.068; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-07-23 11:01:36.071; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-07-23 11:01:36.072; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-07-23 11:01:36.074; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-07-23 11:01:36.078; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+DEBUG - 2014-07-23 11:01:36.084; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+DEBUG - 2014-07-23 11:01:36.345; org.apache.solr.client.solrj.impl.HttpClientUtil; Creating new http client, config:socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2014-07-23 11:01:36.353; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-07-23 11:01:36.358; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-07-23 11:01:36.362; org.apache.solr.core.CoreContainer; Host Name:
+INFO  - 2014-07-23 11:01:36.362; org.apache.solr.core.ZkContainer; Zookeeper client=localhost:10161
+INFO  - 2014-07-23 11:01:36.545; org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+INFO  - 2014-07-23 11:01:36.630; org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@66200db9 name:ZooKeeperConnection Watcher:localhost:10161 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2014-07-23 11:01:36.633; org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2014-07-23 11:01:36.739; org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper...
+WARN  - 2014-07-23 11:02:36.872; org.apache.solr.cloud.ZkController; Timed out waiting to see all nodes published as DOWN in our cluster state.
+INFO  - 2014-07-23 11:02:36.875; org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/127.0.1.1:7804_solr
+INFO  - 2014-07-23 11:02:36.882; org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/127.0.1.1:7804_solr
+INFO  - 2014-07-23 11:02:36.893; org.apache.solr.common.cloud.ZkStateReader$3; Updating live nodes... (1)
+INFO  - 2014-07-23 11:02:36.910; org.apache.solr.cloud.OverseerElectionContext; I am going to be the leader 127.0.1.1:7804_solr
+INFO  - 2014-07-23 11:02:36.910; org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect/leader
+INFO  - 2014-07-23 11:02:36.917; org.apache.solr.cloud.Overseer; Overseer (id=92143311968337944-127.0.1.1:7804_solr-n_0000000009) starting
+INFO  - 2014-07-23 11:02:36.979; org.apache.solr.cloud.OverseerCollectionProcessor; Process current queue of collection creations
+INFO  - 2014-07-23 11:02:36.986; org.apache.solr.cloud.OverseerCollectionProcessor; prioritizing overseer nodes
+INFO  - 2014-07-23 11:02:36.987; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Starting to work on the main queue
+INFO  - 2014-07-23 11:02:37.007; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper...
+INFO  - 2014-07-23 11:02:37.014; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "state":"down",
+  "base_url":"http://127.0.1.1:7804/solr",
+  "core":"collection1",
+  "roles":null,
+  "node_name":"127.0.1.1:7804_solr",
+  "shard":null,
+  "collection":"collection1",
+  "core_node_name":"core_node1"}
+INFO  - 2014-07-23 11:02:37.014; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard1 is already registered
+INFO  - 2014-07-23 11:02:37.033; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:37.042; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+INFO  - 2014-07-23 11:02:37.140; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx
+INFO  - 2014-07-23 11:02:37.201; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in /vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx/collection1/
+INFO  - 2014-07-23 11:02:37.209; org.apache.solr.core.CorePropertiesLocator; Found 1 core definitions
+INFO  - 2014-07-23 11:02:37.213; org.apache.solr.cloud.ZkController; publishing core=collection1 state=down collection=collection1
+INFO  - 2014-07-23 11:02:37.213; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2014-07-23 11:02:37.216; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:37.217; org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2014-07-23 11:02:37.217; org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for collection1
+INFO  - 2014-07-23 11:02:37.218; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using instanceDir: /vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx/collection1
+INFO  - 2014-07-23 11:02:37.220; org.apache.solr.cloud.ZkController; Check for collection zkNode:collection1
+INFO  - 2014-07-23 11:02:37.223; org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2014-07-23 11:02:37.223; org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/collection1
+INFO  - 2014-07-23 11:02:37.224; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper...
+INFO  - 2014-07-23 11:02:37.227; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "state":"down",
+  "base_url":"http://127.0.1.1:7804/solr",
+  "core":"collection1",
+  "roles":null,
+  "node_name":"127.0.1.1:7804_solr",
+  "shard":null,
+  "collection":"collection1",
+  "numShards":null,
+  "core_node_name":null}
+INFO  - 2014-07-23 11:02:37.227; org.apache.solr.cloud.Overseer$ClusterStateUpdater; node=core_node1 is already registered
+INFO  - 2014-07-23 11:02:37.228; org.apache.solr.cloud.Overseer$ClusterStateUpdater; shard=shard1 is already registered
+INFO  - 2014-07-23 11:02:37.229; org.apache.solr.common.cloud.ZkStateReader; path=/collections/collection1 configName=myconf specified config exists in ZooKeeper
+INFO  - 2014-07-23 11:02:37.230; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx/collection1/'
+INFO  - 2014-07-23 11:02:37.243; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:37.353; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+INFO  - 2014-07-23 11:02:37.388; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2014-07-23 11:02:37.409; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2014-07-23 11:02:37.413; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2014-07-23 11:02:37.417; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/asm-3.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.420; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+INFO  - 2014-07-23 11:02:37.422; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2014-07-23 11:02:37.424; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2014-07-23 11:02:37.426; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.429; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+INFO  - 2014-07-23 11:02:37.432; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.434; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/fontbox-1.8.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.438; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/icu4j-52.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.440; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.442; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.445; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/jempbox-1.8.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.448; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2014-07-23 11:02:37.450; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2014-07-23 11:02:37.453; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+INFO  - 2014-07-23 11:02:37.455; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/pdfbox-1.8.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.460; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/poi-3.9.jar' to classloader
+INFO  - 2014-07-23 11:02:37.465; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/poi-ooxml-3.9.jar' to classloader
+INFO  - 2014-07-23 11:02:37.467; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/poi-ooxml-schemas-3.9.jar' to classloader
+INFO  - 2014-07-23 11:02:37.469; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/poi-scratchpad-3.9.jar' to classloader
+INFO  - 2014-07-23 11:02:37.471; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/rome-0.9.jar' to classloader
+INFO  - 2014-07-23 11:02:37.474; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.476; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/tika-core-1.4.jar' to classloader
+INFO  - 2014-07-23 11:02:37.478; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/tika-parsers-1.4.jar' to classloader
+INFO  - 2014-07-23 11:02:37.480; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/tika-xmp-1.4.jar' to classloader
+INFO  - 2014-07-23 11:02:37.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.485; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.488; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.491; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.494; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2014-07-23 11:02:37.497; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/extraction/lib/xz-1.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.513; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/dist/solr-cell-4.7.2.jar' to classloader
+INFO  - 2014-07-23 11:02:37.527; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/clustering/lib/attributes-binder-1.2.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.529; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/clustering/lib/carrot2-mini-3.8.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.531; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2014-07-23 11:02:37.533; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2014-07-23 11:02:37.537; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2014-07-23 11:02:37.540; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.542; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2014-07-23 11:02:37.546; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2014-07-23 11:02:37.560; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/dist/solr-clustering-4.7.2.jar' to classloader
+INFO  - 2014-07-23 11:02:37.581; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2014-07-23 11:02:37.584; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2014-07-23 11:02:37.595; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/dist/solr-langid-4.7.2.jar' to classloader
+INFO  - 2014-07-23 11:02:37.607; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.609; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2014-07-23 11:02:37.611; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2014-07-23 11:02:37.613; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2014-07-23 11:02:37.628; org.apache.solr.core.SolrResourceLoader; Adding 'file:/vagrant/projects/work/search-cloud/cloud/lib/7700-47/dist/solr-velocity-4.7.2.jar' to classloader
+DEBUG - 2014-07-23 11:02:38.037; org.apache.solr.core.Config; solrconfig.xml luceneMatchVersion=4.7
+DEBUG - 2014-07-23 11:02:38.053; org.apache.solr.core.Config; solrconfig.xml missing optional indexDefaults
+DEBUG - 2014-07-23 11:02:38.073; org.apache.solr.core.Config; solrconfig.xml missing optional mainIndex
+DEBUG - 2014-07-23 11:02:38.100; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/nrtMode
+DEBUG - 2014-07-23 11:02:38.150; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/mergeScheduler
+DEBUG - 2014-07-23 11:02:38.162; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/mergePolicy
+DEBUG - 2014-07-23 11:02:38.175; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/luceneAutoCommit
+DEBUG - 2014-07-23 11:02:38.188; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/useCompoundFile
+DEBUG - 2014-07-23 11:02:38.196; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/maxBufferedDocs
+DEBUG - 2014-07-23 11:02:38.208; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/maxMergeDocs
+DEBUG - 2014-07-23 11:02:38.221; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/maxIndexingThreads
+DEBUG - 2014-07-23 11:02:38.237; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/mergeFactor
+DEBUG - 2014-07-23 11:02:38.246; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/ramBufferSizeMB
+DEBUG - 2014-07-23 11:02:38.253; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/writeLockTimeout
+DEBUG - 2014-07-23 11:02:38.265; org.apache.solr.core.Config; solrconfig.xml indexConfig/lockType=native
+DEBUG - 2014-07-23 11:02:38.304; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/termIndexInterval
+DEBUG - 2014-07-23 11:02:38.317; org.apache.solr.core.Config; solrconfig.xml indexConfig/infoStream=true
+DEBUG - 2014-07-23 11:02:38.323; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/infoStream/@file
+INFO  - 2014-07-23 11:02:38.324; org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+DEBUG - 2014-07-23 11:02:38.344; org.apache.solr.core.Config; solrconfig.xml query/maxBooleanClauses=1024
+INFO  - 2014-07-23 11:02:38.345; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_47
+DEBUG - 2014-07-23 11:02:38.353; org.apache.solr.core.Config; solrconfig.xml missing optional query/boolTofilterOptimizer
+DEBUG - 2014-07-23 11:02:38.366; org.apache.solr.core.Config; solrconfig.xml missing optional query/HashDocSet
+DEBUG - 2014-07-23 11:02:38.377; org.apache.solr.core.Config; solrconfig.xml missing optional query/useFilterForSortedQuery
+DEBUG - 2014-07-23 11:02:38.387; org.apache.solr.core.Config; solrconfig.xml query/queryResultWindowSize=20
+DEBUG - 2014-07-23 11:02:38.393; org.apache.solr.core.Config; solrconfig.xml query/queryResultMaxDocsCached=200
+DEBUG - 2014-07-23 11:02:38.401; org.apache.solr.core.Config; solrconfig.xml query/enableLazyFieldLoading=true
+DEBUG - 2014-07-23 11:02:38.490; org.apache.solr.core.Config; solrconfig.xml missing optional indexConfig/unlockOnStartup
+DEBUG - 2014-07-23 11:02:38.502; org.apache.solr.core.Config; solrconfig.xml query/useColdSearcher=false
+DEBUG - 2014-07-23 11:02:38.519; org.apache.solr.core.Config; solrconfig.xml dataDir=
+DEBUG - 2014-07-23 11:02:38.642; org.apache.solr.core.Config; solrconfig.xml missing optional //HashDocSet/@loadFactor
+DEBUG - 2014-07-23 11:02:38.652; org.apache.solr.core.Config; solrconfig.xml missing optional //HashDocSet/@maxSize
+DEBUG - 2014-07-23 11:02:38.667; org.apache.solr.core.Config; solrconfig.xml requestDispatcher/httpCaching/@never304=true
+DEBUG - 2014-07-23 11:02:38.672; org.apache.solr.core.Config; solrconfig.xml missing optional requestDispatcher/httpCaching/@etagSeed
+DEBUG - 2014-07-23 11:02:38.677; org.apache.solr.core.Config; solrconfig.xml missing optional requestDispatcher/httpCaching/@lastModFrom
+DEBUG - 2014-07-23 11:02:38.684; org.apache.solr.core.Config; solrconfig.xml missing optional requestDispatcher/httpCaching/cacheControl
+DEBUG - 2014-07-23 11:02:38.701; org.apache.solr.core.Config; solrconfig.xml missing optional jmx/@agentId
+DEBUG - 2014-07-23 11:02:38.707; org.apache.solr.core.Config; solrconfig.xml missing optional jmx/@serviceUrl
+DEBUG - 2014-07-23 11:02:38.719; org.apache.solr.core.Config; solrconfig.xml missing optional jmx/@rootName
+DEBUG - 2014-07-23 11:02:38.725; org.apache.solr.core.Config; solrconfig.xml query/maxWarmingSearchers=2
+DEBUG - 2014-07-23 11:02:38.854; org.apache.solr.core.Config; solrconfig.xml updateHandler/@class=solr.DirectUpdateHandler2
+DEBUG - 2014-07-23 11:02:38.865; org.apache.solr.core.Config; solrconfig.xml updateHandler/autoCommit/maxDocs=20000
+DEBUG - 2014-07-23 11:02:38.872; org.apache.solr.core.Config; solrconfig.xml updateHandler/autoCommit/maxTime=180000
+DEBUG - 2014-07-23 11:02:38.877; org.apache.solr.core.Config; solrconfig.xml updateHandler/autoCommit/openSearcher=true
+DEBUG - 2014-07-23 11:02:38.883; org.apache.solr.core.Config; solrconfig.xml missing optional updateHandler/commitIntervalLowerBound
+DEBUG - 2014-07-23 11:02:38.891; org.apache.solr.core.Config; solrconfig.xml missing optional updateHandler/autoSoftCommit/maxDocs
+DEBUG - 2014-07-23 11:02:38.896; org.apache.solr.core.Config; solrconfig.xml updateHandler/autoSoftCommit/maxTime=1000
+DEBUG - 2014-07-23 11:02:38.902; org.apache.solr.core.Config; solrconfig.xml missing optional updateHandler/commitWithin/softCommit
+DEBUG - 2014-07-23 11:02:38.907; org.apache.solr.core.Config; solrconfig.xml requestDispatcher/requestParsers/@multipartUploadLimitInKB=2048000
+DEBUG - 2014-07-23 11:02:38.913; org.apache.solr.core.Config; solrconfig.xml requestDispatcher/requestParsers/@formdataUploadLimitInKB=2048
+DEBUG - 2014-07-23 11:02:38.919; org.apache.solr.core.Config; solrconfig.xml requestDispatcher/requestParsers/@enableRemoteStreaming=true
+DEBUG - 2014-07-23 11:02:38.928; org.apache.solr.core.Config; solrconfig.xml requestDispatcher/@handleSelect=false
+DEBUG - 2014-07-23 11:02:38.934; org.apache.solr.core.Config; solrconfig.xml requestDispatcher/requestParsers/@addHttpRequestToContext=false
+INFO  - 2014-07-23 11:02:38.980; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-07-23 11:02:39.007; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-07-23 11:02:39.136; org.apache.solr.schema.IndexSchema; [collection1] Schema name=example
+DEBUG - 2014-07-23 11:02:39.149; org.apache.solr.core.Config; schema /schema/@version=1.5
+WARN  - 2014-07-23 11:02:39.262; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableIntField]. Please consult documentation how to replace it accordingly.
+DEBUG - 2014-07-23 11:02:39.298; org.apache.solr.util.plugin.AbstractPluginLoader; created sint: org.apache.solr.schema.SortableIntField
+WARN  - 2014-07-23 11:02:39.307; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableLongField]. Please consult documentation how to replace it accordingly.
+DEBUG - 2014-07-23 11:02:39.328; org.apache.solr.util.plugin.AbstractPluginLoader; created slong: org.apache.solr.schema.SortableLongField
+WARN  - 2014-07-23 11:02:39.338; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableFloatField]. Please consult documentation how to replace it accordingly.
+DEBUG - 2014-07-23 11:02:39.363; org.apache.solr.util.plugin.AbstractPluginLoader; created sfloat: org.apache.solr.schema.SortableFloatField
+WARN  - 2014-07-23 11:02:39.371; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SortableDoubleField]. Please consult documentation how to replace it accordingly.
+DEBUG - 2014-07-23 11:02:39.415; org.apache.solr.util.plugin.AbstractPluginLoader; created sdouble: org.apache.solr.schema.SortableDoubleField
+DEBUG - 2014-07-23 11:02:39.450; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:39.453; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardFilterFactory
+DEBUG - 2014-07-23 11:02:39.456; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:39.471; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.synonym.SynonymFilterFactory
+DEBUG - 2014-07-23 11:02:39.473; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:39.475; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.WordDelimiterFilterFactory
+DEBUG - 2014-07-23 11:02:39.477; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilterFactory
+DEBUG - 2014-07-23 11:02:39.505; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:39.506; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardFilterFactory
+DEBUG - 2014-07-23 11:02:39.508; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:39.510; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:39.512; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.WordDelimiterFilterFactory
+DEBUG - 2014-07-23 11:02:39.514; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilterFactory
+DEBUG - 2014-07-23 11:02:39.523; org.apache.solr.util.plugin.AbstractPluginLoader; created text: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:39.550; org.apache.solr.util.plugin.AbstractPluginLoader; created string: org.apache.solr.schema.StrField
+DEBUG - 2014-07-23 11:02:39.596; org.apache.solr.util.plugin.AbstractPluginLoader; created boolean: org.apache.solr.schema.BoolField
+DEBUG - 2014-07-23 11:02:39.661; org.apache.solr.util.plugin.AbstractPluginLoader; created int: org.apache.solr.schema.TrieIntField
+DEBUG - 2014-07-23 11:02:39.686; org.apache.solr.util.plugin.AbstractPluginLoader; created float: org.apache.solr.schema.TrieFloatField
+DEBUG - 2014-07-23 11:02:39.708; org.apache.solr.util.plugin.AbstractPluginLoader; created long: org.apache.solr.schema.TrieLongField
+DEBUG - 2014-07-23 11:02:39.732; org.apache.solr.util.plugin.AbstractPluginLoader; created double: org.apache.solr.schema.TrieDoubleField
+DEBUG - 2014-07-23 11:02:39.757; org.apache.solr.util.plugin.AbstractPluginLoader; created tint: org.apache.solr.schema.TrieIntField
+DEBUG - 2014-07-23 11:02:39.774; org.apache.solr.util.plugin.AbstractPluginLoader; created tfloat: org.apache.solr.schema.TrieFloatField
+DEBUG - 2014-07-23 11:02:39.791; org.apache.solr.util.plugin.AbstractPluginLoader; created tlong: org.apache.solr.schema.TrieLongField
+DEBUG - 2014-07-23 11:02:39.818; org.apache.solr.util.plugin.AbstractPluginLoader; created tdouble: org.apache.solr.schema.TrieDoubleField
+DEBUG - 2014-07-23 11:02:39.855; org.apache.solr.util.plugin.AbstractPluginLoader; created date: org.apache.solr.schema.TrieDateField
+DEBUG - 2014-07-23 11:02:39.879; org.apache.solr.util.plugin.AbstractPluginLoader; created tdate: org.apache.solr.schema.TrieDateField
+DEBUG - 2014-07-23 11:02:39.913; org.apache.solr.util.plugin.AbstractPluginLoader; created binary: org.apache.solr.schema.BinaryField
+DEBUG - 2014-07-23 11:02:39.941; org.apache.solr.util.plugin.AbstractPluginLoader; created pint: org.apache.solr.schema.IntField
+DEBUG - 2014-07-23 11:02:39.983; org.apache.solr.util.plugin.AbstractPluginLoader; created plong: org.apache.solr.schema.LongField
+DEBUG - 2014-07-23 11:02:40.013; org.apache.solr.util.plugin.AbstractPluginLoader; created pfloat: org.apache.solr.schema.FloatField
+DEBUG - 2014-07-23 11:02:40.035; org.apache.solr.util.plugin.AbstractPluginLoader; created pdouble: org.apache.solr.schema.DoubleField
+DEBUG - 2014-07-23 11:02:40.064; org.apache.solr.util.plugin.AbstractPluginLoader; created pdate: org.apache.solr.schema.DateField
+DEBUG - 2014-07-23 11:02:40.099; org.apache.solr.util.plugin.AbstractPluginLoader; created random: org.apache.solr.schema.RandomSortField
+DEBUG - 2014-07-23 11:02:40.136; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.WhitespaceTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.141; org.apache.solr.util.plugin.AbstractPluginLoader; created text_ws: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.165; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.166; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.167; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.synonym.SynonymFilterFactory
+DEBUG - 2014-07-23 11:02:40.167; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.187; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.188; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.188; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.193; org.apache.solr.util.plugin.AbstractPluginLoader; created text_general: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.214; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.216; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.synonym.SynonymFilterFactory
+DEBUG - 2014-07-23 11:02:40.216; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.217; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.220; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.en.EnglishPossessiveFilterFactory
+DEBUG - 2014-07-23 11:02:40.224; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.KeywordMarkerFilterFactory
+DEBUG - 2014-07-23 11:02:40.228; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.en.PorterStemFilterFactory
+DEBUG - 2014-07-23 11:02:40.268; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.269; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.269; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.270; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.en.EnglishPossessiveFilterFactory
+DEBUG - 2014-07-23 11:02:40.271; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.KeywordMarkerFilterFactory
+DEBUG - 2014-07-23 11:02:40.271; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.en.PorterStemFilterFactory
+DEBUG - 2014-07-23 11:02:40.277; org.apache.solr.util.plugin.AbstractPluginLoader; created text_en: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.300; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.WhitespaceTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.301; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.synonym.SynonymFilterFactory
+DEBUG - 2014-07-23 11:02:40.302; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.303; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.WordDelimiterFilterFactory
+DEBUG - 2014-07-23 11:02:40.303; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.304; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.KeywordMarkerFilterFactory
+DEBUG - 2014-07-23 11:02:40.304; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.en.PorterStemFilterFactory
+DEBUG - 2014-07-23 11:02:40.332; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.WhitespaceTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.333; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.333; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.WordDelimiterFilterFactory
+DEBUG - 2014-07-23 11:02:40.334; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.334; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.KeywordMarkerFilterFactory
+DEBUG - 2014-07-23 11:02:40.335; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.en.PorterStemFilterFactory
+DEBUG - 2014-07-23 11:02:40.342; org.apache.solr.util.plugin.AbstractPluginLoader; created text_en_splitting: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.387; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.WhitespaceTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.388; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.synonym.SynonymFilterFactory
+DEBUG - 2014-07-23 11:02:40.388; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.389; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.WordDelimiterFilterFactory
+DEBUG - 2014-07-23 11:02:40.389; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.390; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.KeywordMarkerFilterFactory
+DEBUG - 2014-07-23 11:02:40.392; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.en.EnglishMinimalStemFilterFactory
+DEBUG - 2014-07-23 11:02:40.392; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilterFactory
+DEBUG - 2014-07-23 11:02:40.397; org.apache.solr.util.plugin.AbstractPluginLoader; created text_en_splitting_tight: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.414; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.415; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.synonym.SynonymFilterFactory
+DEBUG - 2014-07-23 11:02:40.415; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.416; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.439; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.440; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:40.440; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.447; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.solr.analysis.ReversedWildcardFilterFactory
+DEBUG - 2014-07-23 11:02:40.452; org.apache.solr.util.plugin.AbstractPluginLoader; created text_general_rev: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.484; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.KeywordTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.484; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.486; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.TrimFilterFactory
+DEBUG - 2014-07-23 11:02:40.488; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.pattern.PatternReplaceFilterFactory
+DEBUG - 2014-07-23 11:02:40.492; org.apache.solr.util.plugin.AbstractPluginLoader; created alphaOnlySort: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.520; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.526; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.phonetic.DoubleMetaphoneFilterFactory
+DEBUG - 2014-07-23 11:02:40.531; org.apache.solr.util.plugin.AbstractPluginLoader; created phonetic: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.563; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.WhitespaceTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.566; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.payloads.DelimitedPayloadTokenFilterFactory
+DEBUG - 2014-07-23 11:02:40.571; org.apache.solr.util.plugin.AbstractPluginLoader; created payloads: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.598; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.KeywordTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.598; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:40.602; org.apache.solr.util.plugin.AbstractPluginLoader; created lowercase: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.637; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.KeywordTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.674; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.path.PathHierarchyTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.679; org.apache.solr.util.plugin.AbstractPluginLoader; created descendent_path: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.700; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.path.PathHierarchyTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.736; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.KeywordTokenizerFactory
+DEBUG - 2014-07-23 11:02:40.746; org.apache.solr.util.plugin.AbstractPluginLoader; created ancestor_path: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:40.778; org.apache.solr.util.plugin.AbstractPluginLoader; created ignored: org.apache.solr.schema.StrField
+DEBUG - 2014-07-23 11:02:40.813; org.apache.solr.util.plugin.AbstractPluginLoader; created point: org.apache.solr.schema.PointType
+DEBUG - 2014-07-23 11:02:40.847; org.apache.solr.util.plugin.AbstractPluginLoader; created location: org.apache.solr.schema.LatLonType
+DEBUG - 2014-07-23 11:02:41.030; org.apache.solr.util.plugin.AbstractPluginLoader; created location_rpt: org.apache.solr.schema.SpatialRecursivePrefixTreeFieldType
+DEBUG - 2014-07-23 11:02:41.078; org.apache.solr.util.plugin.AbstractPluginLoader; created currency: org.apache.solr.schema.CurrencyField
+DEBUG - 2014-07-23 11:02:41.122; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.122; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.123; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.125; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ar.ArabicNormalizationFilterFactory
+DEBUG - 2014-07-23 11:02:41.127; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ar.ArabicStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.132; org.apache.solr.util.plugin.AbstractPluginLoader; created text_ar: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.189; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.190; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.191; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.193; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.bg.BulgarianStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.198; org.apache.solr.util.plugin.AbstractPluginLoader; created text_bg: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.232; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.234; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.util.ElisionFilterFactory
+DEBUG - 2014-07-23 11:02:41.236; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.238; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.243; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:41.250; org.apache.solr.util.plugin.AbstractPluginLoader; created text_ca: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.284; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.285; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.cjk.CJKWidthFilterFactory
+DEBUG - 2014-07-23 11:02:41.286; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.288; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.cjk.CJKBigramFilterFactory
+DEBUG - 2014-07-23 11:02:41.293; org.apache.solr.util.plugin.AbstractPluginLoader; created text_cjk: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.318; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.320; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ckb.SoraniNormalizationFilterFactory
+DEBUG - 2014-07-23 11:02:41.320; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.321; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.326; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ckb.SoraniStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.331; org.apache.solr.util.plugin.AbstractPluginLoader; created text_ckb: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.365; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.365; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.366; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.368; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.cz.CzechStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.373; org.apache.solr.util.plugin.AbstractPluginLoader; created text_cz: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.398; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.398; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.399; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.399; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:41.405; org.apache.solr.util.plugin.AbstractPluginLoader; created text_da: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.446; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.447; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.448; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.450; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.de.GermanNormalizationFilterFactory
+DEBUG - 2014-07-23 11:02:41.452; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.de.GermanLightStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.459; org.apache.solr.util.plugin.AbstractPluginLoader; created text_de: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.513; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.519; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.el.GreekLowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.520; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.522; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.el.GreekStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.528; org.apache.solr.util.plugin.AbstractPluginLoader; created text_el: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.588; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.588; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.589; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.590; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.es.SpanishLightStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.596; org.apache.solr.util.plugin.AbstractPluginLoader; created text_es: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.628; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.629; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.629; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.630; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:41.634; org.apache.solr.util.plugin.AbstractPluginLoader; created text_eu: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.674; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.fa.PersianCharFilterFactory
+DEBUG - 2014-07-23 11:02:41.675; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.675; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.676; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ar.ArabicNormalizationFilterFactory
+DEBUG - 2014-07-23 11:02:41.678; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.fa.PersianNormalizationFilterFactory
+DEBUG - 2014-07-23 11:02:41.678; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.683; org.apache.solr.util.plugin.AbstractPluginLoader; created text_fa: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.708; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.708; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.709; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.709; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:41.714; org.apache.solr.util.plugin.AbstractPluginLoader; created text_fi: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.751; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.751; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.util.ElisionFilterFactory
+DEBUG - 2014-07-23 11:02:41.752; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.753; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.754; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.fr.FrenchLightStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.759; org.apache.solr.util.plugin.AbstractPluginLoader; created text_fr: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.784; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.785; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.util.ElisionFilterFactory
+DEBUG - 2014-07-23 11:02:41.785; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.787; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ga.IrishLowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.788; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.788; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:41.793; org.apache.solr.util.plugin.AbstractPluginLoader; created text_ga: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.823; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.823; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.824; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.829; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.gl.GalicianStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.841; org.apache.solr.util.plugin.AbstractPluginLoader; created text_gl: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.875; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.876; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.878; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.in.IndicNormalizationFilterFactory
+DEBUG - 2014-07-23 11:02:41.879; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.hi.HindiNormalizationFilterFactory
+DEBUG - 2014-07-23 11:02:41.880; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.882; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.hi.HindiStemFilterFactory
+DEBUG - 2014-07-23 11:02:41.887; org.apache.solr.util.plugin.AbstractPluginLoader; created text_hi: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.925; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.926; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.926; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.927; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:41.931; org.apache.solr.util.plugin.AbstractPluginLoader; created text_hu: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:41.981; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:41.982; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:41.983; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:41.985; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:41.991; org.apache.solr.util.plugin.AbstractPluginLoader; created text_hy: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.018; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.018; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.018; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.020; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.id.IndonesianStemFilterFactory
+DEBUG - 2014-07-23 11:02:42.025; org.apache.solr.util.plugin.AbstractPluginLoader; created text_id: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.055; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.056; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.util.ElisionFilterFactory
+DEBUG - 2014-07-23 11:02:42.056; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.057; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.063; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.it.ItalianLightStemFilterFactory
+DEBUG - 2014-07-23 11:02:42.071; org.apache.solr.util.plugin.AbstractPluginLoader; created text_it: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.119; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ja.JapaneseTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.121; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ja.JapaneseBaseFormFilterFactory
+DEBUG - 2014-07-23 11:02:42.128; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ja.JapanesePartOfSpeechStopFilterFactory
+DEBUG - 2014-07-23 11:02:42.128; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.cjk.CJKWidthFilterFactory
+DEBUG - 2014-07-23 11:02:42.129; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.131; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.ja.JapaneseKatakanaStemFilterFactory
+DEBUG - 2014-07-23 11:02:42.131; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.136; org.apache.solr.util.plugin.AbstractPluginLoader; created text_ja: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.170; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.171; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.171; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.173; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.lv.LatvianStemFilterFactory
+DEBUG - 2014-07-23 11:02:42.177; org.apache.solr.util.plugin.AbstractPluginLoader; created text_lv: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.203; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.204; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.206; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.209; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.miscellaneous.StemmerOverrideFilterFactory
+DEBUG - 2014-07-23 11:02:42.209; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:42.213; org.apache.solr.util.plugin.AbstractPluginLoader; created text_nl: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.255; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.255; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.256; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.256; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:42.265; org.apache.solr.util.plugin.AbstractPluginLoader; created text_no: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.297; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.297; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.298; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.299; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.pt.PortugueseLightStemFilterFactory
+DEBUG - 2014-07-23 11:02:42.304; org.apache.solr.util.plugin.AbstractPluginLoader; created text_pt: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.337; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.339; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.340; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.341; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:42.347; org.apache.solr.util.plugin.AbstractPluginLoader; created text_ro: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.393; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.393; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.394; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.394; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:42.399; org.apache.solr.util.plugin.AbstractPluginLoader; created text_ru: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.425; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.425; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.426; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.426; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:42.430; org.apache.solr.util.plugin.AbstractPluginLoader; created text_sv: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.465; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.466; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.LowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.470; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.th.ThaiWordFilterFactory
+DEBUG - 2014-07-23 11:02:42.470; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.475; org.apache.solr.util.plugin.AbstractPluginLoader; created text_th: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.500; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.standard.StandardTokenizerFactory
+DEBUG - 2014-07-23 11:02:42.501; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.tr.TurkishLowerCaseFilterFactory
+DEBUG - 2014-07-23 11:02:42.502; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.core.StopFilterFactory
+DEBUG - 2014-07-23 11:02:42.502; org.apache.solr.util.plugin.AbstractPluginLoader; created : org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
+DEBUG - 2014-07-23 11:02:42.507; org.apache.solr.util.plugin.AbstractPluginLoader; created text_tr: org.apache.solr.schema.TextField
+DEBUG - 2014-07-23 11:02:42.571; org.apache.solr.schema.IndexSchema; field defined: _version_{type=long,properties=indexed,stored,omitNorms,omitTermFreqAndPositions}
+DEBUG - 2014-07-23 11:02:42.571; org.apache.solr.schema.IndexSchema; field defined: _root_{type=string,properties=indexed,omitNorms,omitTermFreqAndPositions,sortMissingLast}
+DEBUG - 2014-07-23 11:02:42.571; org.apache.solr.schema.IndexSchema; field defined: a{type=string,properties=indexed,stored,omitNorms,omitTermFreqAndPositions,sortMissingLast}
+DEBUG - 2014-07-23 11:02:42.583; org.apache.solr.schema.IndexSchema; no default search field specified in schema.
+INFO  - 2014-07-23 11:02:42.587; org.apache.solr.schema.IndexSchema; query parser default operator is AND
+WARN  - 2014-07-23 11:02:42.592; org.apache.solr.schema.IndexSchema; no uniqueKey specified in schema.
+DEBUG - 2014-07-23 11:02:42.599; org.apache.solr.schema.IndexSchema; dynamic field creation for schema field: *____currency
+DEBUG - 2014-07-23 11:02:42.604; org.apache.solr.schema.IndexSchema; dynamic field defined: *____currency{type=currency_type_string,properties=indexed,omitNorms}
+DEBUG - 2014-07-23 11:02:42.605; org.apache.solr.schema.IndexSchema; dynamic field creation for schema field: *____amount_raw
+DEBUG - 2014-07-23 11:02:42.605; org.apache.solr.schema.IndexSchema; dynamic field defined: *____amount_raw{type=amount_raw_type_tlong,properties=indexed,omitNorms}
+INFO  - 2014-07-23 11:02:42.995; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2014-07-23 11:02:43.013; org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2014-07-23 11:02:43.391; org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2014-07-23 11:02:43.431; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at /vagrant/projects/work/search-cloud/cloud/7804/server/bin/../../idx/collection1/, dataDir=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/
+INFO  - 2014-07-23 11:02:43.441; org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2014-07-23 11:02:43.461; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2014-07-23 11:02:43.463; org.apache.solr.core.SolrCore; [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=*:*}]}
+INFO  - 2014-07-23 11:02:43.529; org.apache.solr.core.CachingDirectoryFactory; return new directory for /vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data
+DEBUG - 2014-07-23 11:02:43.531; org.apache.solr.core.CachingDirectoryFactory; Releasing directory: /vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data 0 false
+INFO  - 2014-07-23 11:02:43.531; org.apache.solr.core.SolrCore; New index directory detected: old=null new=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index/
+INFO  - 2014-07-23 11:02:43.545; org.apache.solr.core.CachingDirectoryFactory; return new directory for /vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index
+DEBUG - 2014-07-23 11:02:43.594; org.apache.solr.core.CachingDirectoryFactory; Releasing directory: /vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index 0 false
+INFO  - 2014-07-23 11:02:43.603; org.apache.solr.core.SolrCore; created json: solr.JSONResponseWriter
+INFO  - 2014-07-23 11:02:43.604; org.apache.solr.core.SolrCore; adding lazy queryResponseWriter: solr.VelocityResponseWriter
+INFO  - 2014-07-23 11:02:43.605; org.apache.solr.core.SolrCore; created velocity: solr.VelocityResponseWriter
+INFO  - 2014-07-23 11:02:43.617; org.apache.solr.core.SolrCore; created xslt: solr.XSLTResponseWriter
+INFO  - 2014-07-23 11:02:43.617; org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2014-07-23 11:02:44.078; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-07-23 11:02:44.117; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.118; org.apache.solr.core.RequestHandlers; created /query: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.135; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-07-23 11:02:44.149; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-07-23 11:02:44.150; org.apache.solr.core.RequestHandlers; created /update/json: solr.UpdateRequestHandler
+INFO  - 2014-07-23 11:02:44.150; org.apache.solr.core.RequestHandlers; created /update/csv: solr.UpdateRequestHandler
+INFO  - 2014-07-23 11:02:44.151; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-07-23 11:02:44.152; org.apache.solr.core.RequestHandlers; created /update/extract: solr.extraction.ExtractingRequestHandler
+INFO  - 2014-07-23 11:02:44.153; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-07-23 11:02:44.153; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-07-23 11:02:44.153; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-07-23 11:02:44.153; org.apache.solr.core.RequestHandlers; created /analysis/document: solr.DocumentAnalysisRequestHandler
+INFO  - 2014-07-23 11:02:44.162; org.apache.solr.core.RequestHandlers; created /admin/: solr.admin.AdminHandlers
+INFO  - 2014-07-23 11:02:44.170; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-07-23 11:02:44.177; org.apache.solr.core.RequestHandlers; created /debug/dump: solr.DumpRequestHandler
+INFO  - 2014-07-23 11:02:44.196; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-07-23 11:02:44.196; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.196; org.apache.solr.core.RequestHandlers; created /spell: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.197; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.197; org.apache.solr.core.RequestHandlers; created /suggest: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.197; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.198; org.apache.solr.core.RequestHandlers; created /tvrh: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.198; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.SearchHandler
+INFO  - 2014-07-23 11:02:44.199; org.apache.solr.core.RequestHandlers; created /terms: solr.SearchHandler
+DEBUG - 2014-07-23 11:02:44.282; org.apache.solr.handler.loader.XMLLoader; Unable to set the 'reuse-instance' property for the input chain: com.ctc.wstx.stax.WstxInputFactory@3739491b
+INFO  - 2014-07-23 11:02:44.285; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+DEBUG - 2014-07-23 11:02:44.297; org.apache.solr.handler.loader.XMLLoader; Unable to set the 'reuse-instance' property for the input chain: com.ctc.wstx.stax.WstxInputFactory@45f04ea6
+INFO  - 2014-07-23 11:02:44.299; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+DEBUG - 2014-07-23 11:02:44.301; org.apache.solr.handler.loader.XMLLoader; Unable to set the 'reuse-instance' property for the input chain: com.ctc.wstx.stax.WstxInputFactory@23bb9829
+INFO  - 2014-07-23 11:02:44.303; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+DEBUG - 2014-07-23 11:02:44.308; org.apache.solr.core.Config; solrconfig.xml missing optional admin/gettableFiles
+DEBUG - 2014-07-23 11:02:44.319; org.apache.solr.core.Config; solrconfig.xml missing optional //bool[@name='facet.sort']
+DEBUG - 2014-07-23 11:02:44.354; org.apache.solr.update.UpdateLog; UpdateHandler init: tlogDir=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/tlog, existing tlogs=[], next id=0
+INFO  - 2014-07-23 11:02:44.369; org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 180000ms; if 20000 uncommited docs
+INFO  - 2014-07-23 11:02:44.372; org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 1000ms;
+DEBUG - 2014-07-23 11:02:44.377; org.apache.solr.core.CachingDirectoryFactory; Reusing cached directory: CachedDir<<refCount=1;path=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data;done=false>>
+DEBUG - 2014-07-23 11:02:44.382; org.apache.solr.core.CachingDirectoryFactory; Releasing directory: /vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data 0 false
+DEBUG - 2014-07-23 11:02:44.384; org.apache.solr.core.CachingDirectoryFactory; Reusing cached directory: CachedDir<<refCount=1;path=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data;done=false>>
+DEBUG - 2014-07-23 11:02:44.388; org.apache.solr.core.CachingDirectoryFactory; Releasing directory: /vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data 0 false
+DEBUG - 2014-07-23 11:02:44.395; org.apache.solr.core.CachingDirectoryFactory; Reusing cached directory: CachedDir<<refCount=1;path=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index;done=false>>
+INFO  - 2014-07-23 11:02:44.557; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index lockFactory=NativeFSLockFactory@/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+DEBUG - 2014-07-23 11:02:44.559; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index lockFactory=NativeFSLockFactory@/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1,filenames=[segments_1]}
+INFO  - 2014-07-23 11:02:44.559; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+DEBUG - 2014-07-23 11:02:44.561; org.apache.solr.update.SolrIndexWriter; Opened Writer DirectUpdateHandler2
+INFO  - 2014-07-23 11:02:44.582; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@470794d4[collection1] main
+DEBUG - 2014-07-23 11:02:44.583; org.apache.solr.core.CachingDirectoryFactory; incRef'ed: CachedDir<<refCount=2;path=/vagrant/projects/work/search-cloud/cloud/7804/idx/collection1/data/index;done=false>>
+INFO  - 2014-07-23 11:02:44.597; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2014-07-23 11:02:44.637; org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2014-07-23 11:02:44.674; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2014-07-23 11:02:44.676; org.apache.solr.handler.component.SuggestComponent; Initializing SuggestComponent
+INFO  - 2014-07-23 11:02:44.679; org.apache.solr.spelling.suggest.SolrSuggester; init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+INFO  - 2014-07-23 11:02:44.769; org.apache.solr.spelling.suggest.SolrSuggester; Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+DEBUG - 2014-07-23 11:02:44.863; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.QueryComponent@4553f141
+DEBUG - 2014-07-23 11:02:44.864; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.FacetComponent@a0405f6
+DEBUG - 2014-07-23 11:02:44.866; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@e235e9d
+DEBUG - 2014-07-23 11:02:44.867; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.HighlightComponent@34189cab
+DEBUG - 2014-07-23 11:02:44.869; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.StatsComponent@3bd5b945
+DEBUG - 2014-07-23 11:02:44.870; org.apache.solr.handler.component.SearchHandler; Adding  debug component:org.apache.solr.handler.component.DebugComponent@4c767fb3
+DEBUG - 2014-07-23 11:02:44.870; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.QueryComponent@4553f141
+DEBUG - 2014-07-23 11:02:44.871; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.FacetComponent@a0405f6
+DEBUG - 2014-07-23 11:02:44.872; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@e235e9d
+DEBUG - 2014-07-23 11:02:44.872; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.HighlightComponent@34189cab
+DEBUG - 2014-07-23 11:02:44.872; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.StatsComponent@3bd5b945
+DEBUG - 2014-07-23 11:02:44.873; org.apache.solr.handler.component.SearchHandler; Adding  debug component:org.apache.solr.handler.component.DebugComponent@4c767fb3
+DEBUG - 2014-07-23 11:02:44.873; org.apache.solr.handler.component.SearchHandler; Adding  component:org.apache.solr.handler.component.RealTimeGetComponent@77b9e7fc
+INFO  - 2014-07-23 11:02:44.889; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-07-23 11:02:44.890; org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@470794d4[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2014-07-23 11:02:44.892; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2014-07-23 11:02:44.900; org.apache.solr.servlet.SolrDispatchFilter; user.dir=/vagrant/projects/work/search-cloud/cloud/7804/server
+INFO  - 2014-07-23 11:02:44.901; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+DEBUG - 2014-07-23 11:02:44.901; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED SolrRequestFilter
+DEBUG - 2014-07-23 11:02:44.901; org.eclipse.jetty.util.component.AbstractLifeCycle; starting LoadAdminUI
+INFO  - 2014-07-23 11:02:44.901; org.apache.solr.cloud.ZkController; Register replica - core:collection1 address:http://127.0.1.1:7804/solr collection:collection1 shard:shard1
+DEBUG - 2014-07-23 11:02:44.915; org.eclipse.jetty.servlet.Holder; Holding class org.apache.solr.servlet.LoadAdminUiServlet
+DEBUG - 2014-07-23 11:02:44.924; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED LoadAdminUI
+DEBUG - 2014-07-23 11:02:44.926; org.eclipse.jetty.util.component.AbstractLifeCycle; starting RedirectLogging
+DEBUG - 2014-07-23 11:02:44.933; org.eclipse.jetty.servlet.Holder; Holding class org.apache.solr.servlet.RedirectServlet
+DEBUG - 2014-07-23 11:02:44.933; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED RedirectLogging
+DEBUG - 2014-07-23 11:02:44.933; org.eclipse.jetty.util.component.AbstractLifeCycle; starting RedirectOldAdminUI
+INFO  - 2014-07-23 11:02:44.939; org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard1
+INFO  - 2014-07-23 11:02:44.960; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:44.961; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:44.961; org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2014-07-23 11:02:44.961; org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2014-07-23 11:02:44.961; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+DEBUG - 2014-07-23 11:02:44.964; org.eclipse.jetty.servlet.Holder; Holding class org.apache.solr.servlet.RedirectServlet
+DEBUG - 2014-07-23 11:02:44.965; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED RedirectOldAdminUI
+DEBUG - 2014-07-23 11:02:44.965; org.eclipse.jetty.util.component.AbstractLifeCycle; starting RedirectOldZookeeper
+INFO  - 2014-07-23 11:02:44.966; org.apache.solr.cloud.SyncStrategy; Sync replicas to http://127.0.1.1:7804/solr/collection1/
+INFO  - 2014-07-23 11:02:44.967; org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2014-07-23 11:02:44.967; org.apache.solr.cloud.SyncStrategy; http://127.0.1.1:7804/solr/collection1/ has no replicas
+INFO  - 2014-07-23 11:02:44.969; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper...
+DEBUG - 2014-07-23 11:02:44.971; org.eclipse.jetty.servlet.Holder; Holding class org.apache.solr.servlet.RedirectServlet
+DEBUG - 2014-07-23 11:02:44.971; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED RedirectOldZookeeper
+DEBUG - 2014-07-23 11:02:44.971; org.eclipse.jetty.util.component.AbstractLifeCycle; starting Zookeeper
+DEBUG - 2014-07-23 11:02:44.973; org.eclipse.jetty.servlet.Holder; Holding class org.apache.solr.servlet.ZookeeperInfoServlet
+DEBUG - 2014-07-23 11:02:44.974; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED Zookeeper
+DEBUG - 2014-07-23 11:02:44.975; org.eclipse.jetty.util.component.AbstractLifeCycle; starting default
+DEBUG - 2014-07-23 11:02:44.981; org.eclipse.jetty.servlet.Holder; Holding class org.eclipse.jetty.servlet.DefaultServlet
+INFO  - 2014-07-23 11:02:44.984; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:44.991; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+DEBUG - 2014-07-23 11:02:45.013; org.apache.solr.cloud.ShardLeaderElectionContext; 127.0.1.1:7804_solr synched 0
+INFO  - 2014-07-23 11:02:45.013; org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://127.0.1.1:7804/solr/collection1/ shard1
+INFO  - 2014-07-23 11:02:45.013; org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/collection1/leaders/shard1
+INFO  - 2014-07-23 11:02:45.046; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:45.059; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper...
+INFO  - 2014-07-23 11:02:45.083; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+DEBUG - 2014-07-23 11:02:45.123; org.eclipse.jetty.servlet.DefaultServlet; resource base = null
+DEBUG - 2014-07-23 11:02:45.123; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED default
+DEBUG - 2014-07-23 11:02:45.124; org.eclipse.jetty.util.component.AbstractLifeCycle; starting jsp
+DEBUG - 2014-07-23 11:02:45.129; org.eclipse.jetty.servlet.Holder; Holding class org.eclipse.jetty.servlet.NoJspServlet
+DEBUG - 2014-07-23 11:02:45.130; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED jsp
+DEBUG - 2014-07-23 11:02:45.131; org.eclipse.jetty.util.component.AbstractLifeCycle; starting SolrRestApi
+DEBUG - 2014-07-23 11:02:45.147; org.eclipse.jetty.servlet.Holder; Holding class org.restlet.ext.servlet.ServerServlet
+DEBUG - 2014-07-23 11:02:45.148; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED SolrRestApi
+DEBUG - 2014-07-23 11:02:45.149; org.eclipse.jetty.webapp.WebAppContext; postConfigure o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war with org.eclipse.jetty.webapp.WebInfConfiguration@69267649
+DEBUG - 2014-07-23 11:02:45.150; org.eclipse.jetty.webapp.WebAppContext; postConfigure o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war with org.eclipse.jetty.webapp.WebXmlConfiguration@186fa9fc
+DEBUG - 2014-07-23 11:02:45.151; org.eclipse.jetty.webapp.WebAppContext; postConfigure o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war with org.eclipse.jetty.webapp.MetaInfConfiguration@10aadc97
+DEBUG - 2014-07-23 11:02:45.152; org.eclipse.jetty.webapp.WebAppContext; postConfigure o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war with org.eclipse.jetty.webapp.FragmentConfiguration@761eec35
+DEBUG - 2014-07-23 11:02:45.153; org.eclipse.jetty.webapp.WebAppContext; postConfigure o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war with org.eclipse.jetty.webapp.JettyWebXmlConfiguration@6825c828
+DEBUG - 2014-07-23 11:02:45.155; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-07-23 11:02:45.155; org.eclipse.jetty.deploy.DeploymentManager; Executing Node Node[started]
+DEBUG - 2014-07-23 11:02:45.171; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED org.eclipse.jetty.util.Scanner@3794d372
+DEBUG - 2014-07-23 11:02:45.174; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED org.eclipse.jetty.deploy.providers.ContextProvider@39e57e8f
+DEBUG - 2014-07-23 11:02:45.176; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED org.eclipse.jetty.deploy.DeploymentManager@704f459c
+INFO  - 2014-07-23 11:02:45.193; org.apache.solr.core.SolrCore; [collection1] webapp=null path=null params={event=firstSearcher&q=*:*&distrib=false} hits=0 status=0 QTime=293
+DEBUG - 2014-07-23 11:02:45.195; org.eclipse.jetty.util.component.AbstractLifeCycle; starting SocketConnector@0.0.0.0:7804
+INFO  - 2014-07-23 11:02:45.197; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)
+DEBUG - 2014-07-23 11:02:45.206; org.eclipse.jetty.util.component.AbstractLifeCycle; starting null/null
+INFO  - 2014-07-23 11:02:45.216; org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+DEBUG - 2014-07-23 11:02:45.218; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED PooledBuffers [0/1024@6144,0/1024@16384,0/1024@-]/PooledBuffers [0/1024@6144,0/1024@32768,0/1024@-]
+INFO  - 2014-07-23 11:02:45.217; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2014-07-23 11:02:45.226; org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2014-07-23 11:02:45.229; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:7804
+INFO  - 2014-07-23 11:02:45.227; org.apache.solr.handler.component.SuggestComponent$SuggesterListener; Loading suggester index for: mySuggester
+DEBUG - 2014-07-23 11:02:45.233; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED SocketConnector@0.0.0.0:7804
+DEBUG - 2014-07-23 11:02:45.233; org.eclipse.jetty.util.component.AbstractLifeCycle; STARTED org.eclipse.jetty.server.Server@42552c
+INFO  - 2014-07-23 11:02:45.232; org.apache.solr.spelling.suggest.SolrSuggester; reload()
+INFO  - 2014-07-23 11:02:45.234; org.apache.solr.spelling.suggest.SolrSuggester; build()
+INFO  - 2014-07-23 11:02:45.256; org.apache.solr.cloud.ZkController; We are http://127.0.1.1:7804/solr/collection1/ and leader is http://127.0.1.1:7804/solr/collection1/
+INFO  - 2014-07-23 11:02:45.263; org.apache.solr.cloud.ZkController; No LogReplay needed for core=collection1 baseURL=http://127.0.1.1:7804/solr
+INFO  - 2014-07-23 11:02:45.265; org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2014-07-23 11:02:45.267; org.apache.solr.cloud.ZkController; publishing core=collection1 state=active collection=collection1
+INFO  - 2014-07-23 11:02:45.269; org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2014-07-23 11:02:45.274; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:45.275; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:45.275; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:45.277; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper...
+INFO  - 2014-07-23 11:02:45.283; org.apache.solr.common.cloud.ZkStateReader; Updating cloud state from ZooKeeper...
+INFO  - 2014-07-23 11:02:45.293; org.apache.solr.cloud.Overseer$ClusterStateUpdater; Update state numShards=null message={
+  "operation":"state",
+  "state":"active",
+  "base_url":"http://127.0.1.1:7804/solr",
+  "core":"collection1",
+  "roles":null,
+  "node_name":"127.0.1.1:7804_solr",
+  "shard":"shard1",
+  "collection":"collection1",
+  "numShards":null,
+  "core_node_name":"core_node1"}
+INFO  - 2014-07-23 11:02:45.304; org.apache.solr.cloud.DistributedQueue$LatchChildWatcher; LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-07-23 11:02:45.319; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@470794d4[collection1] main{StandardDirectoryReader(segments_1:1:nrt)}
+INFO  - 2014-07-23 11:02:45.413; org.apache.solr.common.cloud.ZkStateReader$2; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 1)

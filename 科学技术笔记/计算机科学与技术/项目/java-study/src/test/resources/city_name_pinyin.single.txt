@@ -1,0 +1,231 @@
+三亚 -- san1 -- ya4 -- 去掉声调 -- san -- ya
+三明 -- san1 -- ming2 -- 去掉声调 -- san -- ming
+东营 -- dong1 -- ying2 -- 去掉声调 -- dong -- ying
+临汾 -- lin2 -- fen2 -- 去掉声调 -- lin -- fen
+临沂 -- lin2 -- yi2 -- 去掉声调 -- lin -- yi
+临沧 -- lin2 -- cang1 -- 去掉声调 -- lin -- cang
+丹东 -- dan1 -- dong1 -- 去掉声调 -- dan -- dong
+九江 -- jiu3 -- jiang1 -- 去掉声调 -- jiu -- jiang
+云浮 -- yun2 -- fu2 -- 去掉声调 -- yun -- fu
+亳州 -- bo2 -- zhou1 -- 去掉声调 -- bo -- zhou
+伊春 -- yi1 -- chun1 -- 去掉声调 -- yi -- chun
+伊犁 -- yi1 -- li2 -- 去掉声调 -- yi -- li
+保定 -- bao3 -- ding4 -- 去掉声调 -- bao -- ding
+保山 -- bao3 -- shan1 -- 去掉声调 -- bao -- shan
+兰州 -- lan2 -- zhou1 -- 去掉声调 -- lan -- zhou
+内江 -- nei4 -- jiang1 -- 去掉声调 -- nei -- jiang
+包头 -- bao1 -- tou2 -- 去掉声调 -- bao -- tou
+北京 -- bei3 -- jing1 -- 去掉声调 -- bei -- jing
+北海 -- bei3 -- hai3 -- 去掉声调 -- bei -- hai
+十堰 -- shi2 -- yan4 -- 去掉声调 -- shi -- yan
+吉安 -- ji2 -- an1 -- 去掉声调 -- ji -- an
+吉林 -- ji2 -- lin2 -- 去掉声调 -- ji -- lin
+吕梁 -- lu:3 -- liang2 -- 去掉声调 -- lu: -- liang
+吴忠 -- wu2 -- zhong1 -- 去掉声调 -- wu -- zhong
+周口 -- zhou1 -- kou3 -- 去掉声调 -- zhou -- kou
+咸阳 -- xian2 -- yang2 -- 去掉声调 -- xian -- yang
+唐山 -- tang2 -- shan1 -- 去掉声调 -- tang -- shan
+商丘 -- shang1 -- qiu1 -- 去掉声调 -- shang -- qiu
+商洛 -- shang1 -- luo4 -- 去掉声调 -- shang -- luo
+四平 -- si4 -- ping2 -- 去掉声调 -- si -- ping
+固原 -- gu4 -- yuan2 -- 去掉声调 -- gu -- yuan
+天水 -- tian1 -- shui3 -- 去掉声调 -- tian -- shui
+太原 -- tai4 -- yuan2 -- 去掉声调 -- tai -- yuan
+威海 -- wei1 -- hai3 -- 去掉声调 -- wei -- hai
+孝感 -- xiao4 -- gan3 -- 去掉声调 -- xiao -- gan
+安庆 -- an1 -- qing4 -- 去掉声调 -- an -- qing
+安康 -- an1 -- kang1 -- 去掉声调 -- an -- kang
+安徽 -- an1 -- hui1 -- 去掉声调 -- an -- hui
+安阳 -- an1 -- yang2 -- 去掉声调 -- an -- yang
+安顺 -- an1 -- shun4 -- 去掉声调 -- an -- shun
+定西 -- ding4 -- xi1 -- 去掉声调 -- ding -- xi
+宜宾 -- yi2 -- bin1 -- 去掉声调 -- yi -- bin
+宜昌 -- yi2 -- chang1 -- 去掉声调 -- yi -- chang
+宜春 -- yi2 -- chun1 -- 去掉声调 -- yi -- chun
+宝鸡 -- bao3 -- ji1 -- 去掉声调 -- bao -- ji
+宣城 -- xuan1 -- cheng2 -- 去掉声调 -- xuan -- cheng
+岳阳 -- yue4 -- yang2 -- 去掉声调 -- yue -- yang
+巢湖 -- chao2 -- hu2 -- 去掉声调 -- chao -- hu
+巴西 -- ba1 -- xi1 -- 去掉声调 -- ba -- xi
+常州 -- chang2 -- zhou1 -- 去掉声调 -- chang -- zhou
+常德 -- chang2 -- de2 -- 去掉声调 -- chang -- de
+庆阳 -- qing4 -- yang2 -- 去掉声调 -- qing -- yang
+延安 -- yan2 -- an1 -- 去掉声调 -- yan -- an
+开县 -- kai1 -- xian4 -- 去掉声调 -- kai -- xian
+开封 -- kai1 -- feng1 -- 去掉声调 -- kai -- feng
+徐州 -- xu2 -- zhou1 -- 去掉声调 -- xu -- zhou
+德宏 -- de2 -- hong2 -- 去掉声调 -- de -- hong
+德州 -- de2 -- zhou1 -- 去掉声调 -- de -- zhou
+德阳 -- de2 -- yang2 -- 去掉声调 -- de -- yang
+忠县 -- zhong1 -- xian4 -- 去掉声调 -- zhong -- xian
+忻州 -- xin1 -- zhou1 -- 去掉声调 -- xin -- zhou
+怒江 -- nu4 -- jiang1 -- 去掉声调 -- nu -- jiang
+惠州 -- hui4 -- zhou1 -- 去掉声调 -- hui -- zhou
+扬州 -- yang2 -- zhou1 -- 去掉声调 -- yang -- zhou
+承德 -- cheng2 -- de2 -- 去掉声调 -- cheng -- de
+抚州 -- fu3 -- zhou1 -- 去掉声调 -- fu -- zhou
+抚顺 -- fu3 -- shun4 -- 去掉声调 -- fu -- shun
+揭阳 -- jie1 -- yang2 -- 去掉声调 -- jie -- yang
+新乡 -- xin1 -- xiang1 -- 去掉声调 -- xin -- xiang
+日本 -- ri4 -- ben3 -- 去掉声调 -- ri -- ben
+日照 -- ri4 -- zhao4 -- 去掉声调 -- ri -- zhao
+昆明 -- kun1 -- ming2 -- 去掉声调 -- kun -- ming
+昌吉 -- chang1 -- ji2 -- 去掉声调 -- chang -- ji
+晋城 -- jin4 -- cheng2 -- 去掉声调 -- jin -- cheng
+朔州 -- shuo4 -- zhou1 -- 去掉声调 -- shuo -- zhou
+杭州 -- hang2 -- zhou1 -- 去掉声调 -- hang -- zhou
+松原 -- song1 -- yuan2 -- 去掉声调 -- song -- yuan
+林芝 -- lin2 -- zhi1 -- 去掉声调 -- lin -- zhi
+果洛 -- guo3 -- luo4 -- 去掉声调 -- guo -- luo
+枣庄 -- zao3 -- zhuang1 -- 去掉声调 -- zao -- zhuang
+柳州 -- liu3 -- zhou1 -- 去掉声调 -- liu -- zhou
+株洲 -- zhu1 -- zhou1 -- 去掉声调 -- zhu -- zhou
+桂林 -- gui4 -- lin2 -- 去掉声调 -- gui -- lin
+梅州 -- mei2 -- zhou1 -- 去掉声调 -- mei -- zhou
+梧州 -- wu2 -- zhou1 -- 去掉声调 -- wu -- zhou
+楚雄 -- chu3 -- xiong2 -- 去掉声调 -- chu -- xiong
+榆林 -- yu2 -- lin2 -- 去掉声调 -- yu -- lin
+武威 -- wu3 -- wei1 -- 去掉声调 -- wu -- wei
+武汉 -- wu3 -- han4 -- 去掉声调 -- wu -- han
+永州 -- yong3 -- zhou1 -- 去掉声调 -- yong -- zhou
+汕头 -- shan4 -- tou2 -- 去掉声调 -- shan -- tou
+江门 -- jiang1 -- men2 -- 去掉声调 -- jiang -- men
+池州 -- chi2 -- zhou1 -- 去掉声调 -- chi -- zhou
+沧州 -- cang1 -- zhou1 -- 去掉声调 -- cang -- zhou
+河北 -- he2 -- bei3 -- 去掉声调 -- he -- bei
+河池 -- he2 -- chi2 -- 去掉声调 -- he -- chi
+河源 -- he2 -- yuan2 -- 去掉声调 -- he -- yuan
+泉州 -- quan2 -- zhou1 -- 去掉声调 -- quan -- zhou
+法国 -- fa3 -- guo2 -- 去掉声调 -- fa -- guo
+泰国 -- tai4 -- guo2 -- 去掉声调 -- tai -- guo
+泰安 -- tai4 -- an1 -- 去掉声调 -- tai -- an
+泰州 -- tai4 -- zhou1 -- 去掉声调 -- tai -- zhou
+泸州 -- lu2 -- zhou1 -- 去掉声调 -- lu -- zhou
+洛阳 -- luo4 -- yang2 -- 去掉声调 -- luo -- yang
+海东 -- hai3 -- dong1 -- 去掉声调 -- hai -- dong
+海北 -- hai3 -- bei3 -- 去掉声调 -- hai -- bei
+海口 -- hai3 -- kou3 -- 去掉声调 -- hai -- kou
+海西 -- hai3 -- xi1 -- 去掉声调 -- hai -- xi
+淄博 -- zi1 -- bo2 -- 去掉声调 -- zi -- bo
+淮北 -- huai2 -- bei3 -- 去掉声调 -- huai -- bei
+淮安 -- huai2 -- an1 -- 去掉声调 -- huai -- an
+深圳 -- shen1 -- zhen4 -- 去掉声调 -- shen -- zhen
+清远 -- qing1 -- yuan3 -- 去掉声调 -- qing -- yuan
+温州 -- wen1 -- zhou1 -- 去掉声调 -- wen -- zhou
+湖北 -- hu2 -- bei3 -- 去掉声调 -- hu -- bei
+湖州 -- hu2 -- zhou1 -- 去掉声调 -- hu -- zhou
+湘潭 -- xiang1 -- tan2 -- 去掉声调 -- xiang -- tan
+湛江 -- zhan4 -- jiang1 -- 去掉声调 -- zhan -- jiang
+滁州 -- chu2 -- zhou1 -- 去掉声调 -- chu -- zhou
+滨州 -- bin1 -- zhou1 -- 去掉声调 -- bin -- zhou
+漳州 -- zhang1 -- zhou1 -- 去掉声调 -- zhang -- zhou
+潮州 -- chao2 -- zhou1 -- 去掉声调 -- chao -- zhou
+澳门 -- ao4 -- men2 -- 去掉声调 -- ao -- men
+濮阳 -- pu2 -- yang2 -- 去掉声调 -- pu -- yang
+玉林 -- yu4 -- lin2 -- 去掉声调 -- yu -- lin
+珠海 -- zhu1 -- hai3 -- 去掉声调 -- zhu -- hai
+甘孜 -- gan1 -- zi1 -- 去掉声调 -- gan -- zi
+白城 -- bai2 -- cheng2 -- 去掉声调 -- bai -- cheng
+白山 -- bai2 -- shan1 -- 去掉声调 -- bai -- shan
+白银 -- bai2 -- yin2 -- 去掉声调 -- bai -- yin
+益阳 -- yi4 -- yang2 -- 去掉声调 -- yi -- yang
+盐城 -- yan2 -- cheng2 -- 去掉声调 -- yan -- cheng
+盘锦 -- pan2 -- jin3 -- 去掉声调 -- pan -- jin
+眉山 -- mei2 -- shan1 -- 去掉声调 -- mei -- shan
+福州 -- fu2 -- zhou1 -- 去掉声调 -- fu -- zhou
+绵阳 -- mian2 -- yang2 -- 去掉声调 -- mian -- yang
+美国 -- mei3 -- guo2 -- 去掉声调 -- mei -- guo
+聊城 -- liao2 -- cheng2 -- 去掉声调 -- liao -- cheng
+肇庆 -- zhao4 -- qing4 -- 去掉声调 -- zhao -- qing
+自贡 -- zi4 -- gong4 -- 去掉声调 -- zi -- gong
+舟山 -- zhou1 -- shan1 -- 去掉声调 -- zhou -- shan
+芜湖 -- wu2 -- hu2 -- 去掉声调 -- wu -- hu
+苏州 -- su1 -- zhou1 -- 去掉声调 -- su -- zhou
+英国 -- ying1 -- guo2 -- 去掉声调 -- ying -- guo
+茂名 -- mao4 -- ming2 -- 去掉声调 -- mao -- ming
+荆州 -- jing1 -- zhou1 -- 去掉声调 -- jing -- zhou
+荆门 -- jing1 -- men2 -- 去掉声调 -- jing -- men
+莆田 -- pu2 -- tian2 -- 去掉声调 -- pu -- tian
+莱芜 -- lai2 -- wu2 -- 去掉声调 -- lai -- wu
+菏泽 -- he2 -- ze2 -- 去掉声调 -- he -- ze
+萍乡 -- ping2 -- xiang1 -- 去掉声调 -- ping -- xiang
+营口 -- ying2 -- kou3 -- 去掉声调 -- ying -- kou
+蓟县 -- ji4 -- xian4 -- 去掉声调 -- ji -- xian
+衡水 -- heng2 -- shui3 -- 去掉声调 -- heng -- shui
+衡阳 -- heng2 -- yang2 -- 去掉声调 -- heng -- yang
+衢州 -- qu2 -- zhou1 -- 去掉声调 -- qu -- zhou
+襄樊 -- xiang1 -- fan2 -- 去掉声调 -- xiang -- fan
+西安 -- xi1 -- an1 -- 去掉声调 -- xi -- an
+许昌 -- xu3 -- chang1 -- 去掉声调 -- xu -- chang
+贵港 -- gui4 -- gang3 -- 去掉声调 -- gui -- gang
+贵阳 -- gui4 -- yang2 -- 去掉声调 -- gui -- yang
+贺州 -- he4 -- zhou1 -- 去掉声调 -- he -- zhou
+资阳 -- zi1 -- yang2 -- 去掉声调 -- zi -- yang
+赣州 -- gan4 -- zhou1 -- 去掉声调 -- gan -- zhou
+赤峰 -- chi4 -- feng1 -- 去掉声调 -- chi -- feng
+辽源 -- liao2 -- yuan2 -- 去掉声调 -- liao -- yuan
+辽阳 -- liao2 -- yang2 -- 去掉声调 -- liao -- yang
+达州 -- da2 -- zhou1 -- 去掉声调 -- da -- zhou
+运城 -- yun4 -- cheng2 -- 去掉声调 -- yun -- cheng
+迪庆 -- di2 -- qing4 -- 去掉声调 -- di -- qing
+遵义 -- zun1 -- yi4 -- 去掉声调 -- zun -- yi
+邯郸 -- han2 -- dan1 -- 去掉声调 -- han -- dan
+邵阳 -- shao4 -- yang2 -- 去掉声调 -- shao -- yang
+郑州 -- zheng4 -- zhou1 -- 去掉声调 -- zheng -- zhou
+郴州 -- chen1 -- zhou1 -- 去掉声调 -- chen -- zhou
+鄂州 -- e4 -- zhou1 -- 去掉声调 -- e -- zhou
+酒泉 -- jiu3 -- quan2 -- 去掉声调 -- jiu -- quan
+金昌 -- jin1 -- chang1 -- 去掉声调 -- jin -- chang
+钦州 -- qin1 -- zhou1 -- 去掉声调 -- qin -- zhou
+铁岭 -- tie3 -- ling3 -- 去掉声调 -- tie -- ling
+铜仁 -- tong2 -- ren2 -- 去掉声调 -- tong -- ren
+铜川 -- tong2 -- chuan1 -- 去掉声调 -- tong -- chuan
+铜陵 -- tong2 -- ling2 -- 去掉声调 -- tong -- ling
+银川 -- yin2 -- chuan1 -- 去掉声调 -- yin -- chuan
+锦州 -- jin3 -- zhou1 -- 去掉声调 -- jin -- zhou
+镇江 -- zhen4 -- jiang1 -- 去掉声调 -- zhen -- jiang
+阜新 -- fu4 -- xin1 -- 去掉声调 -- fu -- xin
+阜阳 -- fu4 -- yang2 -- 去掉声调 -- fu -- yang
+阳江 -- yang2 -- jiang1 -- 去掉声调 -- yang -- jiang
+阳泉 -- yang2 -- quan2 -- 去掉声调 -- yang -- quan
+随州 -- sui2 -- zhou1 -- 去掉声调 -- sui -- zhou
+青岛 -- qing1 -- dao3 -- 去掉声调 -- qing -- dao
+鞍山 -- an1 -- shan1 -- 去掉声调 -- an -- shan
+韶关 -- shao2 -- guan1 -- 去掉声调 -- shao -- guan
+香港 -- xiang1 -- gang3 -- 去掉声调 -- xiang -- gang
+高雄 -- gao1 -- xiong2 -- 去掉声调 -- gao -- xiong
+鸡西 -- ji1 -- xi1 -- 去掉声调 -- ji -- xi
+鹤壁 -- he4 -- bi4 -- 去掉声调 -- he -- bi
+鹰潭 -- ying1 -- tan2 -- 去掉声调 -- ying -- tan
+黄冈 -- huang2 -- gang1 -- 去掉声调 -- huang -- gang
+黄山 -- huang2 -- shan1 -- 去掉声调 -- huang -- shan
+黑河 -- hei1 -- he2 -- 去掉声调 -- hei -- he
+龙岩 -- long2 -- yan2 -- 去掉声调 -- long -- yan
+三门峡 -- san1 -- men2 -- xia2 -- 去掉声调 -- san -- men -- xia
+云阳县 -- yun2 -- yang2 -- xian4 -- 去掉声调 -- yun -- yang -- xian
+佳木斯 -- jia1 -- mu4 -- si1 -- 去掉声调 -- jia -- mu -- si
+双鸭山 -- shuang1 -- ya1 -- shan1 -- 去掉声调 -- shuang -- ya -- shan
+嘉峪关 -- jia1 -- yu4 -- guan1 -- 去掉声调 -- jia -- yu -- guan
+垫江县 -- dian4 -- jiang1 -- xian4 -- 去掉声调 -- dian -- jiang -- xian
+密云县 -- mi4 -- yun2 -- xian4 -- 去掉声调 -- mi -- yun -- xian
+崇明县 -- chong2 -- ming2 -- xian4 -- 去掉声调 -- chong -- ming -- xian
+平顶山 -- ping2 -- ding3 -- shan1 -- 去掉声调 -- ping -- ding -- shan
+延庆县 -- yan2 -- qing4 -- xian4 -- 去掉声调 -- yan -- qing -- xian
+新加坡 -- xin1 -- jia1 -- po1 -- 去掉声调 -- xin -- jia -- po
+梁平县 -- liang2 -- ping2 -- xian4 -- 去掉声调 -- liang -- ping -- xian
+江津市 -- jiang1 -- jin1 -- shi4 -- 去掉声调 -- jiang -- jin -- shi
+牡丹江 -- mu3 -- dan1 -- jiang1 -- 去掉声调 -- mu -- dan -- jiang
+璧山县 -- bi4 -- shan1 -- xian4 -- 去掉声调 -- bi -- shan -- xian
+秦皇岛 -- qin2 -- huang2 -- dao3 -- 去掉声调 -- qin -- huang -- dao
+綦江县 -- qi2 -- jiang1 -- xian4 -- 去掉声调 -- qi -- jiang -- xian
+荣昌县 -- rong2 -- chang1 -- xian4 -- 去掉声调 -- rong -- chang -- xian
+连云港 -- lian2 -- yun2 -- gang3 -- 去掉声调 -- lian -- yun -- gang
+铜梁县 -- tong2 -- liang2 -- xian4 -- 去掉声调 -- tong -- liang -- xian
+防城港 -- fang2 -- cheng2 -- gang3 -- 去掉声调 -- fang -- cheng -- gang
+静海县 -- jing4 -- hai3 -- xian4 -- 去掉声调 -- jing -- hai -- xian
+马鞍山 -- ma3 -- an1 -- shan1 -- 去掉声调 -- ma -- an -- shan
+驻马店 -- zhu4 -- ma3 -- dian4 -- 去掉声调 -- zhu -- ma -- dian
+呼伦贝尔 -- hu1 -- lun2 -- bei4 -- er3 -- 去掉声调 -- hu -- lun -- bei -- er
+西双版纳 -- xi1 -- shuang1 -- ban3 -- na4 -- 去掉声调 -- xi -- shuang -- ban -- na
+鄂尔多斯 -- e4 -- er3 -- duo1 -- si1 -- 去掉声调 -- e -- er -- duo -- si
+马来西亚 -- ma3 -- lai2 -- xi1 -- ya4 -- 去掉声调 -- ma -- lai -- xi -- ya

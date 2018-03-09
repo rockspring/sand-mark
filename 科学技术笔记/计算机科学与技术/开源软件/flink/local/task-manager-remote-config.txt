@@ -1,0 +1,45 @@
+akka {
+  actor {
+    provider = "akka.remote.RemoteActorRefProvider"
+  }
+
+  remote {
+    startup-timeout = 100 seconds
+
+    transport-failure-detector{
+      acceptable-heartbeat-pause = 6000 s
+      heartbeat-interval = 1000 s
+      threshold = 300.0
+    }
+
+    watch-failure-detector{
+      heartbeat-interval = 10 s
+      acceptable-heartbeat-pause = 60 s
+      threshold = 12.0
+    }
+
+    netty {
+      tcp {
+        transport-class = "akka.remote.transport.netty.NettyTransport"
+        port = 0
+        bind-port = 0
+        connection-timeout = 20 s
+        maximum-frame-size = 10485760b
+        tcp-nodelay = on
+      }
+    }
+
+    log-remote-lifecycle-events = off
+  }
+}
+       
+akka {
+  remote {
+    netty {
+      tcp {
+        hostname = localhost
+        bind-hostname = 0.0.0.0
+      }
+    }
+  }
+}

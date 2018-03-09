@@ -1,0 +1,29 @@
+nginx 502
+
+```
+<html>
+<head><title>504 Gateway Time-out</title></head>
+<body bgcolor="white">
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+```
+
+```
+1.000	1.000	10.10.3.136	296	10.10.3.174:7805	28/Apr/2015:16:04:35 +0800	sc10-001.a.ajkdns.com	POST /zufang-04/update/?manual HTTP/1.1	504	346	-	curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3	-	-	10.10.6.51	8983	-	-
+```
+
+solr 200
+
+```
+INFO  - 2015-04-28 16:04:24.263; [qtp505330678-16483] org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update/ params={manual=} {deleteByQuery=city_id:[17 TO *] (-1499682059774328832)} 0 1082
+```
+
+```
+10.10.6.4 -  -  [28/Apr/2015:16:04:23 +0800] "POST /solr/update/?manual HTTP/1.0" 200 150  1083
+```
+
+# 实际结果
+
+solr执行成功

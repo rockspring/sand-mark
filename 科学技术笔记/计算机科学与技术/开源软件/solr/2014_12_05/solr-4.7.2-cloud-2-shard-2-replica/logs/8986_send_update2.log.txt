@@ -1,0 +1,133 @@
+
+DEBUG - 2014-12-05 09:37:28.706; [qtp14214026-18] org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:281); filled 139/139
+DEBUG - 2014-12-05 09:37:28.706; [qtp14214026-18 - /solr/update] org.eclipse.jetty.server.Server.handle(Server.java:363); REQUEST /solr/update on BlockingHttpConnection@74fb7929,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=-5,l=1,c=0},r=1
+DEBUG - 2014-12-05 09:37:28.707; [qtp14214026-18 - /solr/update] org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:931); scope null||/solr/update @ o.e.j.w.WebAppContext{/solr,file:/Users/zlq/Servers/solr/solr-4.7.2-cloud-2-shard-2-replica/solr-4.7.2-8986/example/solr-webapp/webapp/},/Users/zlq/Servers/solr/solr-4.7.2-cloud-2-shard-2-replica/solr-4.7.2-8986/example/webapps/solr.war
+DEBUG - 2014-12-05 09:37:28.707; [qtp14214026-18 - /solr/update] org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1003); context=/solr||/update @ o.e.j.w.WebAppContext{/solr,file:/Users/zlq/Servers/solr/solr-4.7.2-cloud-2-shard-2-replica/solr-4.7.2-8986/example/solr-webapp/webapp/},/Users/zlq/Servers/solr/solr-4.7.2-cloud-2-shard-2-replica/solr-4.7.2-8986/example/webapps/solr.war
+DEBUG - 2014-12-05 09:37:28.707; [qtp14214026-18 - /solr/update] org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:187); sessionManager=org.eclipse.jetty.server.session.HashSessionManager@784eb2c
+DEBUG - 2014-12-05 09:37:28.707; [qtp14214026-18 - /solr/update] org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:188); session=null
+DEBUG - 2014-12-05 09:37:28.707; [qtp14214026-18 - /solr/update] org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:370); servlet /solr|/update|null -> default
+DEBUG - 2014-12-05 09:37:28.708; [qtp14214026-18 - /solr/update] org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:432); chain=SolrRequestFilter->default
+DEBUG - 2014-12-05 09:37:28.708; [qtp14214026-18 - /solr/update] org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1416); call filter SolrRequestFilter
+DEBUG - 2014-12-05 09:37:28.709; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:409); loaded class java.io.SequenceInputStream
+DEBUG - 2014-12-05 09:37:28.709; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class java.io.SequenceInputStream from null
+TRACE - 2014-12-05 09:37:28.709; [qtp14214026-18 - /solr/update] org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:167); body
+DEBUG - 2014-12-05 09:37:28.710; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.exc.WstxParsingException from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.710; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.exc.WstxUnexpectedCharException from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.711; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:409); loaded class java.io.CharConversionException
+DEBUG - 2014-12-05 09:37:28.711; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class java.io.CharConversionException from null
+DEBUG - 2014-12-05 09:37:28.712; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.exc.WstxEOFException from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.713; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.BaseReader from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.713; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.UTF8Reader from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.714; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.ISOLatinReader from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.714; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.AsciiReader from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.715; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.UTF32Reader from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.715; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.MergedStream from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.716; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:409); loaded interface javax.xml.stream.Location
+DEBUG - 2014-12-05 09:37:28.716; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface javax.xml.stream.Location from null
+DEBUG - 2014-12-05 09:37:28.717; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.InputSourceFactory from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.717; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.WstxInputSource from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.718; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.BaseInputSource from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.718; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.CharArraySource from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.719; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.ReaderSource from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.719; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.BranchingReaderSource from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.721; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface com.ctc.wstx.sr.StreamReaderImpl from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.722; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface org.codehaus.stax2.DTDInfo from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.722; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface org.codehaus.stax2.LocationInfo from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.723; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface com.ctc.wstx.sr.InputProblemReporter from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.724; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface com.ctc.wstx.cfg.ParsingErrorMsgs from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.725; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.WstxInputData from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.725; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.StreamScanner from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.725; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.BasicStreamReader from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.725; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.ValidatingStreamReader from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.728; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface org.codehaus.stax2.XMLStreamLocation2 from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.729; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class org.codehaus.stax2.validation.XMLValidationException from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.729; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.exc.WstxValidationException from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.733; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface org.codehaus.stax2.AttributeInfo from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.733; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:409); loaded interface javax.xml.namespace.NamespaceContext
+DEBUG - 2014-12-05 09:37:28.750; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface javax.xml.namespace.NamespaceContext from null
+DEBUG - 2014-12-05 09:37:28.752; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface org.codehaus.stax2.validation.ValidationContext from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.753; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.InputElementStack from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.754; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.NsInputElementStack from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.755; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.NonNsInputElementStack from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.758; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface org.codehaus.stax2.validation.XMLValidationSchema from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.758; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface org.codehaus.stax2.validation.DTDValidationSchema from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.759; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded interface com.ctc.wstx.sr.NsDefaultProvider from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.761; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class org.codehaus.stax2.validation.XMLValidator from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.762; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class org.codehaus.stax2.validation.ValidatorPair from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.762; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.AttributeCollector from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.763; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.NsAttributeCollector from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.763; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.BaseNsContext from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.764; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.EmptyNamespaceContext from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.764; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.sr.CompactNsContext from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.765; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.EmptyIterator from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.766; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.InternCache from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.766; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.StringVector from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.768; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.TextBuilder from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.769; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.TextBuffer from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.770; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.TextBuffer$BufferReader from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.771; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.compat.JdkFeatures from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.771; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.compat.JdkInfo from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.772; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.compat.JdkImpl from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.772; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.compat.Jdk12Impl from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.773; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.compat.Jdk13Impl from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.773; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.compat.Jdk14Impl from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.773; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.compat.Jdk14Impl$LimitMap from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.774; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.BufferRecycler from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.775; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.io.WstxInputLocation from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.776; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class org.apache.solr.common.SolrException$ErrorCode from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.776; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class com.ctc.wstx.util.StringUtil from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.777; [qtp14214026-18 - /solr/update] org.apache.solr.update.processor.LogUpdateProcessor.finish(LogUpdateProcessorFactory.java:178); PRE_UPDATE FINISH {{params(),defaults(wt=xml)}}
+INFO  - 2014-12-05 09:37:28.777; [qtp14214026-18 - /solr/update] org.apache.solr.update.processor.LogUpdateProcessor.finish(LogUpdateProcessorFactory.java:198); [collection1] webapp=/solr path=/update params={} {} 0 69
+ERROR - 2014-12-05 09:37:28.778; [qtp14214026-18 - /solr/update] org.apache.solr.common.SolrException.log(SolrException.java:109); org.apache.solr.common.SolrException: Unexpected EOF in prolog
+ at [row,col {unknown-source}]: [1,0]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:176)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1916)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:768)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:205)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:364)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at [row,col {unknown-source}]: [1,0]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:686)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2134)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2040)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1069)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:213)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:174)
+	... 32 more
+
+DEBUG - 2014-12-05 09:37:28.780; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class org.apache.solr.servlet.ResponseUtils from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.781; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class org.apache.solr.response.TextResponseWriter from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.781; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class org.apache.solr.response.XMLWriter from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.782; [qtp14214026-18 - /solr/update] org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:439); loaded class org.apache.solr.common.util.XML from WebAppClassLoader=1155033168@44d86850
+DEBUG - 2014-12-05 09:37:28.783; [qtp14214026-18 - /solr/update] org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:444); Closing out SolrRequest: {{params(),defaults(wt=xml)}}
+DEBUG - 2014-12-05 09:37:28.783; [qtp14214026-18 - /solr/update] org.eclipse.jetty.server.Server.handle(Server.java:365); RESPONSE /solr/update  400 handled=true
+DEBUG - 2014-12-05 09:37:28.783; [qtp14214026-18] org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:281); filled -1/0
+DEBUG - 2014-12-05 09:37:28.784; [qtp14214026-18] org.eclipse.jetty.server.AbstractHttpConnection.onClose(AbstractHttpConnection.java:716); closed BlockingHttpConnection@74fb7929,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1

@@ -1,0 +1,59 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 2,
+      "shard.check_on_startup": false,
+      "number_of_replicas": 3
+    },
+    "index.write.wait_for_active_shards": "1"
+  },
+  "mappings": {
+    "user": {
+      "_all": {
+        "enabled": false
+      },
+      "properties": {
+        "title": {
+          "type": "text"
+        },
+        "name": {
+          "type": "text"
+        },
+        "age": {
+          "type": "integer"
+        }
+      }
+    },
+    "blogpost": {
+      "_all": {
+        "enabled": false
+      },
+      "properties": {
+        "title": {
+          "type": "text"
+        },
+        "body": {
+          "type": "text"
+        },
+        "user_id": {
+          "type": "keyword"
+        },
+        "created": {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        }
+      }
+    }
+  },
+  "aliases": {
+    "alias_1": {},
+    "alias_2": {
+      "filter": {
+        "term": {
+          "name": "kimchy"
+        }
+      },
+      "routing": "kimchy"
+    }
+  }
+}

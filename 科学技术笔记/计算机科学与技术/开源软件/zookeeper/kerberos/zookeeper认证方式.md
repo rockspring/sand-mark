@@ -1,0 +1,49 @@
+zookeeper有两个内置认证插件ip and digest，额外的插件通过系统属性或配置文件的配置项添加。
+
+系统属性方式添加
+
+-Dzookeeeper.authProvider.X=com.f.MyAuth
+
+
+配置项方式添加
+
+authProvider.1=com.f.MyAuth
+
+
+
+ProviderRegistry类的initialize方法枚举所有的系统属性，检测到zookeeper.authProvider.前缀的系统属性，系统属性值作为类全限定名，加载类并实例化类。ProviderRegistry的静态存储区有一个类型为HashMap<String, AuthenticationProvider>名称为authenticationProviders容器，实例化的AuthenticationProvider以它们的scheme为键，AuthenticationProvider为值存储起来。
+
+
+什么时候ProviderRegistry的initialize被调用进行初始化呢？
+
+ZooKeeperServer的方法public void processPacket(ServerCnxn cnxn, ByteBuffer incomingBuffer) throws IOException处理消息包时。
+
+RequestHeader 	xid int
+				type int
+
+
+如果RequestHeader的type字段值为OpCode.auth，从消息包余下的内容中解析出AuthPacket
+
+AuthPacket	type int
+				scheme String
+				auth byte[]
+
+通过scheme从ProviderRegistry里获取一个AuthenticationProvider实例
+
+
+SASLAuthenticationProvider的handleAuthentication方法永远返回KeeperException.Code.AUTHFAILED，因为SASL authentication is negotiated at session initiation，从来不应该调用此方法。
+
+IPAuthenticationProvider的handleAuthentication方法，获取客户端的主机地址，scheme为ip，id为远程客户端的主机地址，创建一个实例Id，添加到服务端连接对象ServerCnxn的authInfo列表，返回KeeperException.Code.OK。
+
+
+DigestAuthenticationProvider的handleAuthentication方法，获取AuthPacket的auth数据包，格式为“:”分割的字符串idPassword，使用SHA1算法生成auth的消息摘要digest，然后使用base64编码，取出idPassword的第一部分，然后用“:”连接idPassword的第一部分和base64编码后的SHA1消息摘要数据。首先跟superDigest这个通过zookeeper.DigestAuthenticationProvider.superDigest系统属性指定的摘要（格式为super:<base64encoded(SHA1(password))>）对比，如果对比成功，scheme为super，id为“”，创建一个实例Id，添加到服务端连接对象ServerCnxn的authInfo列表。scheme为digest，id为auth数据，创建一个实例Id，添加到服务端连接对象ServerCnxn的authInfo列表，返回KeeperException.Code.OK。
+
+
+handleAuthentication方法的处理结果不是KeeperException.Code.OK，发送一个只有响应头ReplyHeader的消息包。xid为接收到的消息包的请求头RequestHeader的xid，zxid为0，err为KeeperException.Code.AUTHFAILED.intValue()。调用连接的sendBuffer方法发送关闭连接ServerCnxnFactory.closeConn，关闭网络的读数据功能。
+
+
+handleAuthentication方法的处理结果是KeeperException.Code.OK，发送一个只有响应头ReplyHeader的消息包。xid为接收到的消息包的请求头RequestHeader的xid，zxid为0，err为KeeperException.Code.OK.intValue()。
+
+
+如果RequestHeader的type字段值为OpCode.sasl，调用processSasl处理。
+

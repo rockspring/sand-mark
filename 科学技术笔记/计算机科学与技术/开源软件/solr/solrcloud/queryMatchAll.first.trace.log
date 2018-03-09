@@ -1,0 +1,48 @@
+DEBUG - 2014-07-23 13:51:09.523; org.eclipse.jetty.http.HttpParser; filled 537/537
+DEBUG - 2014-07-23 13:51:09.541; org.eclipse.jetty.server.Server; REQUEST /solr/select/ on BlockingHttpConnection@5d18a770,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=-5,l=38,c=0},r=1
+DEBUG - 2014-07-23 13:51:09.541; org.eclipse.jetty.server.handler.ContextHandler; scope null||/solr/select/ @ o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-07-23 13:51:09.542; org.eclipse.jetty.server.handler.ContextHandler; context=/solr||/select/ @ o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-07-23 13:51:09.551; org.eclipse.jetty.server.session.SessionHandler; sessionManager=org.eclipse.jetty.server.session.HashSessionManager@58648016
+DEBUG - 2014-07-23 13:51:09.551; org.eclipse.jetty.server.session.SessionHandler; session=null
+DEBUG - 2014-07-23 13:51:09.551; org.eclipse.jetty.servlet.ServletHandler; servlet /solr|/select/|null -> default
+DEBUG - 2014-07-23 13:51:09.582; org.eclipse.jetty.servlet.ServletHandler; chain=SolrRequestFilter->default
+DEBUG - 2014-07-23 13:51:09.592; org.eclipse.jetty.servlet.ServletHandler$CachedChain; call filter SolrRequestFilter
+DEBUG - 2014-07-23 13:51:09.592; org.eclipse.jetty.webapp.WebAppClassLoader; loaded interface javax.servlet.http.HttpServletRequest
+DEBUG - 2014-07-23 13:51:09.592; org.eclipse.jetty.webapp.WebAppClassLoader; loaded interface javax.servlet.http.HttpServletRequest from startJarLoader@584fce71
+DEBUG - 2014-07-23 13:51:09.592; org.eclipse.jetty.webapp.WebAppClassLoader; loaded interface javax.servlet.http.HttpServletResponse
+DEBUG - 2014-07-23 13:51:09.593; org.eclipse.jetty.webapp.WebAppClassLoader; loaded interface javax.servlet.http.HttpServletResponse from startJarLoader@584fce71
+DEBUG - 2014-07-23 13:51:09.594; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class java.nio.CharBuffer
+DEBUG - 2014-07-23 13:51:09.595; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class java.nio.CharBuffer from null
+DEBUG - 2014-07-23 13:51:09.598; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.servlet.cache.Method from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.600; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.servlet.cache.HttpCacheHeaderUtil from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.602; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.client.solrj.util.ClientUtils from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.603; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.common.util.DateUtil from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.604; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class java.util.Calendar
+DEBUG - 2014-07-23 13:51:09.604; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class java.util.Calendar from null
+DEBUG - 2014-07-23 13:51:09.606; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.common.util.DateUtil$ThreadLocalDateFormat from WebAppClassLoader=1545595021@5c1fe88d
+INFO  - 2014-07-23 13:51:09.609; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select/ params={q=*:*} hits=0 status=0 QTime=11
+DEBUG - 2014-07-23 13:51:09.613; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.response.TextResponseWriter from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.613; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.response.XMLWriter from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.615; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class java.util.Date
+DEBUG - 2014-07-23 13:51:09.615; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class java.util.Date from null
+DEBUG - 2014-07-23 13:51:09.618; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.lucene.document.Document from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.620; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.common.SolrDocument from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.621; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.common.SolrDocumentList from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.623; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.common.util.XML from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.624; org.eclipse.jetty.webapp.WebAppClassLoader; loaded class org.apache.solr.response.transform.TransformContext from WebAppClassLoader=1545595021@5c1fe88d
+DEBUG - 2014-07-23 13:51:09.629; org.apache.solr.servlet.SolrDispatchFilter; Closing out SolrRequest: {{params(q=*:*),defaults(echoParams=explicit&rows=10)}}
+DEBUG - 2014-07-23 13:51:09.632; org.eclipse.jetty.server.Server; RESPONSE /solr/select/  200 handled=true
+DEBUG - 2014-07-23 13:51:52.445; org.eclipse.jetty.http.HttpParser; filled 554/554
+DEBUG - 2014-07-23 13:51:52.447; org.eclipse.jetty.server.Server; REQUEST /solr/select/ on BlockingHttpConnection@5d18a770,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=-5,l=38,c=0},r=2
+DEBUG - 2014-07-23 13:51:52.447; org.eclipse.jetty.server.handler.ContextHandler; scope null||/solr/select/ @ o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-07-23 13:51:52.448; org.eclipse.jetty.server.handler.ContextHandler; context=/solr||/select/ @ o.e.j.w.WebAppContext{/solr,file:/vagrant/projects/work/search-cloud/cloud/7804/server/solr-webapp/webapp/},/vagrant/projects/work/search-cloud/cloud/7804/server/webapps/solr.war
+DEBUG - 2014-07-23 13:51:52.449; org.eclipse.jetty.server.session.SessionHandler; sessionManager=org.eclipse.jetty.server.session.HashSessionManager@58648016
+DEBUG - 2014-07-23 13:51:52.449; org.eclipse.jetty.server.session.SessionHandler; session=null
+DEBUG - 2014-07-23 13:51:52.449; org.eclipse.jetty.servlet.ServletHandler; servlet /solr|/select/|null -> default
+DEBUG - 2014-07-23 13:51:52.449; org.eclipse.jetty.servlet.ServletHandler; chain=SolrRequestFilter->default
+DEBUG - 2014-07-23 13:51:52.450; org.eclipse.jetty.servlet.ServletHandler$CachedChain; call filter SolrRequestFilter
+INFO  - 2014-07-23 13:51:52.452; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select/ params={q=*:*} hits=0 status=0 QTime=0
+DEBUG - 2014-07-23 13:51:52.454; org.apache.solr.servlet.SolrDispatchFilter; Closing out SolrRequest: {{params(q=*:*),defaults(echoParams=explicit&rows=10)}}
+DEBUG - 2014-07-23 13:51:52.454; org.eclipse.jetty.server.Server; RESPONSE /solr/select/  200 handled=true
+DEBUG - 2014-07-23 13:52:42.494; org.eclipse.jetty.http.HttpParser; filled -1/0
+DEBUG - 2014-07-23 13:52:42.496; org.eclipse.jetty.server.AbstractHttpConnection; closed BlockingHttpConnection@5d18a770,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=2

@@ -1,0 +1,3 @@
+SafetyNetCloseableRegistry	registry
+String	debugInfo
+boolean	closed

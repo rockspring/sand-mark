@@ -1,0 +1,5 @@
+/Users/zlq/360云盘/projects/c++/cmake-demo-google-test/eclipse/test/CMakeFiles/hello_test.dir
+/Users/zlq/360云盘/projects/c++/cmake-demo-google-test/eclipse/contrib/googletest-read-only/CMakeFiles/gtest.dir
+/Users/zlq/360云盘/projects/c++/cmake-demo-google-test/eclipse/CMakeFiles/main.dir
+/Users/zlq/360云盘/projects/c++/cmake-demo-google-test/eclipse/src/CMakeFiles/hello.dir
+/Users/zlq/360云盘/projects/c++/cmake-demo-google-test/eclipse/contrib/googletest-read-only/CMakeFiles/gtest_main.dir

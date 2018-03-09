@@ -1,0 +1,1 @@
+bash /Users/zlq/360云盘/文档/学习笔记/solr/2014_12_08/solr故障实验/deleteByQuery.sh

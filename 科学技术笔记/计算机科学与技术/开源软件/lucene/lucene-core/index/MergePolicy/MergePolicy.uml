@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.solr.update.DummyMergePolicy</OriginalElement>
+  <nodes>
+    <node x="1111.6944444444443" y="266.0">org.apache.lucene.index.NoMergePolicy</node>
+    <node x="926.0" y="0.0">org.apache.lucene.index.MergePolicy</node>
+    <node x="916.6944444444443" y="266.0">org.apache.lucene.index.MergePolicyWrapper</node>
+    <node x="0.0" y="488.0">org.apache.lucene.index.LogDocMergePolicy</node>
+    <node x="732.0" y="499.0">org.apache.lucene.index.UpgradeIndexMergePolicy</node>
+    <node x="960.0" y="488.0">org.apache.lucene.index.OneMergeWrappingMergePolicy</node>
+    <node x="289.0" y="466.0">org.apache.lucene.index.LogByteSizeMergePolicy</node>
+    <node x="1342.6944444444443" y="189.0">org.apache.lucene.index.TieredMergePolicy</node>
+    <node x="196.19444444444434" y="167.0">org.apache.lucene.index.LogMergePolicy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.index.UpgradeIndexMergePolicy" target="org.apache.lucene.index.MergePolicyWrapper">
+      <point x="0.0" y="-14.5" />
+      <point x="836.0" y="441.0" />
+      <point x="960.4444444444443" y="441.0" />
+      <point x="-43.75" y="25.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.LogMergePolicy" target="org.apache.lucene.index.MergePolicy">
+      <point x="0.0" y="-124.5" />
+      <point x="339.69444444444434" y="147.0" />
+      <point x="966.625" y="147.0" />
+      <point x="-121.875" y="58.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.LogDocMergePolicy" target="org.apache.lucene.index.LogMergePolicy">
+      <point x="0.0" y="-25.5" />
+      <point x="134.5" y="441.0" />
+      <point x="267.94444444444434" y="441.0" />
+      <point x="-71.75" y="124.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.TieredMergePolicy" target="org.apache.lucene.index.MergePolicy">
+      <point x="0.0" y="-102.5" />
+      <point x="1491.1944444444443" y="137.0" />
+      <point x="1210.375" y="137.0" />
+      <point x="121.875" y="58.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.LogByteSizeMergePolicy" target="org.apache.lucene.index.LogMergePolicy">
+      <point x="-1.1368683772161603E-13" y="-47.5" />
+      <point x="500.4999999999999" y="441.0" />
+      <point x="411.44444444444434" y="441.0" />
+      <point x="71.75" y="124.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.NoMergePolicy" target="org.apache.lucene.index.MergePolicy">
+      <point x="0.0" y="-25.5" />
+      <point x="1217.1944444444443" y="147.0" />
+      <point x="1129.125" y="147.0" />
+      <point x="40.625" y="58.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.OneMergeWrappingMergePolicy" target="org.apache.lucene.index.MergePolicyWrapper">
+      <point x="0.0" y="-25.5" />
+      <point x="1128.0" y="441.0" />
+      <point x="1047.9444444444443" y="441.0" />
+      <point x="43.75" y="25.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.MergePolicyWrapper" target="org.apache.lucene.index.MergePolicy">
+      <point x="0.0" y="-25.5" />
+      <point x="1004.1944444444443" y="147.0" />
+      <point x="1047.875" y="147.0" />
+      <point x="-40.625" y="58.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9754098360655737" x="722.0" y="280.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

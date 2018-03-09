@@ -1,0 +1,43 @@
+./flink-mesos/src/main/scala/org/apache/flink/mesos/runtime/clusterframework/MesosTaskManager.scala:  def main(args: Array[String]): Unit = {
+./flink-scala/src/test/scala/org/apache/flink/api/scala/runtime/TupleSerializerCompatibilityTestGenerator.scala:  def main(args: Array[String]): Unit = {
+./flink-libraries/flink-gelly-examples/src/main/scala/org/apache/flink/graph/scala/examples/SingleSourceShortestPaths.scala:  def main(args: Array[String]) {
+./flink-libraries/flink-gelly-examples/src/main/scala/org/apache/flink/graph/scala/examples/ConnectedComponents.scala:  def main(args: Array[String]) {
+./flink-libraries/flink-gelly-examples/src/main/scala/org/apache/flink/graph/scala/examples/GSASingleSourceShortestPaths.scala:  def main(args: Array[String]) {
+./flink-quickstart/flink-quickstart-scala/target/classes/archetype-resources/src/main/scala/StreamingJob.scala:  def main(args: Array[String]) {
+./flink-quickstart/flink-quickstart-scala/target/classes/archetype-resources/src/main/scala/BatchJob.scala:  def main(args: Array[String]) {
+./flink-quickstart/flink-quickstart-scala/src/main/resources/archetype-resources/src/main/scala/StreamingJob.scala:  def main(args: Array[String]) {
+./flink-quickstart/flink-quickstart-scala/src/main/resources/archetype-resources/src/main/scala/BatchJob.scala:  def main(args: Array[String]) {
+./flink-yarn-tests/src/test/scala/org/apache/flink/yarn/TestingYarnTaskManager.scala:    def main(args: Array[String]): Unit = {
+./flink-scala-shell/src/main/scala/org/apache/flink/api/scala/FlinkShell.scala:  def main(args: Array[String]) {
+./flink-yarn/src/main/scala/org/apache/flink/yarn/YarnTaskManager.scala:  def main(args: Array[String]): Unit = {
+./flink-tests/src/test/scala/org/apache/flink/api/scala/manual/MassiveCaseClassSortingITCase.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/twitter/TwitterExample.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/join/WindowJoin.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/wordcount/WordCount.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/async/AsyncIOExample.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/ml/IncrementalLearningSkeleton.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/kafka/Kafka010Example.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/iteration/IterateExample.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/windowing/WindowWordCount.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/windowing/TopSpeedWindowing.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/windowing/SessionWindowing.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/windowing/GroupedProcessingTimeWindowExample.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-streaming/src/main/scala/org/apache/flink/streaming/scala/examples/socket/SocketWindowWordCount.scala:  def main(args: Array[String]) : Unit = {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/misc/PiEstimation.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/relational/TPCHQuery3.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/relational/WebLogAnalysis.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/relational/TPCHQuery10.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/wordcount/WordCount.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/graph/EnumTriangles.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/graph/PageRankBasic.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/graph/DeltaPageRank.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/graph/ConnectedComponents.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/clustering/KMeans.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-batch/src/main/scala/org/apache/flink/examples/scala/ml/LinearRegression.scala:  def main(args: Array[String]) {
+./flink-examples/flink-examples-table/src/main/scala/org/apache/flink/table/examples/scala/WordCountTable.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-table/src/main/scala/org/apache/flink/table/examples/scala/StreamTableExample.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-table/src/main/scala/org/apache/flink/table/examples/scala/WordCountSQL.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-table/src/main/scala/org/apache/flink/table/examples/scala/StreamSQLExample.scala:  def main(args: Array[String]): Unit = {
+./flink-examples/flink-examples-table/src/main/scala/org/apache/flink/table/examples/scala/TPCHQuery3Table.scala:  def main(args: Array[String]) {
+./flink-runtime/src/main/scala/org/apache/flink/runtime/jobmanager/JobManager.scala:  def main(args: Array[String]): Unit = {
+./flink-runtime/src/main/scala/org/apache/flink/runtime/taskmanager/TaskManager.scala:  def main(args: Array[String]): Unit = {

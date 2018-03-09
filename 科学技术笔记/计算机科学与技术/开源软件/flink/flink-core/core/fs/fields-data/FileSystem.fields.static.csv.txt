@@ -1,0 +1,6 @@
+ReentrantLock	LOCK
+HashMap<FSKey,FileSystem>	CACHE
+List<FileSystemFactory>	RAW_FACTORIES
+HashMap<String,FileSystemFactory>	FS_FACTORIES
+FileSystemFactory	FALLBACK_FACTORY
+URI	DEFAULT_SCHEME

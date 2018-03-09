@@ -1,0 +1,14 @@
+/** The limit for the total number of connections, or 0, if no limit. */
+public final int limitTotal;
+
+/** The limit for the number of input stream connections, or 0, if no limit. */
+public final int limitInput;
+
+/** The limit for the number of output stream connections, or 0, if no limit. */
+public final int limitOutput;
+
+/** The stream opening timeout for a stream, in milliseconds. */
+public final long streamOpenTimeout;
+
+/** The inactivity timeout for a stream, in milliseconds. */
+public final long streamInactivityTimeout;

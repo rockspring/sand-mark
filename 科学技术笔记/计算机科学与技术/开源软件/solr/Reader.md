@@ -1,0 +1,24 @@
+{
+	StandardDirectoryReader(
+		segments_5pv3:
+		19103104
+		:nrt 
+		_4lm9j(4.7):C3896700/305314:delGen=97 
+		_4lmv7(4.7):C22800/1042:delGen=43 
+		_4lnav(4.7):C133371/2038:delGen=42 
+		_4lmva(4.7):C18575/1104:delGen=48 
+		_4ln6f(4.7):C26132/764:delGen=44 
+		_4lmy5(4.7):C12185/498:delGen=48 
+		_4ln1z(4.7):C10930/401:delGen=43 
+		_4lmzu(4.7):C10298/315:delGen=43 
+		_4ln5j(4.7):C19267/573:delGen=47 
+		_4lnj9(4.7):C32929/1223:delGen=35 
+		_4ln4q(4.7):C10954/841:delGen=38 
+		_4lnk1(4.7):C7352/512:delGen=29 
+		_4lobs(4.7):C5101/151:delGen=11 
+		_4lond(4.7):C6339/4 
+		_4lonb(4.7):C1233/63 
+		_4lonf(4.7):C59/4 
+		_4long(4.7):C84/43:delGen=1
+	)
+}

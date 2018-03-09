@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zlq/360云盘/projects/c++/cpp-concurrency-in-action/chapter4/code1/chrono.cpp
+iostream
+-
+iomanip
+-
+ctime
+-
+chrono
+-
+thread
+-
+

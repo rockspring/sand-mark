@@ -1,0 +1,94 @@
+
+
+Adapter
+
+onResponseReceived
+
+asyncSender
+
+RequestHolder
+
+ContextRestoreResponseHandler
+
+handler
+
+TransportNodesAction.AsyncAction.new TransportResponseHandler
+
+onOperation
+
+finishHim
+
+TransportResponseHandler
+
+DirectResponseChannel
+
+TransportServiceAdapter
+
+requestId
+
+sendResponse
+
+DirectResponseChannel的sendResponse方法通过持有的TransportServiceAdapter
+获得请求ID对应的处理器，提交一个任务给线程池运行，这个任务使用处理器处理响应。
+
+
+sendResponse方法语义上本来是一个服务器端通过socket发送数据到客户端的方法。DirectResponseChannel中数据实际上不通过socket传输出去，直接通过对象共享方式给客户端。sendResponse方法内部通过TransportServiceAdapter获得requestId对应的TransportResponseHandler，即调用Adapter的onResponseReceived方法，创建一个处理任务，这个任务的执行方法是DirectResponseChannel的processResponse，内部回调TransportResponseHandler的handleResponse方法，将这个任务提交到线程池，由线程池的线程去执行。
+
+客户端的处理器全部保存在TransportService的clientHandlers中，Adapter是一个TransportService的内部类，可以存取clientHandlers。
+
+RequestHolder
+
+	TransportService.ContextRestoreResponseHandler（TransportResponseHandler）
+
+		ActionListenerResponseHandler
+
+					org/elasticsearch/action/ActionListenerResponseHandler.java
+
+						listener(org/elasticsearch/action/search/AbstractSearchAsyncAction.java的performFirstPhase方法里创建的匿名内部类ActionListener实例)
+
+
+TransportNodesAction.AsyncAction.new TransportResponseHandler
+
+	函数onOperation
+
+		函数finishHim
+
+org/elasticsearch/action/search/SearchTransportService.java
+
+注册了176个处理器到org/elasticsearch/transport/TransportService.java的requestHandlers中
+
+举个例子；
+
+动作（action）名称
+
+```
+indices:data/read/search[phase/query]
+```
+
+动作（action）对应的处理器，使用lambda表达式技术，创建匿名处理器
+
+request为ShardSearchTransportRequest
+
+channel为TransportChannelWrapper
+
+```
+(request, channel) -> {
+    QuerySearchResultProvider result = searchService.executeQueryPhase(request);
+    channel.sendResponse(result);
+}
+```
+
+
+TransportChannelWrapper包装了DirectResponseChannel
+
+
+
+sendLocalRequest方法如何实现的？
+
+创建一个通道DirectResponseChannel，直接通过这个对象通信
+
+org/elasticsearch/action/search/SearchTransportService.java的返回结果直接写入到这个通道
+
+org/elasticsearch/search/SearchService.java的executeQueryPhase方法为索引引擎的对外接口方法之一，提供查询服务。
+
+

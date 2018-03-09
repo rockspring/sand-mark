@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <lst name="responseHeader">
+    <int name="status">0</int>
+    <int name="QTime">1774</int>
+  </lst>
+  <lst name="terms">
+    <lst name="unique_id">
+      <int name="A246650157">5</int>
+      <int name="A239185674">4</int>
+      <int name="A242791308">4</int>
+      <int name="A243120163">4</int>
+      <int name="A243283788">4</int>
+      <int name="A243953549">4</int>
+      <int name="A243981975">4</int>
+      <int name="A243996710">4</int>
+      <int name="A244004492">4</int>
+      <int name="A244019691">4</int>
+    </lst>
+  </lst>
+</response>

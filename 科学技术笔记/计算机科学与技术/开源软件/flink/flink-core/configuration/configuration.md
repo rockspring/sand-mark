@@ -1,0 +1,3 @@
+org.apache.flink.configuration.GlobalConfiguration
+
+构造Configuration的工厂类。读取配置文件的内容创建配置对象。

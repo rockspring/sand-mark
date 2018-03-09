@@ -1,0 +1,6 @@
+/** The scheme of the file system. */
+private final String scheme;
+
+/** The authority of the file system. */
+@Nullable
+private final String authority;

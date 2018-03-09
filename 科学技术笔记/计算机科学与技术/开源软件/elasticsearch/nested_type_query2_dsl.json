@@ -1,0 +1,17 @@
+{
+    "query" : {
+        "nested" : {
+            "path" : "users",
+            "score_mode" : "sum",
+            "query" : {
+                "bool" : {
+                    "must" : [
+                        {
+                            "match" : {"users.first" : "John"}
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

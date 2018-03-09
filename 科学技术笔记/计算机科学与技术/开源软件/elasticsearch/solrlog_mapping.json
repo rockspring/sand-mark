@@ -1,0 +1,162 @@
+{
+  "index_analyzer" : "standard",
+  "search_analyzer" : "standard",
+  "dynamic_date_formats" : ["yyyy-MM-dd", "dd-MM-yyyy"],
+  "date_detection" : true,
+  "numeric_detection" : true,
+  "_id" : {
+      "index" : "not_analyzed",
+      "store" : true
+  },
+  "_type" : {"store" : true},
+  "_source" : {"enabled" : true},
+  "_all" : {"enabled" : true, "store": true},
+  "_analyzer" : {
+      "path" : "message_analyzer"
+  },
+  "_parent" : {
+      "type" : "service"
+  },
+  "_field_names" : { "store" : true},
+  "_routing" : {
+      "required" : true,
+      "path" : "message"
+  },
+  "_index" : { "enabled" : true },
+  "_size" : {"enabled" : true, "store" : true },
+  "_timestamp" : {
+      "enabled" : true,
+      "format" : "YYYY-MM-dd",
+      "store" : true
+  },
+  "_ttl" : { 
+      "enabled" : true, "default" : "1m" 
+  },
+  "properties": {
+    "message": {
+      "type": "string",
+      "similarity":"BM25",
+      "fields" : {
+          "word_count": {
+              "type" : "token_count",
+              "store" : "yes",
+              "analyzer" : "standard"
+          },
+          "raw" : {"type" : "string", "index" : "not_analyzed", "store": true}
+      },
+      "index_name": "message",
+      "store": true,
+      "index": "analyzed",
+      "doc_values": false,
+      "term_vector": "with_positions_offsets",
+      "boost": 1.0,
+      "null_value": "null",
+      "norms": {
+        "enabled": true
+      },
+      "norms": {
+        "loading": "eager"
+      },
+      "index_options": "offsets",
+      "analyzer": "standard",
+      "index_analyzer": "standard",
+      "search_analyzer": "standard",
+      "include_in_all": "true",
+      "ignore_above": 4294967295,
+      "position_offset_gap": 0
+    },
+    "message_analyzer" : {
+      "type": "string",
+      "index_name": "message_analyzer",
+      "store": true
+    },
+    "urlLength": {
+      "type": "integer",
+      "fields" : {
+          "word_count": {
+              "type" : "token_count",
+              "store" : "yes",
+              "analyzer" : "standard"
+          }
+      },
+      "index_name": "urlLength",
+      "store": true,
+      "index": "analyzed",
+      "doc_values": false,
+      "precision_step": 8,
+      "boost": 1.0,
+      "null_value": "0",
+      "include_in_all": "true",
+      "ignore_malformed": false,
+      "coerce": true
+    },
+    "dateTime" : {
+      "type": "date",
+      "format" : "YYYY-MM-dd",
+      "fields" : {
+          "word_count": {
+              "type" : "token_count",
+              "store" : "yes",
+              "analyzer" : "standard"
+          }
+      },
+      "index_name": "dateTime",
+      "store": true,
+      "index": "analyzed",
+      "doc_values": false,
+      "precision_step": 16,
+      "boost": 1.0,
+      "null_value": "null",
+      "include_in_all": "true",
+      "ignore_malformed" : "false" 
+    },
+    "httpCode200" : {
+      "type": "boolean",
+      "index_name": "httpCodeOK",
+      "store": true,
+      "index": "not_analyzed",
+      "boost": 1.0,
+      "null_value": "false",
+      "copy_to" : ["meta_data", "article_info"]
+    },
+    "ip" : {
+      "type": "ip",
+      "index_name": "ip",
+      "store": true,
+      "index": "analyzed",
+      "precision_step": 16,
+      "boost": 1.0,
+      "null_value": "0.0.0.0",
+      "include_in_all": "true"
+    },
+    "meta_data" : { "type" : "string", "store": true },
+    "article_info" : { "type" : "string", "store": true  }
+  },
+  "dynamic_templates" : [
+      {
+          "template_1" : {
+              "match" : "multi*",
+              "unmatch" : "_multi*",
+              "path_match" : "obj1.*.value",
+              "path_unmatch" : "obj1.*.value1",
+              "mapping" : {
+                  "type" : "{dynamic_type}",
+                  "index" : "analyzed",
+                  "fields" : {
+                      "org" : {"type": "{dynamic_type}", "index" : "not_analyzed"}
+                  }
+              }
+          }
+      },
+      {
+          "template_2" : {
+              "match" : "*",
+              "match_mapping_type" : "string",
+              "mapping" : {
+                  "type" : "string",
+                  "index" : "not_analyzed"
+              }
+          }
+      }
+  ]
+}

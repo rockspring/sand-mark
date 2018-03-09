@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.orientechnologies.orient.core.engine.OEngineAbstract</OriginalElement>
+  <nodes>
+    <node x="0.0" y="479.0">com.orientechnologies.orient.core.engine.memory.OEngineMemory</node>
+    <node x="830.0" y="446.0">com.orientechnologies.orient.core.engine.local.OEngineLocalPaginated</node>
+    <node x="415.0" y="457.0">com.orientechnologies.orient.client.remote.OEngineRemote</node>
+    <node x="415.0" y="0.0">com.orientechnologies.orient.core.engine.OEngine</node>
+    <node x="464.0" y="234.0">com.orientechnologies.orient.core.engine.OEngineAbstract</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.orientechnologies.orient.client.remote.OEngineRemote" target="com.orientechnologies.orient.core.engine.OEngineAbstract">
+      <point x="0.0" y="-92.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.engine.memory.OEngineMemory" target="com.orientechnologies.orient.core.engine.OEngineAbstract">
+      <point x="0.0" y="-70.0" />
+      <point x="197.5" y="421.0" />
+      <point x="513.5" y="421.0" />
+      <point x="-99.0" y="81.0" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.engine.local.OEngineLocalPaginated" target="com.orientechnologies.orient.core.engine.OEngineAbstract">
+      <point x="0.0" y="-103.0" />
+      <point x="1027.5" y="421.0" />
+      <point x="711.5" y="421.0" />
+      <point x="99.0" y="81.0" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.engine.OEngineAbstract" target="com.orientechnologies.orient.core.engine.OEngine">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7113095238095238" x="613.1004184100418" y="415.79079497907946" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

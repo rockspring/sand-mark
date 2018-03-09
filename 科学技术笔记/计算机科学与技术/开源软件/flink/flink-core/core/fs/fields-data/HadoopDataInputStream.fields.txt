@@ -1,0 +1,17 @@
+/**
+ * Minimum amount of bytes to skip forward before we issue a seek instead of discarding read.
+ *
+ * <p>The current value is just a magic number. In the long run, this value could become configurable, but for now it
+ * is a conservative, relatively small value that should bring safe improvements for small skips (e.g. in reading
+ * meta data), that would hurt the most with frequent seeks.
+ *
+ * <p>The optimal value depends on the DFS implementation and configuration plus the underlying filesystem.
+ * For now, this number is chosen "big enough" to provide improvements for smaller seeks, and "small enough" to
+ * avoid disadvantages over real seeks. While the minimum should be the page size, a true optimum per system would
+ * be the amounts of bytes the can be consumed sequentially within the seektime. Unfortunately, seektime is not
+ * constant and devices, OS, and DFS potentially also use read buffers and read-ahead.
+ */
+public static final int MIN_SKIP_BYTES = 1024 * 1024;
+
+/** The internal stream. */
+private final org.apache.hadoop.fs.FSDataInputStream fsDataInputStream;

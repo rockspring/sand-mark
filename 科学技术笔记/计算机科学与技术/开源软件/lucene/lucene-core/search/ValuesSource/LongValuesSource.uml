@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.search.LongValuesSource</OriginalElement>
+  <nodes>
+    <node x="888.0" y="466.0">org.apache.lucene.search.LongValuesSource.ConstantLongValuesSource</node>
+    <node x="0.0" y="466.0">org.apache.lucene.search.DoubleValuesSource.LongDoubleValuesSource</node>
+    <node x="495.5" y="0.0">org.apache.lucene.search.SegmentCacheable</node>
+    <node x="444.0" y="466.0">org.apache.lucene.search.LongValuesSource.FieldValuesSource</node>
+    <node x="435.5" y="101.0">org.apache.lucene.search.LongValuesSource</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.search.DoubleValuesSource.LongDoubleValuesSource" target="org.apache.lucene.search.LongValuesSource">
+      <point x="0.0" y="-103.0" />
+      <point x="212.0" y="441.0" />
+      <point x="509.0" y="441.0" />
+      <point x="-147.0" y="157.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.LongValuesSource.ConstantLongValuesSource" target="org.apache.lucene.search.LongValuesSource">
+      <point x="0.0" y="-103.0" />
+      <point x="1100.0" y="441.0" />
+      <point x="803.0" y="441.0" />
+      <point x="147.0" y="157.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.LongValuesSource" target="org.apache.lucene.search.SegmentCacheable">
+      <point x="0.0" y="-157.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="org.apache.lucene.search.LongValuesSource.FieldValuesSource" target="org.apache.lucene.search.LongValuesSource">
+      <point x="0.0" y="-103.0" />
+      <point x="0.0" y="157.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6366366366366366" x="656.0" y="216.31839622641513" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

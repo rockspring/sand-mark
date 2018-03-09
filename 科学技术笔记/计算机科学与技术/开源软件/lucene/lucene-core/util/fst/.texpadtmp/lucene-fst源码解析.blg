@@ -1,0 +1,15 @@
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is '/Users/zlq/360äºç/ææ¡£/å­¦ä¹ ç¬è®°/lucene/fst/.texpadtmp/lucene-fstæºç è§£æ.blg'
+[47] biber-darwin:276> INFO - === Wed Dec 16, 2015, 14:19:18
+[47] Biber.pm:333> INFO - Reading '/Users/zlq/360äºç/ææ¡£/å­¦ä¹ ç¬è®°/lucene/fst/.texpadtmp/lucene-fstæºç è§£æ.bcf'
+[157] Biber.pm:645> INFO - Found 3 citekeys in bib section 0
+[179] Biber.pm:2977> INFO - Processing section 0
+[197] Biber.pm:3115> INFO - Looking for bibtex format file '/Users/zlq/360云盘/文档/学习笔记/lucene/fst/fst.bib' for section 0
+[199] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[201] bibtex.pm:895> INFO - Found BibTeX data source '/Users/zlq/360云盘/文档/学习笔记/lucene/fst/fst.bib'
+[248] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[248] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[248] Biber.pm:2854> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'en-US'
+[248] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[254] bbl.pm:505> INFO - Writing '/Users/zlq/360äºç/ææ¡£/å­¦ä¹ ç¬è®°/lucene/fst/.texpadtmp/lucene-fstæºç è§£æ.bbl' with encoding 'UTF-8'
+[254] bbl.pm:596> INFO - Output to /Users/zlq/360äºç/ææ¡£/å­¦ä¹ ç¬è®°/lucene/fst/.texpadtmp/lucene-fstæºç è§£æ.bbl

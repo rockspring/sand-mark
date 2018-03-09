@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</OriginalElement>
+  <nodes>
+    <node x="903.0" y="158.0">com.orientechnologies.orient.core.storage.impl.local.OLowDiskSpaceListener</node>
+    <node x="678.0" y="336.0">com.orientechnologies.orient.core.storage.impl.memory.ODirectMemoryStorage</node>
+    <node x="454.0" y="79.0">com.orientechnologies.orient.core.storage.OStorage</node>
+    <node x="268.0" y="158.0">com.orientechnologies.orient.core.storage.OStorageAbstract</node>
+    <node x="1557.0" y="158.0">com.orientechnologies.orient.core.storage.impl.local.OPageIsBrokenListener</node>
+    <node x="1118.0" y="158.0">com.orientechnologies.orient.core.OOrientStartupListener</node>
+    <node x="0.0" y="158.0">com.orientechnologies.orient.core.storage.impl.local.OFullCheckpointRequestListener</node>
+    <node x="1329.0" y="158.0">com.orientechnologies.orient.core.OOrientShutdownListener</node>
+    <node x="447.0" y="158.0">com.orientechnologies.orient.core.storage.OIdentifiableStorage</node>
+    <node x="771.0" y="257.0">com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</node>
+    <node x="889.0" y="336.0">com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage</node>
+    <node x="640.0" y="158.0">com.orientechnologies.orient.core.storage.cache.local.OBackgroundExceptionListener</node>
+    <node x="267.5" y="0.0">com.orientechnologies.common.concur.resource.OSharedContainer</node>
+    <node x="469.0" y="0.0">com.orientechnologies.orient.core.util.OBackupable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.paginated.OLocalPaginatedStorage" target="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage">
+      <point x="0.0" y="-14.5" />
+      <point x="988.5" y="311.0" />
+      <point x="936.0" y="311.0" />
+      <point x="55.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.OStorageAbstract" target="com.orientechnologies.common.concur.resource.OSharedContainer">
+      <point x="-39.75" y="-14.5" />
+      <point x="-40.25" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.OStorageAbstract" target="com.orientechnologies.orient.core.storage.OStorage">
+      <point x="39.75" y="-14.5" />
+      <point x="387.25" y="133.0" />
+      <point x="480.5" y="133.0" />
+      <point x="-26.5" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage" target="com.orientechnologies.orient.core.storage.impl.local.OFullCheckpointRequestListener">
+      <point x="-96.25" y="-14.5" />
+      <point x="784.75" y="237.0" />
+      <point x="124.0" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage" target="com.orientechnologies.orient.core.storage.impl.local.OLowDiskSpaceListener">
+      <point x="13.75" y="-14.5" />
+      <point x="894.75" y="207.0" />
+      <point x="1000.5" y="207.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage" target="com.orientechnologies.orient.core.storage.cache.local.OBackgroundExceptionListener">
+      <point x="-13.75" y="-14.5" />
+      <point x="867.25" y="207.0" />
+      <point x="761.5" y="207.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage" target="com.orientechnologies.orient.core.storage.OStorageAbstract">
+      <point x="-68.75" y="-14.5" />
+      <point x="812.25" y="227.0" />
+      <point x="347.5" y="227.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.OIdentifiableStorage" target="com.orientechnologies.orient.core.storage.OStorage">
+      <point x="0.0" y="-14.5" />
+      <point x="26.5" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage" target="com.orientechnologies.orient.core.storage.impl.local.OPageIsBrokenListener">
+      <point x="96.25" y="-14.5" />
+      <point x="977.25" y="237.0" />
+      <point x="1652.5" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage" target="com.orientechnologies.orient.core.OOrientStartupListener">
+      <point x="41.25" y="-14.5" />
+      <point x="922.25" y="217.0" />
+      <point x="1213.5" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.memory.ODirectMemoryStorage" target="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage">
+      <point x="0.0" y="-14.5" />
+      <point x="773.5" y="311.0" />
+      <point x="826.0" y="311.0" />
+      <point x="-55.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage" target="com.orientechnologies.orient.core.storage.OIdentifiableStorage">
+      <point x="-41.25" y="-14.5" />
+      <point x="839.75" y="217.0" />
+      <point x="533.5" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.OStorage" target="com.orientechnologies.orient.core.util.OBackupable">
+      <point x="26.5" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage" target="com.orientechnologies.orient.core.OOrientShutdownListener">
+      <point x="68.75" y="-14.5" />
+      <point x="949.75" y="227.0" />
+      <point x="1433.0" y="227.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.storage.OStorage" target="com.orientechnologies.common.concur.resource.OSharedContainer">
+      <point x="-26.5" y="-14.5" />
+      <point x="480.5" y="54.0" />
+      <point x="388.25" y="54.0" />
+      <point x="40.25" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7426470588235294" x="874.0" y="182.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

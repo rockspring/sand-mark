@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.fs.local.LocalFileSystemFactory</OriginalElement>
+  <nodes>
+    <node x="584.5" y="79.0">org.apache.flink.core.fs.FileSystemFactory</node>
+    <node x="1027.0" y="168.0">org.apache.flink.fs.s3hadoop.S3FileSystemFactory</node>
+    <node x="211.0" y="168.0">org.apache.flink.core.fs.UnsupportedSchemeFactory</node>
+    <node x="865.0" y="168.0">org.apache.flink.runtime.fs.maprfs.MapRFsFactory</node>
+    <node x="688.0" y="168.0">org.apache.flink.runtime.fs.hdfs.HadoopFsFactory</node>
+    <node x="455.0" y="168.0">org.apache.flink.core.fs.ConnectionLimitingFactory</node>
+    <node x="0.0" y="168.0">org.apache.flink.core.fs.local.LocalFileSystemFactory</node>
+    <node x="343.7777777777778" y="0.0">org.apache.flink.annotation.PublicEvolving</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.fs.local.LocalFileSystemFactory" target="org.apache.flink.core.fs.FileSystemFactory">
+      <point x="47.75" y="-14.5" />
+      <point x="143.25" y="128.0" />
+      <point x="597.75" y="128.0" />
+      <point x="-66.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.fs.hdfs.HadoopFsFactory" target="org.apache.flink.core.fs.FileSystemFactory">
+      <point x="0.0" y="-14.5" />
+      <point x="766.5" y="148.0" />
+      <point x="677.25" y="148.0" />
+      <point x="13.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FileSystemFactory" target="org.apache.flink.annotation.PublicEvolving">
+      <point x="0.0" y="-14.5" />
+      <point x="664.0" y="54.0" />
+      <point x="446.5277777777778" y="54.0" />
+      <point x="34.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.ConnectionLimitingFactory" target="org.apache.flink.core.fs.FileSystemFactory">
+      <point x="0.0" y="-14.5" />
+      <point x="561.5" y="148.0" />
+      <point x="650.75" y="148.0" />
+      <point x="-13.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.local.LocalFileSystemFactory" target="org.apache.flink.annotation.PublicEvolving">
+      <point x="-47.75" y="-14.5" />
+      <point x="47.75" y="54.0" />
+      <point x="378.0277777777778" y="54.0" />
+      <point x="-34.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.fs.s3hadoop.S3FileSystemFactory" target="org.apache.flink.core.fs.FileSystemFactory">
+      <point x="0.0" y="-14.5" />
+      <point x="1114.5" y="128.0" />
+      <point x="730.25" y="128.0" />
+      <point x="66.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.UnsupportedSchemeFactory" target="org.apache.flink.core.fs.FileSystemFactory">
+      <point x="0.0" y="-14.5" />
+      <point x="323.0" y="138.0" />
+      <point x="624.25" y="138.0" />
+      <point x="-39.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.fs.maprfs.MapRFsFactory" target="org.apache.flink.core.fs.FileSystemFactory">
+      <point x="0.0" y="-14.5" />
+      <point x="936.0" y="138.0" />
+      <point x="703.75" y="138.0" />
+      <point x="39.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="601.0" y="98.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

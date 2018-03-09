@@ -1,0 +1,4 @@
+private final SafetyNetCloseableRegistry registry;
+private final String debugInfo;
+
+private volatile boolean closed;

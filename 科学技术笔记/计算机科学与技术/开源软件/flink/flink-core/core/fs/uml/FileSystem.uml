@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.fs.FileSystem</OriginalElement>
+  <nodes>
+    <node x="660.5" y="247.0">org.apache.flink.core.fs.LimitedConnectionsFileSystem.OutStream</node>
+    <node x="232.5" y="168.0">org.apache.flink.core.fs.LimitedConnectionsFileSystem.StreamProgressTracker</node>
+    <node x="64.5" y="79.0">org.apache.flink.core.fs.SafetyNetWrapperFileSystem</node>
+    <node x="566.5" y="79.0">org.apache.flink.core.fs.local.LocalFileSystem</node>
+    <node x="582.5" y="0.0">org.apache.flink.core.fs.FileSystem</node>
+    <node x="634.5" y="168.0">org.apache.flink.core.fs.LimitedConnectionsFileSystem.ConnectionLimitingSettings</node>
+    <node x="10.5" y="168.0">org.apache.flink.core.fs.LimitedConnectionsFileSystem.StreamTimeoutException</node>
+    <node x="444.5" y="168.0">org.apache.flink.core.fs.LimitedConnectionsFileSystem.StreamWithTimeout</node>
+    <node x="837.5" y="79.0">org.apache.flink.core.fs.FileSystem.WriteMode</node>
+    <node x="198.7499999999999" y="247.0">org.apache.flink.core.fs.LimitedConnectionsFileSystem.InStream</node>
+    <node x="731.5" y="79.0">org.apache.flink.core.fs.FileSystem.FSKey</node>
+    <node x="311.5" y="79.0">org.apache.flink.core.fs.LimitedConnectionsFileSystem</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.fs.SafetyNetWrapperFileSystem" target="org.apache.flink.core.fs.FileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="178.0" y="49.0" />
+      <point x="593.8" y="49.0" />
+      <point x="-45.200000000000045" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.StreamProgressTracker" target="org.apache.flink.core.fs.LimitedConnectionsFileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="328.5" y="148.0" />
+      <point x="409.41666666666663" y="148.0" />
+      <point x="-19.583333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.InStream" target="org.apache.flink.core.fs.LimitedConnectionsFileSystem.StreamWithTimeout">
+      <point x="25.5" y="-14.5" />
+      <point x="275.2499999999999" y="222.0" />
+      <point x="487.0" y="222.0" />
+      <point x="-42.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FileSystem.FSKey" target="org.apache.flink.core.fs.FileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="774.5" y="59.0" />
+      <point x="661.5999999999999" y="59.0" />
+      <point x="22.600000000000023" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.StreamTimeoutException" target="org.apache.flink.core.fs.LimitedConnectionsFileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="111.5" y="138.0" />
+      <point x="370.25" y="138.0" />
+      <point x="-58.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.InStream" target="org.apache.flink.core.fs.LimitedConnectionsFileSystem">
+      <point x="-25.5" y="-14.5" />
+      <point x="224.2499999999999" y="222.0" />
+      <point x="0.0" y="222.0" />
+      <point x="0.0" y="128.0" />
+      <point x="331.08333333333337" y="128.0" />
+      <point x="-97.91666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.local.LocalFileSystem" target="org.apache.flink.core.fs.FileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.OutStream" target="org.apache.flink.core.fs.LimitedConnectionsFileSystem">
+      <point x="28.5" y="-14.5" />
+      <point x="746.0" y="222.0" />
+      <point x="863.0" y="222.0" />
+      <point x="863.0" y="128.0" />
+      <point x="526.9166666666666" y="128.0" />
+      <point x="97.91666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.ConnectionLimitingSettings" target="org.apache.flink.core.fs.LimitedConnectionsFileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="743.5" y="138.0" />
+      <point x="487.75" y="138.0" />
+      <point x="58.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FileSystem.WriteMode" target="org.apache.flink.core.fs.FileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="895.0" y="49.0" />
+      <point x="684.2" y="49.0" />
+      <point x="45.200000000000045" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.OutStream" target="org.apache.flink.core.fs.LimitedConnectionsFileSystem.StreamWithTimeout">
+      <point x="-28.5" y="-14.5" />
+      <point x="689.0" y="222.0" />
+      <point x="572.0" y="222.0" />
+      <point x="42.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem.StreamWithTimeout" target="org.apache.flink.core.fs.LimitedConnectionsFileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="529.5" y="148.0" />
+      <point x="448.58333333333337" y="148.0" />
+      <point x="19.58333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.LimitedConnectionsFileSystem" target="org.apache.flink.core.fs.FileSystem">
+      <point x="0.0" y="-14.5" />
+      <point x="429.0" y="59.0" />
+      <point x="616.3999999999999" y="59.0" />
+      <point x="-22.600000000000023" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8782924613987284" x="540.5" y="138.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

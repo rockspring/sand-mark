@@ -1,0 +1,3 @@
+StreamWithTimeout	stream
+long	lastCheckBytes
+long	lastCheckTimestampNanos

@@ -1,0 +1,21 @@
+{
+    "explain": true,
+    "query" : {
+        "nested" : {
+            "path" : "users",
+            "score_mode" : "sum",
+            "query" : {
+                "bool" : {
+                    "should" : [
+                        {
+                             "match" : {"users.first" : { "query" : "john", "operator" : "or", "analyzer" : "standard"}}
+                        },
+                        {
+                            "match" : {"users.last" : { "query" : "white", "operator" : "or", "analyzer" : "standard"}}
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

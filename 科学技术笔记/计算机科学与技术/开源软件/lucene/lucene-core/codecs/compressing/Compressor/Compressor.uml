@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.codecs.compressing.Compressor</OriginalElement>
+  <nodes>
+    <node x="238.00000000000003" y="158.0">org.apache.lucene.codecs.compressing.Compressor</node>
+    <node x="213.00000000000003" y="259.0">org.apache.lucene.codecs.compressing.CompressionMode.LZ4FastCompressor</node>
+    <node x="0.0" y="237.0">org.apache.lucene.codecs.compressing.CompressionMode.DeflateCompressor</node>
+    <node x="246.00000000000003" y="79.0">java.io.Closeable</node>
+    <node x="406.0" y="259.0">org.apache.lucene.codecs.compressing.CompressionMode.LZ4HighCompressor</node>
+    <node x="231.00000000000003" y="0.0">java.lang.AutoCloseable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.codecs.compressing.CompressionMode.LZ4HighCompressor" target="org.apache.lucene.codecs.compressing.Compressor">
+      <point x="0.0" y="-25.5" />
+      <point x="494.0" y="212.0" />
+      <point x="340.5" y="212.0" />
+      <point x="41.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.codecs.compressing.Compressor" target="java.io.Closeable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.codecs.compressing.CompressionMode.DeflateCompressor" target="org.apache.lucene.codecs.compressing.Compressor">
+      <point x="0.0" y="-47.5" />
+      <point x="96.5" y="212.0" />
+      <point x="258.5" y="212.0" />
+      <point x="-41.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.codecs.compressing.CompressionMode.LZ4FastCompressor" target="org.apache.lucene.codecs.compressing.Compressor">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="291.0" y="166.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

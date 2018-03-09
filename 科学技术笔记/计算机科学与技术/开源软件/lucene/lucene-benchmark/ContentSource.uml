@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.benchmark.byTask.feeds.ContentSource</OriginalElement>
+  <nodes>
+    <node x="702.8948412698412" y="484.0">org.apache.lucene.benchmark.byTask.feeds.LineDocSource.SimpleLineParser</node>
+    <node x="546.25" y="326.0">org.apache.lucene.benchmark.byTask.feeds.LineDocSource</node>
+    <node x="752.25" y="237.0">org.apache.lucene.benchmark.byTask.feeds.ContentSource</node>
+    <node x="473.25" y="563.0">org.apache.lucene.benchmark.byTask.feeds.LineDocSource.HeaderLineParser.FieldName</node>
+    <node x="1144.75" y="405.0">org.apache.lucene.benchmark.byTask.feeds.SortableSingleDocSource</node>
+    <node x="959.25" y="326.0">org.apache.lucene.benchmark.byTask.feeds.ReutersContentSource</node>
+    <node x="46.5" y="405.0">org.apache.lucene.benchmark.byTask.feeds.EnwikiContentSource.Parser</node>
+    <node x="1170.25" y="326.0">org.apache.lucene.benchmark.byTask.feeds.SingleDocSource</node>
+    <node x="450.75" y="484.0">org.apache.lucene.benchmark.byTask.feeds.LineDocSource.HeaderLineParser</node>
+    <node x="1355.25" y="326.0">org.apache.lucene.benchmark.byTask.feeds.TrecContentSource</node>
+    <node x="754.25" y="0.0">java.lang.AutoCloseable</node>
+    <node x="309.75" y="484.0">org.apache.lucene.benchmark.byTask.feeds.DirContentSource.Iterator.Comparator</node>
+    <node x="560.25" y="405.0">org.apache.lucene.benchmark.byTask.feeds.LineDocSource.LineParser</node>
+    <node x="735.75" y="158.0">org.apache.lucene.benchmark.byTask.feeds.ContentItemsSource</node>
+    <node x="160.75" y="405.0">org.apache.lucene.benchmark.byTask.feeds.DirContentSource.DateFormatInfo</node>
+    <node x="981.75" y="405.0">org.apache.lucene.benchmark.byTask.feeds.ReutersContentSource.DateFormatInfo</node>
+    <node x="323.75" y="405.0">org.apache.lucene.benchmark.byTask.feeds.DirContentSource.Iterator</node>
+    <node x="0.0" y="326.0">org.apache.lucene.benchmark.byTask.feeds.EnwikiContentSource</node>
+    <node x="769.25" y="79.0">java.io.Closeable</node>
+    <node x="706.25" y="326.0">org.apache.lucene.benchmark.byTask.feeds.LongToEnglishContentSource</node>
+    <node x="222.25" y="326.0">org.apache.lucene.benchmark.byTask.feeds.DirContentSource</node>
+    <node x="1367.75" y="405.0">org.apache.lucene.benchmark.byTask.feeds.TrecContentSource.DateFormatInfo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.LineDocSource" target="org.apache.lucene.benchmark.byTask.feeds.ContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="616.25" y="306.0" />
+      <point x="802.6071428571429" y="306.0" />
+      <point x="-20.14285714285711" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.ReutersContentSource" target="org.apache.lucene.benchmark.byTask.feeds.ContentSource">
+      <point x="5.6843418860808015E-14" y="-14.5" />
+      <point x="1053.25" y="306.0" />
+      <point x="842.8928571428571" y="306.0" />
+      <point x="20.14285714285711" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.ReutersContentSource.DateFormatInfo" target="org.apache.lucene.benchmark.byTask.feeds.ReutersContentSource">
+      <point x="5.6843418860808015E-14" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.ContentItemsSource" target="java.io.Closeable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.SingleDocSource" target="org.apache.lucene.benchmark.byTask.feeds.ContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="1246.25" y="296.0" />
+      <point x="863.0357142857142" y="296.0" />
+      <point x="40.28571428571422" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.HeaderLineParser" target="org.apache.lucene.benchmark.byTask.feeds.LineDocSource">
+      <point x="-39.0" y="-14.5" />
+      <point x="489.75" y="459.0" />
+      <point x="509.5" y="459.0" />
+      <point x="509.5" y="380.0" />
+      <point x="569.5833333333334" y="380.0" />
+      <point x="-46.66666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.EnwikiContentSource" target="org.apache.lucene.benchmark.byTask.feeds.ContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="90.0" y="286.0" />
+      <point x="762.3214285714286" y="286.0" />
+      <point x="-60.428571428571445" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.DirContentSource.Iterator.Comparator" target="org.apache.lucene.benchmark.byTask.feeds.DirContentSource.Iterator">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.DirContentSource.Iterator" target="org.apache.lucene.benchmark.byTask.feeds.DirContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="370.25" y="380.0" />
+      <point x="340.75" y="380.0" />
+      <point x="39.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.HeaderLineParser" target="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.LineParser">
+      <point x="39.0" y="-14.5" />
+      <point x="567.75" y="459.0" />
+      <point x="588.25" y="459.0" />
+      <point x="-28.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.DirContentSource" target="org.apache.lucene.benchmark.byTask.feeds.ContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="301.25" y="296.0" />
+      <point x="782.4642857142857" y="296.0" />
+      <point x="-40.285714285714334" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.SortableSingleDocSource" target="org.apache.lucene.benchmark.byTask.feeds.SingleDocSource">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.SimpleLineParser" target="org.apache.lucene.benchmark.byTask.feeds.LineDocSource">
+      <point x="38.0" y="-14.5" />
+      <point x="816.8948412698412" y="459.0" />
+      <point x="779.3948412698412" y="459.0" />
+      <point x="779.3948412698412" y="380.0" />
+      <point x="662.9166666666666" y="380.0" />
+      <point x="46.66666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.DirContentSource.DateFormatInfo" target="org.apache.lucene.benchmark.byTask.feeds.DirContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="232.25" y="380.0" />
+      <point x="261.75" y="380.0" />
+      <point x="-39.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.LongToEnglishContentSource" target="org.apache.lucene.benchmark.byTask.feeds.ContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.LineParser" target="org.apache.lucene.benchmark.byTask.feeds.LineDocSource">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.HeaderLineParser.FieldName" target="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.HeaderLineParser">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.ContentSource" target="org.apache.lucene.benchmark.byTask.feeds.ContentItemsSource">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.TrecContentSource" target="org.apache.lucene.benchmark.byTask.feeds.ContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="1439.25" y="286.0" />
+      <point x="883.1785714285714" y="286.0" />
+      <point x="60.428571428571445" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.EnwikiContentSource.Parser" target="org.apache.lucene.benchmark.byTask.feeds.EnwikiContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.TrecContentSource.DateFormatInfo" target="org.apache.lucene.benchmark.byTask.feeds.TrecContentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.SimpleLineParser" target="org.apache.lucene.benchmark.byTask.feeds.LineDocSource.LineParser">
+      <point x="-38.0" y="-14.5" />
+      <point x="740.8948412698412" y="459.0" />
+      <point x="644.25" y="459.0" />
+      <point x="28.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="683.0" y="357.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

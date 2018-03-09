@@ -1,0 +1,39 @@
+/** The original file system to which connections are limited. */
+private final FileSystem originalFs;
+
+/** The lock that synchronizes connection bookkeeping. */
+private final ReentrantLock lock;
+
+/** Condition for threads that are blocking on the availability of new connections. */
+private final Condition available;
+
+/** The maximum number of concurrently open output streams. */
+private final int maxNumOpenOutputStreams;
+
+/** The maximum number of concurrently open input streams. */
+private final int maxNumOpenInputStreams;
+
+/** The maximum number of concurrently open streams (input + output). */
+private final int maxNumOpenStreamsTotal;
+
+/** The nanoseconds that a opening a stream may wait for availability. */
+private final long streamOpenTimeoutNanos;
+
+/** The nanoseconds that a stream may spend not writing any bytes before it is closed as inactive. */
+private final long streamInactivityTimeoutNanos;
+
+/** The set of currently open output streams. */
+@GuardedBy("lock")
+private final HashSet<OutStream> openOutputStreams;
+
+/** The set of currently open input streams. */
+@GuardedBy("lock")
+private final HashSet<InStream> openInputStreams;
+
+/** The number of output streams reserved to be opened. */
+@GuardedBy("lock")
+private int numReservedOutputStreams;
+
+/** The number of input streams reserved to be opened. */
+@GuardedBy("lock")
+private int numReservedInputStreams;

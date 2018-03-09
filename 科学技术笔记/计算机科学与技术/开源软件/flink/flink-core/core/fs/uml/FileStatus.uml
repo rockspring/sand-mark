@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.fs.local.LocalFileStatus</OriginalElement>
+  <nodes>
+    <node x="169.5" y="79.0">org.apache.flink.core.fs.FileStatus</node>
+    <node x="172.0" y="158.0">org.apache.flink.runtime.fs.hdfs.HadoopFileStatus</node>
+    <node x="0.0" y="79.0">org.apache.flink.annotation.Internal</node>
+    <node x="92.75" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="12.0" y="158.0">org.apache.flink.core.fs.local.LocalFileStatus</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.fs.local.LocalFileStatus" target="org.apache.flink.annotation.Internal">
+      <point x="-35.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FileStatus" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="223.5" y="54.0" />
+      <point x="156.5" y="54.0" />
+      <point x="21.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.local.LocalFileStatus" target="org.apache.flink.core.fs.FileStatus">
+      <point x="35.0" y="-14.5" />
+      <point x="117.0" y="133.0" />
+      <point x="196.5" y="133.0" />
+      <point x="-27.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.fs.hdfs.HadoopFileStatus" target="org.apache.flink.core.fs.FileStatus">
+      <point x="0.0" y="-14.5" />
+      <point x="27.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.annotation.Internal" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="47.0" y="54.0" />
+      <point x="114.0" y="54.0" />
+      <point x="-21.25" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="111.0" y="93.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

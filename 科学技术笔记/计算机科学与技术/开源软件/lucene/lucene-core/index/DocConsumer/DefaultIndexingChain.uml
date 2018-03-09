@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.lucene.index.DefaultIndexingChain</OriginalElement>
+  <nodes>
+    <node x="319.366013224064" y="198.0">org.apache.lucene.index.TermVectorsConsumer</node>
+    <node x="298.0177345253617" y="109.0">org.apache.lucene.index.TermsHash</node>
+    <node x="208.69081144843864" y="297.0">org.apache.lucene.index.FieldInfos.Builder</node>
+    <node x="1099.7677345253617" y="456.0">org.apache.lucene.index.DefaultIndexingChain</node>
+    <node x="1011.3402876078725" y="297.0">org.apache.lucene.index.DefaultIndexingChain.PerField</node>
+    <node x="345.7677345253617" y="297.0">org.apache.lucene.index.SortingTermVectorsConsumer</node>
+    <node x="830.7481816911902" y="744.0">org.apache.lucene.index.StoredFieldsConsumer</node>
+    <node x="120.36601322406398" y="198.0">org.apache.lucene.index.FreqProxTermsWriter</node>
+    <node x="926.7677345253617" y="456.0">org.apache.lucene.index.DocumentsWriterPerThread.IntBlockAllocator</node>
+    <node x="600.7677345253617" y="456.0">org.apache.lucene.index.DocumentsWriterPerThread.IndexingChain</node>
+    <node x="756.7677345253617" y="456.0">org.apache.lucene.index.DocumentsWriterPerThread.FlushedSegment</node>
+    <node x="469.154912460421" y="665.0">org.apache.lucene.index.DocumentsWriterPerThread</node>
+    <node x="45.4182110262617" y="0.0">org.apache.lucene.index.DocumentsWriterPerThread.DocState</node>
+    <node x="600.7677345253617" y="297.0">org.apache.lucene.index.DocConsumer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.DefaultIndexingChain.PerField">
+      <point x="-13.769230769230717" y="-14.5" />
+      <point x="1175.498503756131" y="376.0" />
+      <point x="1067.3402876078726" y="376.0" />
+      <point x="8.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread.DocState" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="0.0" y="14.5" />
+      <point x="97.4182110262617" y="79.0" />
+      <point x="51.26923076923072" y="79.0" />
+      <point x="51.26923076923072" y="615.0" />
+      <point x="498.63568169119014" y="615.0" />
+      <point x="-80.01923076923083" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.FreqProxTermsWriter">
+      <point x="27.538461538461547" y="-14.5" />
+      <point x="1216.8061960638233" y="346.0" />
+      <point x="1117.8402876078726" y="346.0" />
+      <point x="1117.8402876078726" y="257.0" />
+      <point x="254.61601322406398" y="257.0" />
+      <point x="44.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SortingTermVectorsConsumer" target="org.apache.lucene.index.TermVectorsConsumer">
+      <point x="58.75" y="-14.5" />
+      <point x="522.0177345253617" y="277.0" />
+      <point x="452.366013224064" y="277.0" />
+      <point x="38.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.FieldInfos.Builder">
+      <point x="-82.61538461538464" y="-14.5" />
+      <point x="1106.6523499099771" y="426.0" />
+      <point x="284.524144781772" y="426.0" />
+      <point x="30.33333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread" target="org.apache.lucene.index.DefaultIndexingChain">
+      <point x="88.44230769230774" y="-14.5" />
+      <point x="667.0972201527287" y="605.0" />
+      <point x="1117.6677345253615" y="605.0" />
+      <point x="-71.60000000000002" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.DocumentsWriterPerThread.DocState">
+      <point x="82.61538461538464" y="-14.5" />
+      <point x="1272.0561960638233" y="79.0" />
+      <point x="141.98963959769026" y="79.0" />
+      <point x="44.571428571428555" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.TermsHash" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="-50.571428571428555" y="14.5" />
+      <point x="306.4463059539331" y="158.0" />
+      <point x="73.3681318681318" y="158.0" />
+      <point x="73.3681318681318" y="595.0" />
+      <point x="515.4818355373441" y="595.0" />
+      <point x="-63.173076923076906" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread.IntBlockAllocator" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="38.25" y="14.5" />
+      <point x="1041.5177345253617" y="595.0" />
+      <point x="658.6741432296518" y="595.0" />
+      <point x="80.01923076923083" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread" target="org.apache.lucene.index.DocConsumer">
+      <point x="-4.211538461538453" y="-14.5" />
+      <point x="574.4433739988825" y="525.0" />
+      <point x="501.6042729869001" y="525.0" />
+      <point x="501.6042729869001" y="436.0" />
+      <point x="623.2677345253617" y="436.0" />
+      <point x="-45.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.TermVectorsConsumer" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="-38.0" y="14.5" />
+      <point x="376.366013224064" y="277.0" />
+      <point x="198.19081144843864" y="277.0" />
+      <point x="198.19081144843864" y="565.0" />
+      <point x="540.7510663065749" y="565.0" />
+      <point x="-37.903846153846075" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.SortingTermVectorsConsumer" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="-58.75" y="14.5" />
+      <point x="404.5177345253617" y="535.0" />
+      <point x="566.0202970758056" y="535.0" />
+      <point x="-12.634615384615358" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread" target="org.apache.lucene.index.DocumentsWriterPerThread.IndexingChain">
+      <point x="4.211538461538453" y="-14.5" />
+      <point x="582.8664509219594" y="505.0" />
+      <point x="617.6427345253617" y="505.0" />
+      <point x="-50.625" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread.FlushedSegment" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="50.0" y="14.5" />
+      <point x="881.7677345253617" y="575.0" />
+      <point x="641.8279893834979" y="575.0" />
+      <point x="63.173076923076906" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain.PerField" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="-40.0" y="14.5" />
+      <point x="1019.3402876078725" y="436.0" />
+      <point x="746.2677345253617" y="436.0" />
+      <point x="746.2677345253617" y="545.0" />
+      <point x="616.5587586142672" y="545.0" />
+      <point x="37.90384615384619" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread" target="org.apache.lucene.index.FieldInfos.Builder">
+      <point x="-29.48076923076917" y="-14.5" />
+      <point x="549.1741432296518" y="555.0" />
+      <point x="226.19081144843864" y="555.0" />
+      <point x="226.19081144843864" y="436.0" />
+      <point x="223.85747811510527" y="436.0" />
+      <point x="-30.33333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread" target="org.apache.lucene.index.DocumentsWriterPerThread.FlushedSegment">
+      <point x="46.326923076923094" y="-14.5" />
+      <point x="624.9818355373441" y="555.0" />
+      <point x="781.7677345253617" y="555.0" />
+      <point x="-50.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.DocConsumer">
+      <point x="-55.076923076923094" y="-14.5" />
+      <point x="1134.1908114484386" y="406.0" />
+      <point x="713.2677345253617" y="406.0" />
+      <point x="45.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread.IndexingChain" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="50.625" y="14.5" />
+      <point x="718.8927345253617" y="535.0" />
+      <point x="608.1356816911903" y="535.0" />
+      <point x="29.480769230769283" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread" target="org.apache.lucene.index.DocumentsWriterPerThread.IntBlockAllocator">
+      <point x="71.59615384615381" y="-14.5" />
+      <point x="650.2510663065748" y="585.0" />
+      <point x="965.0177345253617" y="585.0" />
+      <point x="-38.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.TermsHash" target="org.apache.lucene.index.DocumentsWriterPerThread.DocState">
+      <point x="0.0" y="-14.5" />
+      <point x="357.0177345253617" y="89.0" />
+      <point x="127.13249674054742" y="89.0" />
+      <point x="29.714285714285722" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.TermVectorsConsumer" target="org.apache.lucene.index.TermsHash">
+      <point x="-47.5" y="-14.5" />
+      <point x="366.866013224064" y="178.0" />
+      <point x="357.0177345253617" y="178.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.StoredFieldsConsumer">
+      <point x="35.799999999999955" y="14.5" />
+      <point x="1225.0677345253616" y="635.0" />
+      <point x="1118.9383645309495" y="635.0" />
+      <point x="1118.9383645309495" y="714.0" />
+      <point x="947.6231816911902" y="714.0" />
+      <point x="23.375" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="0.0" y="14.5" />
+      <point x="1189.2677345253617" y="625.0" />
+      <point x="683.9433739988825" y="625.0" />
+      <point x="105.28846153846155" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.TermVectorsConsumer">
+      <point x="41.307692307692264" y="-14.5" />
+      <point x="1230.5754268330538" y="436.0" />
+      <point x="1239.0561960638233" y="436.0" />
+      <point x="1239.0561960638233" y="247.0" />
+      <point x="490.366013224064" y="247.0" />
+      <point x="76.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread.IndexingChain" target="org.apache.lucene.index.DocConsumer">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.FreqProxTermsWriter" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="-44.75" y="14.5" />
+      <point x="165.11601322406398" y="277.0" />
+      <point x="128.61813186813185" y="277.0" />
+      <point x="128.61813186813185" y="585.0" />
+      <point x="523.904912460421" y="585.0" />
+      <point x="-54.75" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain.PerField" target="org.apache.lucene.index.DefaultIndexingChain">
+      <point x="24.0" y="14.5" />
+      <point x="1083.3402876078726" y="366.0" />
+      <point x="1189.2677345253617" y="366.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DocumentsWriterPerThread" target="org.apache.lucene.index.DocumentsWriterPerThread.DocState">
+      <point x="-88.44230769230774" y="-14.5" />
+      <point x="490.21260476811324" y="625.0" />
+      <point x="42.84615384615381" y="625.0" />
+      <point x="42.84615384615381" y="69.0" />
+      <point x="82.56106816911881" y="69.0" />
+      <point x="-14.85714285714289" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.FreqProxTermsWriter" target="org.apache.lucene.index.TermsHash">
+      <point x="44.75" y="-14.5" />
+      <point x="254.61601322406398" y="178.0" />
+      <point x="340.1605916682188" y="178.0" />
+      <point x="-16.85714285714286" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.TermsHash">
+      <point x="68.84615384615381" y="-14.5" />
+      <point x="1258.1138883715155" y="436.0" />
+      <point x="1261.0561960638233" y="436.0" />
+      <point x="1261.0561960638233" y="158.0" />
+      <point x="407.58916309679023" y="158.0" />
+      <point x="50.571428571428584" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.StoredFieldsConsumer" target="org.apache.lucene.index.DocumentsWriterPerThread">
+      <point x="-70.125" y="-14.5" />
+      <point x="854.1231816911902" y="724.0" />
+      <point x="523.904912460421" y="724.0" />
+      <point x="-54.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.lucene.index.DefaultIndexingChain" target="org.apache.lucene.index.SortingTermVectorsConsumer">
+      <point x="-68.84615384615381" y="-14.5" />
+      <point x="1120.4215806792079" y="416.0" />
+      <point x="522.0177345253617" y="416.0" />
+      <point x="58.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8321964529331515" x="507.5549180327869" y="316.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

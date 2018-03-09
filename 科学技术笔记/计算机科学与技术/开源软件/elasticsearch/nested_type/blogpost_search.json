@@ -1,0 +1,10 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "name": "Alice" }},
+        { "match": { "age":  28      }} 
+      ]
+    }
+  }
+}

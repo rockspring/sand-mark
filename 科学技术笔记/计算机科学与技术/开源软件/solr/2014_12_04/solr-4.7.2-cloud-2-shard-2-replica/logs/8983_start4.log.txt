@@ -1,0 +1,49 @@
+
+INFO  - 2014-12-04 16:37:33.795; [main-EventThread] org.apache.solr.common.cloud.ZkStateReader$3.process(ZkStateReader.java:311); Updating live nodes... (4)
+INFO  - 2014-12-04 16:37:34.014; [main-EventThread] org.apache.solr.cloud.DistributedQueue$LatchChildWatcher.process(DistributedQueue.java:211); LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-12-04 16:37:34.019; [Thread-13] org.apache.solr.common.cloud.ZkStateReader.updateClusterState(ZkStateReader.java:406); Updating cloud state from ZooKeeper... 
+INFO  - 2014-12-04 16:37:34.021; [Thread-13] org.apache.solr.cloud.Overseer$ClusterStateUpdater.updateState(Overseer.java:461); Update state numShards=2 message={
+  "operation":"state",
+  "state":"down",
+  "base_url":"http://192.168.196.141:8986/solr",
+  "core":"collection1",
+  "roles":null,
+  "node_name":"192.168.196.141:8986_solr",
+  "shard":null,
+  "collection":"collection1",
+  "numShards":"2",
+  "core_node_name":null}
+INFO  - 2014-12-04 16:37:34.021; [Thread-13] org.apache.solr.cloud.Overseer$ClusterStateUpdater.updateState(Overseer.java:499); Collection already exists with numShards=2
+INFO  - 2014-12-04 16:37:34.021; [Thread-13] org.apache.solr.cloud.Overseer$ClusterStateUpdater.updateState(Overseer.java:502); Assigning new node to shard shard=shard2
+INFO  - 2014-12-04 16:37:34.025; [main-EventThread] org.apache.solr.cloud.DistributedQueue$LatchChildWatcher.process(DistributedQueue.java:211); LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-12-04 16:37:34.045; [main-EventThread] org.apache.solr.common.cloud.ZkStateReader$2.process(ZkStateReader.java:257); A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 4)
+INFO  - 2014-12-04 16:37:38.057; [main-EventThread] org.apache.solr.cloud.DistributedQueue$LatchChildWatcher.process(DistributedQueue.java:211); LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-12-04 16:37:38.062; [Thread-13] org.apache.solr.common.cloud.ZkStateReader.updateClusterState(ZkStateReader.java:406); Updating cloud state from ZooKeeper... 
+INFO  - 2014-12-04 16:37:38.064; [Thread-13] org.apache.solr.cloud.Overseer$ClusterStateUpdater.updateState(Overseer.java:461); Update state numShards=2 message={
+  "operation":"state",
+  "state":"recovering",
+  "base_url":"http://192.168.196.141:8986/solr",
+  "core":"collection1",
+  "roles":null,
+  "node_name":"192.168.196.141:8986_solr",
+  "shard":"shard2",
+  "collection":"collection1",
+  "numShards":"2",
+  "core_node_name":"core_node4"}
+INFO  - 2014-12-04 16:37:38.069; [main-EventThread] org.apache.solr.cloud.DistributedQueue$LatchChildWatcher.process(DistributedQueue.java:211); LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-12-04 16:37:38.071; [main-EventThread] org.apache.solr.common.cloud.ZkStateReader$2.process(ZkStateReader.java:257); A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 4)
+INFO  - 2014-12-04 16:37:40.463; [main-EventThread] org.apache.solr.cloud.DistributedQueue$LatchChildWatcher.process(DistributedQueue.java:211); LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-12-04 16:37:40.465; [Thread-13] org.apache.solr.common.cloud.ZkStateReader.updateClusterState(ZkStateReader.java:406); Updating cloud state from ZooKeeper... 
+INFO  - 2014-12-04 16:37:40.466; [Thread-13] org.apache.solr.cloud.Overseer$ClusterStateUpdater.updateState(Overseer.java:461); Update state numShards=2 message={
+  "operation":"state",
+  "state":"active",
+  "base_url":"http://192.168.196.141:8986/solr",
+  "core":"collection1",
+  "roles":null,
+  "node_name":"192.168.196.141:8986_solr",
+  "shard":"shard2",
+  "collection":"collection1",
+  "numShards":"2",
+  "core_node_name":"core_node4"}
+INFO  - 2014-12-04 16:37:40.470; [main-EventThread] org.apache.solr.cloud.DistributedQueue$LatchChildWatcher.process(DistributedQueue.java:211); LatchChildWatcher fired on path: /overseer/queue state: SyncConnected type NodeChildrenChanged
+INFO  - 2014-12-04 16:37:40.472; [main-EventThread] org.apache.solr.common.cloud.ZkStateReader$2.process(ZkStateReader.java:257); A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json, has occurred - updating... (live nodes size: 4)

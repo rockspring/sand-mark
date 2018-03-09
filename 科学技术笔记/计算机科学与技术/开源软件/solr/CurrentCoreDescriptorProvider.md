@@ -1,0 +1,5 @@
+CurrentCoreDescriptorProvider
+这是一个接接口，用于得到索引核心描述符
+
+默认实现：
+通过索引核心容器实现CurrentCoreDescriptorProvider

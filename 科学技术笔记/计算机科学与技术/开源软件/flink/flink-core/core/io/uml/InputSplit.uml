@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.streaming.api.functions.source.TimestampedFileInputSplit</OriginalElement>
+  <nodes>
+    <node x="464.0" y="237.0">org.apache.flink.addons.hbase.TableInputSplit</node>
+    <node x="293.1826923076923" y="158.0">org.apache.flink.core.io.LocatableInputSplit</node>
+    <node x="323.03846153846155" y="79.0">org.apache.flink.core.io.InputSplit</node>
+    <node x="141.0" y="237.0">org.apache.flink.core.fs.FileInputSplit</node>
+    <node x="0.0" y="237.0">java.lang.Comparable</node>
+    <node x="288.0" y="237.0">org.apache.flink.api.java.hadoop.mapreduce.wrapper.HadoopInputSplit</node>
+    <node x="248.75" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="14.080128205128233" y="316.0">org.apache.flink.streaming.api.functions.source.TimestampedFileInputSplit</node>
+    <node x="374.28846153846155" y="0.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.addons.hbase.TableInputSplit" target="org.apache.flink.core.io.LocatableInputSplit">
+      <point x="0.0" y="-14.5" />
+      <point x="534.0" y="212.0" />
+      <point x="431.51602564102564" y="212.0" />
+      <point x="55.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.LocatableInputSplit" target="java.io.Serializable">
+      <point x="55.333333333333314" y="-14.5" />
+      <point x="431.51602564102564" y="133.0" />
+      <point x="440.53846153846155" y="133.0" />
+      <point x="440.53846153846155" y="54.0" />
+      <point x="461.28846153846155" y="54.0" />
+      <point x="29.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.hadoop.mapreduce.wrapper.HadoopInputSplit" target="org.apache.flink.core.io.LocatableInputSplit">
+      <point x="0.0" y="-14.5" />
+      <point x="366.0" y="212.0" />
+      <point x="376.1826923076923" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.InputSplit" target="org.apache.flink.annotation.Public">
+      <point x="-26.75" y="-14.5" />
+      <point x="349.78846153846155" y="54.0" />
+      <point x="319.5833333333333" y="54.0" />
+      <point x="28.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.LocatableInputSplit" target="org.apache.flink.core.io.InputSplit">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.TimestampedFileInputSplit" target="java.lang.Comparable">
+      <point x="-52.25" y="-14.5" />
+      <point x="66.33012820512823" y="291.0" />
+      <point x="60.5" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FileInputSplit" target="org.apache.flink.annotation.Public">
+      <point x="-31.75" y="-14.5" />
+      <point x="172.75" y="54.0" />
+      <point x="262.91666666666663" y="54.0" />
+      <point x="-28.33333333333333" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.TimestampedFileInputSplit" target="org.apache.flink.core.fs.FileInputSplit">
+      <point x="52.25" y="-14.5" />
+      <point x="170.83012820512823" y="291.0" />
+      <point x="204.5" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.InputSplit" target="java.io.Serializable">
+      <point x="26.75" y="-14.5" />
+      <point x="-29.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.fs.FileInputSplit" target="org.apache.flink.core.io.LocatableInputSplit">
+      <point x="31.75" y="-14.5" />
+      <point x="236.25" y="212.0" />
+      <point x="320.849358974359" y="212.0" />
+      <point x="-55.33333333333334" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.LocatableInputSplit" target="org.apache.flink.annotation.Public">
+      <point x="-55.33333333333334" y="-14.5" />
+      <point x="320.849358974359" y="133.0" />
+      <point x="291.25" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="185.0" y="172.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

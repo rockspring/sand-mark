@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.orientechnologies.orient.core.index.sbtreebonsai.local.OSBTreeBonsaiLocal</OriginalElement>
+  <nodes>
+    <node x="59.0" y="79.0">com.orientechnologies.orient.core.index.sbtreebonsai.local.OSBTreeBonsai</node>
+    <node x="210.0" y="158.0">com.orientechnologies.orient.core.index.sbtreebonsai.local.OSBTreeBonsaiLocal</node>
+    <node x="65.5" y="0.0">com.orientechnologies.orient.core.index.sbtree.OTreeInternal</node>
+    <node x="253.5" y="79.0">com.orientechnologies.orient.core.storage.impl.local.paginated.base.ODurableComponent</node>
+    <node x="0.0" y="158.0">com.orientechnologies.orient.client.remote.OSBTreeBonsaiRemote</node>
+    <node x="236.0" y="0.0">com.orientechnologies.common.concur.resource.OSharedResourceAdaptive</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.orientechnologies.orient.core.storage.impl.local.paginated.base.ODurableComponent" target="com.orientechnologies.common.concur.resource.OSharedResourceAdaptive">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.index.sbtreebonsai.local.OSBTreeBonsai" target="com.orientechnologies.orient.core.index.sbtree.OTreeInternal">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.index.sbtreebonsai.local.OSBTreeBonsaiLocal" target="com.orientechnologies.orient.core.storage.impl.local.paginated.base.ODurableComponent">
+      <point x="44.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.core.index.sbtreebonsai.local.OSBTreeBonsaiLocal" target="com.orientechnologies.orient.core.index.sbtreebonsai.local.OSBTreeBonsai">
+      <point x="-44.0" y="-14.5" />
+      <point x="254.0" y="133.0" />
+      <point x="167.0" y="133.0" />
+      <point x="36.0" y="14.5" />
+    </edge>
+    <edge source="com.orientechnologies.orient.client.remote.OSBTreeBonsaiRemote" target="com.orientechnologies.orient.core.index.sbtreebonsai.local.OSBTreeBonsai">
+      <point x="0.0" y="-14.5" />
+      <point x="-36.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="224.0" y="93.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

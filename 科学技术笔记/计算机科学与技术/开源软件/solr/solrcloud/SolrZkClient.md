@@ -1,0 +1,17 @@
+ZkController构造时创建SolrZkClient的实例
+SolrZkClient构造时注册OnReconnect回调接口和BeforeReconnect回调接口
+
+SolrZkClient的OnReconnect回调接口：
+OnReconnect.command
+\__取消核心恢复CoreContaner.cancelCoreRecoveries
+\__registerAllCoresAsDown
+	\__发布索引核心状态到zookeeper
+	 \__overseerJobQueue发送一条消息
+\__Overseer选举
+\__createEphemeralLiveNode
+\__注册索引核心ZkController.register
+
+SolrZkClient的BeforeReconnect回调接口：
+\__关闭Overseer
+\__标记所有shard为非Leader
+

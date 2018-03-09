@@ -1,0 +1,13 @@
+# PointValuesWriter#flush#Anonymous匿名类
+
+第i个值从哪里获取呢？
+
+org.apache.lucene.index.PointValuesWriter#bytes存储了所有的值。这个变量是PointValuesWriter的成员变量，由于PointValuesWriter#flush#Anonymous匿名类可以访问外部类的成员变量，所以匿名类的org.apache.lucene.codecs.MutablePointValues#getValue方法读取PointValuesWriter的成员变量bytes。
+
+org.apache.lucene.index.PointValuesWriter#packedBytesLength是PointValuesWriter的成员变量，记录着每个值打包存储时占用的字节数量，由空间点的维度个数和每个维度值的字节长度相乘决定。
+
+org.apache.lucene.index.PointValuesWriter#numPoints是PointValuesWriter的成员变量，记录着存储的空间点的个数。
+
+org.apache.lucene.index.PointValuesWriter#numDocs是PointValuesWriter的成员变量，记录着存储的文档的个数。一个文档可能有多个点？
+
+org.apache.lucene.index.PointValuesWriter#docIDs是PointValuesWriter的成员变量，存储文档id，数组下标就是空间点值的序号。
