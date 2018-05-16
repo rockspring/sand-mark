@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.io.IOReadableWritable</OriginalElement>
+  <nodes>
+    <node x="157.0" y="79.0">org.apache.flink.core.io.IOReadableWritable</node>
+    <node x="115.33333333333329" y="237.0">org.apache.flink.core.io.VersionedIOReadableWritable</node>
+    <node x="162.0833333333333" y="316.0">org.apache.flink.core.io.PostVersionedIOReadableWritable</node>
+    <node x="13.5" y="158.0">org.apache.flink.core.io.Versioned</node>
+    <node x="0.0" y="79.0">org.apache.flink.annotation.PublicEvolving</node>
+    <node x="294.7583333333333" y="158.0">org.apache.flink.annotation.Internal</node>
+    <node x="201.50833333333333" y="0.0">org.apache.flink.annotation.Public</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.io.VersionedIOReadableWritable" target="org.apache.flink.core.io.IOReadableWritable">
+      <point x="2.8421709430404007E-14" y="-14.5" />
+      <point x="229.83333333333331" y="212.0" />
+      <point x="240.5" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.PostVersionedIOReadableWritable" target="org.apache.flink.annotation.Internal">
+      <point x="64.25" y="-14.5" />
+      <point x="354.83333333333326" y="291.0" />
+      <point x="365.2583333333333" y="291.0" />
+      <point x="23.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.IOReadableWritable" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="240.5" y="54.0" />
+      <point x="244.00833333333333" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.annotation.PublicEvolving" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="68.5" y="54.0" />
+      <point x="215.67499999999998" y="54.0" />
+      <point x="-28.333333333333343" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.annotation.Internal" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="341.7583333333333" y="54.0" />
+      <point x="272.34166666666664" y="54.0" />
+      <point x="28.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.VersionedIOReadableWritable" target="org.apache.flink.core.io.Versioned">
+      <point x="-76.33333333333329" y="-14.5" />
+      <point x="153.5" y="212.0" />
+      <point x="68.5" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.VersionedIOReadableWritable" target="org.apache.flink.annotation.Internal">
+      <point x="76.33333333333334" y="-14.5" />
+      <point x="306.16666666666663" y="212.0" />
+      <point x="318.2583333333333" y="212.0" />
+      <point x="-23.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.PostVersionedIOReadableWritable" target="org.apache.flink.core.io.VersionedIOReadableWritable">
+      <point x="-64.25" y="-14.5" />
+      <point x="226.3333333333333" y="291.0" />
+      <point x="229.8333333333333" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.io.Versioned" target="org.apache.flink.annotation.PublicEvolving">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="210.0" y="172.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

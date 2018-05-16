@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.memory.DataInputView</OriginalElement>
+  <nodes>
+    <node x="409.0000000000002" y="346.0">org.apache.flink.runtime.io.disk.iomanager.HeaderlessChannelReaderInputView</node>
+    <node x="766.5" y="168.0">org.apache.flink.runtime.memory.AbstractPagedInputView</node>
+    <node x="443.0" y="267.0">org.apache.flink.runtime.io.disk.iomanager.ChannelReaderInputView</node>
+    <node x="1426.5" y="346.0">org.apache.flink.runtime.operators.hash.HashPartition.PartitionIterator</node>
+    <node x="223.0" y="267.0">org.apache.flink.runtime.operators.sort.FixedLengthRecordSorter.SingleSegmentInputView</node>
+    <node x="863.0" y="267.0">org.apache.flink.runtime.io.disk.SeekableFileChannelInputView</node>
+    <node x="942.0833333333334" y="346.0">org.apache.flink.runtime.operators.hash.HashPartition.BuildSideBuffer</node>
+    <node x="1116.0" y="267.0">org.apache.flink.runtime.iterative.io.SerializedUpdateBuffer.ReadEnd</node>
+    <node x="1462.75" y="267.0">org.apache.flink.runtime.operators.hash.InMemoryPartition.ReadView</node>
+    <node x="1347.5" y="168.0">org.apache.flink.runtime.io.network.api.serialization.AdaptiveSpanningRecordDeserializer.NonSpanningWrapper</node>
+    <node x="1553.5" y="168.0">org.apache.flink.runtime.io.network.api.serialization.AdaptiveSpanningRecordDeserializer.SpanningWrapper</node>
+    <node x="664.0" y="267.0">org.apache.flink.runtime.io.disk.FileChannelInputView</node>
+    <node x="1201.5" y="346.0">org.apache.flink.runtime.operators.hash.ReOpenableHashPartition</node>
+    <node x="0.0" y="267.0">org.apache.flink.runtime.io.disk.RandomAccessInputView</node>
+    <node x="1276.25" y="0.0">java.io.DataInput</node>
+    <node x="1404.25" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="1320.0" y="79.0">org.apache.flink.core.memory.DataInputView</node>
+    <node x="1238.0" y="267.0">org.apache.flink.runtime.operators.hash.HashPartition</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.runtime.operators.hash.HashPartition" target="org.apache.flink.core.memory.DataInputView">
+      <point x="32.99999999999997" y="-14.5" />
+      <point x="1337.0" y="148.0" />
+      <point x="1377.0833333333335" y="148.0" />
+      <point x="-11.416666666666629" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.io.network.api.serialization.AdaptiveSpanningRecordDeserializer.NonSpanningWrapper" target="org.apache.flink.core.memory.DataInputView">
+      <point x="0.0" y="-14.5" />
+      <point x="1440.0" y="148.0" />
+      <point x="1399.9166666666665" y="148.0" />
+      <point x="11.416666666666629" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.io.disk.iomanager.ChannelReaderInputView" target="org.apache.flink.runtime.memory.AbstractPagedInputView">
+      <point x="-1.1368683772161603E-13" y="-14.5" />
+      <point x="543.4999999999999" y="237.0" />
+      <point x="829.0" y="237.0" />
+      <point x="-37.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.HashPartition.BuildSideBuffer" target="org.apache.flink.runtime.operators.hash.HashPartition">
+      <point x="0.0" y="-14.5" />
+      <point x="1014.0833333333334" y="321.0" />
+      <point x="1260.0" y="321.0" />
+      <point x="-44.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.DataInputView" target="java.io.DataInput">
+      <point x="-34.25" y="-14.5" />
+      <point x="1354.25" y="54.0" />
+      <point x="1330.25" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.DataInputView" target="org.apache.flink.annotation.Public">
+      <point x="34.25" y="-14.5" />
+      <point x="1422.75" y="54.0" />
+      <point x="1446.75" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.iterative.io.SerializedUpdateBuffer.ReadEnd" target="org.apache.flink.runtime.memory.AbstractPagedInputView">
+      <point x="0.0" y="-14.5" />
+      <point x="1167.0" y="237.0" />
+      <point x="904.0" y="237.0" />
+      <point x="37.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.sort.FixedLengthRecordSorter.SingleSegmentInputView" target="org.apache.flink.runtime.memory.AbstractPagedInputView">
+      <point x="0.0" y="-14.5" />
+      <point x="323.0" y="227.0" />
+      <point x="804.0" y="227.0" />
+      <point x="-62.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.HashPartition.PartitionIterator" target="org.apache.flink.runtime.operators.hash.HashPartition">
+      <point x="0.0" y="-14.5" />
+      <point x="1499.0" y="321.0" />
+      <point x="1348.0" y="321.0" />
+      <point x="44.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.io.network.api.serialization.AdaptiveSpanningRecordDeserializer.SpanningWrapper" target="org.apache.flink.core.memory.DataInputView">
+      <point x="-5.6843418860808015E-14" y="-14.5" />
+      <point x="1633.0" y="128.0" />
+      <point x="1445.5833333333335" y="128.0" />
+      <point x="57.08333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.io.disk.RandomAccessInputView" target="org.apache.flink.runtime.memory.AbstractPagedInputView">
+      <point x="50.75" y="-14.5" />
+      <point x="152.25" y="217.0" />
+      <point x="779.0" y="217.0" />
+      <point x="-87.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.InMemoryPartition.ReadView" target="org.apache.flink.core.memory.DataInputView">
+      <point x="26.75" y="-14.5" />
+      <point x="1543.0" y="138.0" />
+      <point x="1422.75" y="138.0" />
+      <point x="34.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.io.disk.iomanager.HeaderlessChannelReaderInputView" target="org.apache.flink.runtime.io.disk.iomanager.ChannelReaderInputView">
+      <point x="-1.1368683772161603E-13" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.io.disk.SeekableFileChannelInputView" target="org.apache.flink.runtime.memory.AbstractPagedInputView">
+      <point x="0.0" y="-14.5" />
+      <point x="979.5" y="247.0" />
+      <point x="879.0" y="247.0" />
+      <point x="12.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.InMemoryPartition.ReadView" target="org.apache.flink.runtime.memory.AbstractPagedInputView">
+      <point x="-26.75" y="-14.5" />
+      <point x="1489.5" y="217.0" />
+      <point x="954.0" y="217.0" />
+      <point x="87.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.memory.AbstractPagedInputView" target="org.apache.flink.core.memory.DataInputView">
+      <point x="0.0" y="-14.5" />
+      <point x="866.5" y="138.0" />
+      <point x="1354.25" y="138.0" />
+      <point x="-34.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.io.disk.RandomAccessInputView" target="org.apache.flink.core.memory.DataInputView">
+      <point x="-50.75" y="-14.5" />
+      <point x="50.75" y="128.0" />
+      <point x="1331.4166666666667" y="128.0" />
+      <point x="-57.083333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.ReOpenableHashPartition" target="org.apache.flink.runtime.operators.hash.HashPartition">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.HashPartition" target="org.apache.flink.runtime.memory.AbstractPagedInputView">
+      <point x="-33.0" y="-14.5" />
+      <point x="1271.0" y="227.0" />
+      <point x="929.0" y="227.0" />
+      <point x="62.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.io.disk.FileChannelInputView" target="org.apache.flink.runtime.memory.AbstractPagedInputView">
+      <point x="-5.6843418860808015E-14" y="-14.5" />
+      <point x="753.5" y="247.0" />
+      <point x="854.0" y="247.0" />
+      <point x="-12.5" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8057432432432432" x="878.0" y="187.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

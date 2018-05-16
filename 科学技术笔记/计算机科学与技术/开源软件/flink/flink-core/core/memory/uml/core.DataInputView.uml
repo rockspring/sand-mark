@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.memory.DataInputView</OriginalElement>
+  <nodes>
+    <node x="253.0" y="158.0">org.apache.flink.types.Record.InternalDeSerializer</node>
+    <node x="0.0" y="158.0">org.apache.flink.core.memory.DataInputViewStreamWrapper</node>
+    <node x="636.0" y="158.0">org.apache.flink.core.memory.SeekableDataInputView</node>
+    <node x="438.0" y="158.0">org.apache.flink.core.memory.DataInputDeserializer</node>
+    <node x="31.25" y="0.0">java.io.DataInput</node>
+    <node x="423.0" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="362.75" y="79.0">org.apache.flink.core.memory.DataInputView</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.memory.SeekableDataInputView" target="org.apache.flink.core.memory.DataInputView">
+      <point x="0.0" y="-14.5" />
+      <point x="731.5" y="128.0" />
+      <point x="482.625" y="128.0" />
+      <point x="51.375" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.types.Record.InternalDeSerializer" target="org.apache.flink.core.memory.DataInputView">
+      <point x="0.0" y="-14.5" />
+      <point x="335.5" y="138.0" />
+      <point x="414.125" y="138.0" />
+      <point x="-17.125" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.DataInputView" target="java.io.DataInput">
+      <point x="-34.25" y="-14.5" />
+      <point x="397.0" y="54.0" />
+      <point x="112.25" y="54.0" />
+      <point x="27.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.DataInputViewStreamWrapper" target="java.io.DataInput">
+      <point x="-58.25" y="-14.5" />
+      <point x="-27.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.DataInputView" target="org.apache.flink.annotation.Public">
+      <point x="34.25" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.DataInputDeserializer" target="org.apache.flink.core.memory.DataInputView">
+      <point x="0.0" y="-14.5" />
+      <point x="527.0" y="138.0" />
+      <point x="448.375" y="138.0" />
+      <point x="17.125" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.DataInputViewStreamWrapper" target="org.apache.flink.core.memory.DataInputView">
+      <point x="58.25" y="-14.5" />
+      <point x="174.75" y="128.0" />
+      <point x="379.875" y="128.0" />
+      <point x="-51.375" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="413.5" y="93.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
