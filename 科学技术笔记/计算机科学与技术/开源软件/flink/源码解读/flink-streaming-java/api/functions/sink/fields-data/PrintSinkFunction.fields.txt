@@ -1,0 +1,6 @@
+private static final boolean STD_OUT = false;
+private static final boolean STD_ERR = true;
+
+private boolean target;
+private transient PrintStream stream;
+private transient String prefix;

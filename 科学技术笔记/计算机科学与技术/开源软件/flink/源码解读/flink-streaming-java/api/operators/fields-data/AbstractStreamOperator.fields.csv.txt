@@ -1,0 +1,17 @@
+ChainingStrategy	chainingStrategy
+StreamTask<?,?>	container
+StreamConfig	config
+Output<StreamRecord<OUT>>	output
+StreamingRuntimeContext	runtimeContext
+CheckpointStreamFactory	checkpointStreamFactory
+KeySelector<?,?>	stateKeySelector1
+KeySelector<?,?>	stateKeySelector2
+AbstractKeyedStateBackend<?>	keyedStateBackend
+DefaultKeyedStateStore	keyedStateStore
+OperatorStateBackend	operatorStateBackend
+MetricGroup	metrics
+LatencyGauge	latencyGauge
+InternalTimeServiceManager<?,?>	timeServiceManager
+long	combinedWatermark
+long	input1Watermark
+long	input2Watermark

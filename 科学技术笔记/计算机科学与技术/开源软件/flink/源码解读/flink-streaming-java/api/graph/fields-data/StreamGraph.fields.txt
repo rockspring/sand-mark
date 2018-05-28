@@ -1,0 +1,19 @@
+private String jobName = StreamExecutionEnvironment.DEFAULT_JOB_NAME;
+
+private final StreamExecutionEnvironment environment;
+private final ExecutionConfig executionConfig;
+private final CheckpointConfig checkpointConfig;
+
+private boolean chaining;
+
+private Map<Integer, StreamNode> streamNodes;
+private Set<Integer> sources;
+private Set<Integer> sinks;
+private Map<Integer, Tuple2<Integer, List<String>>> virtualSelectNodes;
+private Map<Integer, Tuple2<Integer, OutputTag>> virtualSideOutputNodes;
+private Map<Integer, Tuple2<Integer, StreamPartitioner<?>>> virtualPartitionNodes;
+
+protected Map<Integer, String> vertexIDtoBrokerID;
+protected Map<Integer, Long> vertexIDtoLoopTimeout;
+private AbstractStateBackend stateBackend;
+private Set<Tuple2<StreamNode, StreamNode>> iterationSourceSinkPairs;

@@ -1,0 +1,25 @@
+private static final int POLLING_THREAD_INTERVAL_MS = 1000;
+
+private YarnClient yarnClient;
+
+private Thread clientShutdownHook = new ClientShutdownHook();
+private PollingThread pollingRunner;
+
+//---------- Class internal fields -------------------
+
+private final AbstractYarnClusterDescriptor clusterDescriptor;
+private final int numberTaskManagers;
+private final int slotsPerTaskManager;
+private final LazApplicationClientLoader applicationClient;
+private final FiniteDuration akkaDuration;
+private final ApplicationReport appReport;
+private final ApplicationId appId;
+private final String trackingURL;
+
+private boolean isConnected = true;
+
+/** Indicator whether this cluster has just been created. */
+private final boolean newlyCreatedCluster;
+// -------------------------- Shutdown handling ------------------------
+
+private AtomicBoolean hasBeenShutDown = new AtomicBoolean(false);

@@ -1,0 +1,7 @@
+private final StreamTransformation<IN> input;
+
+private final OneInputStreamOperator<IN, OUT> operator;
+
+private KeySelector<IN, ?> stateKeySelector;
+
+private TypeInformation<?> stateKeyType;

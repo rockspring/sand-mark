@@ -1,0 +1,9 @@
+/**
+ * A unique ID identifying a logical source in Flink.
+ */
+private final int vertexID;
+
+/**
+ * Identifier for parallel subtasks of a logical source.
+ */
+private final int subtaskIndex;

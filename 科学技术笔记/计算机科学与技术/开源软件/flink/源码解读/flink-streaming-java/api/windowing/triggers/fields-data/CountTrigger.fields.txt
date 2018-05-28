@@ -1,0 +1,3 @@
+private final long maxCount;
+
+private final ReducingStateDescriptor<Long> stateDesc = new ReducingStateDescriptor<>("count", new Sum(), LongSerializer.INSTANCE);

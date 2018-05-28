@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.streaming.api.windowing.triggers.ContinuousEventTimeTrigger</OriginalElement>
+  <nodes>
+    <node x="777.3015740740741" y="218.0">org.apache.flink.streaming.api.windowing.triggers.EventTimeTrigger</node>
+    <node x="418.30157407407404" y="218.0">org.apache.flink.streaming.api.windowing.triggers.CountTrigger</node>
+    <node x="1449.3714814814816" y="297.0">org.apache.flink.streaming.api.windowing.triggers.ContinuousProcessingTimeTrigger.Min</node>
+    <node x="1115.301574074074" y="218.0">org.apache.flink.streaming.api.windowing.triggers.DeltaTrigger</node>
+    <node x="987.8015740740741" y="297.0">org.apache.flink.streaming.api.windowing.triggers.Trigger.OnMergeContext</node>
+    <node x="169.3015740740741" y="218.0">org.apache.flink.streaming.api.windowing.triggers.ContinuousEventTimeTrigger</node>
+    <node x="977.8015740740741" y="119.0">org.apache.flink.streaming.api.windowing.triggers.Trigger</node>
+    <node x="1258.301574074074" y="218.0">org.apache.flink.streaming.api.windowing.triggers.PurgingTrigger</node>
+    <node x="408.0515740740741" y="297.0">org.apache.flink.streaming.api.windowing.triggers.CountTrigger.Sum</node>
+    <node x="16.25" y="218.0">org.apache.flink.streaming.api.windowing.triggers.TriggerResult</node>
+    <node x="1078.176574074074" y="0.0">org.apache.flink.streaming.api.windowing.windows.Window</node>
+    <node x="953.3015740740741" y="218.0">org.apache.flink.streaming.api.windowing.triggers.Trigger.TriggerContext</node>
+    <node x="349.80157407407404" y="0.0">java.io.Serializable</node>
+    <node x="39.75" y="119.0">java.lang.Enum</node>
+    <node x="0.0" y="0.0">java.lang.Comparable</node>
+    <node x="1419.301574074074" y="218.0">org.apache.flink.streaming.api.windowing.triggers.ContinuousProcessingTimeTrigger</node>
+    <node x="170.18814814814823" y="297.0">org.apache.flink.streaming.api.windowing.triggers.ContinuousEventTimeTrigger.Min</node>
+    <node x="568.3015740740741" y="218.0">org.apache.flink.streaming.api.windowing.triggers.ProcessingTimeTrigger</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.CountTrigger.Sum" target="java.io.Serializable">
+      <point x="-18.750000000000057" y="-14.5" />
+      <point x="426.80157407407404" y="272.0" />
+      <point x="407.80157407407404" y="272.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.Trigger.OnMergeContext" target="org.apache.flink.streaming.api.windowing.triggers.Trigger.TriggerContext">
+      <point x="-38.25" y="-14.5" />
+      <point x="1026.051574074074" y="272.0" />
+      <point x="1023.8015740740741" y="272.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ProcessingTimeTrigger" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="0.0" y="-14.5" />
+      <point x="662.8015740740741" y="188.0" />
+      <point x="1003.3571296296295" y="188.0" />
+      <point x="-20.444444444444457" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.Trigger.OnMergeContext" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="38.25" y="-14.5" />
+      <point x="1102.551574074074" y="272.0" />
+      <point x="1104.801574074074" y="272.0" />
+      <point x="1104.801574074074" y="198.0" />
+      <point x="1034.0237962962963" y="198.0" />
+      <point x="10.222222222222172" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ContinuousProcessingTimeTrigger" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="-65.25" y="-14.5" />
+      <point x="1484.551574074074" y="168.0" />
+      <point x="1064.690462962963" y="168.0" />
+      <point x="40.888888888888914" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.PurgingTrigger" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="35.0" y="-14.5" />
+      <point x="1363.301574074074" y="89.0" />
+      <point x="1151.676574074074" y="89.0" />
+      <point x="24.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.PurgingTrigger" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="-35.0" y="-14.5" />
+      <point x="1293.301574074074" y="178.0" />
+      <point x="1054.4682407407406" y="178.0" />
+      <point x="30.66666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.EventTimeTrigger" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="0.0" y="-14.5" />
+      <point x="855.3015740740741" y="198.0" />
+      <point x="1013.5793518518519" y="198.0" />
+      <point x="-10.222222222222172" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.TriggerResult" target="java.lang.Enum">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.DeltaTrigger" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="30.75" y="-14.5" />
+      <point x="1207.551574074074" y="99.0" />
+      <point x="1135.3432407407408" y="99.0" />
+      <point x="8.166666666666742" y="14.5" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.io.Serializable">
+      <point x="20.75" y="-14.5" />
+      <point x="102.0" y="59.0" />
+      <point x="361.40157407407406" y="59.0" />
+      <point x="-46.39999999999998" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ContinuousEventTimeTrigger.Min" target="org.apache.flink.streaming.api.windowing.triggers.ContinuousEventTimeTrigger">
+      <point x="17.5" y="-14.5" />
+      <point x="222.68814814814823" y="272.0" />
+      <point x="283.3015740740741" y="272.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.Trigger" target="java.io.Serializable">
+      <point x="-23.0" y="-14.5" />
+      <point x="1000.8015740740741" y="69.0" />
+      <point x="431.00157407407403" y="69.0" />
+      <point x="23.19999999999999" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ContinuousEventTimeTrigger" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="-57.0" y="-14.5" />
+      <point x="226.3015740740741" y="79.0" />
+      <point x="1086.3432407407408" y="79.0" />
+      <point x="-40.83333333333326" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.CountTrigger" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="32.5" y="-14.5" />
+      <point x="515.8015740740741" y="178.0" />
+      <point x="993.1349074074074" y="178.0" />
+      <point x="-30.66666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.DeltaTrigger" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="-30.75" y="-14.5" />
+      <point x="1146.051574074074" y="188.0" />
+      <point x="1044.2460185185184" y="188.0" />
+      <point x="20.444444444444457" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.Trigger.TriggerContext" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ContinuousProcessingTimeTrigger.Min" target="org.apache.flink.streaming.api.windowing.triggers.ContinuousProcessingTimeTrigger">
+      <point x="17.5" y="-14.5" />
+      <point x="1501.8714814814816" y="272.0" />
+      <point x="1549.801574074074" y="272.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.lang.Comparable">
+      <point x="-20.75" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ContinuousProcessingTimeTrigger" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="65.25" y="-14.5" />
+      <point x="1615.051574074074" y="49.0" />
+      <point x="1168.0099074074074" y="49.0" />
+      <point x="40.83333333333326" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.CountTrigger" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="-32.5" y="-14.5" />
+      <point x="450.80157407407404" y="89.0" />
+      <point x="1102.676574074074" y="89.0" />
+      <point x="-24.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.CountTrigger.Sum" target="org.apache.flink.streaming.api.windowing.triggers.CountTrigger">
+      <point x="18.749999999999943" y="-14.5" />
+      <point x="464.30157407407404" y="272.0" />
+      <point x="483.30157407407404" y="272.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ContinuousEventTimeTrigger.Min" target="java.io.Serializable">
+      <point x="-17.5" y="-14.5" />
+      <point x="187.68814814814823" y="272.0" />
+      <point x="158.8015740740741" y="272.0" />
+      <point x="158.8015740740741" y="69.0" />
+      <point x="384.60157407407405" y="69.0" />
+      <point x="-23.19999999999999" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.Trigger" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="23.0" y="-14.5" />
+      <point x="1046.801574074074" y="99.0" />
+      <point x="1119.0099074074074" y="99.0" />
+      <point x="-8.166666666666742" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ContinuousProcessingTimeTrigger.Min" target="java.io.Serializable">
+      <point x="-17.5" y="-14.5" />
+      <point x="1466.8714814814816" y="272.0" />
+      <point x="1408.801574074074" y="272.0" />
+      <point x="1408.801574074074" y="59.0" />
+      <point x="454.2015740740741" y="59.0" />
+      <point x="46.400000000000034" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.windowing.triggers.ContinuousEventTimeTrigger" target="org.apache.flink.streaming.api.windowing.triggers.Trigger">
+      <point x="57.0" y="-14.5" />
+      <point x="340.3015740740741" y="168.0" />
+      <point x="982.9126851851852" y="168.0" />
+      <point x="-40.888888888888914" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9113428943937418" x="747.0" y="108.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

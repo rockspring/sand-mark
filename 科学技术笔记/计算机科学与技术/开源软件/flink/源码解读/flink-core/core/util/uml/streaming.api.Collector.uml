@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.util.Collector</OriginalElement>
+  <nodes>
+    <node x="239.02083333333334" y="158.0">org.apache.flink.streaming.api.operators.TimestampedCollector</node>
+    <node x="287.0" y="79.0">org.apache.flink.util.Collector</node>
+    <node x="127.02083333333334" y="158.0">org.apache.flink.streaming.api.operators.Output</node>
+    <node x="188.5" y="237.0">org.apache.flink.streaming.api.operators.AbstractStreamOperator.CountingOutput</node>
+    <node x="296.0" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="25.5" y="237.0">org.apache.flink.streaming.api.collector.selector.DirectedOutput</node>
+    <node x="444.02083333333337" y="158.0">org.apache.flink.cep.operator.TimestampedSideOutputCollector</node>
+    <node x="0.0" y="316.0">org.apache.flink.streaming.api.collector.selector.CopyingDirectedOutput</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.util.Collector" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.TimestampedCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="331.5208333333333" y="133.0" />
+      <point x="338.5" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.collector.selector.DirectedOutput" target="org.apache.flink.streaming.api.operators.Output">
+      <point x="0.0" y="-14.5" />
+      <point x="97.0" y="212.0" />
+      <point x="150.02083333333334" y="212.0" />
+      <point x="-23.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.Output" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="173.02083333333334" y="133.0" />
+      <point x="304.1666666666667" y="133.0" />
+      <point x="-34.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractStreamOperator.CountingOutput" target="org.apache.flink.streaming.api.operators.Output">
+      <point x="0.0" y="-14.5" />
+      <point x="263.0" y="212.0" />
+      <point x="196.02083333333334" y="212.0" />
+      <point x="23.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.cep.operator.TimestampedSideOutputCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="571.5208333333334" y="133.0" />
+      <point x="372.83333333333337" y="133.0" />
+      <point x="34.33333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.collector.selector.CopyingDirectedOutput" target="org.apache.flink.streaming.api.collector.selector.DirectedOutput">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="352.0" y="172.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,1 @@
+extractClassFieldsToCsv StreamExecutionEnvironment.fields.txt

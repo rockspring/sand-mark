@@ -1,0 +1,2 @@
+private final StreamTransformation<T> input;
+private final StreamPartitioner<T> partitioner;

@@ -1,0 +1,33 @@
+private transient StreamExecutionEnvironment env;
+
+private final int id;
+private Integer parallelism = null;
+/**
+ * Maximum parallelism for this stream node. The maximum parallelism is the upper limit for
+ * dynamic scaling and the number of key groups used for partitioned state.
+ */
+private int maxParallelism;
+private ResourceSpec minResources = ResourceSpec.DEFAULT;
+private ResourceSpec preferredResources = ResourceSpec.DEFAULT;
+private Long bufferTimeout = null;
+private final String operatorName;
+private String slotSharingGroup;
+private KeySelector<?, ?> statePartitioner1;
+private KeySelector<?, ?> statePartitioner2;
+private TypeSerializer<?> stateKeySerializer;
+
+private transient StreamOperator<?> operator;
+private List<OutputSelector<?>> outputSelectors;
+private TypeSerializer<?> typeSerializerIn1;
+private TypeSerializer<?> typeSerializerIn2;
+private TypeSerializer<?> typeSerializerOut;
+
+private List<StreamEdge> inEdges = new ArrayList<StreamEdge>();
+private List<StreamEdge> outEdges = new ArrayList<StreamEdge>();
+
+private final Class<? extends AbstractInvokable> jobVertexClass;
+
+private InputFormat<?, ?> inputFormat;
+
+private String transformationUID;
+private String userHash;

@@ -1,0 +1,7 @@
+private YarnClient yarnClient;
+
+private final AbstractYarnClusterDescriptor clusterDescriptor;
+
+private ApplicationId appId;
+
+private String trackingURL;

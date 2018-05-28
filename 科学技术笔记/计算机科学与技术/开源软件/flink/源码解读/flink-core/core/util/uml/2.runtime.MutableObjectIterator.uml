@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.util.MutableObjectIterator</OriginalElement>
+  <nodes>
+    <node x="853.25" y="168.0">org.apache.flink.runtime.util.EmptyMutableObjectIterator</node>
+    <node x="594.25" y="168.0">org.apache.flink.runtime.operators.util.metrics.CountingMutableObjectIterator</node>
+    <node x="216.0" y="247.0">org.apache.flink.runtime.operators.sort.MergeIterator.HeadStream</node>
+    <node x="1358.25" y="168.0">org.apache.flink.runtime.util.ResettableMutableObjectIterator</node>
+    <node x="622.75" y="79.0">org.apache.flink.util.MutableObjectIterator</node>
+    <node x="666.75" y="0.0">org.apache.flink.annotation.Internal</node>
+    <node x="439.25" y="168.0">org.apache.flink.runtime.operators.util.ReaderIterator</node>
+    <node x="0.0" y="247.0">org.apache.flink.runtime.operators.sort.MergeIterator.HeadStreamComparator</node>
+    <node x="273.25" y="168.0">org.apache.flink.runtime.operators.sort.LargeRecordHandler.FetchingIterator</node>
+    <node x="122.25" y="168.0">org.apache.flink.runtime.operators.sort.MergeIterator</node>
+    <node x="1094.25" y="168.0">org.apache.flink.runtime.util.RegularToMutableObjectIterator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.runtime.operators.sort.MergeIterator.HeadStreamComparator" target="org.apache.flink.runtime.operators.sort.MergeIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="98.0" y="222.0" />
+      <point x="155.0" y="222.0" />
+      <point x="-32.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.util.EmptyMutableObjectIterator" target="org.apache.flink.util.MutableObjectIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="963.75" y="148.0" />
+      <point x="739.75" y="148.0" />
+      <point x="26.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.util.ResettableMutableObjectIterator" target="org.apache.flink.util.MutableObjectIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="1481.25" y="128.0" />
+      <point x="791.75" y="128.0" />
+      <point x="78.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.util.metrics.CountingMutableObjectIterator" target="org.apache.flink.util.MutableObjectIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.util.ReaderIterator" target="org.apache.flink.util.MutableObjectIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="506.75" y="148.0" />
+      <point x="687.75" y="148.0" />
+      <point x="-26.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.sort.LargeRecordHandler.FetchingIterator" target="org.apache.flink.util.MutableObjectIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="346.25" y="138.0" />
+      <point x="661.75" y="138.0" />
+      <point x="-52.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.MutableObjectIterator" target="org.apache.flink.annotation.Internal">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.sort.MergeIterator.HeadStream" target="org.apache.flink.runtime.operators.sort.MergeIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="277.5" y="222.0" />
+      <point x="220.5" y="222.0" />
+      <point x="32.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.sort.MergeIterator" target="org.apache.flink.util.MutableObjectIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="187.75" y="128.0" />
+      <point x="635.75" y="128.0" />
+      <point x="-78.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.util.RegularToMutableObjectIterator" target="org.apache.flink.util.MutableObjectIterator">
+      <point x="0.0" y="-14.5" />
+      <point x="1216.25" y="138.0" />
+      <point x="765.75" y="138.0" />
+      <point x="52.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="784.0" y="138.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

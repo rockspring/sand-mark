@@ -1,0 +1,4 @@
+StreamTransformation<IN>	input
+OneInputStreamOperator<IN,OUT>	operator
+KeySelector<IN,?>	stateKeySelector
+TypeInformation<?>	stateKeyType

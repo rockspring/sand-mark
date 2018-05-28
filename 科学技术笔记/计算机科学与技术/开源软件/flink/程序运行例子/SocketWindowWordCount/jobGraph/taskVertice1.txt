@@ -1,0 +1,61 @@
+0 = {LinkedHashMap$Entry@7791} "90bea66de1c231edf33913ecd54406c1" -> "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed (org.apache.flink.streaming.runtime.tasks.OneInputStreamTask)"
+ key = {JobVertexID@7793} "90bea66de1c231edf33913ecd54406c1"
+ value = {JobVertex@7794} "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed (org.apache.flink.streaming.runtime.tasks.OneInputStreamTask)"
+  id = {JobVertexID@7793} "90bea66de1c231edf33913ecd54406c1"
+  idAlternatives = {ArrayList@7805}  size = 0
+  operatorIDs = {ArrayList@7806}  size = 2
+   0 = {OperatorID@7820} "17fbfcaabad45985bbdf4da0490487e3"
+   1 = {OperatorID@7821} "90bea66de1c231edf33913ecd54406c1"
+  operatorIdsAlternatives = {ArrayList@7807}  size = 2
+  results = {ArrayList@7808}  size = 0
+  inputs = {ArrayList@7809}  size = 1
+   0 = {JobEdge@7826} "8412b7f0037550c36164ce1822c55f85 --> TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed (org.apache.flink.streaming.runtime.tasks.OneInputStreamTask) [ALL_TO_ALL]"
+    target = {JobVertex@7794} "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed (org.apache.flink.streaming.runtime.tasks.OneInputStreamTask)"
+    distributionPattern = {DistributionPattern@7828} "ALL_TO_ALL"
+    source = {IntermediateDataSet@7829} "Intermediate Data Set (8412b7f0037550c36164ce1822c55f85)"
+    sourceId = {IntermediateDataSetID@7830} "8412b7f0037550c36164ce1822c55f85"
+    shipStrategyName = "HASH"
+    preProcessingOperationName = null
+    operatorLevelCachingDescription = null
+  parallelism = 1
+  maxParallelism = -1
+  minResources = {ResourceSpec@7810} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  preferredResources = {ResourceSpec@7811} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  configuration = {Configuration@7812} "{checkpointing=false, vertexID=4, outStreamEdges=[B@71a9b4c7, nonChainedOutputs=[B@4628b1d3, userFunction=org.apache.flink.streaming.runtime.operators.windowing.WindowOperator, numberOfOutputs=0, operatorName=TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)), timechar=0, numberOfInputs=1, inStreamEdges=[B@77cf3f8b, statekeyser=[B@1df98368, serializedUDF=[B@21ca139c, statePartitioner0=[B@226f885f, statePartitioner1=[B@2cd2c8fe, typeSerializer_in_2=[B@7d61eccf, typeSerializer_in_1=[B@cc6460c, typeSerializer_out=[B@52350abb, bufferTimeout=100, chainedTaskConfig_=[B@681aad3b, chainIndex=0, chainedOutputs=[B@1a6f2363, edgesInOrder=[B@2427e004, outputSelectorWrapper=[B@5ebd56e9, isChainedSubtask=true, checkpointMode=1, operato"
+   confData = {HashMap@7836}  size = 26
+    0 = {HashMap$Node@7839} "checkpointing" -> "false"
+    1 = {HashMap$Node@7840} "vertexID" -> "4"
+    2 = {HashMap$Node@7841} "outStreamEdges" -> 
+    3 = {HashMap$Node@7842} "nonChainedOutputs" -> 
+    4 = {HashMap$Node@7843} "userFunction" -> "org.apache.flink.streaming.runtime.operators.windowing.WindowOperator"
+    5 = {HashMap$Node@7844} "numberOfOutputs" -> "0"
+    6 = {HashMap$Node@7845} "operatorName" -> "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))"
+    7 = {HashMap$Node@7846} "timechar" -> "0"
+    8 = {HashMap$Node@7847} "numberOfInputs" -> "1"
+    9 = {HashMap$Node@7848} "inStreamEdges" -> 
+    10 = {HashMap$Node@7849} "statekeyser" -> 
+    11 = {HashMap$Node@7850} "serializedUDF" -> 
+    12 = {HashMap$Node@7851} "statePartitioner0" -> 
+    13 = {HashMap$Node@7852} "statePartitioner1" -> 
+    14 = {HashMap$Node@7853} "typeSerializer_in_2" -> 
+    15 = {HashMap$Node@7854} "typeSerializer_in_1" -> 
+    16 = {HashMap$Node@7855} "typeSerializer_out" -> 
+    17 = {HashMap$Node@7856} "bufferTimeout" -> "100"
+    18 = {HashMap$Node@7857} "chainedTaskConfig_" -> 
+    19 = {HashMap$Node@7858} "chainIndex" -> "0"
+    20 = {HashMap$Node@7859} "chainedOutputs" -> 
+    21 = {HashMap$Node@7860} "edgesInOrder" -> 
+    22 = {HashMap$Node@7861} "outputSelectorWrapper" -> 
+    23 = {HashMap$Node@7862} "isChainedSubtask" -> "true"
+    24 = {HashMap$Node@7863} "checkpointMode" -> "1"
+    25 = {HashMap$Node@7864} "operatorID" -> 
+  invokableClassName = "org.apache.flink.streaming.runtime.tasks.OneInputStreamTask"
+  isStoppable = false
+  inputSplitSource = null
+  name = "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed"
+  slotSharingGroup = {SlotSharingGroup@7424} "SlotSharingGroup [90bea66de1c231edf33913ecd54406c1, cbc357ccb763df2852fee8c4fc7d55f2]"
+  coLocationGroup = null
+  operatorName = null
+  operatorDescription = null
+  operatorPrettyName = null
+  resultOptimizerProperties = null

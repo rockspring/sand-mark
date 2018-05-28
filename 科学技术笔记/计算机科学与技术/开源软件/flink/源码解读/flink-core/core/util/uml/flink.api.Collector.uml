@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.util.Collector</OriginalElement>
+  <nodes>
+    <node x="566.0" y="158.0">org.apache.flink.api.java.operators.translation.TupleWrappingCollector</node>
+    <node x="341.0" y="158.0">org.apache.flink.api.java.operators.translation.Tuple3WrappingCollector</node>
+    <node x="299.5" y="79.0">org.apache.flink.util.Collector</node>
+    <node x="195.99999999999997" y="158.0">org.apache.flink.api.common.functions.util.ListCollector</node>
+    <node x="308.5" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="0.0" y="158.0">org.apache.flink.api.common.functions.util.CopyingListCollector</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.api.common.functions.util.ListCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="258.5" y="138.0" />
+      <point x="338.125" y="138.0" />
+      <point x="-12.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.Collector" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.operators.translation.Tuple3WrappingCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="443.5" y="138.0" />
+      <point x="363.875" y="138.0" />
+      <point x="12.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.functions.util.CopyingListCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="88.0" y="128.0" />
+      <point x="312.375" y="128.0" />
+      <point x="-38.625" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.operators.translation.TupleWrappingCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="664.5" y="128.0" />
+      <point x="389.625" y="128.0" />
+      <point x="38.625" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="519.0" y="93.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

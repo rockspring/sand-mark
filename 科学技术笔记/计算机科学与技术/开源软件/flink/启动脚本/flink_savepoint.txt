@@ -1,0 +1,5 @@
+bin/flink
+Triggering savepoint for job ad8e8a3277507060a073bce03a44fc7c.
+Waiting for response...
+Savepoint completed. Path: savepoint/savepoint-ad8e8a-ff9c93a86695
+You can resume your program from this savepoint with the run command.

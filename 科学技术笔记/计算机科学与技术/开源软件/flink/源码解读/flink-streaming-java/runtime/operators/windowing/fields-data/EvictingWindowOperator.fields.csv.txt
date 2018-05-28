@@ -1,0 +1,4 @@
+Evictor<?superIN,?superW>	evictor
+StateDescriptor<?extendsListState<StreamRecord<IN>>,?>	evictingWindowStateDescriptor
+EvictorContext	evictorContext
+InternalListState<W,StreamRecord<IN>>	evictingWindowState

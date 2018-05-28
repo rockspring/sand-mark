@@ -1,0 +1,3 @@
+T	value
+long	timestamp
+boolean	hasTimestamp

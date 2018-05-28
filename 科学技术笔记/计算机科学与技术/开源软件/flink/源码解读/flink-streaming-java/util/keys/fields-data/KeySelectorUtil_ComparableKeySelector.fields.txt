@@ -1,0 +1,8 @@
+private final TypeComparator<IN> comparator;
+private final int keyLength;
+private transient TupleTypeInfo<Tuple> tupleTypeInfo;
+
+/** Reusable array to hold the key objects. Since this is initially empty (all positions
+ * are null), it does not have any serialization problems */
+@SuppressWarnings("NonSerializableFieldInSerializableClass")
+private final Object[] keyArray;

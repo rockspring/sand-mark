@@ -1,0 +1,29 @@
+/**
+ * Property name of the entry in JAR manifest file that describes the Flink specific entry point.
+ */
+public static final String MANIFEST_ATTRIBUTE_ASSEMBLER_CLASS = "program-class";
+
+/**
+ * Property name of the entry in JAR manifest file that describes the class with the main method.
+ */
+public static final String MANIFEST_ATTRIBUTE_MAIN_CLASS = "Main-Class";
+
+// --------------------------------------------------------------------------------------------
+
+private final URL jarFile;
+
+private final String[] args;
+
+private final Program program;
+
+private final Class<?> mainClass;
+
+private final List<File> extractedTempLibraries;
+
+private final List<URL> classpaths;
+
+private ClassLoader userCodeClassLoader;
+
+private Plan plan;
+
+private SavepointRestoreSettings savepointSettings = SavepointRestoreSettings.none();

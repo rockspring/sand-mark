@@ -1,0 +1,3 @@
+private final RestClusterClientConfiguration restClusterClientConfiguration;
+private final RestClient restClient;
+private final ExecutorService executorService = Executors.newFixedThreadPool(4, new ExecutorThreadFactory("Flink-RestClusterClient-IO"));

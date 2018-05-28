@@ -1,0 +1,20 @@
+private static final long serialVersionUID = 1L;
+
+private static final Logger LOG = LoggerFactory.getLogger(SocketTextStreamFunction.class);
+
+/** Default delay between successive connection attempts. */
+private static final int DEFAULT_CONNECTION_RETRY_SLEEP = 500;
+
+/** Default connection timeout when connecting to the server socket (infinite). */
+private static final int CONNECTION_TIMEOUT_TIME = 0;
+
+
+private final String hostname;
+private final int port;
+private final String delimiter;
+private final long maxNumRetries;
+private final long delayBetweenRetries;
+
+private transient Socket currentSocket;
+
+private volatile boolean isRunning = true;

@@ -1,0 +1,8 @@
+ClusterClient	client
+List<URL>	jarFilesToAttach
+List<URL>	classpathsToAttach
+ClassLoader	userCodeClassLoader
+int	defaultParallelism
+boolean	isDetached
+ExecutionEnvironment	lastEnvCreated
+SavepointRestoreSettings	savepointSettings

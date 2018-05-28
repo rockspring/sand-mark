@@ -1,0 +1,2 @@
+StreamExecutionEnvironment	environment
+StreamTransformation<T>	transformation

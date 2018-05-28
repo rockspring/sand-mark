@@ -1,0 +1,4 @@
+Map<W,W>	mapping
+Map<W,W>	initialMapping
+ListState<Tuple2<W,W>>	state
+MergingWindowAssigner<?,W>	windowAssigner

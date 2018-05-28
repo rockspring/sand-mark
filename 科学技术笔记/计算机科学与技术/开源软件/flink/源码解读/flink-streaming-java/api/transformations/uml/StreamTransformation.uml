@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.streaming.api.transformations.SourceTransformation</OriginalElement>
+  <nodes>
+    <node x="1722.0" y="109.0">org.apache.flink.streaming.api.transformations.SplitTransformation</node>
+    <node x="1533.0" y="109.0">org.apache.flink.streaming.api.transformations.SinkTransformation</node>
+    <node x="1118.0" y="109.0">org.apache.flink.streaming.api.transformations.PartitionTransformation</node>
+    <node x="2133.0" y="109.0">org.apache.flink.streaming.api.transformations.UnionTransformation</node>
+    <node x="1912.0" y="109.0">org.apache.flink.streaming.api.transformations.TwoInputTransformation</node>
+    <node x="1333.0" y="109.0">org.apache.flink.streaming.api.transformations.SelectTransformation</node>
+    <node x="206.0" y="109.0">org.apache.flink.streaming.api.transformations.SideOutputTransformation</node>
+    <node x="1122.5" y="0.0">org.apache.flink.streaming.api.transformations.StreamTransformation</node>
+    <node x="677.0" y="109.0">org.apache.flink.streaming.api.transformations.FeedbackTransformation</node>
+    <node x="439.0" y="109.0">org.apache.flink.streaming.api.transformations.CoFeedbackTransformation</node>
+    <node x="898.0" y="109.0">org.apache.flink.streaming.api.transformations.OneInputTransformation</node>
+    <node x="0.0" y="109.0">org.apache.flink.streaming.api.transformations.SourceTransformation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.streaming.api.transformations.TwoInputTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="2012.5" y="59.0" />
+      <point x="1283.1363636363637" y="59.0" />
+      <point x="67.63636363636374" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.OneInputTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="998.0" y="89.0" />
+      <point x="1198.590909090909" y="89.0" />
+      <point x="-16.90909090909099" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.PartitionTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.FeedbackTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="777.5" y="79.0" />
+      <point x="1181.6818181818182" y="79.0" />
+      <point x="-33.818181818181756" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.UnionTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="2223.0" y="49.0" />
+      <point x="1300.0454545454545" y="49.0" />
+      <point x="84.5454545454545" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.SplitTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="1807.0" y="69.0" />
+      <point x="1266.2272727272727" y="69.0" />
+      <point x="50.72727272727275" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.SelectTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="1423.0" y="89.0" />
+      <point x="1232.409090909091" y="89.0" />
+      <point x="16.90909090909099" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.CoFeedbackTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="548.0" y="69.0" />
+      <point x="1164.7727272727273" y="69.0" />
+      <point x="-50.72727272727275" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.SinkTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="1617.5" y="79.0" />
+      <point x="1249.3181818181818" y="79.0" />
+      <point x="33.818181818181756" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.SideOutputTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="312.5" y="59.0" />
+      <point x="1147.8636363636363" y="59.0" />
+      <point x="-67.63636363636374" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.transformations.SourceTransformation" target="org.apache.flink.streaming.api.transformations.StreamTransformation">
+      <point x="0.0" y="-14.5" />
+      <point x="93.0" y="49.0" />
+      <point x="1130.9545454545455" y="49.0" />
+      <point x="-84.5454545454545" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5992284612087441" x="1156.5" y="69.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.client.program.ContextEnvironment</OriginalElement>
+  <nodes>
+    <node x="22.0" y="237.0">org.apache.flink.client.program.DetachedEnvironment</node>
+    <node x="0.0" y="316.0">org.apache.flink.client.program.DetachedEnvironment.DetachedJobExecutionResult</node>
+    <node x="225.5" y="82.0">org.apache.flink.api.java.ExecutionEnvironment</node>
+    <node x="448.0" y="237.0">org.apache.flink.client.program.OptimizerPlanEnvironment.ProgramAbortException</node>
+    <node x="278.5" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="221.5" y="158.0">org.apache.flink.client.program.PreviewPlanEnvironment</node>
+    <node x="26.5" y="158.0">org.apache.flink.client.program.ContextEnvironment</node>
+    <node x="440.5" y="158.0">org.apache.flink.client.program.OptimizerPlanEnvironment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.client.program.OptimizerPlanEnvironment.ProgramAbortException" target="org.apache.flink.client.program.OptimizerPlanEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.DetachedEnvironment" target="org.apache.flink.client.program.ContextEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.PreviewPlanEnvironment" target="org.apache.flink.api.java.ExecutionEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.DetachedEnvironment.DetachedJobExecutionResult" target="org.apache.flink.client.program.DetachedEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.ContextEnvironment" target="org.apache.flink.api.java.ExecutionEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="114.0" y="133.0" />
+      <point x="258.6666666666667" y="133.0" />
+      <point x="-62.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.ExecutionEnvironment" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.OptimizerPlanEnvironment" target="org.apache.flink.api.java.ExecutionEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="546.0" y="133.0" />
+      <point x="383.33333333333337" y="133.0" />
+      <point x="62.33333333333337" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="326.0" y="172.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

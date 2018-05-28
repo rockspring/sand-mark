@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.streaming.runtime.operators.windowing.WindowOperator</OriginalElement>
+  <nodes>
+    <node x="627.0902777777778" y="79.0">org.apache.flink.streaming.api.operators.KeyContext</node>
+    <node x="1174.9375" y="237.0">org.apache.flink.streaming.api.operators.Triggerable</node>
+    <node x="222.0000000000001" y="425.0">org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.Timer</node>
+    <node x="932.9375" y="237.0">org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</node>
+    <node x="540.9375" y="237.0">org.apache.flink.streaming.api.operators.AbstractStreamOperator.LatencySourceDescriptor</node>
+    <node x="632.6875" y="326.0">org.apache.flink.streaming.runtime.operators.windowing.WindowOperator</node>
+    <node x="31.0" y="504.0">org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperator.EvictorContext</node>
+    <node x="449.6197691197691" y="504.0">org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.PerWindowStateStore</node>
+    <node x="692.1197691197691" y="504.0">org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.MergingWindowStateStore</node>
+    <node x="528.369769119769" y="425.0">org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.AbstractPerWindowStateStore</node>
+    <node x="784.369769119769" y="425.0">org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.Context</node>
+    <node x="151.90845959595958" y="237.0">org.apache.flink.streaming.api.windowing.windows.Window</node>
+    <node x="589.6736111111112" y="158.0">org.apache.flink.streaming.api.operators.AbstractStreamOperator</node>
+    <node x="769.7063492063493" y="0.0">java.io.Serializable</node>
+    <node x="311.19119769119766" y="79.0">org.apache.flink.streaming.api.operators.StreamOperator</node>
+    <node x="384.9375" y="237.0">org.apache.flink.streaming.api.operators.AbstractStreamOperator.LatencyGauge</node>
+    <node x="0.0" y="425.0">org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperator</node>
+    <node x="992.9375" y="79.0">org.apache.flink.api.common.functions.Function</node>
+    <node x="763.9375" y="237.0">org.apache.flink.streaming.api.operators.AbstractStreamOperator.CountingOutput</node>
+    <node x="246.19119769119766" y="158.0">org.apache.flink.streaming.api.operators.OneInputStreamOperator</node>
+    <node x="1072.6875" y="158.0">org.apache.flink.streaming.api.operators.OutputTypeConfigurable</node>
+    <node x="1267.4563492063494" y="425.0">org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.WindowContext</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.Timer" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator">
+      <point x="20.5" y="-14.5" />
+      <point x="283.5000000000001" y="385.0" />
+      <point x="665.4732142857142" y="385.0" />
+      <point x="-43.71428571428578" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.PerWindowStateStore" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.AbstractPerWindowStateStore">
+      <point x="45.75" y="-14.5" />
+      <point x="-59.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractStreamOperator" target="org.apache.flink.streaming.api.operators.StreamOperator">
+      <point x="-66.33333333333326" y="-14.5" />
+      <point x="622.8402777777779" y="133.0" />
+      <point x="420.69119769119766" y="133.0" />
+      <point x="36.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.MergingWindowStateStore" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.AbstractPerWindowStateStore">
+      <point x="-53.250000000000114" y="-14.5" />
+      <point x="745.369769119769" y="479.0" />
+      <point x="705.369769119769" y="479.0" />
+      <point x="59.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.StreamOperator" target="java.io.Serializable">
+      <point x="0.0" y="-14.5" />
+      <point x="384.19119769119766" y="49.0" />
+      <point x="784.2063492063493" y="49.0" />
+      <point x="-43.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractStreamOperator.LatencySourceDescriptor" target="org.apache.flink.streaming.api.operators.AbstractStreamOperator">
+      <point x="0.0" y="-14.5" />
+      <point x="642.4375" y="217.0" />
+      <point x="664.2986111111112" y="217.0" />
+      <point x="-24.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator" target="org.apache.flink.api.common.functions.Function">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator" target="org.apache.flink.streaming.api.operators.AbstractStreamOperator">
+      <point x="-74.0" y="-14.5" />
+      <point x="969.9375" y="207.0" />
+      <point x="763.7986111111112" y="207.0" />
+      <point x="74.625" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperator" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="-50.5" y="-14.5" />
+      <point x="50.5" y="306.0" />
+      <point x="168.24179292929284" y="306.0" />
+      <point x="-32.66666666666674" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractStreamOperator" target="java.io.Serializable">
+      <point x="66.33333333333337" y="-14.5" />
+      <point x="755.5069444444446" y="133.0" />
+      <point x="764.1855158730159" y="133.0" />
+      <point x="764.1855158730159" y="59.0" />
+      <point x="813.2063492063493" y="59.0" />
+      <point x="-14.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperator.EvictorContext" target="org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperator">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractStreamOperator.CountingOutput" target="org.apache.flink.streaming.api.operators.AbstractStreamOperator">
+      <point x="-5.6843418860808015E-14" y="-14.5" />
+      <point x="838.4375" y="217.0" />
+      <point x="714.0486111111112" y="217.0" />
+      <point x="24.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.WindowContext" target="java.io.Serializable">
+      <point x="36.75" y="-14.5" />
+      <point x="1377.7063492063494" y="49.0" />
+      <point x="871.2063492063493" y="49.0" />
+      <point x="43.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.MergingWindowStateStore" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator">
+      <point x="53.249999999999886" y="-14.5" />
+      <point x="851.869769119769" y="479.0" />
+      <point x="891.869769119769" y="479.0" />
+      <point x="891.869769119769" y="395.0" />
+      <point x="752.9017857142857" y="395.0" />
+      <point x="43.714285714285666" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.Context" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator">
+      <point x="0.0" y="-14.5" />
+      <point x="832.869769119769" y="405.0" />
+      <point x="731.0446428571428" y="405.0" />
+      <point x="21.857142857142776" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractStreamOperator" target="org.apache.flink.streaming.api.operators.KeyContext">
+      <point x="0.0" y="-14.5" />
+      <point x="689.1736111111112" y="133.0" />
+      <point x="687.0902777777778" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.functions.Function" target="java.io.Serializable">
+      <point x="0.0" y="-14.5" />
+      <point x="1043.9375" y="59.0" />
+      <point x="842.2063492063493" y="59.0" />
+      <point x="14.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.OneInputStreamOperator" target="org.apache.flink.streaming.api.operators.StreamOperator">
+      <point x="0.0" y="-14.5" />
+      <point x="-36.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator" target="org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator">
+      <point x="19.125" y="-14.5" />
+      <point x="728.3125" y="296.0" />
+      <point x="1043.9375" y="296.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator" target="org.apache.flink.streaming.api.operators.OutputTypeConfigurable">
+      <point x="74.0" y="-14.5" />
+      <point x="1117.9375" y="217.0" />
+      <point x="1173.1875" y="217.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.Timer" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="-20.5" y="-14.5" />
+      <point x="242.5000000000001" y="306.0" />
+      <point x="200.90845959595958" y="306.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator" target="org.apache.flink.streaming.api.windowing.windows.Window">
+      <point x="-57.375" y="-14.5" />
+      <point x="651.8125" y="296.0" />
+      <point x="233.57512626262633" y="296.0" />
+      <point x="32.66666666666674" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.WindowContext" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator">
+      <point x="-36.75" y="-14.5" />
+      <point x="1304.2063492063494" y="385.0" />
+      <point x="774.7589285714286" y="385.0" />
+      <point x="65.57142857142856" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.PerWindowStateStore" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator">
+      <point x="-45.75" y="-14.5" />
+      <point x="495.3697691197691" y="479.0" />
+      <point x="506.3697691197691" y="479.0" />
+      <point x="506.3697691197691" y="395.0" />
+      <point x="687.3303571428571" y="395.0" />
+      <point x="-21.85714285714289" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperator" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator">
+      <point x="50.5" y="-14.5" />
+      <point x="151.5" y="375.0" />
+      <point x="643.6160714285714" y="375.0" />
+      <point x="-65.57142857142856" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator" target="org.apache.flink.streaming.api.operators.Triggerable">
+      <point x="57.375" y="-14.5" />
+      <point x="766.5625" y="306.0" />
+      <point x="1233.4375" y="306.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.AbstractPerWindowStateStore" target="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator">
+      <point x="0.0" y="-14.5" />
+      <point x="646.369769119769" y="405.0" />
+      <point x="709.1875" y="405.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.operators.AbstractStreamOperator.LatencyGauge" target="org.apache.flink.streaming.api.operators.AbstractStreamOperator">
+      <point x="0.0" y="-14.5" />
+      <point x="452.9375" y="217.0" />
+      <point x="614.5486111111112" y="217.0" />
+      <point x="-74.625" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.operators.windowing.WindowOperator" target="org.apache.flink.streaming.api.operators.OneInputStreamOperator">
+      <point x="-19.125" y="-14.5" />
+      <point x="690.0625" y="286.0" />
+      <point x="347.69119769119766" y="286.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9437148217636022" x="716.5" y="256.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

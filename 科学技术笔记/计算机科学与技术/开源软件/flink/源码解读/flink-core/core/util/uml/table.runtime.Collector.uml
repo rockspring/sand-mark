@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.util.Collector</OriginalElement>
+  <nodes>
+    <node x="202.0" y="158.0">org.apache.flink.table.runtime.aggregate.TimeWindowPropertyCollector</node>
+    <node x="0.0" y="232.0">org.apache.flink.table.runtime.aggregate.DataStreamTimeWindowPropertyCollector</node>
+    <node x="441.0" y="158.0">org.apache.flink.table.runtime.TableFunctionCollector</node>
+    <node x="260.0" y="79.0">org.apache.flink.util.Collector</node>
+    <node x="335.0" y="232.0">org.apache.flink.table.runtime.aggregate.DataSetTimeWindowPropertyCollector</node>
+    <node x="0.0" y="158.0">org.apache.flink.table.runtime.CRowWrappingCollector</node>
+    <node x="269.0" y="0.0">org.apache.flink.annotation.Public</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.table.runtime.TableFunctionCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="528.0" y="133.0" />
+      <point x="345.83333333333337" y="133.0" />
+      <point x="34.33333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.Collector" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.table.runtime.aggregate.TimeWindowPropertyCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.table.runtime.CRowWrappingCollector" target="org.apache.flink.util.Collector">
+      <point x="0.0" y="-14.5" />
+      <point x="91.0" y="133.0" />
+      <point x="277.1666666666667" y="133.0" />
+      <point x="-34.333333333333314" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="307.5" y="130.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

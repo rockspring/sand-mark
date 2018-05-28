@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.util.StringBasedID</OriginalElement>
+  <nodes>
+    <node x="155.0" y="158.0">org.apache.flink.runtime.state.SharedStateRegistryKey</node>
+    <node x="0.0" y="158.0">org.apache.flink.runtime.state.StateHandleID</node>
+    <node x="92.75" y="79.0">org.apache.flink.util.StringBasedID</node>
+    <node x="102.25" y="0.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.util.StringBasedID" target="java.io.Serializable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.state.SharedStateRegistryKey" target="org.apache.flink.util.StringBasedID">
+      <point x="0.0" y="-14.5" />
+      <point x="253.0" y="133.0" />
+      <point x="194.0" y="133.0" />
+      <point x="33.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.state.StateHandleID" target="org.apache.flink.util.StringBasedID">
+      <point x="0.0" y="-14.5" />
+      <point x="67.5" y="133.0" />
+      <point x="126.5" y="133.0" />
+      <point x="-33.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="175.5" y="93.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

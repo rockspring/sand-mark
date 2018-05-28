@@ -1,0 +1,2 @@
+SourceFunction.SourceContext<OUT>	ctx
+boolean	canceledOrStopped

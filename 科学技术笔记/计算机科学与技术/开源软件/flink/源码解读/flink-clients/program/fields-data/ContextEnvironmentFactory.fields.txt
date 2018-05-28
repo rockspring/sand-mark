@@ -1,0 +1,15 @@
+private final ClusterClient client;
+
+private final List<URL> jarFilesToAttach;
+
+private final List<URL> classpathsToAttach;
+
+private final ClassLoader userCodeClassLoader;
+
+private final int defaultParallelism;
+
+private final boolean isDetached;
+
+private ExecutionEnvironment lastEnvCreated;
+
+private SavepointRestoreSettings savepointSettings;

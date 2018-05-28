@@ -1,0 +1,17 @@
+WindowAssigner<?superIN,W>	windowAssigner
+KeySelector<IN,K>	keySelector
+Trigger<?superIN,?superW>	trigger
+StateDescriptor<?extendsAppendingState<IN,ACC>,?>	windowStateDescriptor
+TypeSerializer<K>	keySerializer
+TypeSerializer<W>	windowSerializer
+long	allowedLateness
+OutputTag<IN>	lateDataOutputTag
+Counter	numLateRecordsDropped
+InternalAppendingState<W,IN,ACC>	windowState
+InternalMergingState<W,IN,ACC>	windowMergingState
+InternalListState<VoidNamespace,Tuple2<W,W>>	mergingSetsState
+TimestampedCollector<OUT>	timestampedCollector
+Context	triggerContext
+WindowContext	processContext
+WindowAssigner.WindowAssignerContext	windowAssignerContext
+InternalTimerService<W>	internalTimerService

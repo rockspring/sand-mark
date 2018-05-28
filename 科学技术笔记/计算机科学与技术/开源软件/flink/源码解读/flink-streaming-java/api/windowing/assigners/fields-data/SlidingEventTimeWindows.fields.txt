@@ -1,0 +1,5 @@
+private final long size;
+
+private final long slide;
+
+private final long offset;

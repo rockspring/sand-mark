@@ -1,0 +1,69 @@
+// ----------- configuration properties -------------
+
+// A sane default for most operators
+protected ChainingStrategy chainingStrategy = ChainingStrategy.HEAD;
+
+// ---------------- runtime fields ------------------
+
+/** The task that contains this operator (and other operators in the same chain). */
+private transient StreamTask<?, ?> container;
+
+protected transient StreamConfig config;
+
+protected transient Output<StreamRecord<OUT>> output;
+
+/** The runtime context for UDFs. */
+private transient StreamingRuntimeContext runtimeContext;
+
+// ----------------- general state -------------------
+
+/** The factory that give this operator access to checkpoint storage. */
+private transient CheckpointStreamFactory checkpointStreamFactory;
+
+// ---------------- key/value state ------------------
+
+/**
+ * {@code KeySelector} for extracting a key from an element being processed. This is used to
+ * scope keyed state to a key. This is null if the operator is not a keyed operator.
+ *
+ * <p>This is for elements from the first input.
+ */
+private transient KeySelector<?, ?> stateKeySelector1;
+
+/**
+ * {@code KeySelector} for extracting a key from an element being processed. This is used to
+ * scope keyed state to a key. This is null if the operator is not a keyed operator.
+ *
+ * <p>This is for elements from the second input.
+ */
+private transient KeySelector<?, ?> stateKeySelector2;
+
+/** Backend for keyed state. This might be empty if we're not on a keyed stream. */
+private transient AbstractKeyedStateBackend<?> keyedStateBackend;
+
+/** Keyed state store view on the keyed backend. */
+private transient DefaultKeyedStateStore keyedStateStore;
+
+// ---------------- operator state ------------------
+
+/** Operator state backend / store. */
+private transient OperatorStateBackend operatorStateBackend;
+
+// --------------- Metrics ---------------------------
+
+/** Metric group for the operator. */
+protected transient MetricGroup metrics;
+
+protected transient LatencyGauge latencyGauge;
+
+// ---------------- time handler ------------------
+
+protected transient InternalTimeServiceManager<?, ?> timeServiceManager;
+
+// ---------------- two-input operator watermarks ------------------
+
+// We keep track of watermarks from both inputs, the combined input is the minimum
+// Once the minimum advances we emit a new watermark for downstream operators
+private long combinedWatermark = Long.MIN_VALUE;
+private long input1Watermark = Long.MIN_VALUE;
+private long input2Watermark = Long.MIN_VALUE;

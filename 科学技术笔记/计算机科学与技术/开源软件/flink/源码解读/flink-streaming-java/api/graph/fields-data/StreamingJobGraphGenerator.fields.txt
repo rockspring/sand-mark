@@ -1,0 +1,25 @@
+/**
+ * Restart delay used for the FixedDelayRestartStrategy in case checkpointing was enabled but
+ * no restart strategy has been specified.
+ */
+private static final long DEFAULT_RESTART_DELAY = 10000L;
+// ------------------------------------------------------------------------
+
+private final StreamGraph streamGraph;
+
+private final Map<Integer, JobVertex> jobVertices;
+private final JobGraph jobGraph;
+private final Collection<Integer> builtVertices;
+
+private final List<StreamEdge> physicalEdgesInOrder;
+
+private final Map<Integer, Map<Integer, StreamConfig>> chainedConfigs;
+
+private final Map<Integer, StreamConfig> vertexConfigs;
+private final Map<Integer, String> chainedNames;
+
+private final Map<Integer, ResourceSpec> chainedMinResources;
+private final Map<Integer, ResourceSpec> chainedPreferredResources;
+
+private final StreamGraphHasher defaultStreamGraphHasher;
+private final List<StreamGraphHasher> legacyStreamGraphHashers;

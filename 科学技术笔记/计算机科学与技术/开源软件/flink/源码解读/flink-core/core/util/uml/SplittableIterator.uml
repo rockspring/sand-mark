@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.util.LongValueSequenceIterator</OriginalElement>
+  <nodes>
+    <node x="93.45833333333334" y="79.0">org.apache.flink.util.SplittableIterator</node>
+    <node x="99.98958333333334" y="158.0">org.apache.flink.util.NumberSequenceIterator</node>
+    <node x="136.0" y="0.0">java.util.Iterator</node>
+    <node x="276.15625" y="0.0">org.apache.flink.annotation.Public</node>
+    <node x="321.98958333333337" y="158.0">org.apache.flink.util.LongValueSequenceIterator</node>
+    <node x="0.0" y="0.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.util.SplittableIterator" target="java.util.Iterator">
+      <point x="0.0" y="-14.5" />
+      <point x="168.45833333333334" y="59.0" />
+      <point x="182.5" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.LongValueSequenceIterator" target="org.apache.flink.annotation.Public">
+      <point x="54.5" y="-14.5" />
+      <point x="485.48958333333337" y="59.0" />
+      <point x="346.9895833333333" y="59.0" />
+      <point x="28.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.NumberSequenceIterator" target="org.apache.flink.util.SplittableIterator">
+      <point x="-50.5" y="-14.5" />
+      <point x="150.48958333333334" y="138.0" />
+      <point x="130.95833333333334" y="138.0" />
+      <point x="-37.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.LongValueSequenceIterator" target="org.apache.flink.util.SplittableIterator">
+      <point x="-54.5" y="-14.5" />
+      <point x="376.48958333333337" y="128.0" />
+      <point x="205.95833333333334" y="128.0" />
+      <point x="37.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.SplittableIterator" target="java.io.Serializable">
+      <point x="-50.0" y="-14.5" />
+      <point x="118.45833333333334" y="59.0" />
+      <point x="58.0" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.NumberSequenceIterator" target="org.apache.flink.annotation.Public">
+      <point x="50.5" y="-14.5" />
+      <point x="251.48958333333334" y="138.0" />
+      <point x="291.5" y="138.0" />
+      <point x="291.5" y="59.0" />
+      <point x="318.65625" y="59.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.util.SplittableIterator" target="org.apache.flink.annotation.Public">
+      <point x="50.0" y="-14.5" />
+      <point x="218.45833333333334" y="49.0" />
+      <point x="290.32291666666663" y="49.0" />
+      <point x="-28.333333333333343" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="270.0" y="93.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,78 @@
+2 = {HashMap$Node@6268} "4" -> "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4"
+ key = {Integer@5878} 4
+ value = {StreamNode@5887} "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4"
+  env = {StreamContextEnvironment@3604} 
+  id = 4
+  parallelism = {Integer@5238} 1
+  maxParallelism = -1
+  minResources = {ResourceSpec@3868} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  preferredResources = {ResourceSpec@3868} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  bufferTimeout = null
+  operatorName = "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))"
+  slotSharingGroup = "default"
+  statePartitioner1 = {KeySelectorUtil$ComparableKeySelector@4398} 
+  statePartitioner2 = null
+  stateKeySerializer = {TupleSerializer@6350} 
+  operator = {WindowOperator@4658} 
+   windowAssigner = {TumblingProcessingTimeWindows@4542} "TumblingProcessingTimeWindows(5000)"
+   keySelector = {KeySelectorUtil$ComparableKeySelector@4398} 
+   trigger = {ProcessingTimeTrigger@4565} "ProcessingTimeTrigger()"
+   windowStateDescriptor = {ReducingStateDescriptor@4630} "ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}"
+   keySerializer = {TupleSerializer@4660} 
+   windowSerializer = {TimeWindow$Serializer@4659} 
+   allowedLateness = 0
+   lateDataOutputTag = null
+   numLateRecordsDropped = null
+   windowState = null
+   windowMergingState = null
+   mergingSetsState = null
+   timestampedCollector = null
+   triggerContext = {WindowOperator$Context@4671} "Context{key=null, window=null}"
+   processContext = {WindowOperator$WindowContext@4682} Method threw 'java.lang.NullPointerException' exception. Cannot evaluate org.apache.flink.streaming.runtime.operators.windowing.WindowOperator$WindowContext.toString()
+   windowAssignerContext = null
+   internalTimerService = null
+   userFunction = {InternalSingleValueWindowFunction@4661} 
+   functionsClosed = false
+   chainingStrategy = {ChainingStrategy@3980} "ALWAYS"
+   container = null
+   config = null
+   output = null
+   runtimeContext = null
+   checkpointStreamFactory = null
+   stateKeySelector1 = null
+   stateKeySelector2 = null
+   keyedStateBackend = null
+   keyedStateStore = null
+   operatorStateBackend = null
+   metrics = null
+   latencyGauge = null
+   timeServiceManager = null
+   combinedWatermark = -9223372036854775808
+   input1Watermark = -9223372036854775808
+   input2Watermark = -9223372036854775808
+  outputSelectors = {ArrayList@6351}  size = 0
+  typeSerializerIn1 = {PojoSerializer@6352} 
+  typeSerializerIn2 = null
+  typeSerializerOut = {PojoSerializer@6353} 
+  inEdges = {ArrayList@6354}  size = 1
+   0 = {StreamEdge@6009} "(Flat Map-2 -> TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4, typeNumber=0, selectedNames=[], outputPartitioner=HASH, outputTag=null)"
+    edgeId = "Flat Map-2_TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4_0_[]_HASH"
+    sourceVertex = {StreamNode@5432} "Flat Map-2"
+    targetVertex = {StreamNode@5887} "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4"
+    typeNumber = 0
+    selectedNames = {ArrayList@5992}  size = 0
+    outputTag = null
+    outputPartitioner = {KeyGroupStreamPartitioner@5760} "HASH"
+  outEdges = {ArrayList@6355}  size = 1
+   0 = {StreamEdge@6520} "(TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4 -> Sink: Unnamed-5, typeNumber=0, selectedNames=[], outputPartitioner=FORWARD, outputTag=null)"
+    edgeId = "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4_Sink: Unnamed-5_0_[]_FORWARD"
+    sourceVertex = {StreamNode@5887} "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4"
+    targetVertex = {StreamNode@6199} "Sink: Unnamed-5"
+    typeNumber = 0
+    selectedNames = {ArrayList@6525}  size = 0
+    outputTag = null
+    outputPartitioner = {ForwardPartitioner@6526} "FORWARD"
+  jobVertexClass = {Class@5429} "class org.apache.flink.streaming.runtime.tasks.OneInputStreamTask"
+  inputFormat = null
+  transformationUID = null
+  userHash = null

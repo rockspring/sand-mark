@@ -1,0 +1,5 @@
+String	DEFAULT_JOB_NAME
+TimeCharacteristic	DEFAULT_TIME_CHARACTERISTIC
+long	DEFAULT_NETWORK_BUFFER_TIMEOUT
+StreamExecutionEnvironmentFactory	contextEnvironmentFactory
+int	defaultLocalParallelism

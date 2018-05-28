@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.memory.HeapMemorySegment</OriginalElement>
+  <nodes>
+    <node x="213.078125" y="79.0">org.apache.flink.core.memory.MemorySegment</node>
+    <node x="270.97395833333337" y="158.0">org.apache.flink.core.memory.HybridMemorySegment</node>
+    <node x="67.97395833333334" y="158.0">org.apache.flink.core.memory.HeapMemorySegment</node>
+    <node x="0.0" y="79.0">java.lang.SuppressWarnings</node>
+    <node x="44.97395833333334" y="237.0">org.apache.flink.core.memory.HeapMemorySegment.HeapMemorySegmentFactory</node>
+    <node x="222.72395833333334" y="0.0">org.apache.flink.annotation.Internal</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.memory.HybridMemorySegment" target="org.apache.flink.annotation.Internal">
+      <point x="48.0" y="-14.5" />
+      <point x="414.97395833333337" y="133.0" />
+      <point x="390.08333333333337" y="133.0" />
+      <point x="390.08333333333337" y="54.0" />
+      <point x="301.05729166666663" y="54.0" />
+      <point x="31.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.MemorySegment" target="org.apache.flink.annotation.Internal">
+      <point x="0.0" y="-14.5" />
+      <point x="288.578125" y="54.0" />
+      <point x="269.72395833333337" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.HeapMemorySegment.HeapMemorySegmentFactory" target="org.apache.flink.core.memory.HeapMemorySegment">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.HeapMemorySegment" target="java.lang.SuppressWarnings">
+      <point x="-61.0" y="-14.5" />
+      <point x="98.47395833333334" y="133.0" />
+      <point x="82.5" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.HybridMemorySegment" target="org.apache.flink.core.memory.MemorySegment">
+      <point x="-48.0" y="-14.5" />
+      <point x="318.97395833333337" y="133.0" />
+      <point x="326.328125" y="133.0" />
+      <point x="37.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.HeapMemorySegment" target="org.apache.flink.core.memory.MemorySegment">
+      <point x="61.0" y="-14.5" />
+      <point x="220.47395833333334" y="133.0" />
+      <point x="250.828125" y="133.0" />
+      <point x="-37.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.core.memory.HeapMemorySegment" target="org.apache.flink.annotation.Internal">
+      <point x="0.0" y="-14.5" />
+      <point x="159.47395833333334" y="133.0" />
+      <point x="175.5" y="133.0" />
+      <point x="175.5" y="54.0" />
+      <point x="238.390625" y="54.0" />
+      <point x="-31.333333333333343" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="230.0" y="133.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

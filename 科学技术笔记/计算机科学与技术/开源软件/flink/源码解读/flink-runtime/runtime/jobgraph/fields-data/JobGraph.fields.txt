@@ -1,0 +1,45 @@
+// --- job and configuration ---
+
+/** List of task vertices included in this job graph. */
+private final Map<JobVertexID, JobVertex> taskVertices = new LinkedHashMap<JobVertexID, JobVertex>();
+
+/** The job configuration attached to this job. */
+private final Configuration jobConfiguration = new Configuration();
+
+/** ID of this job. May be set if specific job id is desired (e.g. session management) */
+private final JobID jobID;
+
+/** Name of this job. */
+private final String jobName;
+
+/** The number of seconds after which the corresponding ExecutionGraph is removed at the
+ * job manager after it has been executed. */
+private long sessionTimeout = 0;
+
+/** flag to enable queued scheduling */
+private boolean allowQueuedScheduling;
+
+/** The mode in which the job is scheduled */
+private ScheduleMode scheduleMode = ScheduleMode.LAZY_FROM_SOURCES;
+
+// --- checkpointing ---
+
+/** Job specific execution config */
+private SerializedValue<ExecutionConfig> serializedExecutionConfig;
+
+/** The settings for the job checkpoints */
+private JobCheckpointingSettings snapshotSettings;
+
+/** Savepoint restore settings. */
+private SavepointRestoreSettings savepointRestoreSettings = SavepointRestoreSettings.none();
+
+// --- attached resources ---
+
+/** Set of JAR files required to run this job. */
+private final List<Path> userJars = new ArrayList<Path>();
+
+/** Set of blob keys identifying the JAR files required to run this job. */
+private final List<PermanentBlobKey> userJarBlobKeys = new ArrayList<>();
+
+/** List of classpaths required to run this job. */
+private List<URL> classpaths = Collections.emptyList();

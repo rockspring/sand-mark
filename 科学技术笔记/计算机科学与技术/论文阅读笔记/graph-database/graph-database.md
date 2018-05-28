@@ -23,3 +23,8 @@ https://aws.amazon.com/cn/neptune/
 https://aws.amazon.com/cn/blogs/aws/amazon-neptune-a-fully-managed-graph-database-service/
 
 https://www.ibm.com/developerworks/cn/web/wa-data-integration-at-scale_sparql/index.html
+
+https://news.ycombinator.com/item?id=16375503
+
+https://www.datanami.com/2017/09/19/tigergraph-emerges-native-parallel-graph-database/
+

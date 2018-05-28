@@ -1,0 +1,13 @@
+// ------------------------------------------------------------------------
+// these fields are set by the API stream graph builder to configure the operator
+
+private final Evictor<? super IN, ? super W> evictor;
+
+private final StateDescriptor<? extends ListState<StreamRecord<IN>>, ?> evictingWindowStateDescriptor;
+
+// ------------------------------------------------------------------------
+// the fields below are instantiated once the operator runs in the runtime
+
+private transient EvictorContext evictorContext;
+
+private transient InternalListState<W, StreamRecord<IN>> evictingWindowState;

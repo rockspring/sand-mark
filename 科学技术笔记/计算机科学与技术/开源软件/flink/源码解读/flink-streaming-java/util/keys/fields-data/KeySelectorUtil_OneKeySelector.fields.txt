@@ -1,0 +1,6 @@
+private final TypeComparator<IN> comparator;
+
+/** Reusable array to hold the key objects. Since this is initially empty (all positions
+ * are null), it does not have any serialization problems */
+@SuppressWarnings("NonSerializableFieldInSerializableClass")
+private final Object[] keyArray;

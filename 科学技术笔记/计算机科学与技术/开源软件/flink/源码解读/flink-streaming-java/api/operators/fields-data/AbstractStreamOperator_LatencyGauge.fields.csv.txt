@@ -1,0 +1,2 @@
+Map<LatencySourceDescriptor,DescriptiveStatistics>	latencyStats
+int	historySize

@@ -1,0 +1,3 @@
+int[]	returnArray
+KeySelector<T,K>	keySelector
+int	maxParallelism

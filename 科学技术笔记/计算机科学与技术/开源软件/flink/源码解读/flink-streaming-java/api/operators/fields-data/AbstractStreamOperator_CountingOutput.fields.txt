@@ -1,0 +1,2 @@
+private final Output<StreamRecord<OUT>> output;
+private final Counter numRecordsOut;

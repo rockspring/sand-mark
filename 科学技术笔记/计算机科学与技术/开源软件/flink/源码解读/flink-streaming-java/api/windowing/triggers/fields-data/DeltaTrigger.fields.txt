@@ -1,0 +1,3 @@
+private final DeltaFunction<T> deltaFunction;
+private final double threshold;
+private final ValueStateDescriptor<T> stateDesc;

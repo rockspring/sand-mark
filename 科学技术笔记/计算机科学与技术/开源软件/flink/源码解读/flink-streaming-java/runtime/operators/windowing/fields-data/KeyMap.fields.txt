@@ -1,0 +1,28 @@
+/** The minimum table capacity, 64 entries. */
+private static final int MIN_CAPACITY = 0x40;
+
+/**
+ * The maximum possible table capacity, the largest positive power of two in the 32bit signed
+ * integer value range.
+ */
+private static final int MAX_CAPACITY = 0x40000000;
+
+/** The number of bits used for table addressing when table is at max capacity. */
+private static final int FULL_BIT_RANGE = MathUtils.log2strict(MAX_CAPACITY);
+
+// ------------------------------------------------------------------------
+
+/** The hash index, as an array of entries. */
+private Entry<K, V>[] table;
+
+/** The number of bits by which the hash code is shifted right, to find the bucket. */
+private int shift;
+
+/** The number of elements in the hash table. */
+private int numElements;
+
+/** The number of elements above which the hash table needs to grow. */
+private int rehashThreshold;
+
+/** The base-2 logarithm of the table capacity. */
+private int log2size;

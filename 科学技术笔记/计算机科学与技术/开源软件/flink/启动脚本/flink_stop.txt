@@ -1,0 +1,37 @@
+bin/flink
+Stopping job ad8e8a3277507060a073bce03a44fc7c.
+
+------------------------------------------------------------
+ The program finished with the following exception:
+
+java.lang.Exception: Stopping the job with ID ad8e8a3277507060a073bce03a44fc7c failed.
+	at org.apache.flink.client.program.ClusterClient.stop(ClusterClient.java:657)
+	at org.apache.flink.client.CliFrontend.stop(CliFrontend.java:541)
+	at org.apache.flink.client.CliFrontend.parseParameters(CliFrontend.java:1062)
+	at org.apache.flink.client.CliFrontend$1.call(CliFrontend.java:1101)
+	at org.apache.flink.client.CliFrontend$1.call(CliFrontend.java:1098)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1556)
+	at org.apache.flink.runtime.security.HadoopSecurityContext.runSecured(HadoopSecurityContext.java:41)
+	at org.apache.flink.client.CliFrontend.main(CliFrontend.java:1098)
+Caused by: java.lang.IllegalStateException: Job with ID ad8e8a3277507060a073bce03a44fc7c is not stoppable.
+	at org.apache.flink.runtime.jobmanager.JobManager$$anonfun$handleMessage$1.applyOrElse(JobManager.scala:638)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.flink.runtime.LeaderSessionMessageFilter$$anonfun$receive$1.applyOrElse(LeaderSessionMessageFilter.scala:38)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.flink.runtime.LogMessages$$anon$1.apply(LogMessages.scala:33)
+	at org.apache.flink.runtime.LogMessages$$anon$1.apply(LogMessages.scala:28)
+	at scala.PartialFunction$class.applyOrElse(PartialFunction.scala:123)
+	at org.apache.flink.runtime.LogMessages$$anon$1.applyOrElse(LogMessages.scala:28)
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:502)
+	at org.apache.flink.runtime.jobmanager.JobManager.aroundReceive(JobManager.scala:122)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:526)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:495)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)

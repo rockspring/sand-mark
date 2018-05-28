@@ -1,0 +1,7 @@
+/**
+ * The key selector that can get the key by which the stream if partitioned from the elements.
+ */
+private final KeySelector<T, KEY> keySelector;
+
+/** The type of the key by which the stream is partitioned. */
+private final TypeInformation<KEY> keyType;

@@ -1,0 +1,8 @@
+private final StreamTransformation<T> input;
+
+private final StreamSink<T> operator;
+
+// We need this because sinks can also have state that is partitioned by key
+private KeySelector<T, ?> stateKeySelector;
+
+private TypeInformation<?> stateKeyType;

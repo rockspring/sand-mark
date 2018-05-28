@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.client.program.StandaloneClusterClient</OriginalElement>
+  <nodes>
+    <node x="386.99999999999994" y="158.0">org.apache.flink.yarn.YarnClusterClient.ClientShutdownHook</node>
+    <node x="234.99999999999994" y="158.0">org.apache.flink.yarn.YarnClusterClient.PollingThread</node>
+    <node x="398.99999999999994" y="79.0">org.apache.flink.client.program.ClusterClient.LazyActorSystemLoader</node>
+    <node x="639.0" y="0.0">org.apache.flink.client.program.ClusterClient</node>
+    <node x="616.0" y="79.0">org.apache.flink.yarn.YarnClusterClientV2</node>
+    <node x="0.0" y="158.0">org.apache.flink.yarn.YarnClusterClient.LazApplicationClientLoader</node>
+    <node x="809.0" y="79.0">org.apache.flink.client.program.rest.RestClusterClient</node>
+    <node x="222.99999999999994" y="79.0">org.apache.flink.yarn.YarnClusterClient</node>
+    <node x="983.0" y="79.0">org.apache.flink.client.program.StandaloneClusterClient</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.yarn.YarnClusterClient" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="300.99999999999994" y="49.0" />
+      <point x="651.7" y="49.0" />
+      <point x="-50.799999999999955" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.rest.RestClusterClient" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="886.0" y="59.0" />
+      <point x="727.8999999999999" y="59.0" />
+      <point x="25.399999999999977" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.YarnClusterClient.ClientShutdownHook" target="org.apache.flink.yarn.YarnClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="476.49999999999994" y="133.0" />
+      <point x="352.99999999999994" y="133.0" />
+      <point x="52.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.ClusterClient.LazyActorSystemLoader" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="497.49999999999994" y="59.0" />
+      <point x="677.0999999999999" y="59.0" />
+      <point x="-25.399999999999977" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.YarnClusterClient.PollingThread" target="org.apache.flink.yarn.YarnClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.StandaloneClusterClient" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="1081.0" y="49.0" />
+      <point x="753.3" y="49.0" />
+      <point x="50.799999999999955" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.YarnClusterClientV2" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.YarnClusterClient.LazApplicationClientLoader" target="org.apache.flink.yarn.YarnClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="107.5" y="133.0" />
+      <point x="248.99999999999994" y="133.0" />
+      <point x="-52.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="592.5" y="93.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

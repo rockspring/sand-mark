@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction</OriginalElement>
+  <nodes>
+    <node x="1444.7916666666667" y="356.0">org.apache.flink.streaming.api.functions.source.ContinuousFileMonitoringFunction</node>
+    <node x="833.4999999999999" y="277.0">org.apache.flink.streaming.api.functions.source.FromElementsFunction</node>
+    <node x="439.4999999999999" y="277.0">org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction</node>
+    <node x="1042.5" y="277.0">org.apache.flink.streaming.api.functions.source.FromIteratorFunction</node>
+    <node x="1643.7083333333335" y="435.0">org.apache.flink.streaming.api.functions.source.InputFormatSourceFunction</node>
+    <node x="232.68465909090912" y="356.0">org.apache.flink.streaming.api.functions.source.FileMonitoringFunction.WatchType</node>
+    <node x="1200.1767676767677" y="0.0">java.io.Serializable</node>
+    <node x="673.4999999999999" y="277.0">org.apache.flink.streaming.api.functions.source.SourceFunction.SourceContext</node>
+    <node x="896.2705176767677" y="168.0">org.apache.flink.streaming.api.functions.source.SourceFunction</node>
+    <node x="1066.7083333333333" y="356.0">org.apache.flink.streaming.api.functions.source.MessageAcknowledgingSourceBase</node>
+    <node x="10.5" y="277.0">org.apache.flink.streaming.api.checkpoint.ExternallyInducedSource</node>
+    <node x="1883.7083333333335" y="435.0">org.apache.flink.streaming.api.functions.source.StatefulSequenceSource</node>
+    <node x="1725.7916666666667" y="356.0">org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction</node>
+    <node x="1614.6666666666667" y="89.0">org.apache.flink.api.common.functions.Function</node>
+    <node x="1448.5" y="277.0">org.apache.flink.streaming.api.functions.source.RichSourceFunction</node>
+    <node x="1240.5" y="277.0">org.apache.flink.streaming.api.functions.source.ParallelSourceFunction</node>
+    <node x="1388.7083333333335" y="435.0">org.apache.flink.streaming.api.functions.source.FromSplittableIteratorFunction</node>
+    <node x="230.4999999999999" y="277.0">org.apache.flink.streaming.api.functions.source.FileMonitoringFunction</node>
+    <node x="1033.7083333333335" y="435.0">org.apache.flink.streaming.api.functions.source.MultipleIdsMessageAcknowledgingSourceBase</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.streaming.api.functions.source.ContinuousFileMonitoringFunction" target="org.apache.flink.streaming.api.functions.source.RichSourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="1575.2916666666667" y="336.0" />
+      <point x="1576.75" y="336.0" />
+      <point x="42.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.FromSplittableIteratorFunction" target="org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="1506.2083333333335" y="405.0" />
+      <point x="1761.4583333333335" y="405.0" />
+      <point x="-71.33333333333326" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.RichSourceFunction" target="org.apache.flink.api.common.functions.Function">
+      <point x="0.0" y="-14.5" />
+      <point x="1534.0" y="148.0" />
+      <point x="1665.6666666666667" y="148.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.FromElementsFunction" target="org.apache.flink.streaming.api.functions.source.SourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="927.9999999999999" y="257.0" />
+      <point x="977.8330176767677" y="257.0" />
+      <point x="9.0625" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.checkpoint.ExternallyInducedSource" target="java.io.Serializable">
+      <point x="-50.0" y="-14.5" />
+      <point x="60.5" y="59.0" />
+      <point x="1229.1767676767677" y="59.0" />
+      <point x="-29.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction" target="java.io.Serializable">
+      <point x="71.33333333333326" y="-14.5" />
+      <point x="1904.125" y="336.0" />
+      <point x="1911.8121843434344" y="336.0" />
+      <point x="1911.8121843434344" y="49.0" />
+      <point x="1306.510101010101" y="49.0" />
+      <point x="48.33333333333326" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.ParallelSourceFunction" target="org.apache.flink.streaming.api.functions.source.SourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="1334.5" y="247.0" />
+      <point x="1014.0830176767677" y="247.0" />
+      <point x="45.3125" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.FileMonitoringFunction.WatchType" target="java.io.Serializable">
+      <point x="-29.5" y="-14.5" />
+      <point x="262.1846590909091" y="336.0" />
+      <point x="0.0" y="336.0" />
+      <point x="0.0" y="49.0" />
+      <point x="1209.8434343434344" y="49.0" />
+      <point x="-48.33333333333326" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.InputFormatSourceFunction" target="org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="1753.7083333333335" y="415.0" />
+      <point x="1832.7916666666667" y="415.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.RichSourceFunction" target="org.apache.flink.streaming.api.functions.source.SourceFunction">
+      <point x="-57.0" y="-14.5" />
+      <point x="1477.0" y="237.0" />
+      <point x="1032.2080176767677" y="237.0" />
+      <point x="63.4375" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.SourceFunction" target="java.io.Serializable">
+      <point x="-36.25" y="-14.5" />
+      <point x="932.5205176767677" y="69.0" />
+      <point x="1248.510101010101" y="69.0" />
+      <point x="-9.666666666666742" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction" target="org.apache.flink.streaming.api.functions.source.SourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="546.4999999999999" y="237.0" />
+      <point x="941.5830176767677" y="237.0" />
+      <point x="-27.1875" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.MultipleIdsMessageAcknowledgingSourceBase" target="org.apache.flink.streaming.api.functions.source.MessageAcknowledgingSourceBase">
+      <point x="-2.2737367544323206E-13" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.RichSourceFunction" target="java.io.Serializable">
+      <point x="57.0" y="-14.5" />
+      <point x="1591.0" y="257.0" />
+      <point x="1900.8121843434344" y="257.0" />
+      <point x="1900.8121843434344" y="59.0" />
+      <point x="1287.1767676767677" y="59.0" />
+      <point x="29.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.FileMonitoringFunction.WatchType" target="org.apache.flink.streaming.api.functions.source.FileMonitoringFunction">
+      <point x="29.5" y="-14.5" />
+      <point x="321.1846590909091" y="336.0" />
+      <point x="324.9999999999999" y="336.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.MessageAcknowledgingSourceBase" target="org.apache.flink.streaming.api.functions.source.RichSourceFunction">
+      <point x="-2.2737367544323206E-13" y="-14.5" />
+      <point x="1201.208333333333" y="336.0" />
+      <point x="1491.25" y="336.0" />
+      <point x="-42.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.functions.Function" target="java.io.Serializable">
+      <point x="0.0" y="-14.5" />
+      <point x="1665.6666666666667" y="69.0" />
+      <point x="1267.8434343434344" y="69.0" />
+      <point x="9.666666666666742" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction" target="org.apache.flink.api.common.functions.Function">
+      <point x="0.0" y="-14.5" />
+      <point x="1832.7916666666667" y="336.0" />
+      <point x="1889.8121843434344" y="336.0" />
+      <point x="1889.8121843434344" y="148.0" />
+      <point x="1699.6666666666667" y="148.0" />
+      <point x="33.99999999999994" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.checkpoint.ExternallyInducedSource" target="org.apache.flink.streaming.api.functions.source.SourceFunction">
+      <point x="50.0" y="-14.5" />
+      <point x="160.5" y="217.0" />
+      <point x="905.3330176767677" y="217.0" />
+      <point x="-63.4375" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.SourceFunction" target="org.apache.flink.api.common.functions.Function">
+      <point x="36.25" y="-14.5" />
+      <point x="1005.0205176767677" y="138.0" />
+      <point x="1631.6666666666667" y="138.0" />
+      <point x="-34.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.FileMonitoringFunction" target="org.apache.flink.streaming.api.functions.source.SourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="324.9999999999999" y="227.0" />
+      <point x="923.4580176767677" y="227.0" />
+      <point x="-45.3125" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.StatefulSequenceSource" target="org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="1983.2083333333335" y="415.0" />
+      <point x="1904.125" y="415.0" />
+      <point x="71.33333333333326" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction" target="org.apache.flink.streaming.api.functions.source.ParallelSourceFunction">
+      <point x="-71.33333333333326" y="-14.5" />
+      <point x="1761.4583333333335" y="326.0" />
+      <point x="1334.5" y="326.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.FromIteratorFunction" target="org.apache.flink.streaming.api.functions.source.SourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="1131.5" y="257.0" />
+      <point x="995.9580176767677" y="257.0" />
+      <point x="27.1875" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.api.functions.source.SourceFunction.SourceContext" target="org.apache.flink.streaming.api.functions.source.SourceFunction">
+      <point x="0.0" y="-14.5" />
+      <point x="743.4999999999999" y="247.0" />
+      <point x="959.7080176767677" y="247.0" />
+      <point x="-9.0625" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6457274826789838" x="1072.5" y="227.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

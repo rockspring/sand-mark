@@ -1,0 +1,5 @@
+private final int[] returnArray = new int[1];
+
+private final KeySelector<T, K> keySelector;
+
+private int maxParallelism;

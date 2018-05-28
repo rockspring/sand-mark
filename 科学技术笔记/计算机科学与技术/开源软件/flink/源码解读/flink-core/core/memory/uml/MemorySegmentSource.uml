@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.core.memory.MemorySegmentSource</OriginalElement>
+  <nodes>
+    <node x="384.0" y="79.0">org.apache.flink.core.memory.MemorySegmentSource</node>
+    <node x="188.0" y="237.0">org.apache.flink.runtime.operators.hash.MutableHashTable.UnmatchedBuildIterator</node>
+    <node x="403.0" y="237.0">org.apache.flink.runtime.operators.hash.MutableHashTable.ProbeIterator</node>
+    <node x="295.5" y="158.0">org.apache.flink.runtime.operators.hash.MutableHashTable</node>
+    <node x="0.0" y="237.0">org.apache.flink.runtime.operators.hash.MutableHashTable.HashBucketIterator</node>
+    <node x="477.5" y="158.0">org.apache.flink.runtime.memory.ListMemorySegmentSource</node>
+    <node x="434.0" y="0.0">org.apache.flink.annotation.Internal</node>
+    <node x="552.0" y="237.0">org.apache.flink.runtime.operators.hash.ReOpenableMutableHashTable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.memory.MemorySegmentSource" target="org.apache.flink.annotation.Internal">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.ReOpenableMutableHashTable" target="org.apache.flink.runtime.operators.hash.MutableHashTable">
+      <point x="0.0" y="-14.5" />
+      <point x="669.5" y="207.0" />
+      <point x="437.25" y="207.0" />
+      <point x="60.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.memory.ListMemorySegmentSource" target="org.apache.flink.core.memory.MemorySegmentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="585.5" y="133.0" />
+      <point x="529.5" y="133.0" />
+      <point x="48.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.MutableHashTable.UnmatchedBuildIterator" target="org.apache.flink.runtime.operators.hash.MutableHashTable">
+      <point x="0.0" y="-14.5" />
+      <point x="285.5" y="217.0" />
+      <point x="356.25" y="217.0" />
+      <point x="-20.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.MutableHashTable.HashBucketIterator" target="org.apache.flink.runtime.operators.hash.MutableHashTable">
+      <point x="0.0" y="-14.5" />
+      <point x="84.0" y="207.0" />
+      <point x="315.75" y="207.0" />
+      <point x="-60.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.MutableHashTable" target="org.apache.flink.core.memory.MemorySegmentSource">
+      <point x="0.0" y="-14.5" />
+      <point x="376.5" y="133.0" />
+      <point x="432.5" y="133.0" />
+      <point x="-48.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.runtime.operators.hash.MutableHashTable.ProbeIterator" target="org.apache.flink.runtime.operators.hash.MutableHashTable">
+      <point x="0.0" y="-14.5" />
+      <point x="467.5" y="217.0" />
+      <point x="396.75" y="217.0" />
+      <point x="20.25" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="393.5" y="133.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,25 @@
+private final String edgeId;
+
+private final StreamNode sourceVertex;
+private final StreamNode targetVertex;
+
+/**
+ * The type number of the input for co-tasks.
+ */
+private final int typeNumber;
+
+/**
+ * A list of output names that the target vertex listens to (if there is
+ * output selection).
+ */
+private final List<String> selectedNames;
+
+/**
+ * The side-output tag (if any) of this {@link StreamEdge}.
+ */
+private final OutputTag outputTag;
+
+/**
+ * The {@link StreamPartitioner} on this {@link StreamEdge}.
+ */
+private StreamPartitioner<?> outputPartitioner;

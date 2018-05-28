@@ -1,0 +1,34 @@
+job = {JobGraph@6611} "JobGraph(jobId: b73a4a569d4c833ef5edc6ce97ec021a)"
+ taskVertices = {LinkedHashMap@6616}  size = 2
+  0 = {LinkedHashMap$Entry@7791} "90bea66de1c231edf33913ecd54406c1" -> "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed (org.apache.flink.streaming.runtime.tasks.OneInputStreamTask)"
+  1 = {LinkedHashMap$Entry@7792} "cbc357ccb763df2852fee8c4fc7d55f2" -> "Source: Socket Stream -> Flat Map (org.apache.flink.streaming.runtime.tasks.SourceStreamTask)"
+ jobConfiguration = {Configuration@6618} "{}"
+ jobID = {JobID@6632} "b73a4a569d4c833ef5edc6ce97ec021a"
+ jobName = "Socket Window WordCount"
+ sessionTimeout = 0
+ allowQueuedScheduling = false
+ scheduleMode = {ScheduleMode@6655} "EAGER"
+ serializedExecutionConfig = {SerializedValue@7756} "SerializedValue"
+ snapshotSettings = {JobCheckpointingSettings@7735} "SnapshotSettings: config=JobCheckpointingConfiguration{checkpointInterval=9223372036854775807, checkpointTimeout=600000, minPauseBetweenCheckpoints=0, maxConcurrentCheckpoints=1, externalizedCheckpointSettings=org.apache.flink.runtime.jobgraph.tasks.ExternalizedCheckpointSettings@9e61}, trigger=[cbc357ccb763df2852fee8c4fc7d55f2], ack=[cbc357ccb763df2852fee8c4fc7d55f2, 90bea66de1c231edf33913ecd54406c1], commit=[cbc357ccb763df2852fee8c4fc7d55f2, 90bea66de1c231edf33913ecd54406c1]"
+  verticesToTrigger = {ArrayList@7633}  size = 1
+   0 = {JobVertexID@7438} "cbc357ccb763df2852fee8c4fc7d55f2"
+  verticesToAcknowledge = {ArrayList@7635}  size = 2
+   0 = {JobVertexID@7438} "cbc357ccb763df2852fee8c4fc7d55f2"
+   1 = {JobVertexID@7793} "90bea66de1c231edf33913ecd54406c1"
+  verticesToConfirm = {ArrayList@7637}  size = 2
+   0 = {JobVertexID@7438} "cbc357ccb763df2852fee8c4fc7d55f2"
+   1 = {JobVertexID@7793} "90bea66de1c231edf33913ecd54406c1"
+  checkpointCoordinatorConfiguration = {CheckpointCoordinatorConfiguration@7723} "JobCheckpointingConfiguration{checkpointInterval=9223372036854775807, checkpointTimeout=600000, minPauseBetweenCheckpoints=0, maxConcurrentCheckpoints=1, externalizedCheckpointSettings=org.apache.flink.runtime.jobgraph.tasks.ExternalizedCheckpointSettings@9e61}"
+   checkpointInterval = 9223372036854775807
+   checkpointTimeout = 600000
+   minPauseBetweenCheckpoints = 0
+   maxConcurrentCheckpoints = 1
+   externalizedCheckpointSettings = {ExternalizedCheckpointSettings@7660} 
+   isExactlyOnce = true
+  defaultStateBackend = null
+  masterHooks = null
+ savepointRestoreSettings = {SavepointRestoreSettings@2760} "SavepointRestoreSettings.none()"
+ userJars = {ArrayList@6628}  size = 1
+  0 = {Path@8020} "file:/Users/zlq/Projects/oss/BigData/flink/build-target/examples/streaming/SocketWindowWordCount.jar"
+ userJarBlobKeys = {ArrayList@6630}  size = 0
+ classpaths = {ArrayList@2755}  size = 0

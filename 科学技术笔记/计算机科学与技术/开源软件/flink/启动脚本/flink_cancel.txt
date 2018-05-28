@@ -1,0 +1,3 @@
+bin/flink
+Cancelling job 671f0bd72f92835ab75aefe7c3840743.
+Cancelled job 671f0bd72f92835ab75aefe7c3840743.

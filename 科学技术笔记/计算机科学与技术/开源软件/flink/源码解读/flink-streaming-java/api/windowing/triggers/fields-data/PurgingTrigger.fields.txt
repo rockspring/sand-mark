@@ -1,0 +1,1 @@
+private Trigger<T, W> nestedTrigger;

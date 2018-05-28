@@ -1,0 +1,2 @@
+Output<StreamRecord<OUT>>	output
+Counter	numRecordsOut

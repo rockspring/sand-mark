@@ -1,0 +1,12 @@
+int	id
+String	name
+TypeInformation<T>	outputType
+boolean	typeUsed
+int	parallelism
+int	maxParallelism
+ResourceSpec	minResources
+ResourceSpec	preferredResources
+String	uid
+String	userProvidedNodeHash
+long	bufferTimeout
+String	slotSharingGroup

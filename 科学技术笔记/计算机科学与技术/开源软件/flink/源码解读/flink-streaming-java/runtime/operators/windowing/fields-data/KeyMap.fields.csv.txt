@@ -1,0 +1,5 @@
+Entry<K,V>[]	table
+int	shift
+int	numElements
+int	rehashThreshold
+int	log2size

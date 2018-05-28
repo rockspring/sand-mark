@@ -1,0 +1,2 @@
+boolean	STD_OUT
+boolean	STD_ERR

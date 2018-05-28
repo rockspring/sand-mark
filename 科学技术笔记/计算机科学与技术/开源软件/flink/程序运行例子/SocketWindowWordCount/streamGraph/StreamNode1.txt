@@ -1,0 +1,55 @@
+0 = {HashMap$Node@6266} "1" -> "Source: Socket Stream-1"
+ key = {Integer@5238} 1
+ value = {StreamNode@5251} "Source: Socket Stream-1"
+  env = {StreamContextEnvironment@3604} 
+  id = 1
+  parallelism = {Integer@5238} 1
+  maxParallelism = -1
+  minResources = {ResourceSpec@3868} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  preferredResources = {ResourceSpec@3868} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  bufferTimeout = null
+  operatorName = "Source: Socket Stream"
+  slotSharingGroup = "default"
+  statePartitioner1 = null
+  statePartitioner2 = null
+  stateKeySerializer = null
+  operator = {StreamSource@3843} 
+   ctx = null
+   canceledOrStopped = false
+   userFunction = {SocketTextStreamFunction@3622} 
+   functionsClosed = false
+   chainingStrategy = {ChainingStrategy@4664} "HEAD"
+   container = null
+   config = null
+   output = null
+   runtimeContext = null
+   checkpointStreamFactory = null
+   stateKeySelector1 = null
+   stateKeySelector2 = null
+   keyedStateBackend = null
+   keyedStateStore = null
+   operatorStateBackend = null
+   metrics = null
+   latencyGauge = null
+   timeServiceManager = null
+   combinedWatermark = -9223372036854775808
+   input1Watermark = -9223372036854775808
+   input2Watermark = -9223372036854775808
+  outputSelectors = {ArrayList@5252}  size = 0
+  typeSerializerIn1 = null
+  typeSerializerIn2 = null
+  typeSerializerOut = {StringSerializer@5319} 
+  inEdges = {ArrayList@5272}  size = 0
+  outEdges = {ArrayList@5277}  size = 1
+   0 = {StreamEdge@5549} "(Source: Socket Stream-1 -> Flat Map-2, typeNumber=0, selectedNames=[], outputPartitioner=FORWARD, outputTag=null)"
+    edgeId = "Source: Socket Stream-1_Flat Map-2_0_[]_FORWARD"
+    sourceVertex = {StreamNode@5251} "Source: Socket Stream-1"
+    targetVertex = {StreamNode@5432} "Flat Map-2"
+    typeNumber = 0
+    selectedNames = {ArrayList@6481}  size = 0
+    outputTag = null
+    outputPartitioner = {ForwardPartitioner@5538} "FORWARD"
+  jobVertexClass = {Class@5246} "class org.apache.flink.streaming.runtime.tasks.SourceStreamTask"
+  inputFormat = null
+  transformationUID = null
+  userHash = null

@@ -1,0 +1,1 @@
+extractClassFieldsToCsv PrintSinkFunction.fields.txt

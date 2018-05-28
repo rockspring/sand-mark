@@ -1,0 +1,4 @@
+private final long interval;
+
+/** When merging we take the lowest of all fire timestamps as the new fire timestamp. */
+private final ReducingStateDescriptor<Long> stateDesc = new ReducingStateDescriptor<>("fire-time", new Min(), LongSerializer.INSTANCE);

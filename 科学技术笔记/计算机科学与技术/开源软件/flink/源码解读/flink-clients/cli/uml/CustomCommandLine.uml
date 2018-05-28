@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.client.cli.CustomCommandLine</OriginalElement>
+  <nodes>
+    <node x="160.0" y="158.0">org.apache.flink.yarn.cli.FlinkYarnSessionCli</node>
+    <node x="438.5" y="79.0">org.apache.flink.client.program.ClusterClient.LazyActorSystemLoader</node>
+    <node x="368.5" y="0.0">org.apache.flink.client.program.ClusterClient</node>
+    <node x="235.5" y="79.0">org.apache.flink.client.cli.CustomCommandLine</node>
+    <node x="348.0" y="158.0">org.apache.flink.yarn.cli.FlinkYarnCLI</node>
+    <node x="0.0" y="158.0">org.apache.flink.client.cli.Flip6DefaultCLI</node>
+    <node x="492.0" y="158.0">org.apache.flink.client.cli.DefaultCLI</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.client.cli.Flip6DefaultCLI" target="org.apache.flink.client.cli.CustomCommandLine">
+      <point x="0.0" y="-14.5" />
+      <point x="70.0" y="128.0" />
+      <point x="258.375" y="128.0" />
+      <point x="-68.625" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.ClusterClient.LazyActorSystemLoader" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="537.0" y="54.0" />
+      <point x="463.75" y="54.0" />
+      <point x="31.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.cli.FlinkYarnSessionCli" target="org.apache.flink.client.cli.CustomCommandLine">
+      <point x="0.0" y="-14.5" />
+      <point x="244.0" y="138.0" />
+      <point x="304.125" y="138.0" />
+      <point x="-22.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.cli.FlinkYarnCLI" target="org.apache.flink.client.cli.CustomCommandLine">
+      <point x="0.0" y="-14.5" />
+      <point x="410.0" y="138.0" />
+      <point x="349.875" y="138.0" />
+      <point x="22.875" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.cli.CustomCommandLine" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="327.0" y="54.0" />
+      <point x="400.25" y="54.0" />
+      <point x="-31.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.cli.DefaultCLI" target="org.apache.flink.client.cli.CustomCommandLine">
+      <point x="0.0" y="-14.5" />
+      <point x="547.5" y="128.0" />
+      <point x="395.625" y="128.0" />
+      <point x="68.625" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="301.5" y="93.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

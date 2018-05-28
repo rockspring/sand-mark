@@ -1,0 +1,15 @@
+jobName = "Socket Window WordCount"
+environment = {StreamContextEnvironment@3604} 
+executionConfig = {ExecutionConfig@3606} 
+checkpointConfig = {CheckpointConfig@3607} 
+chaining = true
+streamNodes = {HashMap@5150}  size = 4
+sources = {HashSet@5151}  size = 1
+sinks = {HashSet@5152}  size = 1
+virtualSelectNodes = {HashMap@5153}  size = 0
+virtualSideOutputNodes = {HashMap@5154}  size = 0
+virtualPartitionNodes = {HashMap@5155}  size = 1
+vertexIDtoBrokerID = {HashMap@5156}  size = 0
+vertexIDtoLoopTimeout = {HashMap@5157}  size = 0
+stateBackend = null
+iterationSourceSinkPairs = {HashSet@5158}  size = 0

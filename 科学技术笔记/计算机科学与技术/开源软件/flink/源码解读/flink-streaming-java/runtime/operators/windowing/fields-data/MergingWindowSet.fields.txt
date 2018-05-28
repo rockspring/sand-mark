@@ -1,0 +1,19 @@
+/**
+ * Mapping from window to the window that keeps the window state. When
+ * we are incrementally merging windows starting from some window we keep that starting
+ * window as the state window to prevent costly state juggling.
+ */
+private final Map<W, W> mapping;
+
+/**
+ * Mapping when we created the {@code MergingWindowSet}. We use this to decide whether
+ * we need to persist any changes to state.
+ */
+private final Map<W, W> initialMapping;
+
+private final ListState<Tuple2<W, W>> state;
+
+/**
+ * Our window assigner.
+ */
+private final MergingWindowAssigner<?, W> windowAssigner;

@@ -1,0 +1,10 @@
+private Plan plan;
+
+private List<URL> jarFiles;
+
+/**
+ * classpaths that are needed during user code execution.
+ */
+private List<URL> classpaths;
+
+private ClassLoader userCodeClassLoader;

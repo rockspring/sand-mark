@@ -1,0 +1,1 @@
+extractClassFieldsToCsv KeyGroupStreamPartitioner.fields.txt

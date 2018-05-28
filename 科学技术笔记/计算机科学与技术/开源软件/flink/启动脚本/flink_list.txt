@@ -1,0 +1,6 @@
+bin/flink
+Waiting for response...
+------------------ Running/Restarting Jobs -------------------
+21.05.2018 16:17:36 : 671f0bd72f92835ab75aefe7c3840743 : Socket Window WordCount (RUNNING)
+--------------------------------------------------------------
+No scheduled jobs.

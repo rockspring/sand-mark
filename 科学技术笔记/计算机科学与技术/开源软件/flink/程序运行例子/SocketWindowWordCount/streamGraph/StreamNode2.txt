@@ -1,0 +1,62 @@
+1 = {HashMap$Node@6267} "2" -> "Flat Map-2"
+ key = {Integer@5422} 2
+ value = {StreamNode@5432} "Flat Map-2"
+  env = {StreamContextEnvironment@3604} 
+  id = 2
+  parallelism = {Integer@5238} 1
+  maxParallelism = -1
+  minResources = {ResourceSpec@3868} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  preferredResources = {ResourceSpec@3868} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  bufferTimeout = null
+  operatorName = "Flat Map"
+  slotSharingGroup = "default"
+  statePartitioner1 = null
+  statePartitioner2 = null
+  stateKeySerializer = null
+  operator = {StreamFlatMap@3979} 
+   collector = null
+   userFunction = {SocketWindowWordCount$2@3949} 
+   functionsClosed = false
+   chainingStrategy = {ChainingStrategy@3980} "ALWAYS"
+   container = null
+   config = null
+   output = null
+   runtimeContext = null
+   checkpointStreamFactory = null
+   stateKeySelector1 = null
+   stateKeySelector2 = null
+   keyedStateBackend = null
+   keyedStateStore = null
+   operatorStateBackend = null
+   metrics = null
+   latencyGauge = null
+   timeServiceManager = null
+   combinedWatermark = -9223372036854775808
+   input1Watermark = -9223372036854775808
+   input2Watermark = -9223372036854775808
+  outputSelectors = {ArrayList@5433}  size = 0
+  typeSerializerIn1 = {StringSerializer@5319} 
+  typeSerializerIn2 = null
+  typeSerializerOut = {PojoSerializer@5503} 
+  inEdges = {ArrayList@5453}  size = 1
+   0 = {StreamEdge@5549} "(Source: Socket Stream-1 -> Flat Map-2, typeNumber=0, selectedNames=[], outputPartitioner=FORWARD, outputTag=null)"
+    edgeId = "Source: Socket Stream-1_Flat Map-2_0_[]_FORWARD"
+    sourceVertex = {StreamNode@5251} "Source: Socket Stream-1"
+    targetVertex = {StreamNode@5432} "Flat Map-2"
+    typeNumber = 0
+    selectedNames = {ArrayList@6481}  size = 0
+    outputTag = null
+    outputPartitioner = {ForwardPartitioner@5538} "FORWARD"
+  outEdges = {ArrayList@5458}  size = 1
+   0 = {StreamEdge@6009} "(Flat Map-2 -> TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4, typeNumber=0, selectedNames=[], outputPartitioner=HASH, outputTag=null)"
+    edgeId = "Flat Map-2_TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4_0_[]_HASH"
+    sourceVertex = {StreamNode@5432} "Flat Map-2"
+    targetVertex = {StreamNode@5887} "TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@e48d46c, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@61e94def}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241))-4"
+    typeNumber = 0
+    selectedNames = {ArrayList@5992}  size = 0
+    outputTag = null
+    outputPartitioner = {KeyGroupStreamPartitioner@5760} "HASH"
+  jobVertexClass = {Class@5429} "class org.apache.flink.streaming.runtime.tasks.OneInputStreamTask"
+  inputFormat = null
+  transformationUID = null
+  userHash = null

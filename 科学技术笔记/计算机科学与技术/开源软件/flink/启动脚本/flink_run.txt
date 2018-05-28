@@ -1,0 +1,14 @@
+bin/flink
+Cluster configuration: Standalone cluster with JobManager at localhost/127.0.0.1:6123
+Using address localhost:6123 to connect to JobManager.
+JobManager web interface address http://localhost:8081
+Starting execution of program
+Submitting job with JobID: 671f0bd72f92835ab75aefe7c3840743. Waiting for job completion.
+Connected to JobManager at Actor[akka.tcp://flink@localhost:6123/user/jobmanager#-1346665988] with leader session id 00000000-0000-0000-0000-000000000000.
+05/21/2018 16:17:36	Job execution switched to status RUNNING.
+05/21/2018 16:17:36	Source: Socket Stream -> Flat Map(1/1) switched to SCHEDULED 
+05/21/2018 16:17:36	TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@6f9b4efb, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@a2431d0}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed(1/1) switched to SCHEDULED 
+05/21/2018 16:17:36	Source: Socket Stream -> Flat Map(1/1) switched to DEPLOYING 
+05/21/2018 16:17:36	TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@6f9b4efb, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@a2431d0}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed(1/1) switched to DEPLOYING 
+05/21/2018 16:17:36	Source: Socket Stream -> Flat Map(1/1) switched to RUNNING 
+05/21/2018 16:17:36	TriggerWindow(TumblingProcessingTimeWindows(5000), ReducingStateDescriptor{serializer=org.apache.flink.api.java.typeutils.runtime.PojoSerializer@6f9b4efb, reduceFunction=org.apache.flink.streaming.examples.socket.SocketWindowWordCount$1@a2431d0}, ProcessingTimeTrigger(), WindowedStream.reduce(WindowedStream.java:241)) -> Sink: Unnamed(1/1) switched to RUNNING 

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.configuration.AkkaOptions</OriginalElement>
+  <nodes>
+    <node x="132.03888888888883" y="474.0">org.apache.flink.configuration.DelegatingConfiguration</node>
+    <node x="0.0" y="316.0">org.apache.flink.api.common.ExecutionConfig.GlobalJobParameters</node>
+    <node x="370.96759259259255" y="474.0">org.apache.flink.configuration.UnmodifiableConfiguration</node>
+    <node x="315.21759259259255" y="79.0">java.lang.annotation.Retention</node>
+    <node x="368.8935185185185" y="237.0">org.apache.flink.annotation.Public</node>
+    <node x="199.99999999999994" y="316.0">java.lang.Cloneable</node>
+    <node x="197.78888888888883" y="395.0">org.apache.flink.configuration.Configuration</node>
+    <node x="340.1435185185185" y="158.0">java.lang.annotation.Target</node>
+    <node x="86.71481481481476" y="237.0">java.io.Serializable</node>
+    <node x="328.99999999999994" y="316.0">org.apache.flink.core.io.IOReadableWritable</node>
+    <node x="360.21481481481476" y="0.0">java.lang.annotation.Annotation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.core.io.IOReadableWritable" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="412.49999999999994" y="291.0" />
+      <point x="411.3935185185185" y="291.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.configuration.Configuration" target="org.apache.flink.core.io.IOReadableWritable">
+      <point x="53.19999999999999" y="-14.5" />
+      <point x="317.4888888888888" y="375.0" />
+      <point x="412.49999999999994" y="375.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.configuration.Configuration" target="java.io.Serializable">
+      <point x="-26.600000000000023" y="-14.5" />
+      <point x="237.6888888888888" y="365.0" />
+      <point x="189.49999999999997" y="365.0" />
+      <point x="189.49999999999997" y="291.0" />
+      <point x="173.71481481481476" y="291.0" />
+      <point x="29.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.configuration.Configuration" target="org.apache.flink.annotation.Public">
+      <point x="26.600000000000023" y="-14.5" />
+      <point x="290.88888888888886" y="365.0" />
+      <point x="318.49999999999994" y="365.0" />
+      <point x="318.49999999999994" y="291.0" />
+      <point x="383.06018518518516" y="291.0" />
+      <point x="-28.33333333333333" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.configuration.UnmodifiableConfiguration" target="org.apache.flink.annotation.Public">
+      <point x="53.500000000000014" y="-14.5" />
+      <point x="531.4675925925926" y="291.0" />
+      <point x="439.72685185185185" y="291.0" />
+      <point x="28.333333333333343" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.configuration.DelegatingConfiguration" target="org.apache.flink.configuration.Configuration">
+      <point x="0.0" y="-14.5" />
+      <point x="-33.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.configuration.Configuration" target="org.apache.flink.api.common.ExecutionConfig.GlobalJobParameters">
+      <point x="-53.19999999999999" y="-14.5" />
+      <point x="211.08888888888885" y="375.0" />
+      <point x="89.5" y="375.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="java.lang.annotation.Target" target="java.lang.annotation.Retention">
+      <point x="-29.33333333333333" y="-14.5" />
+      <point x="354.81018518518516" y="133.0" />
+      <point x="341.96759259259255" y="133.0" />
+      <point x="-26.75" y="14.5" />
+    </edge>
+    <edge source="java.lang.annotation.Target" target="java.lang.annotation.Annotation">
+      <point x="29.33333333333333" y="-14.5" />
+      <point x="413.4768518518518" y="133.0" />
+      <point x="432.71759259259255" y="133.0" />
+      <point x="432.71759259259255" y="54.0" />
+      <point x="418.71481481481476" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.annotation.Public" target="java.lang.annotation.Target">
+      <point x="-21.25" y="-14.5" />
+      <point x="390.1435185185185" y="212.0" />
+      <point x="384.1435185185185" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="java.lang.annotation.Retention" target="java.lang.annotation.Target">
+      <point x="26.75" y="14.5" />
+      <point x="395.46759259259255" y="133.0" />
+      <point x="384.1435185185185" y="133.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.common.ExecutionConfig.GlobalJobParameters" target="java.io.Serializable">
+      <point x="-5.6843418860808015E-14" y="-14.5" />
+      <point x="89.49999999999994" y="291.0" />
+      <point x="115.71481481481476" y="291.0" />
+      <point x="-29.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.configuration.Configuration" target="java.lang.Cloneable">
+      <point x="0.0" y="-14.5" />
+      <point x="264.28888888888883" y="375.0" />
+      <point x="253.99999999999994" y="375.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="java.lang.annotation.Retention" target="java.lang.annotation.Annotation">
+      <point x="0.0" y="-14.5" />
+      <point x="368.71759259259255" y="54.0" />
+      <point x="379.71481481481476" y="54.0" />
+      <point x="-39.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.configuration.UnmodifiableConfiguration" target="org.apache.flink.configuration.Configuration">
+      <point x="-53.5" y="-14.5" />
+      <point x="424.46759259259255" y="449.0" />
+      <point x="297.53888888888883" y="449.0" />
+      <point x="33.25" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.annotation.Public" target="java.lang.annotation.Annotation">
+      <point x="21.25" y="-14.5" />
+      <point x="432.6435185185185" y="212.0" />
+      <point x="447.60185185185185" y="212.0" />
+      <point x="447.60185185185185" y="54.0" />
+      <point x="457.71481481481476" y="54.0" />
+      <point x="39.00000000000001" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="304.5" y="251.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

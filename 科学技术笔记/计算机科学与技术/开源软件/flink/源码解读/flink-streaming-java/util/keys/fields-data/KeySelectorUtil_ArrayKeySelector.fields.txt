@@ -1,0 +1,3 @@
+private final int[] fields;
+private final Class<? extends Tuple> tupleClass;
+private transient TupleTypeInfo<Tuple> returnType;

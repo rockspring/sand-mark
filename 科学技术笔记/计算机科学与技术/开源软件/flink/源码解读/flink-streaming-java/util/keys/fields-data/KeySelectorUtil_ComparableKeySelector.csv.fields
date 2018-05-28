@@ -1,0 +1,4 @@
+TypeComparator<IN>	comparator
+int	keyLength
+TupleTypeInfo<Tuple>	tupleTypeInfo
+Object[]	keyArray

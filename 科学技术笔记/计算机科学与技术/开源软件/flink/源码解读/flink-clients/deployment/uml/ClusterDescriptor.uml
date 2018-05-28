@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.client.deployment.ClusterDescriptor</OriginalElement>
+  <nodes>
+    <node x="837.5" y="158.0">org.apache.flink.client.deployment.StandaloneClusterDescriptor</node>
+    <node x="1048.0" y="79.0">org.apache.flink.client.program.ClusterClient.LazyActorSystemLoader</node>
+    <node x="231.0" y="247.0">org.apache.flink.yarn.AbstractYarnClusterDescriptor.ClusterResourceDescription</node>
+    <node x="1082.5" y="158.0">org.apache.flink.client.deployment.Flip6StandaloneClusterDescriptor</node>
+    <node x="872.0" y="79.0">org.apache.flink.client.deployment.ClusterDescriptor</node>
+    <node x="470.0" y="247.0">org.apache.flink.yarn.AbstractYarnClusterDescriptor.DeploymentFailureHook</node>
+    <node x="984.75" y="0.0">org.apache.flink.client.program.ClusterClient</node>
+    <node x="996.0" y="247.0">org.apache.flink.yarn.YarnClusterDescriptorV2</node>
+    <node x="684.0" y="247.0">org.apache.flink.yarn.AbstractYarnClusterDescriptor.ApplicationSubmissionContextReflector</node>
+    <node x="0.0" y="247.0">org.apache.flink.yarn.AbstractYarnClusterDescriptor.YarnDeploymentException</node>
+    <node x="1218.0" y="247.0">org.apache.flink.yarn.YarnClusterDescriptor</node>
+    <node x="579.5" y="158.0">org.apache.flink.yarn.AbstractYarnClusterDescriptor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.yarn.AbstractYarnClusterDescriptor.ClusterResourceDescription" target="org.apache.flink.yarn.AbstractYarnClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="340.5" y="217.0" />
+      <point x="639.0" y="217.0" />
+      <point x="-59.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.program.ClusterClient.LazyActorSystemLoader" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="1146.5" y="54.0" />
+      <point x="1080.0" y="54.0" />
+      <point x="31.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.YarnClusterDescriptorV2" target="org.apache.flink.yarn.AbstractYarnClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="1097.0" y="217.0" />
+      <point x="758.0" y="217.0" />
+      <point x="59.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.deployment.Flip6StandaloneClusterDescriptor" target="org.apache.flink.client.deployment.ClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="1209.5" y="133.0" />
+      <point x="1002.0" y="133.0" />
+      <point x="52.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.deployment.StandaloneClusterDescriptor" target="org.apache.flink.client.deployment.ClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.AbstractYarnClusterDescriptor" target="org.apache.flink.client.deployment.ClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="698.5" y="133.0" />
+      <point x="898.0" y="133.0" />
+      <point x="-52.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.client.deployment.ClusterDescriptor" target="org.apache.flink.client.program.ClusterClient">
+      <point x="0.0" y="-14.5" />
+      <point x="950.0" y="54.0" />
+      <point x="1016.5" y="54.0" />
+      <point x="-31.75" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.AbstractYarnClusterDescriptor.YarnDeploymentException" target="org.apache.flink.yarn.AbstractYarnClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="105.5" y="207.0" />
+      <point x="599.3333333333334" y="207.0" />
+      <point x="-99.16666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.YarnClusterDescriptor" target="org.apache.flink.yarn.AbstractYarnClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="1310.5" y="207.0" />
+      <point x="797.6666666666666" y="207.0" />
+      <point x="99.16666666666663" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.AbstractYarnClusterDescriptor.DeploymentFailureHook" target="org.apache.flink.yarn.AbstractYarnClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="567.0" y="227.0" />
+      <point x="678.6666666666666" y="227.0" />
+      <point x="-19.83333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.yarn.AbstractYarnClusterDescriptor.ApplicationSubmissionContextReflector" target="org.apache.flink.yarn.AbstractYarnClusterDescriptor">
+      <point x="0.0" y="-14.5" />
+      <point x="830.0" y="227.0" />
+      <point x="718.3333333333334" y="227.0" />
+      <point x="19.83333333333337" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="701.5" y="138.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

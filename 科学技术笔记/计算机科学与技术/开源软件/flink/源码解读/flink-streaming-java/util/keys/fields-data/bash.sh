@@ -1,0 +1,3 @@
+extractClassFieldsToCsv org.apacheKeySelectorUtil_ArrayKeySelector.fields.txt
+extractClassFieldsToCsv org.apacheKeySelectorUtil_ComparableKeySelector.fields.txt
+extractClassFieldsToCsv org.apacheKeySelectorUtil_OneKeySelector.fields.txt

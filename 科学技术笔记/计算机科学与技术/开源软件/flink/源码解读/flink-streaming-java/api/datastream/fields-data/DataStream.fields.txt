@@ -1,0 +1,3 @@
+protected final StreamExecutionEnvironment environment;
+
+protected final StreamTransformation<T> transformation;

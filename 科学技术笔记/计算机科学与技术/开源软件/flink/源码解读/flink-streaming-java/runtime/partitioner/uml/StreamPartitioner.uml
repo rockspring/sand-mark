@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.streaming.runtime.partitioner.KeyGroupStreamPartitioner</OriginalElement>
+  <nodes>
+    <node x="158.25" y="237.0">org.apache.flink.streaming.runtime.partitioner.KeyGroupStreamPartitioner</node>
+    <node x="0.0" y="0.0">org.apache.flink.core.io.IOReadableWritable</node>
+    <node x="257.0" y="158.0">org.apache.flink.streaming.runtime.partitioner.ConfigurableStreamPartitioner</node>
+    <node x="81.99999999999999" y="158.0">org.apache.flink.streaming.runtime.partitioner.StreamPartitioner</node>
+    <node x="9.5" y="79.0">org.apache.flink.runtime.io.network.api.writer.ChannelSelector</node>
+    <node x="177.5" y="79.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.runtime.io.network.api.writer.ChannelSelector" target="org.apache.flink.core.io.IOReadableWritable">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.partitioner.KeyGroupStreamPartitioner" target="org.apache.flink.streaming.runtime.partitioner.ConfigurableStreamPartitioner">
+      <point x="54.25" y="-14.5" />
+      <point x="321.0" y="212.0" />
+      <point x="374.0" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.partitioner.StreamPartitioner" target="org.apache.flink.runtime.io.network.api.writer.ChannelSelector">
+      <point x="-38.75" y="-14.5" />
+      <point x="120.74999999999999" y="133.0" />
+      <point x="83.5" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.partitioner.StreamPartitioner" target="java.io.Serializable">
+      <point x="38.75" y="-14.5" />
+      <point x="198.25" y="133.0" />
+      <point x="235.5" y="133.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.streaming.runtime.partitioner.KeyGroupStreamPartitioner" target="org.apache.flink.streaming.runtime.partitioner.StreamPartitioner">
+      <point x="-54.25" y="-14.5" />
+      <point x="212.5" y="212.0" />
+      <point x="159.5" y="212.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="263.0" y="133.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

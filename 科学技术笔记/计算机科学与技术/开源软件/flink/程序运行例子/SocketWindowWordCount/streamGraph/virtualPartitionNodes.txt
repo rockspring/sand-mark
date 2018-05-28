@@ -1,0 +1,14 @@
+virtualPartitionNodes = {HashMap@5155}  size = 1
+ 0 = {HashMap$Node@6455} "6" -> "(2,HASH)"
+  key = {Integer@5787} 6
+  value = {Tuple2@6456} "(2,HASH)"
+   f0 = {Integer@5422} 2
+   f1 = {KeyGroupStreamPartitioner@5760} "HASH"
+    returnArray = {int[1]@6460} 
+     0 = 0
+    keySelector = {KeySelectorUtil$ComparableKeySelector@4398} 
+     comparator = {PojoComparator@4376} 
+     keyLength = 1
+     tupleTypeInfo = {TupleTypeInfo@4388} "Java Tuple1<String>"
+     keyArray = {Object[1]@4406} 
+    maxParallelism = 128

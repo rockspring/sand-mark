@@ -1,0 +1,2 @@
+int	vertexID
+int	subtaskIndex

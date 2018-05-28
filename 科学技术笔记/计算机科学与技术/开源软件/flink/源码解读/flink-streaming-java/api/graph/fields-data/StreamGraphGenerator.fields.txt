@@ -1,0 +1,7 @@
+// The StreamGraph that is being built, this is initialized at the beginning.
+private final StreamGraph streamGraph;
+
+private final StreamExecutionEnvironment env;
+
+// This is used to assign a unique ID to iteration source/sink
+protected static Integer iterationIdCounter = 0;

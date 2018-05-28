@@ -1,0 +1,45 @@
+// This is used to assign a unique ID to every StreamTransformation
+protected static Integer idCounter = 0;
+protected final int id;
+
+protected String name;
+
+protected TypeInformation<T> outputType;
+// This is used to handle MissingTypeInfo. As long as the outputType has not been queried
+// it can still be changed using setOutputType(). Afterwards an exception is thrown when
+// trying to change the output type.
+protected boolean typeUsed;
+
+private int parallelism;
+
+/**
+ * The maximum parallelism for this stream transformation. It defines the upper limit for
+ * dynamic scaling and the number of key groups used for partitioned state.
+ */
+private int maxParallelism = -1;
+
+/**
+ *  The minimum resources for this stream transformation. It defines the lower limit for
+ *  dynamic resources resize in future plan.
+ */
+private ResourceSpec minResources = ResourceSpec.DEFAULT;
+
+/**
+ *  The preferred resources for this stream transformation. It defines the upper limit for
+ *  dynamic resource resize in future plan.
+ */
+private ResourceSpec preferredResources = ResourceSpec.DEFAULT;
+
+/**
+ * User-specified ID for this transformation. This is used to assign the
+ * same operator ID across job restarts. There is also the automatically
+ * generated {@link #id}, which is assigned from a static counter. That
+ * field is independent from this.
+ */
+private String uid;
+
+private String userProvidedNodeHash;
+
+protected long bufferTimeout = -1;
+
+private String slotSharingGroup;

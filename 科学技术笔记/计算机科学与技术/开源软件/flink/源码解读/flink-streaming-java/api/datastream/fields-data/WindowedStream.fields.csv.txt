@@ -1,0 +1,6 @@
+KeyedStream<T,K>	input
+WindowAssigner<?superT,W>	windowAssigner
+Trigger<?superT,?superW>	trigger
+Evictor<?superT,?superW>	evictor
+long	allowedLateness
+OutputTag<T>	lateDataOutputTag

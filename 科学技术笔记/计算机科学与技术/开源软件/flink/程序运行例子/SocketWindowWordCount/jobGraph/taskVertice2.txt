@@ -1,0 +1,56 @@
+1 = {LinkedHashMap$Entry@7792} "cbc357ccb763df2852fee8c4fc7d55f2" -> "Source: Socket Stream -> Flat Map (org.apache.flink.streaming.runtime.tasks.SourceStreamTask)"
+ key = {JobVertexID@7438} "cbc357ccb763df2852fee8c4fc7d55f2"
+ value = {JobVertex@7409} "Source: Socket Stream -> Flat Map (org.apache.flink.streaming.runtime.tasks.SourceStreamTask)"
+  id = {JobVertexID@7438} "cbc357ccb763df2852fee8c4fc7d55f2"
+  idAlternatives = {ArrayList@7439}  size = 0
+  operatorIDs = {ArrayList@7440}  size = 2
+   0 = {OperatorID@7932} "7df19f87deec5680128845fd9a6ca18d"
+   1 = {OperatorID@7933} "cbc357ccb763df2852fee8c4fc7d55f2"
+  operatorIdsAlternatives = {ArrayList@7441}  size = 2
+  results = {ArrayList@7442}  size = 1
+   0 = {IntermediateDataSet@7829} "Intermediate Data Set (8412b7f0037550c36164ce1822c55f85)"
+    id = {IntermediateDataSetID@7830} "8412b7f0037550c36164ce1822c55f85"
+    producer = {JobVertex@7409} "Source: Socket Stream -> Flat Map (org.apache.flink.streaming.runtime.tasks.SourceStreamTask)"
+    consumers = {ArrayList@7980}  size = 1
+    resultType = {ResultPartitionType@7981} "PIPELINED_BOUNDED"
+  inputs = {ArrayList@7443}  size = 0
+  parallelism = 1
+  maxParallelism = -1
+  minResources = {ResourceSpec@7444} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  preferredResources = {ResourceSpec@7445} "ResourceSpec{cpuCores=0.0, heapMemoryInMB=0, directMemoryInMB=0, nativeMemoryInMB=0, stateSizeInMB=0}"
+  configuration = {Configuration@7446} "{checkpointing=false, serializedUDF=[B@5ef8df1e, statePartitioner0=[B@27cf3151, statePartitioner1=[B@127e70c5, vertexID=1, typeSerializer_in_2=[B@5910de75, typeSerializer_in_1=[B@4108fa66, typeSerializer_out=[B@1f130eaf, bufferTimeout=100, outStreamEdges=[B@7e0aadd0, nonChainedOutputs=[B@21362712, userFunction=org.apache.flink.streaming.api.operators.StreamSource, numberOfOutputs=0, operatorName=Source: Socket Stream, chainedTaskConfig_=[B@27eb3298, chainIndex=0, timechar=0, chainedOutputs=[B@200a26bc, edgesInOrder=[B@bc57b40, outputSelectorWrapper=[B@1b5bc39d, isChainedSubtask=true, checkpointMode=1, operatorID=[B@655a5d9c, statekeyser=[B@1494b84d}"
+   confData = {HashMap@7936}  size = 24
+    0 = {HashMap$Node@7939} "checkpointing" -> "false"
+    1 = {HashMap$Node@7940} "serializedUDF" -> 
+    2 = {HashMap$Node@7941} "statePartitioner0" -> 
+    3 = {HashMap$Node@7942} "statePartitioner1" -> 
+    4 = {HashMap$Node@7943} "vertexID" -> "1"
+    5 = {HashMap$Node@7944} "typeSerializer_in_2" -> 
+    6 = {HashMap$Node@7945} "typeSerializer_in_1" -> 
+    7 = {HashMap$Node@7946} "typeSerializer_out" -> 
+    8 = {HashMap$Node@7947} "bufferTimeout" -> "100"
+    9 = {HashMap$Node@7948} "outStreamEdges" -> 
+    10 = {HashMap$Node@7949} "nonChainedOutputs" -> 
+    11 = {HashMap$Node@7950} "userFunction" -> "org.apache.flink.streaming.api.operators.StreamSource"
+    12 = {HashMap$Node@7951} "numberOfOutputs" -> "0"
+    13 = {HashMap$Node@7952} "operatorName" -> "Source: Socket Stream"
+    14 = {HashMap$Node@7953} "chainedTaskConfig_" -> 
+    15 = {HashMap$Node@7954} "chainIndex" -> "0"
+    16 = {HashMap$Node@7955} "timechar" -> "0"
+    17 = {HashMap$Node@7956} "chainedOutputs" -> 
+    18 = {HashMap$Node@7957} "edgesInOrder" -> 
+    19 = {HashMap$Node@7958} "outputSelectorWrapper" -> 
+    20 = {HashMap$Node@7959} "isChainedSubtask" -> "true"
+    21 = {HashMap$Node@7960} "checkpointMode" -> "1"
+    22 = {HashMap$Node@7961} "operatorID" -> 
+    23 = {HashMap$Node@7962} "statekeyser" -> 
+  invokableClassName = "org.apache.flink.streaming.runtime.tasks.SourceStreamTask"
+  isStoppable = false
+  inputSplitSource = null
+  name = "Source: Socket Stream -> Flat Map"
+  slotSharingGroup = {SlotSharingGroup@7424} "SlotSharingGroup [90bea66de1c231edf33913ecd54406c1, cbc357ccb763df2852fee8c4fc7d55f2]"
+  coLocationGroup = null
+  operatorName = null
+  operatorDescription = null
+  operatorPrettyName = null
+  resultOptimizerProperties = null

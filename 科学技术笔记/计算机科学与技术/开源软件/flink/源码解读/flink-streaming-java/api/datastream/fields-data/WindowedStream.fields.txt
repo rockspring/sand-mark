@@ -1,0 +1,20 @@
+/** The keyed data stream that is windowed by this stream. */
+private final KeyedStream<T, K> input;
+
+/** The window assigner. */
+private final WindowAssigner<? super T, W> windowAssigner;
+
+/** The trigger that is used for window evaluation/emission. */
+private Trigger<? super T, ? super W> trigger;
+
+/** The evictor that is used for evicting elements before window evaluation. */
+private Evictor<? super T, ? super W> evictor;
+
+/** The user-specified allowed lateness. */
+private long allowedLateness = 0L;
+
+/**
+ * Side output {@code OutputTag} for late data. If no tag is set late data will simply be
+ * dropped.
+	 */
+private OutputTag<T> lateDataOutputTag;

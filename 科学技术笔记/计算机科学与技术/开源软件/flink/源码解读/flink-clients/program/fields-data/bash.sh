@@ -1,0 +1,1 @@
+extractClassFieldsToCsv ContextEnvironmentFactory.fields.txt

@@ -1,0 +1,72 @@
+// ------------------------------------------------------------------------
+// Configuration values and user functions
+// ------------------------------------------------------------------------
+
+protected final WindowAssigner<? super IN, W> windowAssigner;
+
+private final KeySelector<IN, K> keySelector;
+
+private final Trigger<? super IN, ? super W> trigger;
+
+private final StateDescriptor<? extends AppendingState<IN, ACC>, ?> windowStateDescriptor;
+
+/** For serializing the key in checkpoints. */
+protected final TypeSerializer<K> keySerializer;
+
+/** For serializing the window in checkpoints. */
+protected final TypeSerializer<W> windowSerializer;
+
+/**
+ * The allowed lateness for elements. This is used for:
+ * <ul>
+ *     <li>Deciding if an element should be dropped from a window due to lateness.
+ *     <li>Clearing the state of a window if the system time passes the
+ *         {@code window.maxTimestamp + allowedLateness} landmark.
+ * </ul>
+ */
+protected final long allowedLateness;
+
+/**
+ * {@link OutputTag} to use for late arriving events. Elements for which
+ * {@code window.maxTimestamp + allowedLateness} is smaller than the current watermark will
+ * be emitted to this.
+ */
+protected final OutputTag<IN> lateDataOutputTag;
+
+private static final  String LATE_ELEMENTS_DROPPED_METRIC_NAME = "numLateRecordsDropped";
+
+protected transient Counter numLateRecordsDropped;
+
+// ------------------------------------------------------------------------
+// State that is not checkpointed
+// ------------------------------------------------------------------------
+
+/** The state in which the window contents is stored. Each window is a namespace */
+private transient InternalAppendingState<W, IN, ACC> windowState;
+
+/**
+ * The {@link #windowState}, typed to merging state for merging windows.
+ * Null if the window state is not mergeable.
+ */
+private transient InternalMergingState<W, IN, ACC> windowMergingState;
+
+/** The state that holds the merging window metadata (the sets that describe what is merged). */
+private transient InternalListState<VoidNamespace, Tuple2<W, W>> mergingSetsState;
+
+/**
+ * This is given to the {@code InternalWindowFunction} for emitting elements with a given
+ * timestamp.
+ */
+protected transient TimestampedCollector<OUT> timestampedCollector;
+
+protected transient Context triggerContext = new Context(null, null);
+
+protected transient WindowContext processContext = new WindowContext(null);
+
+protected transient WindowAssigner.WindowAssignerContext windowAssignerContext;
+
+// ------------------------------------------------------------------------
+// State that needs to be checkpointed
+// ------------------------------------------------------------------------
+
+protected transient InternalTimerService<W> internalTimerService;

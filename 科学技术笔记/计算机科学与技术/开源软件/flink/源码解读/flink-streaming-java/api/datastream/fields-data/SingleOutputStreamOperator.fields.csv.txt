@@ -1,0 +1,2 @@
+boolean	nonParallel
+Map<OutputTag<?>,TypeInformation>	requestedSideOutputs

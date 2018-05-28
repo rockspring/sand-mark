@@ -1,0 +1,6 @@
+extractClassFieldsToCsv DataStream.fields.txt
+extractClassFieldsToCsv DataStreamSink.fields.txt
+extractClassFieldsToCsv DataStreamSource.fields.txt
+extractClassFieldsToCsv KeyedStream.fields.txt
+extractClassFieldsToCsv SingleOutputStreamOperator.fields.txt
+extractClassFieldsToCsv WindowedStream.fields.txt

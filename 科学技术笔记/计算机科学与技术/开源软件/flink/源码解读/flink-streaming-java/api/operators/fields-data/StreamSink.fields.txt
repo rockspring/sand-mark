@@ -1,0 +1,4 @@
+private transient SimpleContext sinkContext;
+
+/** We listen to this ourselves because we don't have an {@link InternalTimerService}. */
+private long currentWatermark = Long.MIN_VALUE;

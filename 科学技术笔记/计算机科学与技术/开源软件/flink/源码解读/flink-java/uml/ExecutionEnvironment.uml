@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.flink.api.java.ExecutionEnvironment</OriginalElement>
+  <nodes>
+    <node x="0.0" y="237.0">org.apache.flink.api.java.LocalEnvironment.ExecutorReaper</node>
+    <node x="432.75" y="237.0">org.apache.flink.api.java.ScalaShellRemoteEnvironment</node>
+    <node x="256.25" y="158.0">org.apache.flink.api.java.CollectionEnvironment</node>
+    <node x="256.25" y="79.0">org.apache.flink.api.java.ExecutionEnvironment</node>
+    <node x="165.0" y="237.0">org.apache.flink.api.java.LocalEnvironment.ShutdownThread</node>
+    <node x="78.25" y="158.0">org.apache.flink.api.java.LocalEnvironment</node>
+    <node x="463.25" y="158.0">org.apache.flink.api.java.RemoteEnvironment</node>
+    <node x="307.25" y="0.0">org.apache.flink.annotation.Public</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.flink.api.java.LocalEnvironment" target="org.apache.flink.annotation.Public">
+      <point x="-39.5" y="-14.5" />
+      <point x="117.75" y="54.0" />
+      <point x="321.4166666666667" y="54.0" />
+      <point x="-28.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.RemoteEnvironment" target="org.apache.flink.annotation.Public">
+      <point x="43.0" y="-14.5" />
+      <point x="592.25" y="54.0" />
+      <point x="378.0833333333333" y="54.0" />
+      <point x="28.333333333333314" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.LocalEnvironment.ExecutorReaper" target="org.apache.flink.api.java.LocalEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="72.5" y="212.0" />
+      <point x="117.75" y="212.0" />
+      <point x="-39.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.LocalEnvironment" target="org.apache.flink.api.java.ExecutionEnvironment">
+      <point x="39.5" y="-14.5" />
+      <point x="196.75" y="133.0" />
+      <point x="287.41666666666663" y="133.0" />
+      <point x="-62.33333333333334" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.ExecutionEnvironment" target="org.apache.flink.annotation.Public">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.ScalaShellRemoteEnvironment" target="org.apache.flink.api.java.RemoteEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.RemoteEnvironment" target="org.apache.flink.api.java.ExecutionEnvironment">
+      <point x="-43.0" y="-14.5" />
+      <point x="506.25" y="133.0" />
+      <point x="412.08333333333337" y="133.0" />
+      <point x="62.33333333333337" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.LocalEnvironment.ShutdownThread" target="org.apache.flink.api.java.LocalEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="242.0" y="212.0" />
+      <point x="196.75" y="212.0" />
+      <point x="39.5" y="14.5" />
+    </edge>
+    <edge source="org.apache.flink.api.java.CollectionEnvironment" target="org.apache.flink.api.java.ExecutionEnvironment">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="335.5" y="133.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

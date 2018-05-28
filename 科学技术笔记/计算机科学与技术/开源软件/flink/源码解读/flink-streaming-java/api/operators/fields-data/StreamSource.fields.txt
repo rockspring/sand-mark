@@ -1,0 +1,3 @@
+private transient SourceFunction.SourceContext<OUT> ctx;
+
+private transient volatile boolean canceledOrStopped = false;
