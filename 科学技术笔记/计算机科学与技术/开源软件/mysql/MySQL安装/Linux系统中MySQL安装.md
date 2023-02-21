@@ -15,10 +15,11 @@ MySQL：mysql-5.6.11
 
 ```
 sudo -s
-apt-get install g++
-apt-get install cmake
-apt-get install libncurses5-dev
-apt-get install bison
+sudo apt-get -y install g++
+sudo apt-get -y install cmake
+sudo apt-get -y install libncurses5-dev
+sudo apt-get -y install bison
+sudo apt-get -y install libboost-all-dev
 ```
 ### 2.建立用户和用户组
 
@@ -32,7 +33,8 @@ useradd -r -g mysql mysql
 ```
 tar zxvf mysql-5.6.11.tar.gz
 cd mysql-5.6.11
-cmake .
+mkdir build
+cmake .. -DDOWNLOAD_BOOST=1 -DWITH_BOOST=/tmp
 make
 make install
 ```
